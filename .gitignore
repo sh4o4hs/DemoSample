@@ -1,0 +1,10 @@
+.directory
+.idea
+Thumbs.db
+/app/
+/tmp/
+/config/
+/debug/
+/release/
+/data/
+/raw/

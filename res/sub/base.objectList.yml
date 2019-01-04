@@ -1,0 +1,115 @@
+objects:
+- #系統
+  objName: btnSystem
+  name: 系統
+  type: button
+  isInScene: true
+  resource:
+    group: sub.button
+    name: system
+    enter: enter
+    press: press
+    leave: leave
+    disable: disable
+  pos: {x: 140,y: 140}
+  width: 255
+  height: 255
+  init: clickSys
+- #動畫 boy
+  objName: boy
+  name: 動畫 boy
+  type: bone
+  isInScene: true
+  resource:
+    name: ubbie
+  pos: {x: 500,y: 600}
+  animation:
+    name: turn face
+    timeScale: 1.0
+  width: 128
+  height: 32
+  init: null
+- #粒子
+  objName: aaaa
+  name: 粒子
+  type: particle
+  isInScene: true
+  config:
+    name: cartoonSmoke
+  resource:
+    group: sub.particle
+    name: test
+  pos: {x: 200,y: 400}
+  width: 255
+  height: 255
+  init: null
+- #動畫-TOM STAR
+  objName: contboTomStar
+  name: 動畫-contbo TOM STAR
+  type: spine
+  isInScene: true
+  resource:
+    spineData: demo.contbo.tom.star  # spine data 群組
+    texture: null                    # texture    群組
+  configList: #動畫設定用
+  - #動畫之一
+    name: a0                     #物件名稱
+    dataName: 0                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  - #動畫之一
+    name: a1                     #物件名稱
+    dataName: 1                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  - #動畫之一
+    name: a2                     #物件名稱
+    dataName: 2                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  pos: {x: 250,y: 300}
+  init: null
+- #動畫-TOM LOOP
+  objName: contboTomLoop
+  name: 動畫-contbo TOM LOOP
+  type: spine
+  isInScene: true
+  resource:
+    spineData: demo.contbo.tom.loop  # spine data 群組
+    texture: null                    # texture    群組
+  configList: #動畫設定用
+  - #動畫之一
+    name: a0                     #物件名稱
+    dataName: 0                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  - #動畫之一
+    name: a1                     #物件名稱
+    dataName: 1                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  - #動畫之一
+    name: a2                     #物件名稱
+    dataName: 2                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  - #動畫之一
+    name: a3                     #物件名稱
+    dataName: 3                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  - #動畫之一
+    name: a4                     #物件名稱
+    dataName: 4                 #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: false
+    animationName: demo         #播放名稱
+  pos: {x: 250,y: 300}
+  init: null

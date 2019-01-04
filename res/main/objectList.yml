@@ -1,0 +1,249 @@
+objects:
+- #背景
+  objName: bg
+  name: 背景
+  type: background
+  isInScene: true
+  resource:
+    group: demo.background
+    name: back
+  pos: {x: 0,y: 0}
+  width: 640
+  height: 780
+  init: null
+
+- #前景
+  objName: fg
+  name: 前景
+  type: background
+  isInScene: true
+  resource:
+    group: demo.background
+    name: fore
+  pos: {x: 0,y: 0}
+  width: 640
+  height: 780
+  init: null
+
+- #暱稱
+  objName: nickname
+  name: 暱稱
+  type: text
+  isInScene: true
+  resource:
+    group: null
+    name: null
+  pos: {x: 46,y: 182}
+  width: 148
+  height: 29
+  text: nickname
+  init: setText
+
+- #訊息
+  objName: null
+  name: 訊息
+  type: info
+  isInScene: true
+  resource:
+    group: demo.background
+    name: fore
+  pos: {x: 0,y: 0}
+  width: 640
+  height: 780
+  init: setInfo
+
+- #籌碼
+  objName: coin
+  name: 籌碼
+  type: image
+  isInScene: false
+  resource:
+    group: demo.coin
+    name: 50
+  pos: {x: 0,y: 0}
+  anchor: {x: 0.5, y: 0.5}
+  width: 76
+  height: 66
+  index: 3
+  init: setCoin
+
+- #旋轉
+  objName: ring
+  name: 旋轉
+  type: animation
+  isInScene: true
+  resource:
+    group: demo
+    name: ring
+  pos: {x: 160,y: 160}
+  anchor: {x: 0.5, y: 0.5}
+  width: 212
+  height: 222
+  loop: true
+  init: play
+#--------------------------------------------------
+- #動畫-野
+  objName: wildOpen
+  name: 動畫-野 open
+  type: spine
+  isInScene: false
+  resource:
+    spineData: demo.wild             # spine data 群組
+    texture: null                    # texture    群組
+  configList: #動畫設定用
+  - #動畫之一 (文字)
+    name: open                  #物件名稱
+    dataName: open              #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: true
+    animationName: demo         #播放名稱
+  pos: {x: 400,y: 400}
+  init: null
+- #動畫-野
+  objName: wildLoop
+  name: 動畫-野 loop
+  type: spine
+  isInScene: false
+  resource:
+    spineData: demo.wild             # spine data 群組
+    texture: null                    # texture    群組
+  configList: #動畫設定用
+  - #動畫之一 (文字)
+    name: loop                  #物件名稱
+    dataName: loop              #資源名稱
+    timeScale: 1.0              #播放速度
+    loop: true
+    animationName: demo         #播放名稱
+  pos: {x: 300,y: 200}
+  init: play
+- #動畫-五連線獎
+  objName: fiveOfKind
+  name: 動畫-五連線獎
+  type: spine
+  isInScene: true
+  resource:
+    spineData: demo.fiveofkind             # spine data 群組
+    texture: demo.fiveofkind.mask          # texture    群組
+  configList: #動畫設定用
+  - #動畫之一 (文字)
+    name: text                  #物件名稱
+    dataName: text              #資源名稱
+    timeScale: 1.0              #播放速度
+    animationName: demo         #播放名稱
+  - #動畫之一 (光)
+    name: light01               #物件名稱
+    dataName: light01           #資源名稱
+    timeScale: 1.0              #播放速度
+    animationName: demo         #播放名稱
+    debug: false
+    mask:                       #開啟遮罩
+      local: false                #是否使用區域座標
+      name: gradient1             #材質名稱
+      debug: false
+  - #動畫之一 (光)
+    name: light02               #物件名稱
+    dataName: light02           #資源名稱
+    timeScale: 1.0              #播放速度
+    animationName: demo         #播放名稱
+    mask:                       #開啟遮罩
+      local: false                #是否使用區域座標
+      name: gradient2             #材質名稱
+  - #動畫之一 (星星)
+    name: star                  #物件名稱
+    dataName: star              #資源名稱
+    timeScale: 1.0              #播放速度
+    animationName: demo         #播放名稱
+  pos: {x: 0,y: 0}
+  childName: star_7
+  init: setSpine
+
+#--------------------------------------------------
+- #籌碼堆
+  objName: null
+  name: 籌碼堆
+  type: group
+  isInScene: true
+#  resource:
+#    group: null
+#    name: null
+  pos: {x: 360, y: 400}
+  width: 120
+  height: 100
+  init: createCoin
+  childList:
+  - #籌碼
+    objName: coin
+    name: 籌碼
+    type: image
+    isInScene: true
+    resource:
+      group: demo.coin
+      name: 500
+    pos: {x: 0,y: 0}
+    anchor: {x: 0.5, y: 0.5}
+    width: 76
+    height: 66
+    index: 10000
+    init: aa
+  - #金額
+    objName: cash
+    name: 金額
+    type: number
+    isInScene: true
+    resource:
+      texture: cnum
+      group: null
+      background: null
+    charMap: '0123456789,.'
+    pos: {x: -87,y: 66}
+    anchor: {x: 0,y: 0.5}
+    width: 174
+    height: 40
+    numCounts: 8
+    offset: 18
+    debug: true
+    autoHide: true
+    init: setCash
+
+- #讀取進度
+  objName: loading
+  name: 讀取進度
+  type: group
+  isInScene: false
+  pos: {x: 400, y: 200}
+  init: null
+  childList:
+  - #旋轉
+    objName: ring
+    name: 旋轉
+    type: animation
+    isInScene: true
+    resource:
+      group: demo
+      name: ring
+    pos: {x: 0,y: 0}
+    anchor: {x: 0.5, y: 0.5}
+    width: 212
+    height: 222
+    loop: true
+    init: play
+  - #金額
+    objName: progress
+    name: 金額
+    type: number
+    isInScene: true
+    resource:
+      texture: cnum
+      group: null
+      background: null
+    charMap: '0123456789,.'
+    pos: {x: -106,y: 10}
+    anchor: {x: 0.0,y: 0.5}
+    width: 212
+    height: 40
+    numCounts: 6
+    offset: 18
+    debug: true
+    autoHide: true
+    init: setNum
+    

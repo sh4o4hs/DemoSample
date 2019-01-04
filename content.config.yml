@@ -1,0 +1,26 @@
+---
+name: sample
+title: 
+group: demo
+company: com
+description: webapp demo sample
+version: 0.0.1
+framework:
+  name: stuff
+  version: 1.5.2
+author:
+  name: astro
+  email: www@astrocorp.com.tw
+  url: www.astrocorp.com.tw
+licenses:
+  -
+    type: MIT
+    url: undefined/blob/master/LICENSE-MIT
+keywords:
+  - HTML5
+  - game
+  - es6
+  - app
+#excluded:
+#  autoTest: true
+

@@ -1,0 +1,54 @@
+---
+id: sample # 遊戲代號 遊戲代號
+name:   # 遊戲名稱 (多語設定)
+  en: game sample
+  zh-tw: 遊戲 sample
+  zh-cn: 遊戲 sample
+sysTray: # 是否顯示系統選單
+  left: 40px         # 左邊界座標
+  top: 40px          # 上邊界座標
+  flags: # 選單功能項目開關設定
+    fullscreen: false   # 全螢幕
+    lock: false         # 鎖定顯示比例
+    music: false        # 音樂
+    sound: false        # 音效
+app: release/demo.sample.js   # 程式 (自動產生)
+group: demo                # 群組
+appConfig: sample             # 程式設定檔
+pixiConfig: #PIXI 設定
+  width: &WIDTH 1024
+  height: &HEIGHT 768
+  resolution: 1.0
+  antialias: false
+  transparent: true
+screen:   # 螢幕設定
+  isLock: false             # 是否鎖定
+  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
+  width: *WIDTH               # 寬
+  height: *HEIGHT              # 高
+resize: # 畫面尺寸改變用
+  horizontal:     # 水平
+    width: *WIDTH   # 寬
+    height: *HEIGHT   # 高
+  vertical:       # 垂直
+    width: *HEIGHT    # 寬
+    height: *WIDTH  # 高
+images:   # 圖檔設定
+  icon: gamecard/icon.png
+  logo: gamecard/logo.png
+  background: gamecard/background.png
+overview: # 預覽用
+  width: 960  # 畫面的寬
+  height: 580 # 畫面的高
+  spine: # 動畫設定
+    pos: # 座標
+      x: 0
+      y: 0
+    src: /project/demo/sample/gamecard/overview/moai_loading_bg_loop.json
+    animName:    # 動畫名稱
+      enter: enter      # 進入
+      loop: demo     # 重複播放
+      leave: leave     # 離開
+      progress: progress  # 進度
+type: sports               # 目前沒使用
+doc: slotTest 說明         # 目前沒使用
