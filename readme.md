@@ -1,1 +1,3 @@
-webgame demo sample 說明
+# 遊戲範例
+
+遊戲流程範例

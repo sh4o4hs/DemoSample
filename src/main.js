@@ -14,6 +14,8 @@ import * as component from 'src/component';
 // 程式進入點
 component.run();
 
+console.log('test');
+
 //---------------------------------------------
 // todo 模式設定範例
 if (ALPHA) {

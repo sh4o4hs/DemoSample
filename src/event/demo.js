@@ -192,15 +192,15 @@ export function create (config) {
       let config = {
         style: {
           position: 'absolute',
-          left: '50%',
+          left: '00%',
           top: '0%',
-          width: '50%',
+          width: '100%',
           height: '100%'
         },
         reference: {
           left: 0.0,
           top: 0.0,
-          width: 0.5,
+          width: 1.0,
           height: 1.0
         },
         groupName: 'demo',
@@ -258,6 +258,9 @@ export function create (config) {
               id: gameID,
               from: game.scene.info.id
             });
+            if (seed) {
+              seed.setLoadingVisible(false);
+            }
             game.scene.localEvent.pause();
           }
         }
