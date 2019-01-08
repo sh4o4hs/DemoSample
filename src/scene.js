@@ -60,7 +60,8 @@ export function init (config) {
         app.game = game;
         app.gamecard = gamecard;
       }
-
+  
+      app.langID = conf.langID;
       app.isChild = conf.isChild;
       if (conf.console) {
         console.info = conf.console.info;
@@ -88,6 +89,7 @@ export function init (config) {
 
           entity.create({
             game: game,
+            langID: conf.langID,
             isChild: conf.isChild,
             baseURL: conf.baseURL,
             loadingEvent: loadingEvent
