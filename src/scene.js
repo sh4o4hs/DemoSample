@@ -60,7 +60,7 @@ export function init (config) {
         app.game = game;
         app.gamecard = gamecard;
       }
-  
+
       app.langID = conf.langID;
       app.isChild = conf.isChild;
       if (conf.console) {

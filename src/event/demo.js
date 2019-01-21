@@ -222,30 +222,15 @@ export function create (config) {
           sceneResLoading (value) {
 
             // 顯示進度
-            if (value.hasOwnProperty('totalProgress')) {
-              let str;
-              let s = value.state;
-              let totalProgress = value.totalProgress;
-              if (s) {
-                let baseValue = (s.currentIndex - 1) / s.totals * 100;
-                totalProgress = baseValue + totalProgress / s.totals;
-              }
-              str = totalProgress.toFixed(0) + '%';
-              console.log(str);
+            let s = value.state;
+            let totalProgress = value.totalProgress;
+            if (s) {
+              let baseValue = (s.currentIndex - 1) / s.totals * 100;
+              totalProgress = baseValue + totalProgress / s.totals;
+            }
 
-              if (loading && loading.progress) {
-                loading.progress.setValue(totalProgress.toFixed(0));
-              }
-            } else {
-              let str;
-              let alpha = value.current / value.length;
-              let num = (alpha * 100).toFixed(0);
-              str = num + '%';
-              console.log(str);
-
-              if (loading && loading.progress) {
-                loading.progress.setValue(num);
-              }
+            if (loading && loading.progress) {
+              loading.progress.setValue(totalProgress.toFixed(0));
             }
           },
 
@@ -261,7 +246,9 @@ export function create (config) {
             if (seed) {
               seed.setLoadingVisible(false);
             }
-            game.scene.localEvent.pause();
+
+            //game.scene.localEvent.pause();
+            game.scene.localEvent.once();
           }
         }
       };
