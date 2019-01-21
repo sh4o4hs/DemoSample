@@ -18,7 +18,6 @@ import Seed from 'entity/seed';
  */
 export function create (conf) {
   let game = conf.game;
-  let isChild = conf.isChild;
   let loadingMgr = nuts.scene.loadingManager;
   let sceneList;
 
@@ -53,7 +52,8 @@ export function create (conf) {
   loadingMgr.setDisplayLoading(loading);
 
   let createFinish = function () {
-    seed.eventFinishEx();
+    seed.eventFinish();
+    seed.addToScene();
     game.play();
   };
 
@@ -63,11 +63,6 @@ export function create (conf) {
 
     // 場景建立完成
     createFinish = function () {
-
-      // 是否為子專案
-      if (isChild) {
-        seed.eventFinishEx();
-      }
 
       // reset
       loadingMgr.setGame(game);

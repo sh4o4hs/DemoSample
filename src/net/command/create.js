@@ -14,7 +14,8 @@ let Command = {
     app.decimal = 2;
     let seed = Seed.getSingleton();
     if (seed) {
-      seed.eventFinishEx();
+      seed.eventFinish();
+      seed.addToScene();
     }
 
     app.game.play();

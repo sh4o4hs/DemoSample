@@ -73,11 +73,6 @@ export default class Scene extends nuts.scene.Base {
    refresh (offsetTime) {
    }
    */
-  /**
-   * 重新設定場景狀態
-   */
-  reset (/*mode*/) {
-  }
 
   /**
    * 場景建立完成

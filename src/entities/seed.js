@@ -333,12 +333,10 @@ export default class Scene extends nuts.scene.Base {
   /**
    * 場景建立完成
    */
+  /*
   eventFinish () {
   }
-  eventFinishEx () {
-    super.eventFinish();
-    this.addToScene();
-  }
+*/
 
   /**
    * 處理原始資料

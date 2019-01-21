@@ -39,6 +39,7 @@ function finish () {
 
   if (attribute.addToScene) {
     attribute.sceneList.forEach(scene => {
+      scene.scene.eventFinish();
       scene.scene.addToScene();
     });
   }
