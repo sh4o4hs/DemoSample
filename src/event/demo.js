@@ -134,11 +134,11 @@ export function create (config) {
         game.scene.setMode('demo');
       }
 
-      let set = {
-        index: 0,
-        type: module.TYPE_DEMO
-      };
-      module.add(set);
+      // let set = {
+      //   index: 0,
+      //   type: module.TYPE_DEMO
+      // };
+      // module.add(set);
 
       if (seed) {
         seed.reset('h');
@@ -157,11 +157,11 @@ export function create (config) {
         game.scene.setMode('real');
       }
 
-      let set = {
-        index: 1,
-        type: module.TYPE_FORM
-      };
-      module.add(set);
+      // let set = {
+      //   index: 1,
+      //   type: module.TYPE_FORM
+      // };
+      // module.add(set);
 
       // if (game && game.getRenderer) {
       //   game.getRenderer().resize(900, 1680);
@@ -192,7 +192,7 @@ export function create (config) {
       let config = {
         style: {
           position: 'absolute',
-          left: '00%',
+          left: '0%',
           top: '0%',
           width: '100%',
           height: '100%'
@@ -247,8 +247,8 @@ export function create (config) {
               seed.setLoadingVisible(false);
             }
 
-            //game.scene.localEvent.pause();
-            game.scene.localEvent.once();
+            game.scene.localEvent.pause();
+            game.once();
           }
         }
       };
@@ -269,6 +269,16 @@ export function create (config) {
             seed.setLoadingVisible(true);
           }
           if (loading && loading.progress) {
+            if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {
+              let pixiConf = game.scene.gamecard.pixiConfig;
+              let pos = {
+                x: pixiConf.width / 2,
+                y: pixiConf.height / 2
+              };
+              loading.x = pos.x;
+              loading.y = pos.y;
+            }
+
             loading.progress.setValue(0);
           }
         }

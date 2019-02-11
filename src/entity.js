@@ -49,6 +49,14 @@ export function create (conf) {
     baseURL + '/project/demo/sample/res/loading/Loading_12.png'
   ];
   loading.setScene(resource);
+  if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {
+    let pixiConf = game.scene.gamecard.pixiConfig;
+    let pos = {
+      x: pixiConf.width / 2,
+      y: pixiConf.height / 2
+    };
+    loading.setPosition(pos);
+  }
   loadingMgr.setDisplayLoading(loading);
 
   let createFinish = function () {

@@ -16,16 +16,16 @@ app: release/demo.sample.js   # 程式 (自動產生)
 group: demo                # 群組
 appConfig: sample             # 程式設定檔
 pixiConfig: #PIXI 設定
-  width: &WIDTH 1024
-  height: &HEIGHT 768
+  width: &WIDTH 640
+  height: &HEIGHT 780
   resolution: 1.0
   antialias: false
   transparent: true
 screen:   # 螢幕設定
-  isLock: false             # 是否鎖定
-  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
-  width: *WIDTH               # 寬
-  height: *HEIGHT              # 高
+  isLock: true             # 是否鎖定
+#  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
+  width: 6400               # 寬
+  height: 7800              # 高
 resize: # 畫面尺寸改變用
   horizontal:     # 水平
     width: *WIDTH   # 寬
@@ -39,7 +39,7 @@ images:   # 圖檔設定
   background: gamecard/background.png
 overview: # 預覽用
   width: 960  # 畫面的寬
-  height: 580 # 畫面的高
+  height: 540 # 畫面的高
   spine: # 動畫設定
     pos: # 座標
       x: 0

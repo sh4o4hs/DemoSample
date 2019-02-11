@@ -20,10 +20,10 @@ config:
   map:
     stats: depend:stats/stats.min.0.17.0.js
     loader: depend:loader/resource-loader.min.2.2.3.js
-    mithril: depend:mithril/mithril.min.2.0.0-rc3.js
+    mithril: depend:mithril/mithril.2.0.0-rc4.js
     tweenjs: depend:createjs/tweenjs.min.1.0.2.js
     js-yaml: depend:yaml/js-yaml.min.3.10.0.js
-    nuts: depend:nuts/nuts.1.6.1.js
+    nuts: depend:nuts/nuts.1.7.0.js
     pixi: depend:pixi/pixi.min.4.8.5.js
     pixi-spine: depend:pixi/pixi-spine.1.5.19.js
     pixi-particles: depend:pixi/pixi-particles.2.0.0.js

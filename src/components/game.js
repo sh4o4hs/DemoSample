@@ -1,7 +1,8 @@
 import m from 'mithril';
+import Loader from 'loader';
 import Stats from 'stats';
-import * as nuts from 'nuts';
 
+import * as nuts from 'nuts';
 import app from 'entity/app';
 import * as entity from 'src/entity';
 import * as scene from 'src/scene';
@@ -122,14 +123,14 @@ function init () {
 
   return new Promise((resolve/*, reject*/)=> {
     let config = {};
+    config.Loader = Loader;
+    config.m = m;
 
     // 是否使用 PIXI
     if (usePIXI) {
-      config = {
-        PIXI,
-        Stats,
-        plugin
-      };
+      config.PIXI = PIXI;
+      config.Stats = Stats;
+      config.plugin = plugin;
     }
 
     // 初始化

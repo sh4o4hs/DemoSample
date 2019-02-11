@@ -16,6 +16,7 @@ let Command = {
     if (seed) {
       seed.eventFinish();
       seed.addToScene();
+      seed.reset('v');
     }
 
     app.game.play();
