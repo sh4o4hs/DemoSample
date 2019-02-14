@@ -12,6 +12,16 @@ sysTray: # 是否顯示系統選單
     lock: false         # 鎖定顯示比例
     music: false        # 音樂
     sound: false        # 音效
+options: # 功能開關設定
+  overview:       # 預覽畫面相關設定
+    logo: true           # 是否顯示 公版的 logo
+    animation: true      # 是否顯示 自定義的動畫 (根據 下面的 overview 決定)
+    background: true     # 是否顯示 自定義的背景 (根據 下面的 images.background 決定)
+    progress: false      # 是否顯示 公版的進度條
+  game:
+    custom: false      # 是否顯示 場景設定選單 (pixi.js 初始化設定)
+    fps: false         # 是否顯示畫面更新率
+    debug: false       # 是否顯示 vConsole (目前沒作用)
 app: release/demo.sample.js   # 程式 (自動產生)
 group: demo                # 群組
 appConfig: sample             # 程式設定檔
@@ -23,7 +33,7 @@ pixiConfig: #PIXI 設定
   transparent: true
 screen:   # 螢幕設定
   isLock: true             # 是否鎖定
-#  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
+  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
   width: 6400               # 寬
   height: 7800              # 高
 resize: # 畫面尺寸改變用
