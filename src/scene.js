@@ -96,6 +96,7 @@ export function init (config) {
           });
         };
 
+        pixiConfig.component = nuts.components.game.pixi;
         comGame.create(pixiConfig);
       } else {
 

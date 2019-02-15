@@ -8,7 +8,6 @@ import * as entity from 'src/entity';
 import * as scene from 'src/scene';
 import comUI from 'component/ui';
 
-const components =  nuts.components;
 
 let style = {
   position: 'absolute',
@@ -74,7 +73,7 @@ function create (config, index = 0) {
     oninit (/*vnode*/) {
     },
     view () {
-      return m(components.game.pixi,
+      return m(config.component,
         {
           style: styleList[index],
           config
@@ -88,7 +87,6 @@ function create (config, index = 0) {
 let Component = {
   entity: null,
   game: null,
-  usePIXI: false,
   oninit (/*vnode*/) {
   },
   oncreate (/*vnode*/) {
