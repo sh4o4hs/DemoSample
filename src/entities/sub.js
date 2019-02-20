@@ -245,7 +245,7 @@ export default class Scene extends nuts.scene.Base {
    */
   createScene (finish) {
     let self = this;
-    let res = resource.default[strings.getID()];
+    let res = resource[strings.getID()];
 
     self.setInitMap(subSet.normal);
 
