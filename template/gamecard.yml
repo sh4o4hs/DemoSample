@@ -1,4 +1,5 @@
 ---
+#baseURL: http://127.0.0.1:4000/abcd
 id: sample # 遊戲代號 遊戲代號
 name:   # 遊戲名稱 (多語設定)
   en: game sample
@@ -54,7 +55,7 @@ overview: # 預覽用
     pos: # 座標
       x: 0
       y: 0
-    src: /project/demo/sample/gamecard/overview/moai_loading_bg_loop.json
+    src: gamecard/overview/moai_loading_bg_loop.json
     animName:    # 動畫名稱
       enter: enter      # 進入
       loop: demo     # 重複播放

@@ -10,6 +10,7 @@
 import * as nuts from 'nuts';
 import * as strings from 'language/strings';
 import * as subSet from 'entity/subSet';
+import resource from 'src/res/sub.js';
 
 /**
  * 子場景
@@ -244,28 +245,26 @@ export default class Scene extends nuts.scene.Base {
    */
   createScene (finish) {
     let self = this;
-    let baseURL = nuts.scene.sceneManager.getBaseURL();
+    let res = resource.default[strings.getID()];
 
     self.setInitMap(subSet.normal);
-    SystemJS.import(baseURL + 'src/res/sub.js').then(resource => {
-      let res = resource.default[strings.getID()];
-      if (res) {
-        console.log(res);
 
-        // 設定資訊
-        let config = {
-          infoList: [
-            { eventName: 'data',    obj: res.data},
-            { eventName: 'texture', obj: res.texture},
-            { eventName: 'spine',   obj: res.spine},
-            { eventName: 'object',  obj: res.object}
-          ],
-          isObject: true
-        };
-        super.createScene(finish, config);
-      } else {
-        console.error('resource map is undefined');
-      }
-    });
+    if (res) {
+      console.log(res);
+
+      // 設定資訊
+      let config = {
+        infoList: [
+          { eventName: 'data',    obj: res.data},
+          { eventName: 'texture', obj: res.texture},
+          { eventName: 'spine',   obj: res.spine},
+          { eventName: 'object',  obj: res.object}
+        ],
+        isObject: true
+      };
+      super.createScene(finish, config);
+    } else {
+      console.error('resource map is undefined');
+    }
   }
 }

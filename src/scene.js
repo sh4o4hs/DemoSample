@@ -15,6 +15,7 @@ import * as command from 'net/command';
 import * as eventKeys from 'event/keys';
 import * as eventDemo from 'event/demo';
 
+import * as module from 'component/module';
 import * as comGame from 'component/game';
 import * as comUI from 'component/ui';
 
@@ -61,14 +62,29 @@ export function init (config) {
         app.gamecard = gamecard;
       }
 
+      // 初始化
       app.langID = conf.langID;
+      app.baseURL = conf.baseURL || '';
       app.isChild = conf.isChild;
+      let baseURL = app.baseURL;
+
       if (conf.console) {
         console.info = conf.console.info;
       }
 
-      // 開始更新畫面
-      game.play();
+      // todo: 設定背景
+      let imageFilename = baseURL + '/project/slot/sample/res/background/background.jpg';
+      comGame.setBackgroundFilename(imageFilename);
+
+      // todo : 設定 overview 圖片
+      let set = {
+        index: 0,
+        type: module.TYPE_OVERVIEW,
+        attrs: {
+          logo: baseURL + '/project/slot/sample/res/overview/cat.jpg'
+        }
+      };
+      module.add(set);
 
       // todo:game 收到建立遊戲事件
       if (usePIXI && entity && entity.create) {

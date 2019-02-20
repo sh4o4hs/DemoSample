@@ -4,6 +4,8 @@ app:
   - tmp/resLoading.json
   - tmp/resjs.json
   - tmp/res.json
+  - tmp/textureAsset.json
+  - tmp/spine.json
 
 # 遊戲卡片
 gamecard:
@@ -15,15 +17,15 @@ removePath: res
 removeKey: project/demo/sample/
 
 # 場景資源設定 (release 版用)
-resource:
-  sceneList:
-    - main
-    - sub
+#resource:
+#  sceneList:
+#    - main
+#    - sub
 
 # 程式碼取代 (release 版用)
-code:
-  src/res/main.js: res/main.js
-  src/res/sub.js: res/sub.js
+#code:
+#  src/res/main.js: res/main.js
+#  src/res/sub.js: res/sub.js
 
 #===================================================
 # 資源設定

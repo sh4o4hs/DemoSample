@@ -10,6 +10,7 @@
 import * as nuts from 'nuts';
 import * as strings from 'language/strings';
 import * as seedSet from 'entity/seedSet';
+import resource from 'src/res/main.js';
 
 /**
  * 主場景
@@ -603,32 +604,29 @@ export default class Scene extends nuts.scene.Base {
    */
   createScene (finish) {
     let self = this;
-    let baseURL = nuts.scene.sceneManager.getBaseURL();
-    let str = baseURL + 'src/res/main.js';
+    let res = resource[strings.getID()];
 
     self.setInitMap(seedSet.normal);
-    SystemJS.import(str).then(resource => {
-      let res = resource.default[strings.getID()];
-      if (res) {
-        console.log(res);
 
-        // 設定資訊
-        let config = {
-          infoList: [
-            { eventName: 'data',    obj: res.data},
-            { eventName: 'sound',   obj: res.sound},
-            { eventName: 'texture', obj: res.texture},
-            { eventName: 'spine',   obj: res.spine},
-            { eventName: 'object',  obj: res.object},
-            { eventName: 'object',  obj: res.objectV},
-            { eventName: 'object',  obj: res.objectH}
-          ],
-          isObject: true
-        };
-        super.createScene(finish, config);
-      } else {
-        console.error('resource map is undefined');
-      }
-    });
+    if (res) {
+      console.log(res);
+
+      // 設定資訊
+      let config = {
+        infoList: [
+          { eventName: 'data',    obj: res.data},
+          { eventName: 'sound',   obj: res.sound},
+          { eventName: 'texture', obj: res.texture},
+          { eventName: 'spine',   obj: res.spine},
+          { eventName: 'object',  obj: res.object},
+          { eventName: 'object',  obj: res.objectV},
+          { eventName: 'object',  obj: res.objectH}
+        ],
+        isObject: true
+      };
+      super.createScene(finish, config);
+    } else {
+      console.error('resource map is undefined');
+    }
   }
 }

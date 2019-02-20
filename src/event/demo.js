@@ -157,11 +157,6 @@ export function create (config) {
         game.scene.setMode('real');
       }
 
-      // let set = {
-      //   index: 1,
-      //   type: module.TYPE_FORM
-      // };
-      // module.add(set);
 
       // if (game && game.getRenderer) {
       //   game.getRenderer().resize(900, 1680);
@@ -290,7 +285,13 @@ export function create (config) {
      */
     clickRule () {
       console.log('說明');
-      module.setVisible(!module.isVisible());
+      module.setVisible(true);
+
+      let set = {
+        index: 1,
+        type: module.TYPE_FORM
+      };
+      module.add(set);
     },
 
     /**
@@ -360,6 +361,13 @@ export function create (config) {
           });
         }
       }
+
+      let set = {
+        index: 0,
+        type: module.TYPE_FORM
+      };
+      module.add(set);
+
     }
   };
   return eventList;

@@ -1,29 +1,29 @@
 objects:
-#- #背景
-#  objName: bg
-#  name: 背景
-#  type: background
-#  isInScene: true
-#  resource:
-#    group: demo.background
-#    name: back
-#  pos: {x: 0,y: 0}
-#  width: 640
-#  height: 780
-#  init: null
+- #背景
+  objName: bg
+  name: 背景
+  type: background
+  isInScene: true
+  resource:
+    group: demo.background
+    name: back
+  pos: {x: 0,y: 0}
+  width: 640
+  height: 780
+  init: null
 
-#- #前景
-#  objName: fg
-#  name: 前景
-#  type: background
-#  isInScene: true
-#  resource:
-#    group: demo.background
-#    name: fore
-#  pos: {x: 0,y: 0}
-#  width: 640
-#  height: 780
-#  init: null
+- #前景
+  objName: fg
+  name: 前景
+  type: background
+  isInScene: true
+  resource:
+    group: demo.background
+    name: fore
+  pos: {x: 0,y: 0}
+  width: 640
+  height: 780
+  init: null
 
 - #暱稱
   objName: nickname

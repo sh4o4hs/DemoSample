@@ -12,29 +12,13 @@ import m from 'mithril';
 
 import * as game from 'component/game';
 import * as module from 'component/module';
-import Background from 'component/background';
 
-
-let imageName = '/project/demo/sample/res/background/background.jpg';
 
 /**
  * 啟動程式
  * @returns {void}
  */
 export function run () {
-
-  // todo : 是否顯示背景
-  let useBackground = true;
-
-  // todo : 設定 overview 圖片
-  let set = {
-    index: 0,
-    type: module.TYPE_OVERVIEW,
-    attrs: {
-      logo: '/project/demo/sample/res/overview/cat.jpg'
-    }
-  };
-  module.add(set);
 
   // 設定最大顯示畫面
   let style = {
@@ -57,11 +41,6 @@ export function run () {
         {
           style
         },
-        useBackground ? m(Background,
-          {
-            imageName
-          }
-        ) : null,
         m(Application.main),
         module.isVisible() ? m(module.Component,
         ) : null,

@@ -49,6 +49,7 @@ let Component = {
                   value: 'Subscribe',
                   onclick () {
                     module.remove(1);
+                    module.setVisible(false);
                   }
                 })
               ]

@@ -1,7 +1,9 @@
 import app from 'entity/app';
 import Seed from 'entity/seed';
+
 import * as module from 'component/module';
-import * as comGame from 'component/game';
+
+//import * as comGame from 'component/game';
 
 /**
  * 建立遊戲
@@ -42,9 +44,6 @@ let Command = {
     // 移除 overview
     module.remove(0);
     module.setVisible(false);
-
-    // end
-    comGame.setVisibleUI(true);
   }
 };
 

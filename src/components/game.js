@@ -7,9 +7,9 @@ import app from 'entity/app';
 import * as entity from 'src/entity';
 import * as scene from 'src/scene';
 import comUI from 'component/ui';
+import Background from 'component/background';
 
-
-let style = {
+let defaultStyle = {
   position: 'absolute',
   left: '0%',
   top: '0%',
@@ -33,9 +33,23 @@ let styleList = [
   }
 ];
 
+// todo : 是否顯示背景
+let useBackground = true;
+let backgroundFilename = null;
+
+// todo : 是否使用 UI
 let useUI = app.useUI;
+
+// todo : 是否顯示 UI
 let visibleUI =  app.visibleUI;
+
+// todo : 是否使用 PIXI
 let usePIXI = app.usePIXI;
+
+function setBackgroundFilename (filename) {
+  backgroundFilename = filename;
+  m.redraw();
+}
 
 function setUseUI (enable) {
   useUI = enable;
@@ -69,9 +83,11 @@ function remove (index = 0) {
 }
 
 function create (config, index = 0) {
+
   let component = {
-    oninit (/*vnode*/) {
-    },
+
+    // oninit (vnode) {
+    // },
     view () {
       return m(config.component,
         {
@@ -97,8 +113,13 @@ let Component = {
   view (/*vnode*/) {
     return m('.',
       {
-        style
+        style: defaultStyle
       }, [
+        (useBackground && backgroundFilename) ? m(Background,
+          {
+            imageName: backgroundFilename
+          }
+        ) : null,
 
         // 遊戲
         comList.map(com => {
@@ -149,6 +170,7 @@ function init () {
 }
 
 export {
+  setBackgroundFilename,
   add,
   remove,
   create,
