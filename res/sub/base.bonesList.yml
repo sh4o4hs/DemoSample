@@ -1,13 +1,13 @@
 bones:
   data: #動畫
-    - /project/demo/sample/res/sub/bones/demon/demon.json
-    - /project/demo/sample/res/sub/bones/ubbie/ubbie.json
+    - res/sub/bones/demon/demon.json
+    - res/sub/bones/ubbie/ubbie.json
   resource: #資源
-    - atlas: /project/demo/sample/res/sub/bones/demon/texture.atlas
+    - atlas: res/sub/bones/demon/texture.atlas
       texture:
         group: sub.bones.demon
         name: texture
-    - atlas: /project/demo/sample/res/sub/bones/ubbie/texture.atlas
+    - atlas: res/sub/bones/ubbie/texture.atlas
       texture:
         group: sub.bones.ubbie
         name: texture

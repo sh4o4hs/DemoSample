@@ -73,7 +73,7 @@ export function init (config) {
       }
 
       // todo: 設定背景
-      let imageFilename = baseURL + '/project/demo/sample/res/background/background.jpg';
+      let imageFilename = baseURL + 'res/background/background.jpg';
       comGame.setBackgroundFilename(imageFilename);
 
       // todo : 設定 overview 圖片
@@ -81,7 +81,7 @@ export function init (config) {
         index: 0,
         type: module.TYPE_OVERVIEW,
         attrs: {
-          logo: baseURL + '/project/demo/sample/res/overview/cat.jpg'
+          logo: baseURL + 'res/overview/cat.jpg'
         }
       };
       module.add(set);

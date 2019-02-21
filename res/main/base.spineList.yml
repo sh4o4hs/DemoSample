@@ -1,10 +1,10 @@
 spines:
   demo: #群組
     fiveofkind: #五連線
-      text: /project/demo/sample/res/main/spine/five/5kind.anim.json
-      light01: /project/demo/sample/res/main/spine/five/5kind.light1.json
-      light02: /project/demo/sample/res/main/spine/five/5kind.light2.json
-      star: /project/demo/sample/res/main/spine/five/5kind.star.json
+      text: res/main/spine/five/5kind.anim.json
+      light01: res/main/spine/five/5kind.light1.json
+      light02: res/main/spine/five/5kind.light2.json
+      star: res/main/spine/five/5kind.star.json
     wild: #野
-      loop: /project/demo/sample/res/main/spine/wild/odin_wild_loop.json
-      open: /project/demo/sample/res/main/spine/wild/odin_wild_open.json
+      loop: res/main/spine/wild/odin_wild_loop.json
+      open: res/main/spine/wild/odin_wild_open.json

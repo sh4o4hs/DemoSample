@@ -35,18 +35,18 @@ export function create (conf) {
   //--設定讀取畫面
   let loading = nuts.ui.loading;
   let resource = [
-    baseURL + '/project/demo/sample/res/loading/Loading_01.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_02.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_03.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_04.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_05.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_06.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_07.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_08.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_09.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_10.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_11.png',
-    baseURL + '/project/demo/sample/res/loading/Loading_12.png'
+    baseURL + 'res/loading/Loading_01.png',
+    baseURL + 'res/loading/Loading_02.png',
+    baseURL + 'res/loading/Loading_03.png',
+    baseURL + 'res/loading/Loading_04.png',
+    baseURL + 'res/loading/Loading_05.png',
+    baseURL + 'res/loading/Loading_06.png',
+    baseURL + 'res/loading/Loading_07.png',
+    baseURL + 'res/loading/Loading_08.png',
+    baseURL + 'res/loading/Loading_09.png',
+    baseURL + 'res/loading/Loading_10.png',
+    baseURL + 'res/loading/Loading_11.png',
+    baseURL + 'res/loading/Loading_12.png'
   ];
   loading.setScene(resource);
   if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {

@@ -1,5 +1,5 @@
 ---
-#baseURL: http://127.0.0.1:4000/abcd
+baseURL: /project/demo/sample/
 id: sample # 遊戲代號 遊戲代號
 name:   # 遊戲名稱 (多語設定)
   en: game sample

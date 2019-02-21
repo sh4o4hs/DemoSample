@@ -3,12 +3,12 @@ spines:
     contbo: #英雄
       tom:
         star:
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_star_03.json
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_star_04.json
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_star_05.json
+          - res/sub/spine/contbo/khero_tom_star_03.json
+          - res/sub/spine/contbo/khero_tom_star_04.json
+          - res/sub/spine/contbo/khero_tom_star_05.json
         loop:
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_loop_01.json
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_loop_02.json
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_loop_03.json
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_loop_04.json
-          - /project/demo/sample/res/sub/spine/contbo/khero_tom_loop_05.json
+          - res/sub/spine/contbo/khero_tom_loop_01.json
+          - res/sub/spine/contbo/khero_tom_loop_02.json
+          - res/sub/spine/contbo/khero_tom_loop_03.json
+          - res/sub/spine/contbo/khero_tom_loop_04.json
+          - res/sub/spine/contbo/khero_tom_loop_05.json

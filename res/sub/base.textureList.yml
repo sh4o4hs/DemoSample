@@ -2,16 +2,16 @@ images:
   sub: #群組
     button: #系統按鈕
       system:
-        enter: /project/demo/sample/res/sub/image/SYSTEM_256.png
-        press: /project/demo/sample/res/sub/image/SYSTEM_256_on.png
-        leave: /project/demo/sample/res/sub/image/SYSTEM_256_70.png
-        disable: /project/demo/sample/res/sub/image/SYSTEM_256_70.png
+        enter: res/sub/image/SYSTEM_256.png
+        press: res/sub/image/SYSTEM_256_on.png
+        leave: res/sub/image/SYSTEM_256_70.png
+        disable: res/sub/image/SYSTEM_256_70.png
     bones: #動畫
       demon:
-        texture: /project/demo/sample/res/sub/bones/demon/texture.png
+        texture: res/sub/bones/demon/texture.png
       ubbie:
-        texture: /project/demo/sample/res/sub/bones/ubbie/texture.png
+        texture: res/sub/bones/ubbie/texture.png
     particle:
-      cartoonSmoke: /project/demo/sample/res/sub/image/CartoonSmoke.png
-      test: /project/demo/sample/res/sub/image/SYSTEM_256.png
+      cartoonSmoke: res/sub/image/CartoonSmoke.png
+      test: res/sub/image/SYSTEM_256.png
 
