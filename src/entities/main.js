@@ -10,7 +10,7 @@
 import * as nuts from 'nuts';
 import * as strings from 'language/strings';
 import * as mainSet from 'entity/mainSet';
-import resource from 'src/res/main.js';
+import resource from 'src/res/main';
 
 /**
  * 主場景

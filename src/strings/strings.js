@@ -1,7 +1,7 @@
 
-import en from 'language/en';
-import tw from 'language/zh-tw';
-import cn from 'language/zh-cn';
+import en from 'language/en.ts';
+import tw from 'language/zh-tw.ts';
+import cn from 'language/zh-cn.ts';
 
 /**
  * 語言代碼
@@ -17,12 +17,9 @@ let lang = en;
 let currentID = ID.EN;
 export function get (name) {
   'use strict';
-  let str = 'null';
-  if (lang) {
-    str = lang(name);
-    if (!str) {
-      str = 'no found !';
-    }
+  let str = lang[name];
+  if (!str) {
+    str = 'no found !';
   }
 
   return str;

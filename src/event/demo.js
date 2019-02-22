@@ -34,7 +34,6 @@ export function create (config) {
   let game = config.game;
   let testID = 'testTheOther';
 
-
   let seed = Seed.getSingleton();
 
   eventList = {
@@ -182,7 +181,7 @@ export function create (config) {
         loading = seed.getLoading();
       }
 
-      let sceneID = 'Jackpot';
+      let sceneID = 'other';
       let gameID = 'sample.0';
       let config = {
         style: {
