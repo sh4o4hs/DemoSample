@@ -60,6 +60,7 @@ export default class Scene extends nuts.scene.Base {
        * @param offsetTime {Number} 時間偏移量, 每一個 frame 所花費的時間
        */
       event.update = (offsetTime) => {
+
         if (center.currentUpdate !== null) {
           center.currentUpdate(offsetTime);
         }
