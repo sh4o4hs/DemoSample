@@ -58,3 +58,4 @@ images:
         press: res/main/button/leave/press.png
 assets:
 - res/main/asset/cnum.json
+- res/main/asset/winNum.json

@@ -289,35 +289,35 @@ export function init (config) {
     resize (state) {
       console.log(state);
 
-      // let loading = nuts.ui.loading;
-      //
-      // if (state.width > state.height) {
-      //   let size = gamecard.resize.horizontal;
-      //   if (size && gameRoot && gameRoot.getRenderer) {
-      //     gameRoot.getRenderer().resize(size.width, size.height);
-      //
-      //     // 修正 loading 座標
-      //     if (loading.setPosition) {
-      //       loading.setPosition({
-      //         x: size.width / 2,
-      //         y: size.height / 2
-      //       });
-      //     }
-      //   }
-      // } else {
-      //   let size = gamecard.resize.vertical;
-      //   if (size && gameRoot && gameRoot.getRenderer) {
-      //     gameRoot.getRenderer().resize(size.width, size.height);
-      //
-      //     // 修正 loading 座標
-      //     if (loading.setPosition) {
-      //       loading.setPosition({
-      //         x: size.width / 2,
-      //         y: size.height / 2
-      //       });
-      //     }
-      //   }
-      // }
+      let loading = nuts.ui.loading;
+
+      if (state.width > state.height) {
+        let size = gamecard.resize.horizontal;
+        if (size && gameRoot && gameRoot.getRenderer) {
+          gameRoot.getRenderer().resize(size.width, size.height);
+
+          // 修正 loading 座標
+          if (loading.setPosition) {
+            loading.setPosition({
+              x: size.width / 2,
+              y: size.height / 2
+            });
+          }
+        }
+      } else {
+        let size = gamecard.resize.vertical;
+        if (size && gameRoot && gameRoot.getRenderer) {
+          gameRoot.getRenderer().resize(size.width, size.height);
+
+          // 修正 loading 座標
+          if (loading.setPosition) {
+            loading.setPosition({
+              x: size.width / 2,
+              y: size.height / 2
+            });
+          }
+        }
+      }
     },
 
     /**

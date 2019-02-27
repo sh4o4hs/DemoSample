@@ -236,7 +236,7 @@ objects:
       texture: cnum
       group: null
       background: null
-    charMap: '0123456789,.'
+    charMap: '0123456789.'
     pos: {x: -106,y: 10}
     anchor: {x: 0.0,y: 0.5}
     width: 212

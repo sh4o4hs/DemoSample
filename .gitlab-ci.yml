@@ -1,21 +1,21 @@
 stages:
-- test
+- check
 - build
 - deploy
 
 最佳化程式碼:
   stage: build
   environment:
-    name: minify
+    name: build
   variables:
     STUFF_DEBUG: 1
   script:
   - stuff build
   only:
   - tags
-  
+
 檢查程式碼:
-  stage: test
+  stage: check
   environment:
     name: check
   variables:
@@ -23,35 +23,7 @@ stages:
   script:
   - stuff source
 
-打包alpha版至審查機組:
-  stage: deploy
-  environment:
-    name: alpha/$CI_COMMIT_REF_NAME
-  variables:
-    STUFF_DEBUG: 0
-    STUFF_MODE: alpha
-    STUFF_UPLOAD: review
-  script:
-  - stuff deploy
-  when: manual
-  only:
-  - tags
-
-打包beta版至審查機組機:
-  stage: deploy
-  environment:
-    name: beta/$CI_COMMIT_REF_NAME
-  variables:
-    STUFF_DEBUG: 0
-    STUFF_MODE: beta
-    STUFF_UPLOAD: review
-  script:
-  - stuff deploy
-  when: manual
-  only:
-  - tags
-
-打包demo版至審查機組機:
+打包展示版:
   stage: deploy
   environment:
     name: demo/$CI_COMMIT_REF_NAME
@@ -65,7 +37,7 @@ stages:
   only:
   - tags
 
-打包test版至審查機組機:
+打包有log版:
   stage: deploy
   environment:
     name: test/$CI_COMMIT_REF_NAME
@@ -79,7 +51,7 @@ stages:
   only:
   - tags
 
-打包release版至審查機組機:
+打包無log版:
   stage: deploy
   environment:
     name: release/$CI_COMMIT_REF_NAME
