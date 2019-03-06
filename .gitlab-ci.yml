@@ -37,7 +37,7 @@ stages:
   only:
   - tags
 
-打包有log版:
+打包除錯版:
   stage: deploy
   environment:
     name: test/$CI_COMMIT_REF_NAME
@@ -51,7 +51,7 @@ stages:
   only:
   - tags
 
-打包無log版:
+打包正式版:
   stage: deploy
   environment:
     name: release/$CI_COMMIT_REF_NAME
