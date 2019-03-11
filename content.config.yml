@@ -4,10 +4,10 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 1.1.5
+version: 1.1.6
 framework:
   name: stuff
-  version: 1.7.0
+  version: 1.8.7
 author:
   name: astro
   email: www@astrocorp.com.tw

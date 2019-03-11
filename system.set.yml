@@ -25,7 +25,7 @@ config:
     js-yaml: depend:yaml/js-yaml.min.3.10.0.js
     nuts: depend:nuts/nuts.1.7.2.js
     pixi: depend:pixi/pixi.min.4.8.6.js
-    pixi-spine: depend:pixi/pixi-spine.1.5.19.js
+    pixi-spine: depend:pixi/pixi-spine.1.5.20.js
     pixi-particles: depend:pixi/pixi-particles.2.0.0.js
     dragonBones: depend:pixi/dragonBones.min.3.0.5.js
     dragonBonesPixi: depend:pixi/dragonBonesPixi.min.3.0.5.js
