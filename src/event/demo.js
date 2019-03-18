@@ -186,15 +186,15 @@ export function create (config) {
       let config = {
         style: {
           position: 'absolute',
-          left: '0%',
+          left: '50%',
           top: '0%',
-          width: '100%',
+          width: '50%',
           height: '100%'
         },
         reference: {
-          left: 0.0,
+          left: 0.5,
           top: 0.0,
-          width: 1.0,
+          width: 0.5,
           height: 1.0
         },
         groupName: 'demo',
