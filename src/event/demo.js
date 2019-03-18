@@ -221,6 +221,8 @@ export function create (config) {
             if (s) {
               let baseValue = (s.currentIndex - 1) / s.totals * 100;
               totalProgress = baseValue + totalProgress / s.totals;
+            } else {
+              totalProgress = value.current / value.length * 100;
             }
 
             if (loading && loading.progress) {
