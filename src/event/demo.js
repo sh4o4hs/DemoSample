@@ -197,7 +197,7 @@ export function create (config) {
           width: 0.5,
           height: 1.0
         },
-        groupName: 'video',
+        groupName: 'slot',
         id: testID,
         sceneID: sceneID,
         loadingEvent: {
