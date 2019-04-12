@@ -63,3 +63,16 @@ stages:
   - stuff deploy
   only:
   - tags
+
+打包:
+  stage: deploy
+  environment:
+    name: release/$CI_COMMIT_REF_NAME
+  variables:
+    STUFF_DEBUG: 0
+    STUFF_MODE: release
+    STUFF_UPLOAD: test
+  script:
+  - stuff deploy
+  only:
+  - tags
