@@ -303,6 +303,7 @@ export function init (config) {
               y: size.height / 2
             });
           }
+
         }
       } else {
         let size = gamecard.resize.vertical;

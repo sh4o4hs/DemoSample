@@ -103,6 +103,7 @@ export function normal (that) {
           });
         }
 
+
         // 取得動畫子物件
         let child = ui.Spine.getChild(spine, childName);
         center.spineDemo = spine;

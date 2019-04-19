@@ -301,6 +301,8 @@ export default class Scene extends nuts.scene.Base {
 
     // 選擇模式
     if (mode === 'h') {
+      let layer = new PIXI.DisplayObject();
+
       obj = entity.groupVertical;
       obj && layer.removeChild(obj);
 

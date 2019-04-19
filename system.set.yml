@@ -23,7 +23,7 @@ config:
     mithril: depend:mithril/mithril.min.2.0.0-rc4.js
     tweenjs: depend:createjs/tweenjs.min.1.0.2.js
     js-yaml: depend:yaml/js-yaml.min.3.13.1.js
-    nuts: depend:nuts/nuts.1.7.3.js
+    nuts: depend:nuts/nuts.1.8.0.js
     pixi: depend:pixi/pixi.min.4.8.7.js
     pixi-spine: depend:pixi/pixi-spine.1.5.21.js
     pixi-particles: depend:pixi/pixi-particles.2.0.0.js

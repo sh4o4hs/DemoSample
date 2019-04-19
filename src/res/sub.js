@@ -1,11 +1,11 @@
 
-import data from 'res/sub/base.config.yml!';
-import spine from 'res/sub/base.spineList.yml!';
-import object from 'res/sub/base.objectList.yml!';
+import data from 'res/sub/base.config.yml';
+import spine from 'res/sub/base.spineList.yml';
+import object from 'res/sub/base.objectList.yml';
 
-import teEn from 'res/sub/en.textureList.yml!';
-import teTw from 'res/sub/zh-tw.textureList.yml!';
-import teCn from 'res/sub/zh-cn.textureList.yml!';
+import teEn from 'res/sub/en.textureList.yml';
+import teTw from 'res/sub/zh-tw.textureList.yml';
+import teCn from 'res/sub/zh-cn.textureList.yml';
 
 let resource = {
   en: {
