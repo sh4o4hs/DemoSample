@@ -167,6 +167,7 @@ export default class Scene extends nuts.scene.Base {
     }
 
     let obj = entity.contboTomStar;
+    console.log(obj);
     let event = center.event;
     let isEnd = true;
     if (obj) {
