@@ -34,7 +34,7 @@ let styleList = [
 ];
 
 // todo : 是否顯示背景
-let useBackground = true;
+let useBackground = false;
 let backgroundFilename = null;
 
 // todo : 是否使用 UI
@@ -64,8 +64,9 @@ function setVisibleUI (enable) {
 }
 
 let plugin = [
-  'pixi-spine',
-  'pixi-particles'
+
+  // 'pixi-spine',
+  // 'pixi-particles'
 ];
 
 let comList = [];

@@ -10,7 +10,7 @@
 import * as nuts from 'nuts';
 import * as strings from 'language/strings';
 import * as subSet from 'entity/subSet';
-import resource from 'src/res/sub.js';
+import resource from 'src/res/sub';
 
 /**
  * 子場景

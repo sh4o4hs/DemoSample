@@ -56,6 +56,15 @@ images:
         enter: res/main/button/leave/enter.png
         leave: res/main/button/leave/leave.png
         press: res/main/button/leave/press.png
+frames:
+  demo: #群組
+#    aaaa: #旋轉圖
+#      - odinwildparticle_01
+#      - odinwildsword_01
+    bbbb: #背景圖
+      back: cnum9
+      fore: cnum8
+
 assets:
 - res/main/asset/cnum.json
 - res/main/asset/winNum.json

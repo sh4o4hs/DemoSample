@@ -10,7 +10,7 @@
 import * as nuts from 'nuts';
 import * as strings from 'language/strings';
 import * as seedSet from 'entity/seedSet';
-import resource from 'src/res/main.js';
+import resource from 'src/res/main';
 
 /**
  * 主場景
@@ -359,10 +359,15 @@ export default class Scene extends nuts.scene.Base {
   /**
    * 處理材質
    */
-  /*
-    eventTexture (textures){
-    }
-  */
+  // eventTexture (textures) {
+  //   console.log(textures);
+  //   console.log('---------------------');
+  //   console.log(PIXI);
+  //   console.log('---------------------');
+  //   super.eventTexture(textures);
+  // }
+
+
   /**
    * 處理動畫
    */
@@ -618,8 +623,8 @@ export default class Scene extends nuts.scene.Base {
         infoList: [
           { eventName: 'data',    obj: res.data},
           { eventName: 'sound',   obj: res.sound},
-          { eventName: 'texture', obj: res.texture},
           { eventName: 'spine',   obj: res.spine},
+          { eventName: 'texture', obj: res.texture},
           { eventName: 'object',  obj: res.object},
           { eventName: 'object',  obj: res.objectV},
           { eventName: 'object',  obj: res.objectH}

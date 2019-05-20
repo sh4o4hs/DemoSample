@@ -4,11 +4,11 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 1.2.5
+version: 1.2.6
 framework:
   name: stuff
   version: 2.0.0
-#  builder: rollup
+  builder: rollup
 author:
   name: astro
   email: www@astrocorp.com.tw

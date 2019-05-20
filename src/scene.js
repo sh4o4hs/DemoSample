@@ -289,8 +289,8 @@ export function init (config) {
     resize (state) {
       console.log(state);
 
+      /*
       let loading = nuts.ui.loading;
-
       if (state.width > state.height) {
         let size = gamecard.resize.horizontal;
         if (size && gameRoot && gameRoot.getRenderer) {
@@ -319,6 +319,7 @@ export function init (config) {
           }
         }
       }
+*/
     },
 
     /**
