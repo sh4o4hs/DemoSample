@@ -32,7 +32,7 @@ export function create (config) {
   }
 
   let game = config.game;
-  let testID = 'testTheOther';
+  let testID = 'Jackpot';
 
   let seed = Seed.getSingleton();
 
@@ -355,12 +355,15 @@ export function create (config) {
       } else {
 
         // todo 取得指定的專案
-        let scene = game.scene.getTheOther(testID);
-        if (scene) {
-          scene.localEvent.leave({
-            from: game.scene.info.id
-          });
-        }
+        // let scene = game.scene.getTheOther(testID);
+        // if (scene) {
+        //   scene.localEvent.leave({
+        //     from: game.scene.info.id
+        //   });
+        // }
+        game.scene.callTheOther(testID, {
+          jackpot: app.jackpot
+        });
       }
 
       let set = {
