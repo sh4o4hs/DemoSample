@@ -238,6 +238,7 @@ export function init (config) {
         }
       }
 
+      // todo: 網路斷線事件
       conf.game.disconnect = () => {
         console.log('!!!! game.disconnect !!!!');
       };
