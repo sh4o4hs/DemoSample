@@ -23,6 +23,7 @@ options: # 功能開關設定
     custom: false      # 是否顯示 場景設定選單 (pixi.js 初始化設定)
     fps: false         # 是否顯示畫面更新率
     debug: false       # 是否顯示 vConsole (目前沒作用)
+    useDialog: true    # 是否使用共用對話視窗
 app: release/demo.sample.js   # 程式 (自動產生)
 group: demo                # 群組
 appConfig: sample             # 程式設定檔

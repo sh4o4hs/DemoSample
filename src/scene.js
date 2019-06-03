@@ -237,6 +237,10 @@ export function init (config) {
           sound.music.play();
         }
       }
+
+      conf.game.disconnect = () => {
+        console.log('!!!! game.disconnect !!!!');
+      };
     },
 
     /**

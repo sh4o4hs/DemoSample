@@ -23,6 +23,7 @@ export function normal (that) {
 
     // 按鈕
     clickSys (obj) {
+
       obj.setClick(() => {
         that.removeFromScene();
       });
