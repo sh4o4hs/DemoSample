@@ -214,6 +214,7 @@ export default class Scene extends nuts.scene.Base {
     let center = this.getCenter();
     let e = center.event;
     e.finish = event.finish || e.finish;
+    e.aaaa = event.aaaa || e.aaaa;
   }
 
   /**
