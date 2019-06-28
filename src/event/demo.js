@@ -82,7 +82,7 @@ export function create (config) {
       }
 
       let config = {
-        isDestroyScene: false,
+        isDestroyScene: true,
         sceneList: [
           {scene: sub}
         ],

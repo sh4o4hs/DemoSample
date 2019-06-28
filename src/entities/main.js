@@ -219,9 +219,7 @@ export default class Scene extends nuts.scene.Base {
           { eventName: 'sound',   obj: res.sound},
           { eventName: 'texture', obj: res.texture},
           { eventName: 'spine',   obj: res.spine},
-          { eventName: 'object',  obj: res.object},
-          { eventName: 'object',  obj: res.objectV},
-          { eventName: 'object',  obj: res.objectH}
+          { eventName: 'object',  obj: res.object}
         ],
         isObject: true
       };

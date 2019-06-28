@@ -8,9 +8,12 @@
 
  ************************************************************************ */
 import * as nuts from 'nuts';
-import * as strings from 'language/strings';
+
+//import * as strings from 'language/strings';
 import * as subSet from 'entity/subSet';
-import resource from 'src/res/sub';
+
+//import resource from 'src/res/sub';
+import vendor from 'src/res/vendor';
 
 /**
  * 子場景
@@ -247,7 +250,9 @@ export default class Scene extends nuts.scene.Base {
    */
   createScene (finish) {
     let self = this;
-    let res = resource[strings.getID()];
+
+    //    let res = resource[strings.getID()];
+    let res = vendor.sub;
 
     self.setInitMap(subSet.normal);
 
@@ -257,10 +262,14 @@ export default class Scene extends nuts.scene.Base {
       // 設定資訊
       let config = {
         infoList: [
-          { eventName: 'data',    obj: res.data},
-          { eventName: 'texture', obj: res.texture},
-          { eventName: 'spine',   obj: res.spine},
-          { eventName: 'object',  obj: res.object}
+          { eventName: 'texture', obj: res},
+          { eventName: 'spine',   obj: res},
+          { eventName: 'object',  obj: res}
+
+          // { eventName: 'data',    obj: res.data},
+          // { eventName: 'texture', obj: res.texture},
+          // { eventName: 'spine',   obj: res.spine},
+          // { eventName: 'object',  obj: res.object}
         ],
         isObject: true
       };

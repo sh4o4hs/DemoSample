@@ -16,6 +16,12 @@ gamecard:
 removePath: res
 removeKey: project/demo/sample/
 
+# 最佳化用
+vendor:
+  source: src/resource.js
+  resource: res/vendor.yml
+  output: src/res/vendor.js
+
 # 場景資源設定 (release 版用)
 #resource:
 #  sceneList:

@@ -8,9 +8,12 @@
 
 ************************************************************************ */
 import * as nuts from 'nuts';
-import * as strings from 'language/strings';
 import * as seedSet from 'entity/seedSet';
-import resource from 'src/res/main';
+
+// import * as strings from 'language/strings';
+// import resource from 'src/res/main';
+
+import vendor from 'src/res/vendor';
 
 /**
  * 主場景
@@ -611,7 +614,10 @@ export default class Scene extends nuts.scene.Base {
    */
   createScene (finish) {
     let self = this;
-    let res = resource[strings.getID()];
+
+    // let res = resource[strings.getID()];
+
+    let res = vendor.main;
 
     self.setInitMap(seedSet.normal);
 
@@ -621,13 +627,17 @@ export default class Scene extends nuts.scene.Base {
       // 設定資訊
       let config = {
         infoList: [
-          { eventName: 'data',    obj: res.data},
-          { eventName: 'sound',   obj: res.sound},
-          { eventName: 'spine',   obj: res.spine},
-          { eventName: 'texture', obj: res.texture},
-          { eventName: 'object',  obj: res.object},
-          { eventName: 'object',  obj: res.objectV},
-          { eventName: 'object',  obj: res.objectH}
+
+          { eventName: 'sound',   obj: res},
+          { eventName: 'spine',   obj: res},
+          { eventName: 'texture', obj: res},
+          { eventName: 'object',  obj: res}
+
+          // { eventName: 'data',    obj: res.data},
+          // { eventName: 'sound',   obj: res.sound},
+          // { eventName: 'spine',   obj: res.spine},
+          // { eventName: 'texture', obj: res.texture},
+          // { eventName: 'object',  obj: res.object}
         ],
         isObject: true
       };
