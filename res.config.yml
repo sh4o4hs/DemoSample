@@ -18,20 +18,14 @@ removeKey: project/demo/sample/
 
 # 最佳化用
 vendor:
+  custom:
+    - en
+    - zh-tw
+    - zh-cn
   source: src/resource.js
   resource: res/vendor.yml
   output: src/res/vendor.js
 
-# 場景資源設定 (release 版用)
-#resource:
-#  sceneList:
-#    - main
-#    - sub
-
-# 程式碼取代 (release 版用)
-#code:
-#  src/res/main.js: res/main.js
-#  src/res/sub.js: res/sub.js
 
 #===================================================
 # 資源設定

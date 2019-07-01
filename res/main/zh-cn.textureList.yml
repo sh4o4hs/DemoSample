@@ -16,6 +16,7 @@ images:
     background: #背景圖
       back: res/main/bg/background.png
       fore: res/main/bg/foreground.png
+      t02: res/main/bg/foreground.png
     coin: #籌碼
       50: res/main/base/chip_50.png
       100: res/main/base/chip_100.png
