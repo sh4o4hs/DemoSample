@@ -526,170 +526,175 @@ main:
       - objName: click
         config:
           src:
-            - data/main/sound/6adb0cf12169dc7f.wav
-            - data/main/sound/3aa6966f71af17ca.mp3
-            - data/main/sound/46c31e28ecc000d5.ogg
+            - res/main/sound/pbg_click.wav
+            - res/main/sound/pbg_click.mp3
+            - res/main/sound/pbg_click.ogg
           loop: false
       - objName: winBonus
         config:
           src:
-            - data/main/sound/b04575fe67b1ce35.wav
-            - data/main/sound/8e10a184530b5ee2.mp3
-            - data/main/sound/9330d6a723dae150.ogg
+            - res/main/sound/pbg_winbonus.wav
+            - res/main/sound/pbg_winbonus.mp3
+            - res/main/sound/pbg_winbonus.ogg
           loop: false
       - objName: countDown
         config:
           src:
-            - data/main/sound/14e2472fd975afac.wav
-            - data/main/sound/e25c1c76dcc1ab4d.mp3
-            - data/main/sound/5627cfb4a31f7648.ogg
+            - res/main/sound/pbg_countdown.wav
+            - res/main/sound/pbg_countdown.mp3
+            - res/main/sound/pbg_countdown.ogg
         loop: false
       - objName: music
         config:
           src:
-            - data/main/sound/152910ad6c641833.wav
+            - res/main/sound/bgm.wav
           loop: true
       - objName: bomb
         config:
           src:
-            - data/main/sound/f45a6440e96995f7.wav
+            - res/main/sound/bomb.wav
           loop: false
       - objName: light
         config:
           src:
-            - data/main/sound/7673244f74012b52.wav
+            - res/main/sound/light.wav
           loop: false
       - objName: no0
         config:
           src:
-            - data/main/sound/d12ae9c3d9ff5cde.wav
+            - res/main/sound/no-0.wav
           loop: false
       - objName: no1
         config:
           src:
-            - data/main/sound/30e2828f096b3b9f.wav
+            - res/main/sound/no-1.wav
           loop: false
       - objName: no2
         config:
           src:
-            - data/main/sound/79021e9bb288efd3.wav
+            - res/main/sound/no-2.wav
           loop: false
       - objName: no3
         config:
           src:
-            - data/main/sound/861c4b56f30d39ac.wav
+            - res/main/sound/no-3.wav
           loop: false
       - objName: no4
         config:
           src:
-            - data/main/sound/b007924cbfe41373.wav
+            - res/main/sound/no-4.wav
           loop: false
       - objName: no5
         config:
           src:
-            - data/main/sound/c8660b631c572e25.wav
+            - res/main/sound/no-5.wav
           loop: false
       - objName: no6
         config:
           src:
-            - data/main/sound/138439a5c72c5acc.wav
+            - res/main/sound/no-6.wav
           loop: false
       - objName: no7
         config:
           src:
-            - data/main/sound/e7b8198365a5a1cb.wav
+            - res/main/sound/no-7.wav
           loop: false
       - objName: no8
         config:
           src:
-            - data/main/sound/64ff3850b9fd5249.wav
+            - res/main/sound/no-8.wav
           loop: false
       - objName: no9
         config:
           src:
-            - data/main/sound/ae76aa2d51b1ec43.wav
+            - res/main/sound/no-9.wav
           loop: false
       - objName: sndReverse
         config:
           src:
-            - data/main/sound/6c0e35be91083f28.wav
+            - res/main/sound/reverse.wav
           loop: true
       - objName: sndRotate
         config:
           src:
-            - data/main/sound/5405c00a62fc21ed.wav
+            - res/main/sound/rotate.wav
           loop: false
       - objName: star
         config:
           src:
-            - data/main/sound/8ba6e15930d9be3c.wav
+            - res/main/sound/star.wav
           loop: false
       - objName: totem
         config:
           src:
-            - data/main/sound/f82550ea2e80cd97.wav
+            - res/main/sound/totem.wav
           loop: false
   images:
     demo:
       ring:
-        - data/main/loading/5194d92e22d8f036.png
-        - data/main/loading/18ce551957f56e22.png
-        - data/main/loading/ff13b3ff9fd7990b.png
-        - data/main/loading/5be33c170a708391.png
-        - data/main/loading/20898c6ca3eed211.png
-        - data/main/loading/6a8620a546ad4363.png
-        - data/main/loading/1aa8deaac39b5da0.png
-        - data/main/loading/535839ce0bed8517.png
-        - data/main/loading/4474841b72c56deb.png
-        - data/main/loading/40ee4fadb2a8f3be.png
-        - data/main/loading/dc2dc25760fa8491.png
-        - data/main/loading/c3bfd5f259340831.png
+        - res/main/loading/Loading_01.png
+        - res/main/loading/Loading_02.png
+        - res/main/loading/Loading_03.png
+        - res/main/loading/Loading_04.png
+        - res/main/loading/Loading_05.png
+        - res/main/loading/Loading_06.png
+        - res/main/loading/Loading_07.png
+        - res/main/loading/Loading_08.png
+        - res/main/loading/Loading_09.png
+        - res/main/loading/Loading_10.png
+        - res/main/loading/Loading_11.png
+        - res/main/loading/Loading_12.png
       background:
-        back: data/main/bg/01b23b049a27a49b.png
-        fore: data/main/bg/cddc5a27241ad23f.png
-        t02: data/main/bg/cddc5a27241ad23f.png
+        back: res/main/bg/background.png
+        fore: res/main/bg/foreground.png
+        t01: res/main/bg/foreground.png
       coin:
-        '50': data/main/base/20ce236a30490b87.png
-        '100': data/main/base/65c06bf9dab5f03a.png
-        '500': data/main/base/ebec19791cb97faf.png
-        '1000': data/main/base/a72c4993cc09f213.png
-        '5000': data/main/base/1c5b59163524d99c.png
-        '10000': data/main/base/af670bd7c8714960.png
-        '50000': data/main/base/07b5003036b8330a.png
-        '100000': data/main/base/8e6de2cd32b64c0c.png
-        '500000': data/main/base/91bde0260acbfc2f.png
-        '1000000': data/main/base/ea42938a58680542.png
+        '50': res/main/base/chip_50.png
+        '100': res/main/base/chip_100.png
+        '500': res/main/base/chip_500.png
+        '1000': res/main/base/chip_1k.png
+        '5000': res/main/base/chip_5k.png
+        '10000': res/main/base/chip_10k.png
+        '50000': res/main/base/chip_50k.png
+        '100000': res/main/base/chip_100k.png
+        '500000': res/main/base/chip_500k.png
+        '1000000': res/main/base/chip_1m.png
       fiveofkind:
         mask:
-          gradient1: data/main/spine/five/9722e6a392b88699.png
-          gradient2: data/main/spine/five/5a9bfdd6794a50be.png
+          gradient1: res/main/spine/five/gradient1_mask.png
+          gradient2: res/main/spine/five/gradient2_mask.png
       button:
         auto:
-          enter: data/main/button/auto/8f2907689ccc6f75.png
-          leave: data/main/button/auto/8f2907689ccc6f75.png
-          press: data/main/button/auto/fa4f2de2fb814f5c.png
+          enter: res/main/button/auto/enter.png
+          leave: res/main/button/auto/leave.png
+          press: res/main/button/auto/press.png
         autoLight:
-          enter: data/main/button/auto/fa4f2de2fb814f5c.png
-          leave: data/main/button/auto/fa4f2de2fb814f5c.png
-          press: data/main/button/auto/8f2907689ccc6f75.png
+          enter: res/main/button/auto/press.png
+          leave: res/main/button/auto/press.png
+          press: res/main/button/auto/enter.png
         start:
-          enter: data/main/button/start/ef70d3e41904c825.png
-          leave: data/main/button/start/30ccb36d04b2ab42.png
-          press: data/main/button/start/a40aae537f735379.png
+          enter: res/main/button/start/enter.png
+          leave: res/main/button/start/leave.png
+          press: res/main/button/start/press.png
         bet:
-          enter: data/main/button/bet/2ff78c3691df51d5.png
-          leave: data/main/button/bet/1d80e78cffe77850.png
-          press: data/main/button/bet/50b2ccc5a9a2cda2.png
+          enter: res/main/button/bet/enter.png
+          leave: res/main/button/bet/enter.png
+          press: res/main/button/bet/press.png
         rule:
-          enter: data/main/button/rule/e8732dd1f3338986.png
-          leave: data/main/button/rule/aa12fddde76b7101.png
-          press: data/main/button/rule/350cc6bbd92f78bf.png
+          enter: res/main/button/rule/enter.png
+          leave: res/main/button/rule/leave.png
+          press: res/main/button/rule/press.png
         leave:
-          enter: data/main/button/leave/3bb32cc432aec70c.png
-          leave: data/main/button/leave/ea824c85de726448.png
-          press: data/main/button/leave/4a511febb44a506c.png
+          enter: res/main/button/leave/enter.png
+          leave: res/main/button/leave/leave.png
+          press: res/main/button/leave/press.png
+  frames:
+    demo:
+      bbbb:
+        back: cnum9
+        fore: cnum8
   assets:
-    data/main/asset/1247313e3598518f.json:
+    res/main/asset/cnum.json:
       frames:
         cnum.:
           frame:
@@ -885,20 +890,233 @@ main:
             h: 27
       meta:
         app: GIMP
-        image: 4a0d8beb9c938ffa.png
+        image: cnum.png
+    res/main/asset/winNum.json:
+      frames:
+        'winNum,':
+          frame:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum.:
+          frame:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum0:
+          frame:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum1:
+          frame:
+            x: 21
+            'y': 0
+            w: 14
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 14
+            h: 17
+          sourceSize:
+            w: 14
+            h: 17
+        winNum2:
+          frame:
+            x: 38
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum3:
+          frame:
+            x: 57
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum4:
+          frame:
+            x: 76
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum5:
+          frame:
+            x: 95
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum6:
+          frame:
+            x: 114
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum7:
+          frame:
+            x: 133
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum8:
+          frame:
+            x: 152
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNum9:
+          frame:
+            x: 172
+            'y': 0
+            w: 18
+            h: 17
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 18
+            h: 17
+          sourceSize:
+            w: 18
+            h: 17
+        winNumX:
+          frame:
+            x: 192
+            'y': 3
+            w: 17
+            h: 13
+          rotated: false
+          trimmed: false
+          spriteSourceSize:
+            x: 0
+            'y': 0
+            w: 17
+            h: 13
+          sourceSize:
+            w: 17
+            h: 13
+      meta:
+        app: GIMP
+        image: winNum.png
   spineDataMap:
     spines:
       demo:
         fiveofkind:
-          text: data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.json
-          light01: data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.json
-          light02: data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.json
-          star: data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.json
+          text: res/main/spine/five/5kind.anim.json
+          light01: res/main/spine/five/5kind.light1.json
+          light02: res/main/spine/five/5kind.light2.json
+          star: res/main/spine/five/5kind.star.json
         wild:
-          loop: data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.json
-          open: data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.json
+          loop: res/main/spine/wild/odin_wild_loop.json
+          open: res/main/spine/wild/odin_wild_open.json
   spines:
-    data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.json:
+    res/main/spine/five/5kind.anim.json:
       bones:
         - name: root
         - name: '5'
@@ -1246,7 +1464,7 @@ main:
                   color: FFFFFFB2
                 - time: 1.667
                   color: FFFFFF00
-    data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.json:
+    res/main/spine/five/5kind.light1.json:
       bones:
         - name: root
         - name: gradient1
@@ -1630,7 +1848,7 @@ main:
                   color: FFFFFFB2
                 - time: 1.667
                   color: FFFFFF00
-    data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.json:
+    res/main/spine/five/5kind.light2.json:
       bones:
         - name: root
         - name: gradient2_1
@@ -2055,7 +2273,7 @@ main:
                   color: FFFFFFB2
                 - time: 1.667
                   color: FFFFFF00
-    data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.json:
+    res/main/spine/five/5kind.star.json:
       bones:
         - name: root
         - name: star_1
@@ -2373,7 +2591,7 @@ main:
                   color: FFFFFF00
                 - time: 1.667
                   color: FFFFFF00
-    data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.json:
+    res/main/spine/wild/odin_wild_loop.json:
       bones:
         - name: root
         - name: odinjolly_wildshine_11a_1
@@ -3290,7 +3508,7 @@ main:
                   name: null
                 - time: 1.167
                   name: odinwildfire00_15
-    data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.json:
+    res/main/spine/wild/odin_wild_open.json:
       bones:
         - name: root
         - name: odinwildparticle_01
@@ -4034,35 +4252,35 @@ sub:
     sub:
       button:
         system:
-          enter: data/sub/image/f9bf6dc80452b523.png
-          press: data/sub/image/2a32823e3294aee0.png
-          leave: data/sub/image/b90ac7569d8bb74a.png
-          disable: data/sub/image/b90ac7569d8bb74a.png
+          enter: res/sub/image/SYSTEM_256.png
+          press: res/sub/image/SYSTEM_256_on.png
+          leave: res/sub/image/SYSTEM_256_70.png
+          disable: res/sub/image/SYSTEM_256_70.png
       bones:
         demon:
-          texture: data/sub/bones/demon/b3588371b744754c.png
+          texture: res/sub/bones/demon/texture.png
         ubbie:
-          texture: data/sub/bones/ubbie/da002f162a0ec4ce.png
+          texture: res/sub/bones/ubbie/texture.png
       particle:
-        cartoonSmoke: data/sub/image/3781f9532e20268e.png
-        test: data/sub/image/f9bf6dc80452b523.png
+        cartoonSmoke: res/sub/image/CartoonSmoke.png
+        test: res/sub/image/SYSTEM_256.png
   spineDataMap:
     spines:
       demo:
         contbo:
           tom:
             star:
-              - data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.json
-              - data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.json
-              - data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.json
+              - res/sub/spine/contbo/khero_tom_star_03.json
+              - res/sub/spine/contbo/khero_tom_star_04.json
+              - res/sub/spine/contbo/khero_tom_star_05.json
             loop:
-              - data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.json
-              - data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.json
-              - data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.json
-              - data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.json
-              - data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.json
+              - res/sub/spine/contbo/khero_tom_loop_01.json
+              - res/sub/spine/contbo/khero_tom_loop_02.json
+              - res/sub/spine/contbo/khero_tom_loop_03.json
+              - res/sub/spine/contbo/khero_tom_loop_04.json
+              - res/sub/spine/contbo/khero_tom_loop_05.json
   spines:
-    data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.json:
+    res/sub/spine/contbo/khero_tom_star_03.json:
       bones:
         - name: root
         - name: khero_contbo_fire_b_1
@@ -8706,7 +8924,7 @@ sub:
                   name: khero_contbo_pf_04
                 - time: 1.167
                   name: null
-    data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.json:
+    res/sub/spine/contbo/khero_tom_star_04.json:
       bones:
         - name: root
         - name: khero_contbo_fire_b_1
@@ -13271,7 +13489,7 @@ sub:
                   name: null
                 - time: 0.15
                   name: khero_contbo_pf_04
-    data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.json:
+    res/sub/spine/contbo/khero_tom_star_05.json:
       bones:
         - name: root
         - name: khero_contbo_fire_b_1
@@ -18082,7 +18300,7 @@ sub:
                   name: null
                 - time: 0.15
                   name: khero_contbo_pf_04
-    data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.json:
+    res/sub/spine/contbo/khero_tom_loop_01.json:
       bones:
         - name: root
         - name: khero_contbo_pf_07_1
@@ -18852,7 +19070,7 @@ sub:
                   name: null
                 - time: 0.5
                   name: khero_contbo_line_02_8
-    data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.json:
+    res/sub/spine/contbo/khero_tom_loop_02.json:
       bones:
         - name: root
         - name: khero_contbo_pf_07_1
@@ -19622,7 +19840,7 @@ sub:
                   name: null
                 - time: 0.5
                   name: khero_contbo_line_02_8
-    data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.json:
+    res/sub/spine/contbo/khero_tom_loop_03.json:
       bones:
         - name: root
         - name: khero_contbo_pf_07_1
@@ -20438,7 +20656,7 @@ sub:
                   name: null
                 - time: 0.5
                   name: khero_contbo_line_02_8
-    data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.json:
+    res/sub/spine/contbo/khero_tom_loop_04.json:
       bones:
         - name: root
         - name: khero_contbo_pf_07_1
@@ -21254,7 +21472,7 @@ sub:
                   name: null
                 - time: 0.5
                   name: khero_contbo_line_02_8
-    data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.json:
+    res/sub/spine/contbo/khero_tom_loop_05.json:
       bones:
         - name: root
         - name: khero_contbo_pf_07_1

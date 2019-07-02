@@ -96,32 +96,32 @@ var resource = {
               {
                 x: 742,
                 y: 819,
-                type: "center"
+                type: 'center'
               },
               {
                 x: 20,
                 y: 560,
-                type: "right"
+                type: 'right'
               },
               {
                 x: 20,
                 y: 211,
-                type: "right"
+                type: 'right'
               },
               {
                 x: 742,
                 y: 95,
-                type: "right"
+                type: 'right'
               },
               {
                 x: 1465,
                 y: 211,
-                type: "left"
+                type: 'left'
               },
               {
                 x: 1465,
                 y: 560,
-                type: "left"
+                type: 'left'
               }
             ]
           }
@@ -130,13 +130,13 @@ var resource = {
     },
     objects: [
       {
-        objName: "bg",
-        name: "背景",
-        type: "background",
+        objName: 'bg',
+        name: '背景',
+        type: 'background',
         isInScene: true,
         resource: {
-          group: "demo.background",
-          name: "back"
+          group: 'demo.background',
+          name: 'back'
         },
         pos: {
           x: 0,
@@ -147,13 +147,13 @@ var resource = {
         init: null
       },
       {
-        objName: "fg",
-        name: "前景",
-        type: "background",
+        objName: 'fg',
+        name: '前景',
+        type: 'background',
         isInScene: true,
         resource: {
-          group: "demo.background",
-          name: "fore"
+          group: 'demo.background',
+          name: 'fore'
         },
         pos: {
           x: 0,
@@ -164,9 +164,9 @@ var resource = {
         init: null
       },
       {
-        objName: "nickname",
-        name: "暱稱",
-        type: "text",
+        objName: 'nickname',
+        name: '暱稱',
+        type: 'text',
         isInScene: true,
         resource: {
           group: null,
@@ -178,17 +178,17 @@ var resource = {
         },
         width: 148,
         height: 29,
-        text: "nickname",
-        init: "setText"
+        text: 'nickname',
+        init: 'setText'
       },
       {
         objName: null,
-        name: "訊息",
-        type: "info",
+        name: '訊息',
+        type: 'info',
         isInScene: true,
         resource: {
-          group: "demo.background",
-          name: "fore"
+          group: 'demo.background',
+          name: 'fore'
         },
         pos: {
           x: 0,
@@ -196,15 +196,15 @@ var resource = {
         },
         width: 640,
         height: 780,
-        init: "setInfo"
+        init: 'setInfo'
       },
       {
-        objName: "coin",
-        name: "籌碼",
-        type: "image",
+        objName: 'coin',
+        name: '籌碼',
+        type: 'image',
         isInScene: false,
         resource: {
-          group: "demo.coin",
+          group: 'demo.coin',
           name: 50
         },
         pos: {
@@ -218,16 +218,16 @@ var resource = {
         width: 76,
         height: 66,
         index: 3,
-        init: "setCoin"
+        init: 'setCoin'
       },
       {
-        objName: "ring",
-        name: "旋轉",
-        type: "animation",
+        objName: 'ring',
+        name: '旋轉',
+        type: 'animation',
         isInScene: true,
         resource: {
-          group: "demo",
-          name: "ring"
+          group: 'demo',
+          name: 'ring'
         },
         pos: {
           x: 160,
@@ -240,24 +240,24 @@ var resource = {
         width: 212,
         height: 222,
         loop: true,
-        init: "play"
+        init: 'play'
       },
       {
-        objName: "wildOpen",
-        name: "動畫-野 open",
-        type: "spine",
+        objName: 'wildOpen',
+        name: '動畫-野 open',
+        type: 'spine',
         isInScene: false,
         resource: {
-          spineData: "demo.wild",
+          spineData: 'demo.wild',
           texture: null
         },
         configList: [
           {
-            name: "open",
-            dataName: "open",
+            name: 'open',
+            dataName: 'open',
             timeScale: 1,
             loop: true,
-            animationName: "demo"
+            animationName: 'demo'
           }
         ],
         pos: {
@@ -267,85 +267,85 @@ var resource = {
         init: null
       },
       {
-        objName: "wildLoop",
-        name: "動畫-野 loop",
-        type: "spine",
+        objName: 'wildLoop',
+        name: '動畫-野 loop',
+        type: 'spine',
         isInScene: false,
         resource: {
-          spineData: "demo.wild",
+          spineData: 'demo.wild',
           texture: null
         },
         configList: [
           {
-            name: "loop",
-            dataName: "loop",
+            name: 'loop',
+            dataName: 'loop',
             timeScale: 1,
             loop: true,
-            animationName: "demo"
+            animationName: 'demo'
           }
         ],
         pos: {
           x: 300,
           y: 200
         },
-        init: "play"
+        init: 'play'
       },
       {
-        objName: "fiveOfKind",
-        name: "動畫-五連線獎",
-        type: "spine",
+        objName: 'fiveOfKind',
+        name: '動畫-五連線獎',
+        type: 'spine',
         isInScene: true,
         resource: {
-          spineData: "demo.fiveofkind",
-          texture: "demo.fiveofkind.mask"
+          spineData: 'demo.fiveofkind',
+          texture: 'demo.fiveofkind.mask'
         },
         configList: [
           {
-            name: "text",
-            dataName: "text",
+            name: 'text',
+            dataName: 'text',
             timeScale: 1,
-            animationName: "demo"
+            animationName: 'demo'
           },
           {
-            name: "light01",
-            dataName: "light01",
+            name: 'light01',
+            dataName: 'light01',
             timeScale: 1,
-            animationName: "demo",
+            animationName: 'demo',
             debug: false,
             mask: {
               local: false,
-              name: "gradient1",
+              name: 'gradient1',
               debug: false
             }
           },
           {
-            name: "light02",
-            dataName: "light02",
+            name: 'light02',
+            dataName: 'light02',
             timeScale: 1,
-            animationName: "demo",
+            animationName: 'demo',
             mask: {
               local: false,
-              name: "gradient2"
+              name: 'gradient2'
             }
           },
           {
-            name: "star",
-            dataName: "star",
+            name: 'star',
+            dataName: 'star',
             timeScale: 1,
-            animationName: "demo"
+            animationName: 'demo'
           }
         ],
         pos: {
           x: 0,
           y: 0
         },
-        childName: "star_7",
-        init: "setSpine"
+        childName: 'star_7',
+        init: 'setSpine'
       },
       {
         objName: null,
-        name: "籌碼堆",
-        type: "group",
+        name: '籌碼堆',
+        type: 'group',
         isInScene: true,
         pos: {
           x: 360,
@@ -353,15 +353,15 @@ var resource = {
         },
         width: 120,
         height: 100,
-        init: "createCoin",
+        init: 'createCoin',
         childList: [
           {
-            objName: "coin",
-            name: "籌碼",
-            type: "image",
+            objName: 'coin',
+            name: '籌碼',
+            type: 'image',
             isInScene: true,
             resource: {
-              group: "demo.coin",
+              group: 'demo.coin',
               name: 500
             },
             pos: {
@@ -375,19 +375,19 @@ var resource = {
             width: 76,
             height: 66,
             index: 10000,
-            init: "aa"
+            init: 'aa'
           },
           {
-            objName: "cash",
-            name: "金額",
-            type: "number",
+            objName: 'cash',
+            name: '金額',
+            type: 'number',
             isInScene: true,
             resource: {
-              texture: "cnum",
+              texture: 'cnum',
               group: null,
               background: null
             },
-            charMap: "0123456789,.",
+            charMap: '0123456789,.',
             pos: {
               x: -87,
               y: 66
@@ -402,14 +402,14 @@ var resource = {
             offset: 18,
             debug: true,
             autoHide: true,
-            init: "setCash"
+            init: 'setCash'
           }
         ]
       },
       {
-        objName: "loading",
-        name: "讀取進度",
-        type: "group",
+        objName: 'loading',
+        name: '讀取進度',
+        type: 'group',
         isInScene: false,
         pos: {
           x: 400,
@@ -418,13 +418,13 @@ var resource = {
         init: null,
         childList: [
           {
-            objName: "ring",
-            name: "旋轉",
-            type: "animation",
+            objName: 'ring',
+            name: '旋轉',
+            type: 'animation',
             isInScene: true,
             resource: {
-              group: "demo",
-              name: "ring"
+              group: 'demo',
+              name: 'ring'
             },
             pos: {
               x: 0,
@@ -437,19 +437,19 @@ var resource = {
             width: 212,
             height: 222,
             loop: true,
-            init: "play"
+            init: 'play'
           },
           {
-            objName: "progress",
-            name: "金額",
-            type: "number",
+            objName: 'progress',
+            name: '金額',
+            type: 'number',
             isInScene: true,
             resource: {
-              texture: "cnum",
+              texture: 'cnum',
               group: null,
               background: null
             },
-            charMap: "0123456789.",
+            charMap: '0123456789.',
             pos: {
               x: -106,
               y: 10
@@ -464,14 +464,14 @@ var resource = {
             offset: 18,
             debug: true,
             autoHide: true,
-            init: "setNum"
+            init: 'setNum'
           }
         ]
       },
       {
-        objName: "groupHorizontal",
-        name: "水平群組",
-        type: "group",
+        objName: 'groupHorizontal',
+        name: '水平群組',
+        type: 'group',
         isInScene: true,
         pos: {
           x: 0,
@@ -482,17 +482,17 @@ var resource = {
         init: null,
         childList: [
           {
-            objName: "btnStart",
-            name: "開始",
-            type: "button",
+            objName: 'btnStart',
+            name: '開始',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "start",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'start',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 707,
@@ -500,20 +500,20 @@ var resource = {
             },
             width: 88,
             height: 82,
-            init: "clickStart"
+            init: 'clickStart'
           },
           {
-            objName: "btnAuto",
-            name: "自動",
-            type: "button",
+            objName: 'btnAuto',
+            name: '自動',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "auto",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'auto',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 618,
@@ -521,20 +521,20 @@ var resource = {
             },
             width: 88,
             height: 82,
-            init: "clickAuto"
+            init: 'clickAuto'
           },
           {
-            objName: "btnBet",
-            name: "下注",
-            type: "button",
+            objName: 'btnBet',
+            name: '下注',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "bet",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'bet',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 408,
@@ -543,20 +543,20 @@ var resource = {
             debug: false,
             width: 212,
             height: 82,
-            init: "clickBet"
+            init: 'clickBet'
           },
           {
-            objName: "btnRule",
-            name: "規則",
-            type: "button",
+            objName: 'btnRule',
+            name: '規則',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "rule",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'rule',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 94,
@@ -565,20 +565,20 @@ var resource = {
             debug: false,
             width: 88,
             height: 82,
-            init: "clickRule"
+            init: 'clickRule'
           },
           {
-            objName: "btnLeave",
-            name: "離開",
-            type: "button",
+            objName: 'btnLeave',
+            name: '離開',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "leave",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'leave',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 2,
@@ -587,14 +587,14 @@ var resource = {
             debug: false,
             width: 88,
             height: 82,
-            init: "clickLeave"
+            init: 'clickLeave'
           }
         ]
       },
       {
-        objName: "groupVertical",
-        name: "垂直群組",
-        type: "group",
+        objName: 'groupVertical',
+        name: '垂直群組',
+        type: 'group',
         isInScene: false,
         pos: {
           x: 0,
@@ -605,17 +605,17 @@ var resource = {
         init: null,
         childList: [
           {
-            objName: "btnStart",
-            name: "開始",
-            type: "button",
+            objName: 'btnStart',
+            name: '開始',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "start",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'start',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 32,
@@ -623,20 +623,20 @@ var resource = {
             },
             width: 88,
             height: 82,
-            init: "clickStart"
+            init: 'clickStart'
           },
           {
-            objName: "btnAuto",
-            name: "自動",
-            type: "button",
+            objName: 'btnAuto',
+            name: '自動',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "auto",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'auto',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 32,
@@ -644,20 +644,20 @@ var resource = {
             },
             width: 88,
             height: 82,
-            init: "clickAuto"
+            init: 'clickAuto'
           },
           {
-            objName: "btnBet",
-            name: "下注",
-            type: "button",
+            objName: 'btnBet',
+            name: '下注',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "bet",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'bet',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 32,
@@ -666,20 +666,20 @@ var resource = {
             debug: false,
             width: 212,
             height: 82,
-            init: "clickBet"
+            init: 'clickBet'
           },
           {
-            objName: "btnRule",
-            name: "規則",
-            type: "button",
+            objName: 'btnRule',
+            name: '規則',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "rule",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'rule',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 32,
@@ -688,20 +688,20 @@ var resource = {
             debug: false,
             width: 88,
             height: 82,
-            init: "clickRule"
+            init: 'clickRule'
           },
           {
-            objName: "btnLeave",
-            name: "離開",
-            type: "button",
+            objName: 'btnLeave',
+            name: '離開',
+            type: 'button',
             isInScene: true,
             resource: {
-              group: "demo.button",
-              name: "leave",
-              enter: "enter",
-              press: "press",
-              leave: "leave",
-              disable: "disable"
+              group: 'demo.button',
+              name: 'leave',
+              enter: 'enter',
+              press: 'press',
+              leave: 'leave',
+              disable: 'disable'
             },
             pos: {
               x: 32,
@@ -710,7 +710,7 @@ var resource = {
             debug: false,
             width: 88,
             height: 82,
-            init: "clickLeave"
+            init: 'clickLeave'
           }
         ]
       }
@@ -718,187 +718,187 @@ var resource = {
     sounds: {
       demo: [
         {
-          objName: "click",
+          objName: 'click',
           config: {
             src: [
-              "data/main/sound/6adb0cf12169dc7f.wav",
-              "data/main/sound/3aa6966f71af17ca.mp3",
-              "data/main/sound/46c31e28ecc000d5.ogg"
+              'res/main/sound/pbg_click.wav',
+              'res/main/sound/pbg_click.mp3',
+              'res/main/sound/pbg_click.ogg'
             ],
             loop: false
           }
         },
         {
-          objName: "winBonus",
+          objName: 'winBonus',
           config: {
             src: [
-              "data/main/sound/b04575fe67b1ce35.wav",
-              "data/main/sound/8e10a184530b5ee2.mp3",
-              "data/main/sound/9330d6a723dae150.ogg"
+              'res/main/sound/pbg_winbonus.wav',
+              'res/main/sound/pbg_winbonus.mp3',
+              'res/main/sound/pbg_winbonus.ogg'
             ],
             loop: false
           }
         },
         {
-          objName: "countDown",
+          objName: 'countDown',
           config: {
             src: [
-              "data/main/sound/14e2472fd975afac.wav",
-              "data/main/sound/e25c1c76dcc1ab4d.mp3",
-              "data/main/sound/5627cfb4a31f7648.ogg"
+              'res/main/sound/pbg_countdown.wav',
+              'res/main/sound/pbg_countdown.mp3',
+              'res/main/sound/pbg_countdown.ogg'
             ]
           },
           loop: false
         },
         {
-          objName: "music",
+          objName: 'music',
           config: {
             src: [
-              "data/main/sound/152910ad6c641833.wav"
+              'res/main/sound/bgm.wav'
             ],
             loop: true
           }
         },
         {
-          objName: "bomb",
+          objName: 'bomb',
           config: {
             src: [
-              "data/main/sound/f45a6440e96995f7.wav"
+              'res/main/sound/bomb.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "light",
+          objName: 'light',
           config: {
             src: [
-              "data/main/sound/7673244f74012b52.wav"
+              'res/main/sound/light.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no0",
+          objName: 'no0',
           config: {
             src: [
-              "data/main/sound/d12ae9c3d9ff5cde.wav"
+              'res/main/sound/no-0.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no1",
+          objName: 'no1',
           config: {
             src: [
-              "data/main/sound/30e2828f096b3b9f.wav"
+              'res/main/sound/no-1.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no2",
+          objName: 'no2',
           config: {
             src: [
-              "data/main/sound/79021e9bb288efd3.wav"
+              'res/main/sound/no-2.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no3",
+          objName: 'no3',
           config: {
             src: [
-              "data/main/sound/861c4b56f30d39ac.wav"
+              'res/main/sound/no-3.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no4",
+          objName: 'no4',
           config: {
             src: [
-              "data/main/sound/b007924cbfe41373.wav"
+              'res/main/sound/no-4.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no5",
+          objName: 'no5',
           config: {
             src: [
-              "data/main/sound/c8660b631c572e25.wav"
+              'res/main/sound/no-5.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no6",
+          objName: 'no6',
           config: {
             src: [
-              "data/main/sound/138439a5c72c5acc.wav"
+              'res/main/sound/no-6.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no7",
+          objName: 'no7',
           config: {
             src: [
-              "data/main/sound/e7b8198365a5a1cb.wav"
+              'res/main/sound/no-7.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no8",
+          objName: 'no8',
           config: {
             src: [
-              "data/main/sound/64ff3850b9fd5249.wav"
+              'res/main/sound/no-8.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "no9",
+          objName: 'no9',
           config: {
             src: [
-              "data/main/sound/ae76aa2d51b1ec43.wav"
+              'res/main/sound/no-9.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "sndReverse",
+          objName: 'sndReverse',
           config: {
             src: [
-              "data/main/sound/6c0e35be91083f28.wav"
+              'res/main/sound/reverse.wav'
             ],
             loop: true
           }
         },
         {
-          objName: "sndRotate",
+          objName: 'sndRotate',
           config: {
             src: [
-              "data/main/sound/5405c00a62fc21ed.wav"
+              'res/main/sound/rotate.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "star",
+          objName: 'star',
           config: {
             src: [
-              "data/main/sound/8ba6e15930d9be3c.wav"
+              'res/main/sound/star.wav'
             ],
             loop: false
           }
         },
         {
-          objName: "totem",
+          objName: 'totem',
           config: {
             src: [
-              "data/main/sound/f82550ea2e80cd97.wav"
+              'res/main/sound/totem.wav'
             ],
             loop: false
           }
@@ -908,80 +908,88 @@ var resource = {
     images: {
       demo: {
         ring: [
-          "data/main/loading/5194d92e22d8f036.png",
-          "data/main/loading/18ce551957f56e22.png",
-          "data/main/loading/ff13b3ff9fd7990b.png",
-          "data/main/loading/5be33c170a708391.png",
-          "data/main/loading/20898c6ca3eed211.png",
-          "data/main/loading/6a8620a546ad4363.png",
-          "data/main/loading/1aa8deaac39b5da0.png",
-          "data/main/loading/535839ce0bed8517.png",
-          "data/main/loading/4474841b72c56deb.png",
-          "data/main/loading/40ee4fadb2a8f3be.png",
-          "data/main/loading/dc2dc25760fa8491.png",
-          "data/main/loading/c3bfd5f259340831.png"
+          'res/main/loading/Loading_01.png',
+          'res/main/loading/Loading_02.png',
+          'res/main/loading/Loading_03.png',
+          'res/main/loading/Loading_04.png',
+          'res/main/loading/Loading_05.png',
+          'res/main/loading/Loading_06.png',
+          'res/main/loading/Loading_07.png',
+          'res/main/loading/Loading_08.png',
+          'res/main/loading/Loading_09.png',
+          'res/main/loading/Loading_10.png',
+          'res/main/loading/Loading_11.png',
+          'res/main/loading/Loading_12.png'
         ],
         background: {
-          back: "data/main/bg/01b23b049a27a49b.png",
-          fore: "data/main/bg/cddc5a27241ad23f.png",
-          t02: "data/main/bg/cddc5a27241ad23f.png"
+          back: 'res/main/bg/background.png',
+          fore: 'res/main/bg/foreground.png',
+          t01: 'res/main/bg/foreground.png'
         },
         coin: {
-          "50": "data/main/base/20ce236a30490b87.png",
-          "100": "data/main/base/65c06bf9dab5f03a.png",
-          "500": "data/main/base/ebec19791cb97faf.png",
-          "1000": "data/main/base/a72c4993cc09f213.png",
-          "5000": "data/main/base/1c5b59163524d99c.png",
-          "10000": "data/main/base/af670bd7c8714960.png",
-          "50000": "data/main/base/07b5003036b8330a.png",
-          "100000": "data/main/base/8e6de2cd32b64c0c.png",
-          "500000": "data/main/base/91bde0260acbfc2f.png",
-          "1000000": "data/main/base/ea42938a58680542.png"
+          50: 'res/main/base/chip_50.png',
+          100: 'res/main/base/chip_100.png',
+          500: 'res/main/base/chip_500.png',
+          1000: 'res/main/base/chip_1k.png',
+          5000: 'res/main/base/chip_5k.png',
+          10000: 'res/main/base/chip_10k.png',
+          50000: 'res/main/base/chip_50k.png',
+          100000: 'res/main/base/chip_100k.png',
+          500000: 'res/main/base/chip_500k.png',
+          1000000: 'res/main/base/chip_1m.png'
         },
         fiveofkind: {
           mask: {
-            gradient1: "data/main/spine/five/9722e6a392b88699.png",
-            gradient2: "data/main/spine/five/5a9bfdd6794a50be.png"
+            gradient1: 'res/main/spine/five/gradient1_mask.png',
+            gradient2: 'res/main/spine/five/gradient2_mask.png'
           }
         },
         button: {
           auto: {
-            enter: "data/main/button/auto/8f2907689ccc6f75.png",
-            leave: "data/main/button/auto/8f2907689ccc6f75.png",
-            press: "data/main/button/auto/fa4f2de2fb814f5c.png"
+            enter: 'res/main/button/auto/enter.png',
+            leave: 'res/main/button/auto/leave.png',
+            press: 'res/main/button/auto/press.png'
           },
           autoLight: {
-            enter: "data/main/button/auto/fa4f2de2fb814f5c.png",
-            leave: "data/main/button/auto/fa4f2de2fb814f5c.png",
-            press: "data/main/button/auto/8f2907689ccc6f75.png"
+            enter: 'res/main/button/auto/press.png',
+            leave: 'res/main/button/auto/press.png',
+            press: 'res/main/button/auto/enter.png'
           },
           start: {
-            enter: "data/main/button/start/ef70d3e41904c825.png",
-            leave: "data/main/button/start/30ccb36d04b2ab42.png",
-            press: "data/main/button/start/a40aae537f735379.png"
+            enter: 'res/main/button/start/enter.png',
+            leave: 'res/main/button/start/leave.png',
+            press: 'res/main/button/start/press.png'
           },
           bet: {
-            enter: "data/main/button/bet/2ff78c3691df51d5.png",
-            leave: "data/main/button/bet/1d80e78cffe77850.png",
-            press: "data/main/button/bet/50b2ccc5a9a2cda2.png"
+            enter: 'res/main/button/bet/enter.png',
+            leave: 'res/main/button/bet/enter.png',
+            press: 'res/main/button/bet/press.png'
           },
           rule: {
-            enter: "data/main/button/rule/e8732dd1f3338986.png",
-            leave: "data/main/button/rule/aa12fddde76b7101.png",
-            press: "data/main/button/rule/350cc6bbd92f78bf.png"
+            enter: 'res/main/button/rule/enter.png',
+            leave: 'res/main/button/rule/leave.png',
+            press: 'res/main/button/rule/press.png'
           },
           leave: {
-            enter: "data/main/button/leave/3bb32cc432aec70c.png",
-            leave: "data/main/button/leave/ea824c85de726448.png",
-            press: "data/main/button/leave/4a511febb44a506c.png"
+            enter: 'res/main/button/leave/enter.png',
+            leave: 'res/main/button/leave/leave.png',
+            press: 'res/main/button/leave/press.png'
           }
         }
       }
     },
+    frames: {
+      demo: {
+        bbbb: {
+          back: 'cnum9',
+          fore: 'cnum8'
+        }
+      }
+    },
     assets: {
-      "data/main/asset/1247313e3598518f.json": {
+      'res/main/asset/cnum.json': {
         frames: {
-          "cnum.": {
+          'cnum.': {
             frame: {
               x: 198,
               y: 0,
@@ -1001,7 +1009,7 @@ var resource = {
               h: 27
             }
           },
-          "cnum,": {
+          'cnum,': {
             frame: {
               x: 180,
               y: 0,
@@ -1223,8 +1231,276 @@ var resource = {
           }
         },
         meta: {
-          app: "GIMP",
-          image: "4a0d8beb9c938ffa.png"
+          app: 'GIMP',
+          image: 'cnum.png'
+        }
+      },
+      'res/main/asset/winNum.json': {
+        frames: {
+          'winNum,': {
+            frame: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          'winNum.': {
+            frame: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum0: {
+            frame: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum1: {
+            frame: {
+              x: 21,
+              y: 0,
+              w: 14,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 14,
+              h: 17
+            },
+            sourceSize: {
+              w: 14,
+              h: 17
+            }
+          },
+          winNum2: {
+            frame: {
+              x: 38,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum3: {
+            frame: {
+              x: 57,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum4: {
+            frame: {
+              x: 76,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum5: {
+            frame: {
+              x: 95,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum6: {
+            frame: {
+              x: 114,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum7: {
+            frame: {
+              x: 133,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum8: {
+            frame: {
+              x: 152,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNum9: {
+            frame: {
+              x: 172,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 18,
+              h: 17
+            },
+            sourceSize: {
+              w: 18,
+              h: 17
+            }
+          },
+          winNumX: {
+            frame: {
+              x: 192,
+              y: 3,
+              w: 17,
+              h: 13
+            },
+            rotated: false,
+            trimmed: false,
+            spriteSourceSize: {
+              x: 0,
+              y: 0,
+              w: 17,
+              h: 13
+            },
+            sourceSize: {
+              w: 17,
+              h: 13
+            }
+          }
+        },
+        meta: {
+          app: 'GIMP',
+          image: 'winNum.png'
         }
       }
     },
@@ -1232,100 +1508,100 @@ var resource = {
       spines: {
         demo: {
           fiveofkind: {
-            text: "data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.json",
-            light01: "data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.json",
-            light02: "data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.json",
-            star: "data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.json"
+            text: 'res/main/spine/five/5kind.anim.json',
+            light01: 'res/main/spine/five/5kind.light1.json',
+            light02: 'res/main/spine/five/5kind.light2.json',
+            star: 'res/main/spine/five/5kind.star.json'
           },
           wild: {
-            loop: "data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.json",
-            open: "data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.json"
+            loop: 'res/main/spine/wild/odin_wild_loop.json',
+            open: 'res/main/spine/wild/odin_wild_open.json'
           }
         }
       }
     },
     spines: {
-      "data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.json": {
+      'res/main/spine/five/5kind.anim.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "5",
-            parent: "root",
+            name: '5',
+            parent: 'root',
             x: 359,
             y: 57
           },
           {
-            name: "kind",
-            parent: "root",
+            name: 'kind',
+            parent: 'root',
             x: 624.375,
             y: 26.25
           },
           {
-            name: "of",
-            parent: "root",
+            name: 'of',
+            parent: 'root',
             x: 579,
             y: 45
           },
           {
-            name: "a",
-            parent: "root",
+            name: 'a',
+            parent: 'root',
             x: 681,
             y: 35,
             rotation: 20
           },
           {
-            name: "shadow_5",
-            parent: "root",
+            name: 'shadow_5',
+            parent: 'root',
             x: 366,
             y: -426
           },
           {
-            name: "shadow_kind",
-            parent: "root",
+            name: 'shadow_kind',
+            parent: 'root',
             x: 616,
             y: -391.5
           }
         ],
         slots: [
           {
-            name: "shadow_kind",
-            bone: "shadow_kind",
-            attachment: "shadow_kind",
-            color: "FFFFFF00"
+            name: 'shadow_kind',
+            bone: 'shadow_kind',
+            attachment: 'shadow_kind',
+            color: 'FFFFFF00'
           },
           {
-            name: "shadow_5",
-            bone: "shadow_5",
-            attachment: "shadow_5",
-            color: "FFFFFF00"
+            name: 'shadow_5',
+            bone: 'shadow_5',
+            attachment: 'shadow_5',
+            color: 'FFFFFF00'
           },
           {
-            name: "a",
-            bone: "a",
-            attachment: "a"
+            name: 'a',
+            bone: 'a',
+            attachment: 'a'
           },
           {
-            name: "of",
-            bone: "of",
-            attachment: "of"
+            name: 'of',
+            bone: 'of',
+            attachment: 'of'
           },
           {
-            name: "kind",
-            bone: "kind",
-            attachment: "kind"
+            name: 'kind',
+            bone: 'kind',
+            attachment: 'kind'
           },
           {
-            name: "5",
-            bone: "5",
-            attachment: "5"
+            name: '5',
+            bone: '5',
+            attachment: '5'
           }
         ],
         skins: {
-          "default": {
-            "5": {
-              "5": {
+          default: {
+            5: {
+              5: {
                 width: 252,
                 height: 282,
                 x: 4,
@@ -1372,7 +1648,7 @@ var resource = {
         animations: {
           demo: {
             bones: {
-              "5": {
+              5: {
                 translate: [
                   {
                     time: 0,
@@ -1715,19 +1991,19 @@ var resource = {
               }
             },
             slots: {
-              "5": {
+              5: {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -1735,15 +2011,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -1751,15 +2027,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -1767,15 +2043,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -1783,19 +2059,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.133,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -1803,39 +2079,39 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.133,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.283,
-                    color: "FFFFFFD8"
+                    color: 'FFFFFFD8'
                   },
                   {
                     time: 0.367,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 0.45,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               }
@@ -1843,100 +2119,100 @@ var resource = {
           }
         }
       },
-      "data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.json": {
+      'res/main/spine/five/5kind.light1.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "gradient1",
-            parent: "root",
+            name: 'gradient1',
+            parent: 'root',
             x: -188,
             y: -270
           },
           {
-            name: "5",
-            parent: "root",
+            name: '5',
+            parent: 'root',
             x: 359,
             y: 57
           },
           {
-            name: "kind",
-            parent: "root",
+            name: 'kind',
+            parent: 'root',
             x: 624.375,
             y: 26.25
           },
           {
-            name: "of",
-            parent: "root",
+            name: 'of',
+            parent: 'root',
             x: 579,
             y: 45
           },
           {
-            name: "a",
-            parent: "root",
+            name: 'a',
+            parent: 'root',
             x: 681,
             y: 35,
             rotation: 20
           },
           {
-            name: "shadow_5",
-            parent: "root",
+            name: 'shadow_5',
+            parent: 'root',
             x: 366,
             y: -426
           },
           {
-            name: "shadow_kind",
-            parent: "root",
+            name: 'shadow_kind',
+            parent: 'root',
             x: 616,
             y: -391.5
           }
         ],
         slots: [
           {
-            name: "shadow_kind",
-            bone: "shadow_kind",
-            attachment: "shadow_kind",
-            color: "FFFFFF00"
+            name: 'shadow_kind',
+            bone: 'shadow_kind',
+            attachment: 'shadow_kind',
+            color: 'FFFFFF00'
           },
           {
-            name: "shadow_5",
-            bone: "shadow_5",
-            attachment: "shadow_5",
-            color: "FFFFFF00"
+            name: 'shadow_5',
+            bone: 'shadow_5',
+            attachment: 'shadow_5',
+            color: 'FFFFFF00'
           },
           {
-            name: "a",
-            bone: "a",
-            attachment: "a"
+            name: 'a',
+            bone: 'a',
+            attachment: 'a'
           },
           {
-            name: "of",
-            bone: "of",
-            attachment: "of"
+            name: 'of',
+            bone: 'of',
+            attachment: 'of'
           },
           {
-            name: "kind",
-            bone: "kind",
-            attachment: "kind"
+            name: 'kind',
+            bone: 'kind',
+            attachment: 'kind'
           },
           {
-            name: "5",
-            bone: "5",
-            attachment: "5"
+            name: '5',
+            bone: '5',
+            attachment: '5'
           },
           {
-            name: "gradient1",
-            bone: "gradient1",
-            attachment: "gradient1",
-            blend: "additive",
-            color: "FFFFFFA5"
+            name: 'gradient1',
+            bone: 'gradient1',
+            attachment: 'gradient1',
+            blend: 'additive',
+            color: 'FFFFFFA5'
           }
         ],
         skins: {
-          "default": {
-            "5": {
-              "5": {
+          default: {
+            5: {
+              5: {
                 width: 252,
                 height: 282,
                 x: 4,
@@ -1989,7 +2265,7 @@ var resource = {
         animations: {
           demo: {
             bones: {
-              "5": {
+              5: {
                 translate: [
                   {
                     time: 0,
@@ -2358,19 +2634,19 @@ var resource = {
               }
             },
             slots: {
-              "5": {
+              5: {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -2378,15 +2654,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 1.583,
-                    color: "FFFFFF7F"
+                    color: 'FFFFFF7F'
                   }
                 ]
               },
@@ -2394,15 +2670,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -2410,15 +2686,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -2426,15 +2702,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -2442,19 +2718,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.133,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -2462,39 +2738,39 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.133,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.283,
-                    color: "FFFFFFD8"
+                    color: 'FFFFFFD8'
                   },
                   {
                     time: 0.367,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 0.45,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               }
@@ -2502,112 +2778,112 @@ var resource = {
           }
         }
       },
-      "data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.json": {
+      'res/main/spine/five/5kind.light2.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "gradient2_1",
-            parent: "root",
+            name: 'gradient2_1',
+            parent: 'root',
             x: -310,
             y: -270
           },
           {
-            name: "gradient2_2",
-            parent: "root",
+            name: 'gradient2_2',
+            parent: 'root',
             x: -310,
             y: -270
           },
           {
-            name: "5",
-            parent: "root",
+            name: '5',
+            parent: 'root',
             x: 359,
             y: 57
           },
           {
-            name: "kind",
-            parent: "root",
+            name: 'kind',
+            parent: 'root',
             x: 624.375,
             y: 26.25
           },
           {
-            name: "of",
-            parent: "root",
+            name: 'of',
+            parent: 'root',
             x: 579,
             y: 45
           },
           {
-            name: "a",
-            parent: "root",
+            name: 'a',
+            parent: 'root',
             x: 681,
             y: 35,
             rotation: 20
           },
           {
-            name: "shadow_5",
-            parent: "root",
+            name: 'shadow_5',
+            parent: 'root',
             x: 366,
             y: -426
           },
           {
-            name: "shadow_kind",
-            parent: "root",
+            name: 'shadow_kind',
+            parent: 'root',
             x: 616,
             y: -391.5
           }
         ],
         slots: [
           {
-            name: "shadow_kind",
-            bone: "shadow_kind",
-            attachment: "shadow_kind",
-            color: "FFFFFF00"
+            name: 'shadow_kind',
+            bone: 'shadow_kind',
+            attachment: 'shadow_kind',
+            color: 'FFFFFF00'
           },
           {
-            name: "shadow_5",
-            bone: "shadow_5",
-            attachment: "shadow_5",
-            color: "FFFFFF00"
+            name: 'shadow_5',
+            bone: 'shadow_5',
+            attachment: 'shadow_5',
+            color: 'FFFFFF00'
           },
           {
-            name: "a",
-            bone: "a",
-            attachment: "a"
+            name: 'a',
+            bone: 'a',
+            attachment: 'a'
           },
           {
-            name: "of",
-            bone: "of",
-            attachment: "of"
+            name: 'of',
+            bone: 'of',
+            attachment: 'of'
           },
           {
-            name: "kind",
-            bone: "kind",
-            attachment: "kind"
+            name: 'kind',
+            bone: 'kind',
+            attachment: 'kind'
           },
           {
-            name: "5",
-            bone: "5",
-            attachment: "5"
+            name: '5',
+            bone: '5',
+            attachment: '5'
           },
           {
-            name: "gradient2_2",
-            bone: "gradient2_2",
-            attachment: "gradient2_2",
-            blend: "additive"
+            name: 'gradient2_2',
+            bone: 'gradient2_2',
+            attachment: 'gradient2_2',
+            blend: 'additive'
           },
           {
-            name: "gradient2_1",
-            bone: "gradient2_1",
-            attachment: "gradient2_1",
-            blend: "additive",
-            color: "FFFFFF99"
+            name: 'gradient2_1',
+            bone: 'gradient2_1',
+            attachment: 'gradient2_1',
+            blend: 'additive',
+            color: 'FFFFFF99'
           }
         ],
         skins: {
-          "default": {
-            "5": {
-              "5": {
+          default: {
+            5: {
+              5: {
                 width: 252,
                 height: 282,
                 x: 4,
@@ -2618,14 +2894,14 @@ var resource = {
               gradient2_1: {
                 width: 396,
                 height: 208,
-                name: "gradient2"
+                name: 'gradient2'
               }
             },
             gradient2_2: {
               gradient2_2: {
                 width: 396,
                 height: 208,
-                name: "gradient2"
+                name: 'gradient2'
               }
             },
             kind: {
@@ -2668,7 +2944,7 @@ var resource = {
         animations: {
           demo: {
             bones: {
-              "5": {
+              5: {
                 translate: [
                   {
                     time: 0,
@@ -3063,19 +3339,19 @@ var resource = {
               }
             },
             slots: {
-              "5": {
+              5: {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3083,19 +3359,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF99"
+                    color: 'FFFFFF99'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF99"
+                    color: 'FFFFFF99'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF7F"
+                    color: 'FFFFFF7F'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3103,19 +3379,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.383,
-                    color: "FFFFFF7F"
+                    color: 'FFFFFF7F'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3123,15 +3399,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3139,15 +3415,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3155,15 +3431,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3171,19 +3447,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.133,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3191,39 +3467,39 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.133,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.283,
-                    color: "FFFFFFD8"
+                    color: 'FFFFFFD8'
                   },
                   {
                     time: 0.367,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 0.45,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFFA5"
+                    color: 'FFFFFFA5'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               }
@@ -3231,154 +3507,154 @@ var resource = {
           }
         }
       },
-      "data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.json": {
+      'res/main/spine/five/5kind.star.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "star_1",
-            parent: "root",
+            name: 'star_1',
+            parent: 'root',
             x: 759,
             y: -282
           },
           {
-            name: "star_2",
-            parent: "root",
+            name: 'star_2',
+            parent: 'root',
             x: 716,
             y: -210
           },
           {
-            name: "star_3",
-            parent: "root",
+            name: 'star_3',
+            parent: 'root',
             x: 640,
             y: -363
           },
           {
-            name: "star_4",
-            parent: "root",
+            name: 'star_4',
+            parent: 'root',
             x: 538,
             y: -203
           },
           {
-            name: "star_5",
-            parent: "root",
+            name: 'star_5',
+            parent: 'root',
             x: 488,
             y: -273
           },
           {
-            name: "star_6",
-            parent: "root",
+            name: 'star_6',
+            parent: 'root',
             x: 438,
             y: -388
           },
           {
-            name: "star_7",
-            parent: "root",
+            name: 'star_7',
+            parent: 'root',
             x: 288,
             y: -140
           }
         ],
         slots: [
           {
-            name: "star_7",
-            bone: "star_7",
-            attachment: "star_7",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'star_7',
+            bone: 'star_7',
+            attachment: 'star_7',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "star_6",
-            bone: "star_6",
-            attachment: "star_6",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'star_6',
+            bone: 'star_6',
+            attachment: 'star_6',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "star_5",
-            bone: "star_5",
-            attachment: "star_5",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'star_5',
+            bone: 'star_5',
+            attachment: 'star_5',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "star_4",
-            bone: "star_4",
-            attachment: "star_4",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'star_4',
+            bone: 'star_4',
+            attachment: 'star_4',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "star_3",
-            bone: "star_3",
-            attachment: "star_3",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'star_3',
+            bone: 'star_3',
+            attachment: 'star_3',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "star_2",
-            bone: "star_2",
-            attachment: "star_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'star_2',
+            bone: 'star_2',
+            attachment: 'star_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "star_1",
-            bone: "star_1",
-            attachment: "star_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'star_1',
+            bone: 'star_1',
+            attachment: 'star_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           }
         ],
         skins: {
-          "default": {
+          default: {
             star_1: {
               star_1: {
                 width: 104,
                 height: 90,
-                name: "star"
+                name: 'star'
               }
             },
             star_2: {
               star_2: {
                 width: 104,
                 height: 90,
-                name: "star"
+                name: 'star'
               }
             },
             star_3: {
               star_3: {
                 width: 104,
                 height: 90,
-                name: "star"
+                name: 'star'
               }
             },
             star_4: {
               star_4: {
                 width: 104,
                 height: 90,
-                name: "star"
+                name: 'star'
               }
             },
             star_5: {
               star_5: {
                 width: 104,
                 height: 90,
-                name: "star"
+                name: 'star'
               }
             },
             star_6: {
               star_6: {
                 width: 104,
                 height: 90,
-                name: "star"
+                name: 'star'
               }
             },
             star_7: {
               star_7: {
                 width: 104,
                 height: 90,
-                name: "star"
+                name: 'star'
               }
             }
           }
@@ -3560,31 +3836,31 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.35,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3592,31 +3868,31 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.133,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.35,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3624,31 +3900,31 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.9,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.3,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3656,31 +3932,31 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.8,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.033,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3688,31 +3964,31 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.767,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3720,31 +3996,31 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.683,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.283,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -3752,31 +4028,31 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.633,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.9,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.5,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               }
@@ -3784,387 +4060,387 @@ var resource = {
           }
         }
       },
-      "data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.json": {
+      'res/main/spine/wild/odin_wild_loop.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "odinjolly_wildshine_11a_1",
-            parent: "root",
+            name: 'odinjolly_wildshine_11a_1',
+            parent: 'root',
             x: -16,
             y: -24.5
           },
           {
-            name: "odinwildwildshine_01",
-            parent: "root",
+            name: 'odinwildwildshine_01',
+            parent: 'root',
             x: -16,
             y: -24.5
           },
           {
-            name: "odinjolly_wildshine_11a_2",
-            parent: "root",
+            name: 'odinjolly_wildshine_11a_2',
+            parent: 'root',
             x: -16,
             y: -24.5
           },
           {
-            name: "lighting",
-            parent: "root",
+            name: 'lighting',
+            parent: 'root',
             x: -7,
             y: 15.5,
             rotation: -45
           },
           {
-            name: "odinjollywild_01",
-            parent: "root"
+            name: 'odinjollywild_01',
+            parent: 'root'
           },
           {
-            name: "odinwildsword_01_1",
-            parent: "root",
+            name: 'odinwildsword_01_1',
+            parent: 'root',
             x: -5.5,
             y: 10,
             rotation: 45
           },
           {
-            name: "odinwildsword_01_2",
-            parent: "root",
+            name: 'odinwildsword_01_2',
+            parent: 'root',
             x: -5.5,
             y: 10,
             rotation: 45
           },
           {
-            name: "fire",
-            parent: "root",
+            name: 'fire',
+            parent: 'root',
             y: 51
           },
           {
-            name: "odinwildicon_01",
-            parent: "root"
+            name: 'odinwildicon_01',
+            parent: 'root'
           },
           {
-            name: "odinjolly_lighting_01_1",
-            parent: "lighting"
+            name: 'odinjolly_lighting_01_1',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_02_1",
-            parent: "lighting"
+            name: 'odinjolly_lighting_02_1',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_03_1",
-            parent: "lighting"
+            name: 'odinjolly_lighting_03_1',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_01_2",
-            parent: "lighting"
+            name: 'odinjolly_lighting_01_2',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_02_2",
-            parent: "lighting"
+            name: 'odinjolly_lighting_02_2',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_03_2",
-            parent: "lighting"
+            name: 'odinjolly_lighting_03_2',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_01_3",
-            parent: "lighting"
+            name: 'odinjolly_lighting_01_3',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_02_3",
-            parent: "lighting"
+            name: 'odinjolly_lighting_02_3',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_03_3",
-            parent: "lighting"
+            name: 'odinjolly_lighting_03_3',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_01_4",
-            parent: "lighting"
+            name: 'odinjolly_lighting_01_4',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_02_4",
-            parent: "lighting"
+            name: 'odinjolly_lighting_02_4',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_03_4",
-            parent: "lighting"
+            name: 'odinjolly_lighting_03_4',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_01_5",
-            parent: "lighting"
+            name: 'odinjolly_lighting_01_5',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_02_5",
-            parent: "lighting"
+            name: 'odinjolly_lighting_02_5',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_lighting_03_5",
-            parent: "lighting"
+            name: 'odinjolly_lighting_03_5',
+            parent: 'lighting'
           },
           {
-            name: "odinjolly_fire3_01",
-            parent: "fire"
+            name: 'odinjolly_fire3_01',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_02",
-            parent: "fire"
+            name: 'odinwildfire00_02',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_03",
-            parent: "fire"
+            name: 'odinwildfire00_03',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_04",
-            parent: "fire"
+            name: 'odinwildfire00_04',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_05",
-            parent: "fire"
+            name: 'odinwildfire00_05',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_06",
-            parent: "fire"
+            name: 'odinwildfire00_06',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_07",
-            parent: "fire"
+            name: 'odinwildfire00_07',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_08",
-            parent: "fire"
+            name: 'odinwildfire00_08',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_09",
-            parent: "fire"
+            name: 'odinwildfire00_09',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_10",
-            parent: "fire"
+            name: 'odinwildfire00_10',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_11",
-            parent: "fire"
+            name: 'odinwildfire00_11',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_12",
-            parent: "fire"
+            name: 'odinwildfire00_12',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_13",
-            parent: "fire"
+            name: 'odinwildfire00_13',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_14",
-            parent: "fire"
+            name: 'odinwildfire00_14',
+            parent: 'fire'
           },
           {
-            name: "odinwildfire00_15",
-            parent: "fire"
+            name: 'odinwildfire00_15',
+            parent: 'fire'
           }
         ],
         slots: [
           {
-            name: "odinwildicon_01",
-            bone: "odinwildicon_01",
-            attachment: "odinwildicon_01"
+            name: 'odinwildicon_01',
+            bone: 'odinwildicon_01',
+            attachment: 'odinwildicon_01'
           },
           {
-            name: "odinwildfire00_15",
-            bone: "odinwildfire00_15",
-            blend: "additive"
+            name: 'odinwildfire00_15',
+            bone: 'odinwildfire00_15',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_14",
-            bone: "odinwildfire00_14",
-            blend: "additive"
+            name: 'odinwildfire00_14',
+            bone: 'odinwildfire00_14',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_13",
-            bone: "odinwildfire00_13",
-            blend: "additive"
+            name: 'odinwildfire00_13',
+            bone: 'odinwildfire00_13',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_12",
-            bone: "odinwildfire00_12",
-            blend: "additive"
+            name: 'odinwildfire00_12',
+            bone: 'odinwildfire00_12',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_11",
-            bone: "odinwildfire00_11",
-            blend: "additive"
+            name: 'odinwildfire00_11',
+            bone: 'odinwildfire00_11',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_10",
-            bone: "odinwildfire00_10",
-            blend: "additive"
+            name: 'odinwildfire00_10',
+            bone: 'odinwildfire00_10',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_09",
-            bone: "odinwildfire00_09",
-            blend: "additive"
+            name: 'odinwildfire00_09',
+            bone: 'odinwildfire00_09',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_08",
-            bone: "odinwildfire00_08",
-            blend: "additive"
+            name: 'odinwildfire00_08',
+            bone: 'odinwildfire00_08',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_07",
-            bone: "odinwildfire00_07",
-            blend: "additive"
+            name: 'odinwildfire00_07',
+            bone: 'odinwildfire00_07',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_06",
-            bone: "odinwildfire00_06",
-            blend: "additive"
+            name: 'odinwildfire00_06',
+            bone: 'odinwildfire00_06',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_05",
-            bone: "odinwildfire00_05",
-            blend: "additive"
+            name: 'odinwildfire00_05',
+            bone: 'odinwildfire00_05',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_04",
-            bone: "odinwildfire00_04",
-            blend: "additive"
+            name: 'odinwildfire00_04',
+            bone: 'odinwildfire00_04',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_03",
-            bone: "odinwildfire00_03",
-            blend: "additive"
+            name: 'odinwildfire00_03',
+            bone: 'odinwildfire00_03',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_02",
-            bone: "odinwildfire00_02",
-            blend: "additive"
+            name: 'odinwildfire00_02',
+            bone: 'odinwildfire00_02',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_fire3_01",
-            bone: "odinjolly_fire3_01",
-            attachment: "odinjolly_fire3_01",
-            blend: "additive"
+            name: 'odinjolly_fire3_01',
+            bone: 'odinjolly_fire3_01',
+            attachment: 'odinjolly_fire3_01',
+            blend: 'additive'
           },
           {
-            name: "odinwildsword_01_2",
-            bone: "odinwildsword_01_2",
-            attachment: "odinwildsword_01_2"
+            name: 'odinwildsword_01_2',
+            bone: 'odinwildsword_01_2',
+            attachment: 'odinwildsword_01_2'
           },
           {
-            name: "odinwildsword_01_1",
-            bone: "odinwildsword_01_1",
-            attachment: "odinwildsword_01_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinwildsword_01_1',
+            bone: 'odinwildsword_01_1',
+            attachment: 'odinwildsword_01_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "odinjollywild_01",
-            bone: "odinjollywild_01",
-            attachment: "odinjollywild_01"
+            name: 'odinjollywild_01',
+            bone: 'odinjollywild_01',
+            attachment: 'odinjollywild_01'
           },
           {
-            name: "odinjolly_lighting_03_5",
-            bone: "odinjolly_lighting_03_5",
-            blend: "additive"
+            name: 'odinjolly_lighting_03_5',
+            bone: 'odinjolly_lighting_03_5',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_02_5",
-            bone: "odinjolly_lighting_02_5",
-            blend: "additive"
+            name: 'odinjolly_lighting_02_5',
+            bone: 'odinjolly_lighting_02_5',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_01_5",
-            bone: "odinjolly_lighting_01_5",
-            blend: "additive"
+            name: 'odinjolly_lighting_01_5',
+            bone: 'odinjolly_lighting_01_5',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_03_4",
-            bone: "odinjolly_lighting_03_4",
-            blend: "additive"
+            name: 'odinjolly_lighting_03_4',
+            bone: 'odinjolly_lighting_03_4',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_02_4",
-            bone: "odinjolly_lighting_02_4",
-            blend: "additive"
+            name: 'odinjolly_lighting_02_4',
+            bone: 'odinjolly_lighting_02_4',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_01_4",
-            bone: "odinjolly_lighting_01_4",
-            blend: "additive"
+            name: 'odinjolly_lighting_01_4',
+            bone: 'odinjolly_lighting_01_4',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_03_3",
-            bone: "odinjolly_lighting_03_3",
-            blend: "additive"
+            name: 'odinjolly_lighting_03_3',
+            bone: 'odinjolly_lighting_03_3',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_02_3",
-            bone: "odinjolly_lighting_02_3",
-            blend: "additive"
+            name: 'odinjolly_lighting_02_3',
+            bone: 'odinjolly_lighting_02_3',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_01_3",
-            bone: "odinjolly_lighting_01_3",
-            blend: "additive"
+            name: 'odinjolly_lighting_01_3',
+            bone: 'odinjolly_lighting_01_3',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_03_2",
-            bone: "odinjolly_lighting_03_2",
-            blend: "additive"
+            name: 'odinjolly_lighting_03_2',
+            bone: 'odinjolly_lighting_03_2',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_02_2",
-            bone: "odinjolly_lighting_02_2",
-            blend: "additive"
+            name: 'odinjolly_lighting_02_2',
+            bone: 'odinjolly_lighting_02_2',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_01_2",
-            bone: "odinjolly_lighting_01_2",
-            blend: "additive"
+            name: 'odinjolly_lighting_01_2',
+            bone: 'odinjolly_lighting_01_2',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_03_1",
-            bone: "odinjolly_lighting_03_1",
-            blend: "additive"
+            name: 'odinjolly_lighting_03_1',
+            bone: 'odinjolly_lighting_03_1',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_02_1",
-            bone: "odinjolly_lighting_02_1",
-            blend: "additive"
+            name: 'odinjolly_lighting_02_1',
+            bone: 'odinjolly_lighting_02_1',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_lighting_01_1",
-            bone: "odinjolly_lighting_01_1",
-            attachment: "odinjolly_lighting_01_1",
-            blend: "additive"
+            name: 'odinjolly_lighting_01_1',
+            bone: 'odinjolly_lighting_01_1',
+            attachment: 'odinjolly_lighting_01_1',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_wildshine_11a_2",
-            bone: "odinjolly_wildshine_11a_2",
-            attachment: "odinjolly_wildshine_11a_2",
-            blend: "additive",
-            color: "4DFF9800"
+            name: 'odinjolly_wildshine_11a_2',
+            bone: 'odinjolly_wildshine_11a_2',
+            attachment: 'odinjolly_wildshine_11a_2',
+            blend: 'additive',
+            color: '4DFF9800'
           },
           {
-            name: "odinwildwildshine_01",
-            bone: "odinwildwildshine_01",
-            attachment: "odinwildwildshine_01",
-            color: "FFFFFF00"
+            name: 'odinwildwildshine_01',
+            bone: 'odinwildwildshine_01',
+            attachment: 'odinwildwildshine_01',
+            color: 'FFFFFF00'
           },
           {
-            name: "odinjolly_wildshine_11a_1",
-            bone: "odinjolly_wildshine_11a_1",
-            attachment: "odinjolly_wildshine_11a_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinjolly_wildshine_11a_1',
+            bone: 'odinjolly_wildshine_11a_1',
+            attachment: 'odinjolly_wildshine_11a_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           }
         ],
         skins: {
-          "default": {
+          default: {
             odinjolly_wildshine_11a_1: {
               odinjolly_wildshine_11a_1: {
                 width: 140,
                 height: 100,
-                name: "odinjolly_wildshine_11a"
+                name: 'odinjolly_wildshine_11a'
               }
             },
             odinwildwildshine_01: {
@@ -4177,112 +4453,112 @@ var resource = {
               odinjolly_wildshine_11a_2: {
                 width: 140,
                 height: 100,
-                name: "odinjolly_wildshine_11a"
+                name: 'odinjolly_wildshine_11a'
               }
             },
             odinjolly_lighting_01_1: {
               odinjolly_lighting_01_1: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_01"
+                name: 'odinjolly_lighting_01'
               }
             },
             odinjolly_lighting_02_1: {
               odinjolly_lighting_02_1: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_02"
+                name: 'odinjolly_lighting_02'
               }
             },
             odinjolly_lighting_03_1: {
               odinjolly_lighting_03_1: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_03"
+                name: 'odinjolly_lighting_03'
               }
             },
             odinjolly_lighting_01_2: {
               odinjolly_lighting_01_2: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_01"
+                name: 'odinjolly_lighting_01'
               }
             },
             odinjolly_lighting_02_2: {
               odinjolly_lighting_02_2: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_02"
+                name: 'odinjolly_lighting_02'
               }
             },
             odinjolly_lighting_03_2: {
               odinjolly_lighting_03_2: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_03"
+                name: 'odinjolly_lighting_03'
               }
             },
             odinjolly_lighting_01_3: {
               odinjolly_lighting_01_3: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_01"
+                name: 'odinjolly_lighting_01'
               }
             },
             odinjolly_lighting_02_3: {
               odinjolly_lighting_02_3: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_02"
+                name: 'odinjolly_lighting_02'
               }
             },
             odinjolly_lighting_03_3: {
               odinjolly_lighting_03_3: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_03"
+                name: 'odinjolly_lighting_03'
               }
             },
             odinjolly_lighting_01_4: {
               odinjolly_lighting_01_4: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_01"
+                name: 'odinjolly_lighting_01'
               }
             },
             odinjolly_lighting_02_4: {
               odinjolly_lighting_02_4: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_02"
+                name: 'odinjolly_lighting_02'
               }
             },
             odinjolly_lighting_03_4: {
               odinjolly_lighting_03_4: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_03"
+                name: 'odinjolly_lighting_03'
               }
             },
             odinjolly_lighting_01_5: {
               odinjolly_lighting_01_5: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_01"
+                name: 'odinjolly_lighting_01'
               }
             },
             odinjolly_lighting_02_5: {
               odinjolly_lighting_02_5: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_02"
+                name: 'odinjolly_lighting_02'
               }
             },
             odinjolly_lighting_03_5: {
               odinjolly_lighting_03_5: {
                 width: 140,
                 height: 52,
-                name: "odinjolly_lighting_03"
+                name: 'odinjolly_lighting_03'
               }
             },
             odinjollywild_01: {
@@ -4295,14 +4571,14 @@ var resource = {
               odinwildsword_01_1: {
                 width: 110,
                 height: 288,
-                name: "odinwildsword_01"
+                name: 'odinwildsword_01'
               }
             },
             odinwildsword_01_2: {
               odinwildsword_01_2: {
                 width: 110,
                 height: 288,
-                name: "odinwildsword_01"
+                name: 'odinwildsword_01'
               }
             },
             odinjolly_fire3_01: {
@@ -4847,23 +5123,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF7F"
+                    color: 'FFFFFF7F'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.833,
-                    color: "FFFFFF7F"
+                    color: 'FFFFFF7F'
                   },
                   {
                     time: 1.233,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -4871,23 +5147,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.833,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.233,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -4895,23 +5171,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "4DFF9800"
+                    color: '4DFF9800'
                   },
                   {
                     time: 0.25,
-                    color: "4DFF98FF"
+                    color: '4DFF98FF'
                   },
                   {
                     time: 0.55,
-                    color: "4DFF9800"
+                    color: '4DFF9800'
                   },
                   {
                     time: 0.833,
-                    color: "4DFF98FF"
+                    color: '4DFF98FF'
                   },
                   {
                     time: 1.233,
-                    color: "4DFF9800"
+                    color: '4DFF9800'
                   }
                 ]
               },
@@ -4919,7 +5195,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "odinjolly_lighting_01_1"
+                    name: 'odinjolly_lighting_01_1'
                   },
                   {
                     time: 0.083,
@@ -4935,7 +5211,7 @@ var resource = {
                   },
                   {
                     time: 0.083,
-                    name: "odinjolly_lighting_02_1"
+                    name: 'odinjolly_lighting_02_1'
                   },
                   {
                     time: 0.167,
@@ -4951,7 +5227,7 @@ var resource = {
                   },
                   {
                     time: 0.167,
-                    name: "odinjolly_lighting_03_1"
+                    name: 'odinjolly_lighting_03_1'
                   },
                   {
                     time: 0.25,
@@ -4967,7 +5243,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "odinjolly_lighting_01_2"
+                    name: 'odinjolly_lighting_01_2'
                   },
                   {
                     time: 0.333,
@@ -4983,7 +5259,7 @@ var resource = {
                   },
                   {
                     time: 0.333,
-                    name: "odinjolly_lighting_02_2"
+                    name: 'odinjolly_lighting_02_2'
                   },
                   {
                     time: 0.417,
@@ -4999,7 +5275,7 @@ var resource = {
                   },
                   {
                     time: 0.417,
-                    name: "odinjolly_lighting_03_2"
+                    name: 'odinjolly_lighting_03_2'
                   },
                   {
                     time: 0.5,
@@ -5015,7 +5291,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "odinjolly_lighting_01_3"
+                    name: 'odinjolly_lighting_01_3'
                   },
                   {
                     time: 0.583,
@@ -5031,7 +5307,7 @@ var resource = {
                   },
                   {
                     time: 0.583,
-                    name: "odinjolly_lighting_02_3"
+                    name: 'odinjolly_lighting_02_3'
                   },
                   {
                     time: 0.667,
@@ -5047,7 +5323,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "odinjolly_lighting_03_3"
+                    name: 'odinjolly_lighting_03_3'
                   },
                   {
                     time: 0.75,
@@ -5063,7 +5339,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "odinjolly_lighting_01_4"
+                    name: 'odinjolly_lighting_01_4'
                   },
                   {
                     time: 0.833,
@@ -5079,7 +5355,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "odinjolly_lighting_02_4"
+                    name: 'odinjolly_lighting_02_4'
                   },
                   {
                     time: 0.917,
@@ -5095,7 +5371,7 @@ var resource = {
                   },
                   {
                     time: 0.917,
-                    name: "odinjolly_lighting_03_4"
+                    name: 'odinjolly_lighting_03_4'
                   },
                   {
                     time: 1,
@@ -5111,7 +5387,7 @@ var resource = {
                   },
                   {
                     time: 1,
-                    name: "odinjolly_lighting_01_5"
+                    name: 'odinjolly_lighting_01_5'
                   },
                   {
                     time: 1.083,
@@ -5127,7 +5403,7 @@ var resource = {
                   },
                   {
                     time: 1.083,
-                    name: "odinjolly_lighting_02_5"
+                    name: 'odinjolly_lighting_02_5'
                   }
                 ]
               },
@@ -5135,11 +5411,11 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.233,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
@@ -5149,7 +5425,7 @@ var resource = {
                   },
                   {
                     time: 1.167,
-                    name: "odinjolly_lighting_03_5"
+                    name: 'odinjolly_lighting_03_5'
                   }
                 ]
               },
@@ -5157,23 +5433,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.817,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.233,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -5181,7 +5457,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "odinjolly_fire3_01"
+                    name: 'odinjolly_fire3_01'
                   },
                   {
                     time: 0.083,
@@ -5197,7 +5473,7 @@ var resource = {
                   },
                   {
                     time: 0.083,
-                    name: "odinwildfire00_02"
+                    name: 'odinwildfire00_02'
                   },
                   {
                     time: 0.167,
@@ -5213,7 +5489,7 @@ var resource = {
                   },
                   {
                     time: 0.167,
-                    name: "odinwildfire00_03"
+                    name: 'odinwildfire00_03'
                   },
                   {
                     time: 0.25,
@@ -5229,7 +5505,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "odinwildfire00_04"
+                    name: 'odinwildfire00_04'
                   },
                   {
                     time: 0.333,
@@ -5245,7 +5521,7 @@ var resource = {
                   },
                   {
                     time: 0.333,
-                    name: "odinwildfire00_05"
+                    name: 'odinwildfire00_05'
                   },
                   {
                     time: 0.417,
@@ -5261,7 +5537,7 @@ var resource = {
                   },
                   {
                     time: 0.417,
-                    name: "odinwildfire00_06"
+                    name: 'odinwildfire00_06'
                   },
                   {
                     time: 0.5,
@@ -5277,7 +5553,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "odinwildfire00_07"
+                    name: 'odinwildfire00_07'
                   },
                   {
                     time: 0.583,
@@ -5293,7 +5569,7 @@ var resource = {
                   },
                   {
                     time: 0.583,
-                    name: "odinwildfire00_08"
+                    name: 'odinwildfire00_08'
                   },
                   {
                     time: 0.667,
@@ -5309,7 +5585,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "odinwildfire00_09"
+                    name: 'odinwildfire00_09'
                   },
                   {
                     time: 0.75,
@@ -5325,7 +5601,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "odinwildfire00_10"
+                    name: 'odinwildfire00_10'
                   },
                   {
                     time: 0.833,
@@ -5341,7 +5617,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "odinwildfire00_11"
+                    name: 'odinwildfire00_11'
                   },
                   {
                     time: 0.917,
@@ -5357,7 +5633,7 @@ var resource = {
                   },
                   {
                     time: 0.917,
-                    name: "odinwildfire00_12"
+                    name: 'odinwildfire00_12'
                   },
                   {
                     time: 1,
@@ -5373,7 +5649,7 @@ var resource = {
                   },
                   {
                     time: 1,
-                    name: "odinwildfire00_13"
+                    name: 'odinwildfire00_13'
                   },
                   {
                     time: 1.083,
@@ -5389,7 +5665,7 @@ var resource = {
                   },
                   {
                     time: 1.083,
-                    name: "odinwildfire00_14"
+                    name: 'odinwildfire00_14'
                   }
                 ]
               },
@@ -5401,7 +5677,7 @@ var resource = {
                   },
                   {
                     time: 1.167,
-                    name: "odinwildfire00_15"
+                    name: 'odinwildfire00_15'
                   }
                 ]
               }
@@ -5409,216 +5685,216 @@ var resource = {
           }
         }
       },
-      "data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.json": {
+      'res/main/spine/wild/odin_wild_open.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "odinwildparticle_01",
-            parent: "root",
+            name: 'odinwildparticle_01',
+            parent: 'root',
             y: 0.125
           },
           {
-            name: "odinwildsword_01_1",
-            parent: "root",
+            name: 'odinwildsword_01_1',
+            parent: 'root',
             x: -5.5,
             y: 10.125,
             rotation: 45
           },
           {
-            name: "odinjolly_falre",
-            parent: "root",
+            name: 'odinjolly_falre',
+            parent: 'root',
             x: -7,
             y: 1.125,
             rotation: 14.847
           },
           {
-            name: "odinwildshine_01",
-            parent: "root",
+            name: 'odinwildshine_01',
+            parent: 'root',
             y: 0.125
           },
           {
-            name: "odinjollywild_01",
-            parent: "root",
+            name: 'odinjollywild_01',
+            parent: 'root',
             y: 0.125
           },
           {
-            name: "odinwildsword_01_2",
-            parent: "root",
+            name: 'odinwildsword_01_2',
+            parent: 'root',
             x: -5.5,
             y: 10.125,
             rotation: 45
           },
           {
-            name: "fire_2",
-            parent: "root",
+            name: 'fire_2',
+            parent: 'root',
             y: 51.125
           },
           {
-            name: "odinwildicon_01",
-            parent: "root",
+            name: 'odinwildicon_01',
+            parent: 'root',
             y: 0.125
           },
           {
-            name: "odinjolly_fire3_01",
-            parent: "fire_2"
+            name: 'odinjolly_fire3_01',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_02",
-            parent: "fire_2"
+            name: 'odinwildfire00_02',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_03",
-            parent: "fire_2"
+            name: 'odinwildfire00_03',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_04",
-            parent: "fire_2"
+            name: 'odinwildfire00_04',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_05",
-            parent: "fire_2"
+            name: 'odinwildfire00_05',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_06",
-            parent: "fire_2"
+            name: 'odinwildfire00_06',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_07",
-            parent: "fire_2"
+            name: 'odinwildfire00_07',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_08",
-            parent: "fire_2"
+            name: 'odinwildfire00_08',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_09",
-            parent: "fire_2"
+            name: 'odinwildfire00_09',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_10",
-            parent: "fire_2"
+            name: 'odinwildfire00_10',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_11",
-            parent: "fire_2"
+            name: 'odinwildfire00_11',
+            parent: 'fire_2'
           },
           {
-            name: "odinwildfire00_12",
-            parent: "fire_2"
+            name: 'odinwildfire00_12',
+            parent: 'fire_2'
           }
         ],
         slots: [
           {
-            name: "odinwildicon_01",
-            bone: "odinwildicon_01",
-            attachment: "odinwildicon_01"
+            name: 'odinwildicon_01',
+            bone: 'odinwildicon_01',
+            attachment: 'odinwildicon_01'
           },
           {
-            name: "odinwildfire00_12",
-            bone: "odinwildfire00_12",
-            blend: "additive"
+            name: 'odinwildfire00_12',
+            bone: 'odinwildfire00_12',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_11",
-            bone: "odinwildfire00_11",
-            blend: "additive"
+            name: 'odinwildfire00_11',
+            bone: 'odinwildfire00_11',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_10",
-            bone: "odinwildfire00_10",
-            blend: "additive"
+            name: 'odinwildfire00_10',
+            bone: 'odinwildfire00_10',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_09",
-            bone: "odinwildfire00_09",
-            blend: "additive"
+            name: 'odinwildfire00_09',
+            bone: 'odinwildfire00_09',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_08",
-            bone: "odinwildfire00_08",
-            blend: "additive"
+            name: 'odinwildfire00_08',
+            bone: 'odinwildfire00_08',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_07",
-            bone: "odinwildfire00_07",
-            blend: "additive"
+            name: 'odinwildfire00_07',
+            bone: 'odinwildfire00_07',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_06",
-            bone: "odinwildfire00_06",
-            blend: "additive"
+            name: 'odinwildfire00_06',
+            bone: 'odinwildfire00_06',
+            blend: 'additive'
           },
           {
-            name: "odinwildfire00_05",
-            bone: "odinwildfire00_05",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinwildfire00_05',
+            bone: 'odinwildfire00_05',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "odinwildfire00_04",
-            bone: "odinwildfire00_04",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinwildfire00_04',
+            bone: 'odinwildfire00_04',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "odinwildfire00_03",
-            bone: "odinwildfire00_03",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinwildfire00_03',
+            bone: 'odinwildfire00_03',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "odinwildfire00_02",
-            bone: "odinwildfire00_02",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinwildfire00_02',
+            bone: 'odinwildfire00_02',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "odinjolly_fire3_01",
-            bone: "odinjolly_fire3_01",
-            attachment: "odinjolly_fire3_01",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinjolly_fire3_01',
+            bone: 'odinjolly_fire3_01',
+            attachment: 'odinjolly_fire3_01',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "odinwildsword_01_2",
-            bone: "odinwildsword_01_2",
-            attachment: "odinwildsword_01_2"
+            name: 'odinwildsword_01_2',
+            bone: 'odinwildsword_01_2',
+            attachment: 'odinwildsword_01_2'
           },
           {
-            name: "odinjollywild_01",
-            bone: "odinjollywild_01",
-            attachment: "odinjollywild_01"
+            name: 'odinjollywild_01',
+            bone: 'odinjollywild_01',
+            attachment: 'odinjollywild_01'
           },
           {
-            name: "odinwildshine_01",
-            bone: "odinwildshine_01",
-            attachment: "odinwildshine_01",
-            blend: "additive"
+            name: 'odinwildshine_01',
+            bone: 'odinwildshine_01',
+            attachment: 'odinwildshine_01',
+            blend: 'additive'
           },
           {
-            name: "odinjolly_falre",
-            bone: "odinjolly_falre",
-            attachment: "odinjolly_falre",
-            blend: "additive",
-            color: "FFFFFFCC"
+            name: 'odinjolly_falre',
+            bone: 'odinjolly_falre',
+            attachment: 'odinjolly_falre',
+            blend: 'additive',
+            color: 'FFFFFFCC'
           },
           {
-            name: "odinwildsword_01_1",
-            bone: "odinwildsword_01_1",
-            attachment: "odinwildsword_01_1"
+            name: 'odinwildsword_01_1',
+            bone: 'odinwildsword_01_1',
+            attachment: 'odinwildsword_01_1'
           },
           {
-            name: "odinwildparticle_01",
-            bone: "odinwildparticle_01",
-            attachment: "odinwildparticle_01",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'odinwildparticle_01',
+            bone: 'odinwildparticle_01',
+            attachment: 'odinwildparticle_01',
+            blend: 'additive',
+            color: 'FFFFFF00'
           }
         ],
         skins: {
-          "default": {
+          default: {
             odinwildparticle_01: {
               odinwildparticle_01: {
                 width: 200,
@@ -5629,7 +5905,7 @@ var resource = {
               odinwildsword_01_1: {
                 width: 110,
                 height: 288,
-                name: "odinwildsword_01"
+                name: 'odinwildsword_01'
               }
             },
             odinjolly_falre: {
@@ -5654,7 +5930,7 @@ var resource = {
               odinwildsword_01_2: {
                 width: 110,
                 height: 288,
-                name: "odinwildsword_01"
+                name: 'odinwildsword_01'
               }
             },
             odinjolly_fire3_01: {
@@ -5985,19 +6261,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.183,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -6005,15 +6281,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.2,
-                    color: "FFFFFF66"
+                    color: 'FFFFFF66'
                   },
                   {
                     time: 0.983,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -6021,15 +6297,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.983,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -6037,15 +6313,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -6053,7 +6329,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "odinjolly_fire3_01"
+                    name: 'odinjolly_fire3_01'
                   },
                   {
                     time: 0.083,
@@ -6065,15 +6341,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.4,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
@@ -6083,7 +6359,7 @@ var resource = {
                   },
                   {
                     time: 0.083,
-                    name: "odinwildfire00_02"
+                    name: 'odinwildfire00_02'
                   },
                   {
                     time: 0.167,
@@ -6095,15 +6371,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.4,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
@@ -6113,7 +6389,7 @@ var resource = {
                   },
                   {
                     time: 0.167,
-                    name: "odinwildfire00_03"
+                    name: 'odinwildfire00_03'
                   },
                   {
                     time: 0.25,
@@ -6125,15 +6401,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.4,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
@@ -6143,7 +6419,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "odinwildfire00_04"
+                    name: 'odinwildfire00_04'
                   },
                   {
                     time: 0.333,
@@ -6155,15 +6431,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.4,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
@@ -6173,7 +6449,7 @@ var resource = {
                   },
                   {
                     time: 0.333,
-                    name: "odinwildfire00_05"
+                    name: 'odinwildfire00_05'
                   },
                   {
                     time: 0.417,
@@ -6189,7 +6465,7 @@ var resource = {
                   },
                   {
                     time: 0.417,
-                    name: "odinwildfire00_06"
+                    name: 'odinwildfire00_06'
                   },
                   {
                     time: 0.5,
@@ -6205,7 +6481,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "odinwildfire00_07"
+                    name: 'odinwildfire00_07'
                   },
                   {
                     time: 0.583,
@@ -6221,7 +6497,7 @@ var resource = {
                   },
                   {
                     time: 0.583,
-                    name: "odinwildfire00_08"
+                    name: 'odinwildfire00_08'
                   },
                   {
                     time: 0.667,
@@ -6237,7 +6513,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "odinwildfire00_09"
+                    name: 'odinwildfire00_09'
                   },
                   {
                     time: 0.75,
@@ -6253,7 +6529,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "odinwildfire00_10"
+                    name: 'odinwildfire00_10'
                   },
                   {
                     time: 0.833,
@@ -6269,7 +6545,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "odinwildfire00_11"
+                    name: 'odinwildfire00_11'
                   }
                 ]
               },
@@ -6281,7 +6557,7 @@ var resource = {
                   },
                   {
                     time: 0.917,
-                    name: "odinwildfire00_12"
+                    name: 'odinwildfire00_12'
                   }
                 ]
               }
@@ -6384,32 +6660,32 @@ var resource = {
               {
                 x: 742,
                 y: 819,
-                type: "center"
+                type: 'center'
               },
               {
                 x: 20,
                 y: 560,
-                type: "right"
+                type: 'right'
               },
               {
                 x: 20,
                 y: 211,
-                type: "right"
+                type: 'right'
               },
               {
                 x: 742,
                 y: 95,
-                type: "right"
+                type: 'right'
               },
               {
                 x: 1465,
                 y: 211,
-                type: "left"
+                type: 'left'
               },
               {
                 x: 1465,
                 y: 560,
-                type: "left"
+                type: 'left'
               }
             ]
           }
@@ -6427,8 +6703,8 @@ var resource = {
             minimumScaleMultiplier: 0.5
           },
           color: {
-            start: "ffffff",
-            end: "ffffff"
+            start: 'ffffff',
+            end: 'ffffff'
           },
           speed: {
             start: 200,
@@ -6446,7 +6722,7 @@ var resource = {
             min: 4,
             max: 4
           },
-          blendMode: "normal",
+          blendMode: 'normal',
           frequency: 0.016,
           emitterLifetime: 0,
           maxParticles: 100,
@@ -6455,7 +6731,7 @@ var resource = {
             y: 0
           },
           addAtBack: false,
-          spawnType: "point"
+          spawnType: 'point'
         },
         cartoonSmoke: {
           alpha: {
@@ -6467,8 +6743,8 @@ var resource = {
             end: 1.2
           },
           color: {
-            start: "eb8b58",
-            end: "575757"
+            start: 'eb8b58',
+            end: '575757'
           },
           speed: {
             start: 700,
@@ -6486,7 +6762,7 @@ var resource = {
             min: 0.4,
             max: 0.7
           },
-          blendMode: "normal",
+          blendMode: 'normal',
           frequency: 0.001,
           emitterLifetime: 0.2,
           maxParticles: 100,
@@ -6495,23 +6771,23 @@ var resource = {
             y: 0
           },
           addAtBack: true,
-          spawnType: "point"
+          spawnType: 'point'
         }
       }
     },
     objects: [
       {
-        objName: "btnSystem",
-        name: "系統",
-        type: "button",
+        objName: 'btnSystem',
+        name: '系統',
+        type: 'button',
         isInScene: true,
         resource: {
-          group: "sub.button",
-          name: "system",
-          enter: "enter",
-          press: "press",
-          leave: "leave",
-          disable: "disable"
+          group: 'sub.button',
+          name: 'system',
+          enter: 'enter',
+          press: 'press',
+          leave: 'leave',
+          disable: 'disable'
         },
         pos: {
           x: 140,
@@ -6519,22 +6795,22 @@ var resource = {
         },
         width: 255,
         height: 255,
-        init: "clickSys"
+        init: 'clickSys'
       },
       {
-        objName: "boy",
-        name: "動畫 boy",
-        type: "bone",
+        objName: 'boy',
+        name: '動畫 boy',
+        type: 'bone',
         isInScene: true,
         resource: {
-          name: "ubbie"
+          name: 'ubbie'
         },
         pos: {
           x: 500,
           y: 600
         },
         animation: {
-          name: "turn face",
+          name: 'turn face',
           timeScale: 1
         },
         width: 128,
@@ -6542,16 +6818,16 @@ var resource = {
         init: null
       },
       {
-        objName: "aaaa",
-        name: "粒子",
-        type: "particle",
+        objName: 'aaaa',
+        name: '粒子',
+        type: 'particle',
         isInScene: true,
         config: {
-          name: "cartoonSmoke"
+          name: 'cartoonSmoke'
         },
         resource: {
-          group: "sub.particle",
-          name: "test"
+          group: 'sub.particle',
+          name: 'test'
         },
         pos: {
           x: 200,
@@ -6562,35 +6838,35 @@ var resource = {
         init: null
       },
       {
-        objName: "contboTomStar",
-        name: "動畫-contbo TOM STAR",
-        type: "spine",
+        objName: 'contboTomStar',
+        name: '動畫-contbo TOM STAR',
+        type: 'spine',
         isInScene: true,
         resource: {
-          spineData: "demo.contbo.tom.star",
+          spineData: 'demo.contbo.tom.star',
           texture: null
         },
         configList: [
           {
-            name: "a0",
+            name: 'a0',
             dataName: 0,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           },
           {
-            name: "a1",
+            name: 'a1',
             dataName: 1,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           },
           {
-            name: "a2",
+            name: 'a2',
             dataName: 2,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           }
         ],
         pos: {
@@ -6600,49 +6876,49 @@ var resource = {
         init: null
       },
       {
-        objName: "contboTomLoop",
-        name: "動畫-contbo TOM LOOP",
-        type: "spine",
+        objName: 'contboTomLoop',
+        name: '動畫-contbo TOM LOOP',
+        type: 'spine',
         isInScene: true,
         resource: {
-          spineData: "demo.contbo.tom.loop",
+          spineData: 'demo.contbo.tom.loop',
           texture: null
         },
         configList: [
           {
-            name: "a0",
+            name: 'a0',
             dataName: 0,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           },
           {
-            name: "a1",
+            name: 'a1',
             dataName: 1,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           },
           {
-            name: "a2",
+            name: 'a2',
             dataName: 2,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           },
           {
-            name: "a3",
+            name: 'a3',
             dataName: 3,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           },
           {
-            name: "a4",
+            name: 'a4',
             dataName: 4,
             timeScale: 1,
             loop: false,
-            animationName: "demo"
+            animationName: 'demo'
           }
         ],
         pos: {
@@ -6656,23 +6932,23 @@ var resource = {
       sub: {
         button: {
           system: {
-            enter: "data/sub/image/f9bf6dc80452b523.png",
-            press: "data/sub/image/2a32823e3294aee0.png",
-            leave: "data/sub/image/b90ac7569d8bb74a.png",
-            disable: "data/sub/image/b90ac7569d8bb74a.png"
+            enter: 'res/sub/image/SYSTEM_256.png',
+            press: 'res/sub/image/SYSTEM_256_on.png',
+            leave: 'res/sub/image/SYSTEM_256_70.png',
+            disable: 'res/sub/image/SYSTEM_256_70.png'
           }
         },
         bones: {
           demon: {
-            texture: "data/sub/bones/demon/b3588371b744754c.png"
+            texture: 'res/sub/bones/demon/texture.png'
           },
           ubbie: {
-            texture: "data/sub/bones/ubbie/da002f162a0ec4ce.png"
+            texture: 'res/sub/bones/ubbie/texture.png'
           }
         },
         particle: {
-          cartoonSmoke: "data/sub/image/3781f9532e20268e.png",
-          test: "data/sub/image/f9bf6dc80452b523.png"
+          cartoonSmoke: 'res/sub/image/CartoonSmoke.png',
+          test: 'res/sub/image/SYSTEM_256.png'
         }
       }
     },
@@ -6682,16 +6958,16 @@ var resource = {
           contbo: {
             tom: {
               star: [
-                "data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.json",
-                "data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.json",
-                "data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.json"
+                'res/sub/spine/contbo/khero_tom_star_03.json',
+                'res/sub/spine/contbo/khero_tom_star_04.json',
+                'res/sub/spine/contbo/khero_tom_star_05.json'
               ],
               loop: [
-                "data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.json",
-                "data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.json",
-                "data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.json",
-                "data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.json",
-                "data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.json"
+                'res/sub/spine/contbo/khero_tom_loop_01.json',
+                'res/sub/spine/contbo/khero_tom_loop_02.json',
+                'res/sub/spine/contbo/khero_tom_loop_03.json',
+                'res/sub/spine/contbo/khero_tom_loop_04.json',
+                'res/sub/spine/contbo/khero_tom_loop_05.json'
               ]
             }
           }
@@ -6699,1070 +6975,1070 @@ var resource = {
       }
     },
     spines: {
-      "data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.json": {
+      'res/sub/spine/contbo/khero_tom_star_03.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_fire_b_1",
-            parent: "root",
+            name: 'khero_contbo_fire_b_1',
+            parent: 'root',
             x: -14,
             y: 14
           },
           {
-            name: "khero_contbo_fire_b_2",
-            parent: "root",
+            name: 'khero_contbo_fire_b_2',
+            parent: 'root',
             x: 8,
             y: 14
           },
           {
-            name: "khero_contbo_pf_03_1",
-            parent: "root",
+            name: 'khero_contbo_pf_03_1',
+            parent: 'root',
             x: -6,
             y: 9
           },
           {
-            name: "khero_contbo_pf_03_2",
-            parent: "root",
+            name: 'khero_contbo_pf_03_2',
+            parent: 'root',
             x: -6,
             y: 9
           },
           {
-            name: "khero_contbo_fire_ms_1",
-            parent: "root",
+            name: 'khero_contbo_fire_ms_1',
+            parent: 'root',
             x: -9,
             y: 4
           },
           {
-            name: "khero_contbo_fire_ms_2",
-            parent: "root",
+            name: 'khero_contbo_fire_ms_2',
+            parent: 'root',
             x: -9,
             y: 4
           },
           {
-            name: "khero_contbo_people_ani_0_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_1',
+            parent: 'root',
             x: -11,
             y: 11
           },
           {
-            name: "khero_contbo_pf_02_1",
-            parent: "root",
+            name: 'khero_contbo_pf_02_1',
+            parent: 'root',
             x: -1,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_2",
-            parent: "root",
+            name: 'khero_contbo_pf_02_2',
+            parent: 'root',
             x: -1,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_3",
-            parent: "root",
+            name: 'khero_contbo_pf_02_3',
+            parent: 'root',
             x: -1.312,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_4",
-            parent: "root",
+            name: 'khero_contbo_pf_02_4',
+            parent: 'root',
             x: -1.312,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_5",
-            parent: "root",
+            name: 'khero_contbo_pf_02_5',
+            parent: 'root',
             x: 58.103,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_6",
-            parent: "root",
+            name: 'khero_contbo_pf_02_6',
+            parent: 'root',
             x: 58.103,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_7",
-            parent: "root",
+            name: 'khero_contbo_pf_02_7',
+            parent: 'root',
             x: 125.056,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_8",
-            parent: "root",
+            name: 'khero_contbo_pf_02_8',
+            parent: 'root',
             x: 125.056,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_9",
-            parent: "root",
+            name: 'khero_contbo_pf_02_9',
+            parent: 'root',
             x: 238.35,
             y: 10
           },
           {
-            name: "khero_contbo_pf_02_10",
-            parent: "root",
+            name: 'khero_contbo_pf_02_10',
+            parent: 'root',
             x: 238.35,
             y: 10
           },
           {
-            name: "khero_contbo_pf_02_11",
-            parent: "root",
+            name: 'khero_contbo_pf_02_11',
+            parent: 'root',
             x: 127.913,
             y: 10
           },
           {
-            name: "khero_contbo_pf_02_12",
-            parent: "root",
+            name: 'khero_contbo_pf_02_12',
+            parent: 'root',
             x: 127.913,
             y: 10
           },
           {
-            name: "khero_contbo_fire_fg_01_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_1',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_fire_fg_01_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_2',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_fire_fg_01_3",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_3',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_pf_06_n_mask",
-            parent: "root",
+            name: 'khero_contbo_pf_06_n_mask',
+            parent: 'root',
             x: -3,
             y: -8
           },
           {
-            name: "khero_contbo_people_ani_0_2",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_2',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_people_ani_0_3",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_3',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_people_ani_0_4",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_4',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_pf_05_1",
-            parent: "root",
+            name: 'khero_contbo_pf_05_1',
+            parent: 'root',
             x: -6,
             y: 16
           },
           {
-            name: "khero_contbo_pf_05_2",
-            parent: "root",
+            name: 'khero_contbo_pf_05_2',
+            parent: 'root',
             x: -6,
             y: 16
           },
           {
-            name: "khero_contbo_cc",
-            parent: "root",
+            name: 'khero_contbo_cc',
+            parent: 'root',
             x: 47,
             y: 16,
             rotation: 90
           },
           {
-            name: "khero_contbo_people_ani_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_1',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_people_ani_2_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_1',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_2",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_2',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_3",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_3',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_4",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_4',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_pf_08",
-            parent: "root",
+            name: 'khero_contbo_pf_08',
+            parent: 'root',
             x: 75,
             y: 8
           },
           {
-            name: "khero_contbo_fire_fg_02_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_02_1',
+            parent: 'root',
             x: 44,
             y: 10,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_02_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_02_2',
+            parent: 'root',
             x: 44,
             y: 10,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_11_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_11_1',
+            parent: 'root',
             x: 44,
             y: 10,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_11_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_11_2',
+            parent: 'root',
             x: 44,
             y: 10,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_13_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_13_1',
+            parent: 'root',
             x: 44,
             y: 10,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_13_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_13_2',
+            parent: 'root',
             x: 44,
             y: 10,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_bk0_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk0_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk1_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk1_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk2_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk2_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk3_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk3_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk4_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk4_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk5_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk5_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk6_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk6_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk7_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk7_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk8_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk8_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk9_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk9_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk10_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk10_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk11_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk11_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk12_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk12_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk13_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk13_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk14_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk14_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk15_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk15_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk16_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk16_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk17_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk17_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk18_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk18_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk19_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk19_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk20_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk20_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk0_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk0_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk1_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk1_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk2_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk2_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk3_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk3_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk4_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk4_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk5_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk5_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk6_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk6_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk7_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk7_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk8_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk8_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk9_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk9_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk10_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk10_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk11_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk11_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk12_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk12_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk13_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk13_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk14_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk14_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk15_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk15_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk16_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk16_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk17_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk17_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk18_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk18_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk19_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk19_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk20_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk20_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_b_3",
-            parent: "root",
+            name: 'khero_contbo_fire_b_3',
+            parent: 'root',
             x: 302,
             y: 9
           },
           {
-            name: "khero_contbo_fire_b_4",
-            parent: "root",
+            name: 'khero_contbo_fire_b_4',
+            parent: 'root',
             x: 324,
             y: 9
           },
           {
-            name: "khero_contbo_pf_05_3",
-            parent: "root",
+            name: 'khero_contbo_pf_05_3',
+            parent: 'root',
             x: 310,
             y: 11
           },
           {
-            name: "khero_contbo_pf_05_4",
-            parent: "root",
+            name: 'khero_contbo_pf_05_4',
+            parent: 'root',
             x: 310,
             y: 11
           },
           {
-            name: "khero_contbo_pf_03_3",
-            parent: "root",
+            name: 'khero_contbo_pf_03_3',
+            parent: 'root',
             x: 310,
             y: 4
           },
           {
-            name: "khero_contbo_pf_03_4",
-            parent: "root",
+            name: 'khero_contbo_pf_03_4',
+            parent: 'root',
             x: 310,
             y: 4
           },
           {
-            name: "khero_contbo_pf_04",
-            parent: "root",
+            name: 'khero_contbo_pf_04',
+            parent: 'root',
             y: 2
           }
         ],
         slots: [
           {
-            name: "khero_contbo_pf_04",
-            bone: "khero_contbo_pf_04",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_04',
+            bone: 'khero_contbo_pf_04',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_03_4",
-            bone: "khero_contbo_pf_03_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_4',
+            bone: 'khero_contbo_pf_03_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_03_3",
-            bone: "khero_contbo_pf_03_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_3',
+            bone: 'khero_contbo_pf_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_4",
-            bone: "khero_contbo_pf_05_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_4',
+            bone: 'khero_contbo_pf_05_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_3",
-            bone: "khero_contbo_pf_05_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_3',
+            bone: 'khero_contbo_pf_05_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_b_4",
-            bone: "khero_contbo_fire_b_4",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_4',
+            bone: 'khero_contbo_fire_b_4',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_b_3",
-            bone: "khero_contbo_fire_b_3",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_3',
+            bone: 'khero_contbo_fire_b_3',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk20_2",
-            bone: "khero_contbo_fire_bk20_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk20_2',
+            bone: 'khero_contbo_fire_bk20_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk19_2",
-            bone: "khero_contbo_fire_bk19_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk19_2',
+            bone: 'khero_contbo_fire_bk19_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk18_2",
-            bone: "khero_contbo_fire_bk18_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk18_2',
+            bone: 'khero_contbo_fire_bk18_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk17_2",
-            bone: "khero_contbo_fire_bk17_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk17_2',
+            bone: 'khero_contbo_fire_bk17_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk16_2",
-            bone: "khero_contbo_fire_bk16_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk16_2',
+            bone: 'khero_contbo_fire_bk16_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk15_2",
-            bone: "khero_contbo_fire_bk15_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk15_2',
+            bone: 'khero_contbo_fire_bk15_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk14_2",
-            bone: "khero_contbo_fire_bk14_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk14_2',
+            bone: 'khero_contbo_fire_bk14_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk13_2",
-            bone: "khero_contbo_fire_bk13_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk13_2',
+            bone: 'khero_contbo_fire_bk13_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk12_2",
-            bone: "khero_contbo_fire_bk12_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk12_2',
+            bone: 'khero_contbo_fire_bk12_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk11_2",
-            bone: "khero_contbo_fire_bk11_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk11_2',
+            bone: 'khero_contbo_fire_bk11_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk10_2",
-            bone: "khero_contbo_fire_bk10_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk10_2',
+            bone: 'khero_contbo_fire_bk10_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk9_2",
-            bone: "khero_contbo_fire_bk9_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk9_2',
+            bone: 'khero_contbo_fire_bk9_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk8_2",
-            bone: "khero_contbo_fire_bk8_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk8_2',
+            bone: 'khero_contbo_fire_bk8_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk7_2",
-            bone: "khero_contbo_fire_bk7_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk7_2',
+            bone: 'khero_contbo_fire_bk7_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk6_2",
-            bone: "khero_contbo_fire_bk6_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk6_2',
+            bone: 'khero_contbo_fire_bk6_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk5_2",
-            bone: "khero_contbo_fire_bk5_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk5_2',
+            bone: 'khero_contbo_fire_bk5_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk4_2",
-            bone: "khero_contbo_fire_bk4_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk4_2',
+            bone: 'khero_contbo_fire_bk4_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk3_2",
-            bone: "khero_contbo_fire_bk3_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk3_2',
+            bone: 'khero_contbo_fire_bk3_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk2_2",
-            bone: "khero_contbo_fire_bk2_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk2_2',
+            bone: 'khero_contbo_fire_bk2_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk1_2",
-            bone: "khero_contbo_fire_bk1_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk1_2',
+            bone: 'khero_contbo_fire_bk1_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk0_2",
-            bone: "khero_contbo_fire_bk0_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk0_2',
+            bone: 'khero_contbo_fire_bk0_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk20_1",
-            bone: "khero_contbo_fire_bk20_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk20_1',
+            bone: 'khero_contbo_fire_bk20_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk19_1",
-            bone: "khero_contbo_fire_bk19_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk19_1',
+            bone: 'khero_contbo_fire_bk19_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk18_1",
-            bone: "khero_contbo_fire_bk18_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk18_1',
+            bone: 'khero_contbo_fire_bk18_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk17_1",
-            bone: "khero_contbo_fire_bk17_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk17_1',
+            bone: 'khero_contbo_fire_bk17_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk16_1",
-            bone: "khero_contbo_fire_bk16_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk16_1',
+            bone: 'khero_contbo_fire_bk16_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk15_1",
-            bone: "khero_contbo_fire_bk15_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk15_1',
+            bone: 'khero_contbo_fire_bk15_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk14_1",
-            bone: "khero_contbo_fire_bk14_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk14_1',
+            bone: 'khero_contbo_fire_bk14_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk13_1",
-            bone: "khero_contbo_fire_bk13_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk13_1',
+            bone: 'khero_contbo_fire_bk13_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk12_1",
-            bone: "khero_contbo_fire_bk12_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk12_1',
+            bone: 'khero_contbo_fire_bk12_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk11_1",
-            bone: "khero_contbo_fire_bk11_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk11_1',
+            bone: 'khero_contbo_fire_bk11_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk10_1",
-            bone: "khero_contbo_fire_bk10_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk10_1',
+            bone: 'khero_contbo_fire_bk10_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk9_1",
-            bone: "khero_contbo_fire_bk9_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk9_1',
+            bone: 'khero_contbo_fire_bk9_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk8_1",
-            bone: "khero_contbo_fire_bk8_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk8_1',
+            bone: 'khero_contbo_fire_bk8_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk7_1",
-            bone: "khero_contbo_fire_bk7_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk7_1',
+            bone: 'khero_contbo_fire_bk7_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk6_1",
-            bone: "khero_contbo_fire_bk6_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk6_1',
+            bone: 'khero_contbo_fire_bk6_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk5_1",
-            bone: "khero_contbo_fire_bk5_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk5_1',
+            bone: 'khero_contbo_fire_bk5_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk4_1",
-            bone: "khero_contbo_fire_bk4_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk4_1',
+            bone: 'khero_contbo_fire_bk4_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk3_1",
-            bone: "khero_contbo_fire_bk3_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk3_1',
+            bone: 'khero_contbo_fire_bk3_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk2_1",
-            bone: "khero_contbo_fire_bk2_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk2_1',
+            bone: 'khero_contbo_fire_bk2_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk1_1",
-            bone: "khero_contbo_fire_bk1_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk1_1',
+            bone: 'khero_contbo_fire_bk1_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk0_1",
-            bone: "khero_contbo_fire_bk0_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk0_1',
+            bone: 'khero_contbo_fire_bk0_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_13_2",
-            bone: "khero_contbo_fire_fg_13_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_13_2',
+            bone: 'khero_contbo_fire_fg_13_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_13_1",
-            bone: "khero_contbo_fire_fg_13_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_13_1',
+            bone: 'khero_contbo_fire_fg_13_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_11_2",
-            bone: "khero_contbo_fire_fg_11_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_11_2',
+            bone: 'khero_contbo_fire_fg_11_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_11_1",
-            bone: "khero_contbo_fire_fg_11_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_11_1',
+            bone: 'khero_contbo_fire_fg_11_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_02_2",
-            bone: "khero_contbo_fire_fg_02_2"
+            name: 'khero_contbo_fire_fg_02_2',
+            bone: 'khero_contbo_fire_fg_02_2'
           },
           {
-            name: "khero_contbo_fire_fg_02_1",
-            bone: "khero_contbo_fire_fg_02_1",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_02_1',
+            bone: 'khero_contbo_fire_fg_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_08",
-            bone: "khero_contbo_pf_08"
+            name: 'khero_contbo_pf_08',
+            bone: 'khero_contbo_pf_08'
           },
           {
-            name: "khero_contbo_people_ani_2_4",
-            bone: "khero_contbo_people_ani_2_4"
+            name: 'khero_contbo_people_ani_2_4',
+            bone: 'khero_contbo_people_ani_2_4'
           },
           {
-            name: "khero_contbo_people_ani_2_3",
-            bone: "khero_contbo_people_ani_2_3"
+            name: 'khero_contbo_people_ani_2_3',
+            bone: 'khero_contbo_people_ani_2_3'
           },
           {
-            name: "khero_contbo_people_ani_2_2",
-            bone: "khero_contbo_people_ani_2_2"
+            name: 'khero_contbo_people_ani_2_2',
+            bone: 'khero_contbo_people_ani_2_2'
           },
           {
-            name: "khero_contbo_people_ani_2_1",
-            bone: "khero_contbo_people_ani_2_1",
-            blend: "additive",
-            color: "FFFFFF3F"
+            name: 'khero_contbo_people_ani_2_1',
+            bone: 'khero_contbo_people_ani_2_1',
+            blend: 'additive',
+            color: 'FFFFFF3F'
           },
           {
-            name: "khero_contbo_people_ani_1",
-            bone: "khero_contbo_people_ani_1"
+            name: 'khero_contbo_people_ani_1',
+            bone: 'khero_contbo_people_ani_1'
           },
           {
-            name: "khero_contbo_cc",
-            bone: "khero_contbo_cc",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_cc',
+            bone: 'khero_contbo_cc',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_05_2",
-            bone: "khero_contbo_pf_05_2",
-            attachment: "khero_contbo_pf_05_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_2',
+            bone: 'khero_contbo_pf_05_2',
+            attachment: 'khero_contbo_pf_05_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_1",
-            bone: "khero_contbo_pf_05_1",
-            attachment: "khero_contbo_pf_05_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_1',
+            bone: 'khero_contbo_pf_05_1',
+            attachment: 'khero_contbo_pf_05_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_people_ani_0_4",
-            bone: "khero_contbo_people_ani_0_4",
-            attachment: "khero_contbo_people_ani_0_4",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_4',
+            bone: 'khero_contbo_people_ani_0_4',
+            attachment: 'khero_contbo_people_ani_0_4',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_3",
-            bone: "khero_contbo_people_ani_0_3",
-            attachment: "khero_contbo_people_ani_0_3",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_3',
+            bone: 'khero_contbo_people_ani_0_3',
+            attachment: 'khero_contbo_people_ani_0_3',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_2",
-            bone: "khero_contbo_people_ani_0_2",
-            attachment: "khero_contbo_people_ani_0_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_2',
+            bone: 'khero_contbo_people_ani_0_2',
+            attachment: 'khero_contbo_people_ani_0_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_06_n_mask",
-            bone: "khero_contbo_pf_06_n_mask",
-            attachment: "khero_contbo_pf_06_n_mask",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_06_n_mask',
+            bone: 'khero_contbo_pf_06_n_mask',
+            attachment: 'khero_contbo_pf_06_n_mask',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_01_3",
-            bone: "khero_contbo_fire_fg_01_3"
+            name: 'khero_contbo_fire_fg_01_3',
+            bone: 'khero_contbo_fire_fg_01_3'
           },
           {
-            name: "khero_contbo_fire_fg_01_2",
-            bone: "khero_contbo_fire_fg_01_2",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_01_2',
+            bone: 'khero_contbo_fire_fg_01_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_fg_01_1",
-            bone: "khero_contbo_fire_fg_01_1",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_01_1',
+            bone: 'khero_contbo_fire_fg_01_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_02_12",
-            bone: "khero_contbo_pf_02_12",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_12',
+            bone: 'khero_contbo_pf_02_12',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_11",
-            bone: "khero_contbo_pf_02_11",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_11',
+            bone: 'khero_contbo_pf_02_11',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_10",
-            bone: "khero_contbo_pf_02_10",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_10',
+            bone: 'khero_contbo_pf_02_10',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_9",
-            bone: "khero_contbo_pf_02_9",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_9',
+            bone: 'khero_contbo_pf_02_9',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_8",
-            bone: "khero_contbo_pf_02_8",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_8',
+            bone: 'khero_contbo_pf_02_8',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_7",
-            bone: "khero_contbo_pf_02_7",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_7',
+            bone: 'khero_contbo_pf_02_7',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_6",
-            bone: "khero_contbo_pf_02_6",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_6',
+            bone: 'khero_contbo_pf_02_6',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_5",
-            bone: "khero_contbo_pf_02_5",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_5',
+            bone: 'khero_contbo_pf_02_5',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_4",
-            bone: "khero_contbo_pf_02_4",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_4',
+            bone: 'khero_contbo_pf_02_4',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_3",
-            bone: "khero_contbo_pf_02_3",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_3',
+            bone: 'khero_contbo_pf_02_3',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_2",
-            bone: "khero_contbo_pf_02_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_2',
+            bone: 'khero_contbo_pf_02_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_1",
-            bone: "khero_contbo_pf_02_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_1',
+            bone: 'khero_contbo_pf_02_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_1",
-            bone: "khero_contbo_people_ani_0_1",
-            attachment: "khero_contbo_people_ani_0_1",
-            color: "FFFFFF02"
+            name: 'khero_contbo_people_ani_0_1',
+            bone: 'khero_contbo_people_ani_0_1',
+            attachment: 'khero_contbo_people_ani_0_1',
+            color: 'FFFFFF02'
           },
           {
-            name: "khero_contbo_fire_ms_2",
-            bone: "khero_contbo_fire_ms_2",
-            attachment: "khero_contbo_fire_ms_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_ms_2',
+            bone: 'khero_contbo_fire_ms_2',
+            attachment: 'khero_contbo_fire_ms_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_ms_1",
-            bone: "khero_contbo_fire_ms_1",
-            attachment: "khero_contbo_fire_ms_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_ms_1',
+            bone: 'khero_contbo_fire_ms_1',
+            attachment: 'khero_contbo_fire_ms_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_03_2",
-            bone: "khero_contbo_pf_03_2",
-            attachment: "khero_contbo_pf_03_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_2',
+            bone: 'khero_contbo_pf_03_2',
+            attachment: 'khero_contbo_pf_03_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_03_1",
-            bone: "khero_contbo_pf_03_1",
-            attachment: "khero_contbo_pf_03_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_1',
+            bone: 'khero_contbo_pf_03_1',
+            attachment: 'khero_contbo_pf_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_b_2",
-            bone: "khero_contbo_fire_b_2",
-            attachment: "khero_contbo_fire_b_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_2',
+            bone: 'khero_contbo_fire_b_2',
+            attachment: 'khero_contbo_fire_b_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_b_1",
-            bone: "khero_contbo_fire_b_1",
-            attachment: "khero_contbo_fire_b_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_1',
+            bone: 'khero_contbo_fire_b_1',
+            attachment: 'khero_contbo_fire_b_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_fire_b_1: {
               khero_contbo_fire_b_1: {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_fire_b_2: {
@@ -7770,21 +8046,21 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_pf_03_1: {
               khero_contbo_pf_03_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_03_2: {
               khero_contbo_pf_03_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_fire_ms_1: {
@@ -7792,7 +8068,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_ms"
+                name: 'khero_contbo_fire_ms'
               }
             },
             khero_contbo_fire_ms_2: {
@@ -7800,7 +8076,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_ms"
+                name: 'khero_contbo_fire_ms'
               }
             },
             khero_contbo_people_ani_0_1: {
@@ -7808,112 +8084,112 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_pf_02_1: {
               khero_contbo_pf_02_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_2: {
               khero_contbo_pf_02_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_3: {
               khero_contbo_pf_02_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_4: {
               khero_contbo_pf_02_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_5: {
               khero_contbo_pf_02_5: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_6: {
               khero_contbo_pf_02_6: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_7: {
               khero_contbo_pf_02_7: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_8: {
               khero_contbo_pf_02_8: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_9: {
               khero_contbo_pf_02_9: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_10: {
               khero_contbo_pf_02_10: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_11: {
               khero_contbo_pf_02_11: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_12: {
               khero_contbo_pf_02_12: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_fire_fg_01_1: {
               khero_contbo_fire_fg_01_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_fire_fg_01_2: {
               khero_contbo_fire_fg_01_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_fire_fg_01_3: {
               khero_contbo_fire_fg_01_3: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_pf_06_n_mask: {
@@ -7927,7 +8203,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_people_ani_0_3: {
@@ -7935,7 +8211,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_people_ani_0_4: {
@@ -7943,21 +8219,21 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_pf_05_1: {
               khero_contbo_pf_05_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_05_2: {
               khero_contbo_pf_05_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_cc: {
@@ -7976,28 +8252,28 @@ var resource = {
               khero_contbo_people_ani_2_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_2: {
               khero_contbo_people_ani_2_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_3: {
               khero_contbo_people_ani_2_3: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_4: {
               khero_contbo_people_ani_2_4: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_pf_08: {
@@ -8010,336 +8286,336 @@ var resource = {
               khero_contbo_fire_fg_02_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_02"
+                name: 'khero_contbo_fire_fg_02'
               }
             },
             khero_contbo_fire_fg_02_2: {
               khero_contbo_fire_fg_02_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_02"
+                name: 'khero_contbo_fire_fg_02'
               }
             },
             khero_contbo_fire_fg_11_1: {
               khero_contbo_fire_fg_11_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_11"
+                name: 'khero_contbo_fire_fg_11'
               }
             },
             khero_contbo_fire_fg_11_2: {
               khero_contbo_fire_fg_11_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_11"
+                name: 'khero_contbo_fire_fg_11'
               }
             },
             khero_contbo_fire_fg_13_1: {
               khero_contbo_fire_fg_13_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_13"
+                name: 'khero_contbo_fire_fg_13'
               }
             },
             khero_contbo_fire_fg_13_2: {
               khero_contbo_fire_fg_13_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_13"
+                name: 'khero_contbo_fire_fg_13'
               }
             },
             khero_contbo_fire_bk0_1: {
               khero_contbo_fire_bk0_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk0"
+                name: 'khero_contbo_fire_bk0'
               }
             },
             khero_contbo_fire_bk1_1: {
               khero_contbo_fire_bk1_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk1"
+                name: 'khero_contbo_fire_bk1'
               }
             },
             khero_contbo_fire_bk2_1: {
               khero_contbo_fire_bk2_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk2"
+                name: 'khero_contbo_fire_bk2'
               }
             },
             khero_contbo_fire_bk3_1: {
               khero_contbo_fire_bk3_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk3"
+                name: 'khero_contbo_fire_bk3'
               }
             },
             khero_contbo_fire_bk4_1: {
               khero_contbo_fire_bk4_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk4"
+                name: 'khero_contbo_fire_bk4'
               }
             },
             khero_contbo_fire_bk5_1: {
               khero_contbo_fire_bk5_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk5"
+                name: 'khero_contbo_fire_bk5'
               }
             },
             khero_contbo_fire_bk6_1: {
               khero_contbo_fire_bk6_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk6"
+                name: 'khero_contbo_fire_bk6'
               }
             },
             khero_contbo_fire_bk7_1: {
               khero_contbo_fire_bk7_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk7"
+                name: 'khero_contbo_fire_bk7'
               }
             },
             khero_contbo_fire_bk8_1: {
               khero_contbo_fire_bk8_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk8"
+                name: 'khero_contbo_fire_bk8'
               }
             },
             khero_contbo_fire_bk9_1: {
               khero_contbo_fire_bk9_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk9"
+                name: 'khero_contbo_fire_bk9'
               }
             },
             khero_contbo_fire_bk10_1: {
               khero_contbo_fire_bk10_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk10"
+                name: 'khero_contbo_fire_bk10'
               }
             },
             khero_contbo_fire_bk11_1: {
               khero_contbo_fire_bk11_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk11"
+                name: 'khero_contbo_fire_bk11'
               }
             },
             khero_contbo_fire_bk12_1: {
               khero_contbo_fire_bk12_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk12"
+                name: 'khero_contbo_fire_bk12'
               }
             },
             khero_contbo_fire_bk13_1: {
               khero_contbo_fire_bk13_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk13"
+                name: 'khero_contbo_fire_bk13'
               }
             },
             khero_contbo_fire_bk14_1: {
               khero_contbo_fire_bk14_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk14"
+                name: 'khero_contbo_fire_bk14'
               }
             },
             khero_contbo_fire_bk15_1: {
               khero_contbo_fire_bk15_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk15"
+                name: 'khero_contbo_fire_bk15'
               }
             },
             khero_contbo_fire_bk16_1: {
               khero_contbo_fire_bk16_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk16"
+                name: 'khero_contbo_fire_bk16'
               }
             },
             khero_contbo_fire_bk17_1: {
               khero_contbo_fire_bk17_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk17"
+                name: 'khero_contbo_fire_bk17'
               }
             },
             khero_contbo_fire_bk18_1: {
               khero_contbo_fire_bk18_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk18"
+                name: 'khero_contbo_fire_bk18'
               }
             },
             khero_contbo_fire_bk19_1: {
               khero_contbo_fire_bk19_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk19"
+                name: 'khero_contbo_fire_bk19'
               }
             },
             khero_contbo_fire_bk20_1: {
               khero_contbo_fire_bk20_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk20"
+                name: 'khero_contbo_fire_bk20'
               }
             },
             khero_contbo_fire_bk0_2: {
               khero_contbo_fire_bk0_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk0"
+                name: 'khero_contbo_fire_bk0'
               }
             },
             khero_contbo_fire_bk1_2: {
               khero_contbo_fire_bk1_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk1"
+                name: 'khero_contbo_fire_bk1'
               }
             },
             khero_contbo_fire_bk2_2: {
               khero_contbo_fire_bk2_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk2"
+                name: 'khero_contbo_fire_bk2'
               }
             },
             khero_contbo_fire_bk3_2: {
               khero_contbo_fire_bk3_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk3"
+                name: 'khero_contbo_fire_bk3'
               }
             },
             khero_contbo_fire_bk4_2: {
               khero_contbo_fire_bk4_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk4"
+                name: 'khero_contbo_fire_bk4'
               }
             },
             khero_contbo_fire_bk5_2: {
               khero_contbo_fire_bk5_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk5"
+                name: 'khero_contbo_fire_bk5'
               }
             },
             khero_contbo_fire_bk6_2: {
               khero_contbo_fire_bk6_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk6"
+                name: 'khero_contbo_fire_bk6'
               }
             },
             khero_contbo_fire_bk7_2: {
               khero_contbo_fire_bk7_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk7"
+                name: 'khero_contbo_fire_bk7'
               }
             },
             khero_contbo_fire_bk8_2: {
               khero_contbo_fire_bk8_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk8"
+                name: 'khero_contbo_fire_bk8'
               }
             },
             khero_contbo_fire_bk9_2: {
               khero_contbo_fire_bk9_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk9"
+                name: 'khero_contbo_fire_bk9'
               }
             },
             khero_contbo_fire_bk10_2: {
               khero_contbo_fire_bk10_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk10"
+                name: 'khero_contbo_fire_bk10'
               }
             },
             khero_contbo_fire_bk11_2: {
               khero_contbo_fire_bk11_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk11"
+                name: 'khero_contbo_fire_bk11'
               }
             },
             khero_contbo_fire_bk12_2: {
               khero_contbo_fire_bk12_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk12"
+                name: 'khero_contbo_fire_bk12'
               }
             },
             khero_contbo_fire_bk13_2: {
               khero_contbo_fire_bk13_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk13"
+                name: 'khero_contbo_fire_bk13'
               }
             },
             khero_contbo_fire_bk14_2: {
               khero_contbo_fire_bk14_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk14"
+                name: 'khero_contbo_fire_bk14'
               }
             },
             khero_contbo_fire_bk15_2: {
               khero_contbo_fire_bk15_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk15"
+                name: 'khero_contbo_fire_bk15'
               }
             },
             khero_contbo_fire_bk16_2: {
               khero_contbo_fire_bk16_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk16"
+                name: 'khero_contbo_fire_bk16'
               }
             },
             khero_contbo_fire_bk17_2: {
               khero_contbo_fire_bk17_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk17"
+                name: 'khero_contbo_fire_bk17'
               }
             },
             khero_contbo_fire_bk18_2: {
               khero_contbo_fire_bk18_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk18"
+                name: 'khero_contbo_fire_bk18'
               }
             },
             khero_contbo_fire_bk19_2: {
               khero_contbo_fire_bk19_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk19"
+                name: 'khero_contbo_fire_bk19'
               }
             },
             khero_contbo_fire_bk20_2: {
               khero_contbo_fire_bk20_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk20"
+                name: 'khero_contbo_fire_bk20'
               }
             },
             khero_contbo_fire_b_3: {
@@ -8347,7 +8623,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_fire_b_4: {
@@ -8355,35 +8631,35 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_pf_05_3: {
               khero_contbo_pf_05_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_05_4: {
               khero_contbo_pf_05_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_03_3: {
               khero_contbo_pf_03_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_03_4: {
               khero_contbo_pf_03_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_04: {
@@ -11881,21 +12157,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.167,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_b_1"
+                    name: 'khero_contbo_fire_b_1'
                   },
                   {
                     time: 0.417,
@@ -11907,21 +12183,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.167,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_b_2"
+                    name: 'khero_contbo_fire_b_2'
                   },
                   {
                     time: 0.417,
@@ -11933,21 +12209,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_03_1"
+                    name: 'khero_contbo_pf_03_1'
                   },
                   {
                     time: 0.683,
@@ -11959,21 +12235,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_03_2"
+                    name: 'khero_contbo_pf_03_2'
                   },
                   {
                     time: 0.683,
@@ -11985,17 +12261,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_ms_1"
+                    name: 'khero_contbo_fire_ms_1'
                   },
                   {
                     time: 0.467,
@@ -12007,17 +12283,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_ms_2"
+                    name: 'khero_contbo_fire_ms_2'
                   },
                   {
                     time: 0.467,
@@ -12029,21 +12305,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF02"
+                    color: 'FFFFFF02'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_1"
+                    name: 'khero_contbo_people_ani_0_1'
                   },
                   {
                     time: 0.467,
@@ -12055,19 +12331,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.467,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.7,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.917,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12077,7 +12353,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_pf_02_1"
+                    name: 'khero_contbo_pf_02_1'
                   },
                   {
                     time: 0.95,
@@ -12089,19 +12365,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.467,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.7,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.917,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12111,7 +12387,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_pf_02_2"
+                    name: 'khero_contbo_pf_02_2'
                   },
                   {
                     time: 0.95,
@@ -12123,19 +12399,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12145,7 +12421,7 @@ var resource = {
                   },
                   {
                     time: 0.617,
-                    name: "khero_contbo_pf_02_3"
+                    name: 'khero_contbo_pf_02_3'
                   },
                   {
                     time: 1.1,
@@ -12157,19 +12433,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12179,7 +12455,7 @@ var resource = {
                   },
                   {
                     time: 0.617,
-                    name: "khero_contbo_pf_02_4"
+                    name: 'khero_contbo_pf_02_4'
                   },
                   {
                     time: 1.1,
@@ -12191,19 +12467,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.783,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12213,7 +12489,7 @@ var resource = {
                   },
                   {
                     time: 0.55,
-                    name: "khero_contbo_pf_02_5"
+                    name: 'khero_contbo_pf_02_5'
                   },
                   {
                     time: 1.033,
@@ -12225,19 +12501,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.783,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12247,7 +12523,7 @@ var resource = {
                   },
                   {
                     time: 0.55,
-                    name: "khero_contbo_pf_02_6"
+                    name: 'khero_contbo_pf_02_6'
                   },
                   {
                     time: 1.033,
@@ -12259,19 +12535,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.783,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12281,7 +12557,7 @@ var resource = {
                   },
                   {
                     time: 0.55,
-                    name: "khero_contbo_pf_02_7"
+                    name: 'khero_contbo_pf_02_7'
                   },
                   {
                     time: 1.033,
@@ -12293,19 +12569,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.783,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12315,7 +12591,7 @@ var resource = {
                   },
                   {
                     time: 0.55,
-                    name: "khero_contbo_pf_02_8"
+                    name: 'khero_contbo_pf_02_8'
                   },
                   {
                     time: 1.033,
@@ -12327,19 +12603,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12349,7 +12625,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_9"
+                    name: 'khero_contbo_pf_02_9'
                   },
                   {
                     time: 1.167,
@@ -12361,19 +12637,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12383,7 +12659,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_10"
+                    name: 'khero_contbo_pf_02_10'
                   },
                   {
                     time: 1.167,
@@ -12395,19 +12671,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12417,7 +12693,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_11"
+                    name: 'khero_contbo_pf_02_11'
                   },
                   {
                     time: 1.167,
@@ -12429,19 +12705,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12451,7 +12727,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_12"
+                    name: 'khero_contbo_pf_02_12'
                   },
                   {
                     time: 1.167,
@@ -12467,7 +12743,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_1"
+                    name: 'khero_contbo_fire_fg_01_1'
                   },
                   {
                     time: 0.533,
@@ -12483,7 +12759,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_2"
+                    name: 'khero_contbo_fire_fg_01_2'
                   },
                   {
                     time: 0.533,
@@ -12499,7 +12775,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_3"
+                    name: 'khero_contbo_fire_fg_01_3'
                   },
                   {
                     time: 0.533,
@@ -12511,25 +12787,25 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_06_n_mask"
+                    name: 'khero_contbo_pf_06_n_mask'
                   },
                   {
                     time: 0.467,
@@ -12541,17 +12817,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_2"
+                    name: 'khero_contbo_people_ani_0_2'
                   },
                   {
                     time: 0.467,
@@ -12563,17 +12839,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_3"
+                    name: 'khero_contbo_people_ani_0_3'
                   },
                   {
                     time: 0.467,
@@ -12585,17 +12861,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_4"
+                    name: 'khero_contbo_people_ani_0_4'
                   },
                   {
                     time: 0.467,
@@ -12607,21 +12883,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_05_1"
+                    name: 'khero_contbo_pf_05_1'
                   },
                   {
                     time: 0.533,
@@ -12633,21 +12909,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_05_2"
+                    name: 'khero_contbo_pf_05_2'
                   },
                   {
                     time: 0.533,
@@ -12659,23 +12935,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.567,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12685,7 +12961,7 @@ var resource = {
                   },
                   {
                     time: 0.4,
-                    name: "khero_contbo_cc"
+                    name: 'khero_contbo_cc'
                   },
                   {
                     time: 1.167,
@@ -12701,7 +12977,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_people_ani_1"
+                    name: 'khero_contbo_people_ani_1'
                   },
                   {
                     time: 0.533,
@@ -12713,15 +12989,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF3F"
+                    color: 'FFFFFF3F'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFF3F"
+                    color: 'FFFFFF3F'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12731,7 +13007,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_1"
+                    name: 'khero_contbo_people_ani_2_1'
                   },
                   {
                     time: 1.167,
@@ -12743,15 +13019,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12761,7 +13037,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_2"
+                    name: 'khero_contbo_people_ani_2_2'
                   },
                   {
                     time: 1.167,
@@ -12773,15 +13049,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12791,7 +13067,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_3"
+                    name: 'khero_contbo_people_ani_2_3'
                   },
                   {
                     time: 1.167,
@@ -12803,15 +13079,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12821,7 +13097,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_4"
+                    name: 'khero_contbo_people_ani_2_4'
                   },
                   {
                     time: 1.167,
@@ -12837,7 +13113,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_pf_08"
+                    name: 'khero_contbo_pf_08'
                   },
                   {
                     time: 1.017,
@@ -12849,15 +13125,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12867,7 +13143,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_02_1"
+                    name: 'khero_contbo_fire_fg_02_1'
                   },
                   {
                     time: 0.75,
@@ -12879,15 +13155,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12897,7 +13173,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_02_2"
+                    name: 'khero_contbo_fire_fg_02_2'
                   },
                   {
                     time: 0.75,
@@ -12909,19 +13185,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12931,7 +13207,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_11_1"
+                    name: 'khero_contbo_fire_fg_11_1'
                   },
                   {
                     time: 0.883,
@@ -12943,19 +13219,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12965,7 +13241,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_11_2"
+                    name: 'khero_contbo_fire_fg_11_2'
                   },
                   {
                     time: 0.883,
@@ -12977,19 +13253,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -12999,7 +13275,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_fg_13_1"
+                    name: 'khero_contbo_fire_fg_13_1'
                   },
                   {
                     time: 1.017,
@@ -13011,19 +13287,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13033,7 +13309,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_fg_13_2"
+                    name: 'khero_contbo_fire_fg_13_2'
                   },
                   {
                     time: 1.017,
@@ -13045,23 +13321,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13071,7 +13347,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_bk0_1"
+                    name: 'khero_contbo_fire_bk0_1'
                   },
                   {
                     time: 0.567,
@@ -13083,23 +13359,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13109,7 +13385,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_fire_bk1_1"
+                    name: 'khero_contbo_fire_bk1_1'
                   },
                   {
                     time: 0.6,
@@ -13121,23 +13397,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13147,7 +13423,7 @@ var resource = {
                   },
                   {
                     time: 0.6,
-                    name: "khero_contbo_fire_bk2_1"
+                    name: 'khero_contbo_fire_bk2_1'
                   },
                   {
                     time: 0.633,
@@ -13159,23 +13435,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13185,7 +13461,7 @@ var resource = {
                   },
                   {
                     time: 0.633,
-                    name: "khero_contbo_fire_bk3_1"
+                    name: 'khero_contbo_fire_bk3_1'
                   },
                   {
                     time: 0.65,
@@ -13197,23 +13473,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13223,7 +13499,7 @@ var resource = {
                   },
                   {
                     time: 0.65,
-                    name: "khero_contbo_fire_bk4_1"
+                    name: 'khero_contbo_fire_bk4_1'
                   },
                   {
                     time: 0.667,
@@ -13235,23 +13511,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13261,7 +13537,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_fire_bk5_1"
+                    name: 'khero_contbo_fire_bk5_1'
                   },
                   {
                     time: 0.683,
@@ -13273,23 +13549,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13299,7 +13575,7 @@ var resource = {
                   },
                   {
                     time: 0.683,
-                    name: "khero_contbo_fire_bk6_1"
+                    name: 'khero_contbo_fire_bk6_1'
                   },
                   {
                     time: 0.7,
@@ -13311,23 +13587,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13337,7 +13613,7 @@ var resource = {
                   },
                   {
                     time: 0.7,
-                    name: "khero_contbo_fire_bk7_1"
+                    name: 'khero_contbo_fire_bk7_1'
                   },
                   {
                     time: 0.717,
@@ -13349,23 +13625,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13375,7 +13651,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_fire_bk8_1"
+                    name: 'khero_contbo_fire_bk8_1'
                   },
                   {
                     time: 0.733,
@@ -13387,23 +13663,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13413,7 +13689,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_bk9_1"
+                    name: 'khero_contbo_fire_bk9_1'
                   },
                   {
                     time: 0.75,
@@ -13425,23 +13701,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13451,7 +13727,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "khero_contbo_fire_bk10_1"
+                    name: 'khero_contbo_fire_bk10_1'
                   },
                   {
                     time: 0.767,
@@ -13463,23 +13739,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13489,7 +13765,7 @@ var resource = {
                   },
                   {
                     time: 0.767,
-                    name: "khero_contbo_fire_bk11_1"
+                    name: 'khero_contbo_fire_bk11_1'
                   },
                   {
                     time: 0.783,
@@ -13501,23 +13777,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13527,7 +13803,7 @@ var resource = {
                   },
                   {
                     time: 0.783,
-                    name: "khero_contbo_fire_bk12_1"
+                    name: 'khero_contbo_fire_bk12_1'
                   },
                   {
                     time: 0.8,
@@ -13539,23 +13815,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13565,7 +13841,7 @@ var resource = {
                   },
                   {
                     time: 0.8,
-                    name: "khero_contbo_fire_bk13_1"
+                    name: 'khero_contbo_fire_bk13_1'
                   },
                   {
                     time: 0.817,
@@ -13577,23 +13853,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13603,7 +13879,7 @@ var resource = {
                   },
                   {
                     time: 0.817,
-                    name: "khero_contbo_fire_bk14_1"
+                    name: 'khero_contbo_fire_bk14_1'
                   },
                   {
                     time: 0.833,
@@ -13615,23 +13891,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13641,7 +13917,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_bk15_1"
+                    name: 'khero_contbo_fire_bk15_1'
                   },
                   {
                     time: 0.85,
@@ -13653,23 +13929,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13679,7 +13955,7 @@ var resource = {
                   },
                   {
                     time: 0.85,
-                    name: "khero_contbo_fire_bk16_1"
+                    name: 'khero_contbo_fire_bk16_1'
                   },
                   {
                     time: 0.867,
@@ -13691,23 +13967,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13717,7 +13993,7 @@ var resource = {
                   },
                   {
                     time: 0.867,
-                    name: "khero_contbo_fire_bk17_1"
+                    name: 'khero_contbo_fire_bk17_1'
                   },
                   {
                     time: 0.9,
@@ -13729,23 +14005,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13755,7 +14031,7 @@ var resource = {
                   },
                   {
                     time: 0.9,
-                    name: "khero_contbo_fire_bk18_1"
+                    name: 'khero_contbo_fire_bk18_1'
                   },
                   {
                     time: 0.933,
@@ -13767,23 +14043,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13793,7 +14069,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_bk19_1"
+                    name: 'khero_contbo_fire_bk19_1'
                   },
                   {
                     time: 0.967,
@@ -13805,23 +14081,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13831,7 +14107,7 @@ var resource = {
                   },
                   {
                     time: 0.967,
-                    name: "khero_contbo_fire_bk20_1"
+                    name: 'khero_contbo_fire_bk20_1'
                   },
                   {
                     time: 1,
@@ -13843,23 +14119,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13869,7 +14145,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_bk0_2"
+                    name: 'khero_contbo_fire_bk0_2'
                   },
                   {
                     time: 0.567,
@@ -13881,23 +14157,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13907,7 +14183,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_fire_bk1_2"
+                    name: 'khero_contbo_fire_bk1_2'
                   },
                   {
                     time: 0.6,
@@ -13919,23 +14195,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13945,7 +14221,7 @@ var resource = {
                   },
                   {
                     time: 0.6,
-                    name: "khero_contbo_fire_bk2_2"
+                    name: 'khero_contbo_fire_bk2_2'
                   },
                   {
                     time: 0.633,
@@ -13957,23 +14233,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -13983,7 +14259,7 @@ var resource = {
                   },
                   {
                     time: 0.633,
-                    name: "khero_contbo_fire_bk3_2"
+                    name: 'khero_contbo_fire_bk3_2'
                   },
                   {
                     time: 0.65,
@@ -13995,23 +14271,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14021,7 +14297,7 @@ var resource = {
                   },
                   {
                     time: 0.65,
-                    name: "khero_contbo_fire_bk4_2"
+                    name: 'khero_contbo_fire_bk4_2'
                   },
                   {
                     time: 0.667,
@@ -14033,23 +14309,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14059,7 +14335,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_fire_bk5_2"
+                    name: 'khero_contbo_fire_bk5_2'
                   },
                   {
                     time: 0.683,
@@ -14071,23 +14347,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14097,7 +14373,7 @@ var resource = {
                   },
                   {
                     time: 0.683,
-                    name: "khero_contbo_fire_bk6_2"
+                    name: 'khero_contbo_fire_bk6_2'
                   },
                   {
                     time: 0.7,
@@ -14109,23 +14385,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14135,7 +14411,7 @@ var resource = {
                   },
                   {
                     time: 0.7,
-                    name: "khero_contbo_fire_bk7_2"
+                    name: 'khero_contbo_fire_bk7_2'
                   },
                   {
                     time: 0.717,
@@ -14147,23 +14423,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14173,7 +14449,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_fire_bk8_2"
+                    name: 'khero_contbo_fire_bk8_2'
                   },
                   {
                     time: 0.733,
@@ -14185,23 +14461,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14211,7 +14487,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_bk9_2"
+                    name: 'khero_contbo_fire_bk9_2'
                   },
                   {
                     time: 0.75,
@@ -14223,23 +14499,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14249,7 +14525,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "khero_contbo_fire_bk10_2"
+                    name: 'khero_contbo_fire_bk10_2'
                   },
                   {
                     time: 0.767,
@@ -14261,23 +14537,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14287,7 +14563,7 @@ var resource = {
                   },
                   {
                     time: 0.767,
-                    name: "khero_contbo_fire_bk11_2"
+                    name: 'khero_contbo_fire_bk11_2'
                   },
                   {
                     time: 0.783,
@@ -14299,23 +14575,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14325,7 +14601,7 @@ var resource = {
                   },
                   {
                     time: 0.783,
-                    name: "khero_contbo_fire_bk12_2"
+                    name: 'khero_contbo_fire_bk12_2'
                   },
                   {
                     time: 0.8,
@@ -14337,23 +14613,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14363,7 +14639,7 @@ var resource = {
                   },
                   {
                     time: 0.8,
-                    name: "khero_contbo_fire_bk13_2"
+                    name: 'khero_contbo_fire_bk13_2'
                   },
                   {
                     time: 0.817,
@@ -14375,23 +14651,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14401,7 +14677,7 @@ var resource = {
                   },
                   {
                     time: 0.817,
-                    name: "khero_contbo_fire_bk14_2"
+                    name: 'khero_contbo_fire_bk14_2'
                   },
                   {
                     time: 0.833,
@@ -14413,23 +14689,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14439,7 +14715,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_bk15_2"
+                    name: 'khero_contbo_fire_bk15_2'
                   },
                   {
                     time: 0.85,
@@ -14451,23 +14727,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14477,7 +14753,7 @@ var resource = {
                   },
                   {
                     time: 0.85,
-                    name: "khero_contbo_fire_bk16_2"
+                    name: 'khero_contbo_fire_bk16_2'
                   },
                   {
                     time: 0.867,
@@ -14489,23 +14765,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14515,7 +14791,7 @@ var resource = {
                   },
                   {
                     time: 0.867,
-                    name: "khero_contbo_fire_bk17_2"
+                    name: 'khero_contbo_fire_bk17_2'
                   },
                   {
                     time: 0.9,
@@ -14527,23 +14803,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14553,7 +14829,7 @@ var resource = {
                   },
                   {
                     time: 0.9,
-                    name: "khero_contbo_fire_bk18_2"
+                    name: 'khero_contbo_fire_bk18_2'
                   },
                   {
                     time: 0.933,
@@ -14565,23 +14841,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14591,7 +14867,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_bk19_2"
+                    name: 'khero_contbo_fire_bk19_2'
                   },
                   {
                     time: 0.967,
@@ -14603,23 +14879,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14629,7 +14905,7 @@ var resource = {
                   },
                   {
                     time: 0.967,
-                    name: "khero_contbo_fire_bk20_2"
+                    name: 'khero_contbo_fire_bk20_2'
                   },
                   {
                     time: 1,
@@ -14641,19 +14917,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.833,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14663,7 +14939,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_b_3"
+                    name: 'khero_contbo_fire_b_3'
                   },
                   {
                     time: 1.1,
@@ -14675,19 +14951,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.833,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14697,7 +14973,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_b_4"
+                    name: 'khero_contbo_fire_b_4'
                   },
                   {
                     time: 1.1,
@@ -14709,15 +14985,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14727,7 +15003,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_05_3"
+                    name: 'khero_contbo_pf_05_3'
                   },
                   {
                     time: 1.1,
@@ -14739,15 +15015,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14757,7 +15033,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_05_4"
+                    name: 'khero_contbo_pf_05_4'
                   },
                   {
                     time: 1.1,
@@ -14769,15 +15045,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14787,7 +15063,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_03_3"
+                    name: 'khero_contbo_pf_03_3'
                   },
                   {
                     time: 1.1,
@@ -14799,15 +15075,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14817,7 +15093,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_03_4"
+                    name: 'khero_contbo_pf_03_4'
                   },
                   {
                     time: 1.1,
@@ -14829,19 +15105,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.767,
-                    color: "FFFFFF99"
+                    color: 'FFFFFF99'
                   },
                   {
                     time: 1.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -14851,7 +15127,7 @@ var resource = {
                   },
                   {
                     time: 0.15,
-                    name: "khero_contbo_pf_04"
+                    name: 'khero_contbo_pf_04'
                   },
                   {
                     time: 1.167,
@@ -14863,1056 +15139,1056 @@ var resource = {
           }
         }
       },
-      "data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.json": {
+      'res/sub/spine/contbo/khero_tom_star_04.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_fire_b_1",
-            parent: "root",
+            name: 'khero_contbo_fire_b_1',
+            parent: 'root',
             x: -14,
             y: 14
           },
           {
-            name: "khero_contbo_fire_b_2",
-            parent: "root",
+            name: 'khero_contbo_fire_b_2',
+            parent: 'root',
             x: 8,
             y: 14
           },
           {
-            name: "khero_contbo_pf_03_1",
-            parent: "root",
+            name: 'khero_contbo_pf_03_1',
+            parent: 'root',
             x: -6,
             y: 9
           },
           {
-            name: "khero_contbo_pf_03_2",
-            parent: "root",
+            name: 'khero_contbo_pf_03_2',
+            parent: 'root',
             x: -6,
             y: 9
           },
           {
-            name: "khero_contbo_fire_ms",
-            parent: "root",
+            name: 'khero_contbo_fire_ms',
+            parent: 'root',
             x: -11,
             y: 11
           },
           {
-            name: "khero_contbo_people_ani_0_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_1',
+            parent: 'root',
             x: -11,
             y: 11
           },
           {
-            name: "khero_contbo_pf_02_1",
-            parent: "root",
+            name: 'khero_contbo_pf_02_1',
+            parent: 'root',
             x: -1,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_2",
-            parent: "root",
+            name: 'khero_contbo_pf_02_2',
+            parent: 'root',
             x: -1,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_3",
-            parent: "root",
+            name: 'khero_contbo_pf_02_3',
+            parent: 'root',
             x: 66.688,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_4",
-            parent: "root",
+            name: 'khero_contbo_pf_02_4',
+            parent: 'root',
             x: 66.688,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_5",
-            parent: "root",
+            name: 'khero_contbo_pf_02_5',
+            parent: 'root',
             x: 135.103,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_6",
-            parent: "root",
+            name: 'khero_contbo_pf_02_6',
+            parent: 'root',
             x: 135.103,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_7",
-            parent: "root",
+            name: 'khero_contbo_pf_02_7',
+            parent: 'root',
             x: 184.056,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_8",
-            parent: "root",
+            name: 'khero_contbo_pf_02_8',
+            parent: 'root',
             x: 184.056,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_9",
-            parent: "root",
+            name: 'khero_contbo_pf_02_9',
+            parent: 'root',
             x: 359.35,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_10",
-            parent: "root",
+            name: 'khero_contbo_pf_02_10',
+            parent: 'root',
             x: 359.35,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_11",
-            parent: "root",
+            name: 'khero_contbo_pf_02_11',
+            parent: 'root',
             x: 248.913,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_12",
-            parent: "root",
+            name: 'khero_contbo_pf_02_12',
+            parent: 'root',
             x: 248.913,
             y: 12
           },
           {
-            name: "khero_contbo_fire_fg_01_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_1',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_fire_fg_01_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_2',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_fire_fg_01_3",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_3',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_pf_06_n_mask",
-            parent: "root",
+            name: 'khero_contbo_pf_06_n_mask',
+            parent: 'root',
             x: -3,
             y: -8
           },
           {
-            name: "khero_contbo_people_ani_0_2",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_2',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_people_ani_0_3",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_3',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_people_ani_0_4",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_4',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_pf_05_1",
-            parent: "root",
+            name: 'khero_contbo_pf_05_1',
+            parent: 'root',
             x: -6,
             y: 16
           },
           {
-            name: "khero_contbo_pf_05_2",
-            parent: "root",
+            name: 'khero_contbo_pf_05_2',
+            parent: 'root',
             x: -6,
             y: 16
           },
           {
-            name: "khero_contbo_cc",
-            parent: "root",
+            name: 'khero_contbo_cc',
+            parent: 'root',
             x: 47,
             y: 16,
             rotation: 90
           },
           {
-            name: "khero_contbo_people_ani_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_1',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_people_ani_2_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_1',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_2",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_2',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_3",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_3',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_4",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_4',
+            parent: 'root',
             x: 48,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_pf_08",
-            parent: "root",
+            name: 'khero_contbo_pf_08',
+            parent: 'root',
             x: 35
           },
           {
-            name: "khero_contbo_fire_fg_02_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_02_1',
+            parent: 'root',
             x: 43,
             y: 9.5,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_02_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_02_2',
+            parent: 'root',
             x: 43,
             y: 9.5,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_11_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_11_1',
+            parent: 'root',
             x: 43,
             y: 9.5,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_11_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_11_2',
+            parent: 'root',
             x: 43,
             y: 9.5,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_13_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_13_1',
+            parent: 'root',
             x: 43,
             y: 9.5,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_13_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_13_2',
+            parent: 'root',
             x: 43,
             y: 9.5,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_bk0_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk0_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk1_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk1_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk2_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk2_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk3_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk3_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk4_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk4_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk5_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk5_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk6_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk6_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk7_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk7_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk8_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk8_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk9_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk9_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk10_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk10_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk11_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk11_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk12_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk12_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk13_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk13_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk14_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk14_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk15_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk15_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk16_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk16_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk17_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk17_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk18_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk18_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk19_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk19_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk20_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk20_1',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk0_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk0_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk1_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk1_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk2_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk2_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk3_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk3_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk4_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk4_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk5_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk5_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk6_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk6_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk7_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk7_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk8_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk8_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk9_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk9_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk10_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk10_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk11_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk11_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk12_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk12_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk13_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk13_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk14_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk14_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk15_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk15_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk16_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk16_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk17_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk17_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk18_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk18_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk19_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk19_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk20_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk20_2',
+            parent: 'root',
             x: 82,
             y: 6
           },
           {
-            name: "khero_contbo_fire_b_3",
-            parent: "root",
+            name: 'khero_contbo_fire_b_3',
+            parent: 'root',
             x: 453,
             y: 9
           },
           {
-            name: "khero_contbo_fire_b_4",
-            parent: "root",
+            name: 'khero_contbo_fire_b_4',
+            parent: 'root',
             x: 475,
             y: 9
           },
           {
-            name: "khero_contbo_pf_05_3",
-            parent: "root",
+            name: 'khero_contbo_pf_05_3',
+            parent: 'root',
             x: 461,
             y: 11
           },
           {
-            name: "khero_contbo_pf_05_4",
-            parent: "root",
+            name: 'khero_contbo_pf_05_4',
+            parent: 'root',
             x: 461,
             y: 11
           },
           {
-            name: "khero_contbo_pf_03_3",
-            parent: "root",
+            name: 'khero_contbo_pf_03_3',
+            parent: 'root',
             x: 461,
             y: 4
           },
           {
-            name: "khero_contbo_pf_03_4",
-            parent: "root",
+            name: 'khero_contbo_pf_03_4',
+            parent: 'root',
             x: 461,
             y: 4
           },
           {
-            name: "khero_contbo_pf_04",
-            parent: "root",
+            name: 'khero_contbo_pf_04',
+            parent: 'root',
             y: 2
           }
         ],
         slots: [
           {
-            name: "khero_contbo_pf_04",
-            bone: "khero_contbo_pf_04",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_04',
+            bone: 'khero_contbo_pf_04',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_03_4",
-            bone: "khero_contbo_pf_03_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_4',
+            bone: 'khero_contbo_pf_03_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_03_3",
-            bone: "khero_contbo_pf_03_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_3',
+            bone: 'khero_contbo_pf_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_4",
-            bone: "khero_contbo_pf_05_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_4',
+            bone: 'khero_contbo_pf_05_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_3",
-            bone: "khero_contbo_pf_05_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_3',
+            bone: 'khero_contbo_pf_05_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_b_4",
-            bone: "khero_contbo_fire_b_4",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_4',
+            bone: 'khero_contbo_fire_b_4',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_b_3",
-            bone: "khero_contbo_fire_b_3",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_3',
+            bone: 'khero_contbo_fire_b_3',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk20_2",
-            bone: "khero_contbo_fire_bk20_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk20_2',
+            bone: 'khero_contbo_fire_bk20_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk19_2",
-            bone: "khero_contbo_fire_bk19_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk19_2',
+            bone: 'khero_contbo_fire_bk19_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk18_2",
-            bone: "khero_contbo_fire_bk18_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk18_2',
+            bone: 'khero_contbo_fire_bk18_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk17_2",
-            bone: "khero_contbo_fire_bk17_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk17_2',
+            bone: 'khero_contbo_fire_bk17_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk16_2",
-            bone: "khero_contbo_fire_bk16_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk16_2',
+            bone: 'khero_contbo_fire_bk16_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk15_2",
-            bone: "khero_contbo_fire_bk15_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk15_2',
+            bone: 'khero_contbo_fire_bk15_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk14_2",
-            bone: "khero_contbo_fire_bk14_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk14_2',
+            bone: 'khero_contbo_fire_bk14_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk13_2",
-            bone: "khero_contbo_fire_bk13_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk13_2',
+            bone: 'khero_contbo_fire_bk13_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk12_2",
-            bone: "khero_contbo_fire_bk12_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk12_2',
+            bone: 'khero_contbo_fire_bk12_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk11_2",
-            bone: "khero_contbo_fire_bk11_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk11_2',
+            bone: 'khero_contbo_fire_bk11_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk10_2",
-            bone: "khero_contbo_fire_bk10_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk10_2',
+            bone: 'khero_contbo_fire_bk10_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk9_2",
-            bone: "khero_contbo_fire_bk9_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk9_2',
+            bone: 'khero_contbo_fire_bk9_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk8_2",
-            bone: "khero_contbo_fire_bk8_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk8_2',
+            bone: 'khero_contbo_fire_bk8_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk7_2",
-            bone: "khero_contbo_fire_bk7_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk7_2',
+            bone: 'khero_contbo_fire_bk7_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk6_2",
-            bone: "khero_contbo_fire_bk6_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk6_2',
+            bone: 'khero_contbo_fire_bk6_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk5_2",
-            bone: "khero_contbo_fire_bk5_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk5_2',
+            bone: 'khero_contbo_fire_bk5_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk4_2",
-            bone: "khero_contbo_fire_bk4_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk4_2',
+            bone: 'khero_contbo_fire_bk4_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk3_2",
-            bone: "khero_contbo_fire_bk3_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk3_2',
+            bone: 'khero_contbo_fire_bk3_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk2_2",
-            bone: "khero_contbo_fire_bk2_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk2_2',
+            bone: 'khero_contbo_fire_bk2_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk1_2",
-            bone: "khero_contbo_fire_bk1_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk1_2',
+            bone: 'khero_contbo_fire_bk1_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk0_2",
-            bone: "khero_contbo_fire_bk0_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk0_2',
+            bone: 'khero_contbo_fire_bk0_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk20_1",
-            bone: "khero_contbo_fire_bk20_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk20_1',
+            bone: 'khero_contbo_fire_bk20_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk19_1",
-            bone: "khero_contbo_fire_bk19_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk19_1',
+            bone: 'khero_contbo_fire_bk19_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk18_1",
-            bone: "khero_contbo_fire_bk18_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk18_1',
+            bone: 'khero_contbo_fire_bk18_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk17_1",
-            bone: "khero_contbo_fire_bk17_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk17_1',
+            bone: 'khero_contbo_fire_bk17_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk16_1",
-            bone: "khero_contbo_fire_bk16_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk16_1',
+            bone: 'khero_contbo_fire_bk16_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk15_1",
-            bone: "khero_contbo_fire_bk15_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk15_1',
+            bone: 'khero_contbo_fire_bk15_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk14_1",
-            bone: "khero_contbo_fire_bk14_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk14_1',
+            bone: 'khero_contbo_fire_bk14_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk13_1",
-            bone: "khero_contbo_fire_bk13_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk13_1',
+            bone: 'khero_contbo_fire_bk13_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk12_1",
-            bone: "khero_contbo_fire_bk12_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk12_1',
+            bone: 'khero_contbo_fire_bk12_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk11_1",
-            bone: "khero_contbo_fire_bk11_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk11_1',
+            bone: 'khero_contbo_fire_bk11_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk10_1",
-            bone: "khero_contbo_fire_bk10_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk10_1',
+            bone: 'khero_contbo_fire_bk10_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk9_1",
-            bone: "khero_contbo_fire_bk9_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk9_1',
+            bone: 'khero_contbo_fire_bk9_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk8_1",
-            bone: "khero_contbo_fire_bk8_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk8_1',
+            bone: 'khero_contbo_fire_bk8_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk7_1",
-            bone: "khero_contbo_fire_bk7_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk7_1',
+            bone: 'khero_contbo_fire_bk7_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk6_1",
-            bone: "khero_contbo_fire_bk6_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk6_1',
+            bone: 'khero_contbo_fire_bk6_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk5_1",
-            bone: "khero_contbo_fire_bk5_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk5_1',
+            bone: 'khero_contbo_fire_bk5_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk4_1",
-            bone: "khero_contbo_fire_bk4_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk4_1',
+            bone: 'khero_contbo_fire_bk4_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk3_1",
-            bone: "khero_contbo_fire_bk3_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk3_1',
+            bone: 'khero_contbo_fire_bk3_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk2_1",
-            bone: "khero_contbo_fire_bk2_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk2_1',
+            bone: 'khero_contbo_fire_bk2_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk1_1",
-            bone: "khero_contbo_fire_bk1_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk1_1',
+            bone: 'khero_contbo_fire_bk1_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk0_1",
-            bone: "khero_contbo_fire_bk0_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk0_1',
+            bone: 'khero_contbo_fire_bk0_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_13_2",
-            bone: "khero_contbo_fire_fg_13_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_13_2',
+            bone: 'khero_contbo_fire_fg_13_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_13_1",
-            bone: "khero_contbo_fire_fg_13_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_13_1',
+            bone: 'khero_contbo_fire_fg_13_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_11_2",
-            bone: "khero_contbo_fire_fg_11_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_11_2',
+            bone: 'khero_contbo_fire_fg_11_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_11_1",
-            bone: "khero_contbo_fire_fg_11_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_11_1',
+            bone: 'khero_contbo_fire_fg_11_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_02_2",
-            bone: "khero_contbo_fire_fg_02_2"
+            name: 'khero_contbo_fire_fg_02_2',
+            bone: 'khero_contbo_fire_fg_02_2'
           },
           {
-            name: "khero_contbo_fire_fg_02_1",
-            bone: "khero_contbo_fire_fg_02_1",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_02_1',
+            bone: 'khero_contbo_fire_fg_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_08",
-            bone: "khero_contbo_pf_08"
+            name: 'khero_contbo_pf_08',
+            bone: 'khero_contbo_pf_08'
           },
           {
-            name: "khero_contbo_people_ani_2_4",
-            bone: "khero_contbo_people_ani_2_4"
+            name: 'khero_contbo_people_ani_2_4',
+            bone: 'khero_contbo_people_ani_2_4'
           },
           {
-            name: "khero_contbo_people_ani_2_3",
-            bone: "khero_contbo_people_ani_2_3"
+            name: 'khero_contbo_people_ani_2_3',
+            bone: 'khero_contbo_people_ani_2_3'
           },
           {
-            name: "khero_contbo_people_ani_2_2",
-            bone: "khero_contbo_people_ani_2_2"
+            name: 'khero_contbo_people_ani_2_2',
+            bone: 'khero_contbo_people_ani_2_2'
           },
           {
-            name: "khero_contbo_people_ani_2_1",
-            bone: "khero_contbo_people_ani_2_1",
-            blend: "additive",
-            color: "FFFFFF3F"
+            name: 'khero_contbo_people_ani_2_1',
+            bone: 'khero_contbo_people_ani_2_1',
+            blend: 'additive',
+            color: 'FFFFFF3F'
           },
           {
-            name: "khero_contbo_people_ani_1",
-            bone: "khero_contbo_people_ani_1"
+            name: 'khero_contbo_people_ani_1',
+            bone: 'khero_contbo_people_ani_1'
           },
           {
-            name: "khero_contbo_cc",
-            bone: "khero_contbo_cc",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_cc',
+            bone: 'khero_contbo_cc',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_05_2",
-            bone: "khero_contbo_pf_05_2",
-            attachment: "khero_contbo_pf_05_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_2',
+            bone: 'khero_contbo_pf_05_2',
+            attachment: 'khero_contbo_pf_05_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_1",
-            bone: "khero_contbo_pf_05_1",
-            attachment: "khero_contbo_pf_05_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_1',
+            bone: 'khero_contbo_pf_05_1',
+            attachment: 'khero_contbo_pf_05_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_people_ani_0_4",
-            bone: "khero_contbo_people_ani_0_4",
-            attachment: "khero_contbo_people_ani_0_4",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_4',
+            bone: 'khero_contbo_people_ani_0_4',
+            attachment: 'khero_contbo_people_ani_0_4',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_3",
-            bone: "khero_contbo_people_ani_0_3",
-            attachment: "khero_contbo_people_ani_0_3",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_3',
+            bone: 'khero_contbo_people_ani_0_3',
+            attachment: 'khero_contbo_people_ani_0_3',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_2",
-            bone: "khero_contbo_people_ani_0_2",
-            attachment: "khero_contbo_people_ani_0_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_2',
+            bone: 'khero_contbo_people_ani_0_2',
+            attachment: 'khero_contbo_people_ani_0_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_06_n_mask",
-            bone: "khero_contbo_pf_06_n_mask",
-            attachment: "khero_contbo_pf_06_n_mask",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_06_n_mask',
+            bone: 'khero_contbo_pf_06_n_mask',
+            attachment: 'khero_contbo_pf_06_n_mask',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_01_3",
-            bone: "khero_contbo_fire_fg_01_3"
+            name: 'khero_contbo_fire_fg_01_3',
+            bone: 'khero_contbo_fire_fg_01_3'
           },
           {
-            name: "khero_contbo_fire_fg_01_2",
-            bone: "khero_contbo_fire_fg_01_2",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_01_2',
+            bone: 'khero_contbo_fire_fg_01_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_fg_01_1",
-            bone: "khero_contbo_fire_fg_01_1",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_01_1',
+            bone: 'khero_contbo_fire_fg_01_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_02_12",
-            bone: "khero_contbo_pf_02_12",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_12',
+            bone: 'khero_contbo_pf_02_12',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_11",
-            bone: "khero_contbo_pf_02_11",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_11',
+            bone: 'khero_contbo_pf_02_11',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_10",
-            bone: "khero_contbo_pf_02_10",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_10',
+            bone: 'khero_contbo_pf_02_10',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_9",
-            bone: "khero_contbo_pf_02_9",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_9',
+            bone: 'khero_contbo_pf_02_9',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_8",
-            bone: "khero_contbo_pf_02_8",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_8',
+            bone: 'khero_contbo_pf_02_8',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_7",
-            bone: "khero_contbo_pf_02_7",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_7',
+            bone: 'khero_contbo_pf_02_7',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_6",
-            bone: "khero_contbo_pf_02_6",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_6',
+            bone: 'khero_contbo_pf_02_6',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_5",
-            bone: "khero_contbo_pf_02_5",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_5',
+            bone: 'khero_contbo_pf_02_5',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_4",
-            bone: "khero_contbo_pf_02_4",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_4',
+            bone: 'khero_contbo_pf_02_4',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_3",
-            bone: "khero_contbo_pf_02_3",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_3',
+            bone: 'khero_contbo_pf_02_3',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_2",
-            bone: "khero_contbo_pf_02_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_2',
+            bone: 'khero_contbo_pf_02_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_1",
-            bone: "khero_contbo_pf_02_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_1',
+            bone: 'khero_contbo_pf_02_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_1",
-            bone: "khero_contbo_people_ani_0_1",
-            attachment: "khero_contbo_people_ani_0_1",
-            color: "FFFFFF02"
+            name: 'khero_contbo_people_ani_0_1',
+            bone: 'khero_contbo_people_ani_0_1',
+            attachment: 'khero_contbo_people_ani_0_1',
+            color: 'FFFFFF02'
           },
           {
-            name: "khero_contbo_fire_ms",
-            bone: "khero_contbo_fire_ms",
-            attachment: "khero_contbo_fire_ms",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_ms',
+            bone: 'khero_contbo_fire_ms',
+            attachment: 'khero_contbo_fire_ms',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_03_2",
-            bone: "khero_contbo_pf_03_2",
-            attachment: "khero_contbo_pf_03_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_2',
+            bone: 'khero_contbo_pf_03_2',
+            attachment: 'khero_contbo_pf_03_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_03_1",
-            bone: "khero_contbo_pf_03_1",
-            attachment: "khero_contbo_pf_03_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_1',
+            bone: 'khero_contbo_pf_03_1',
+            attachment: 'khero_contbo_pf_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_b_2",
-            bone: "khero_contbo_fire_b_2",
-            attachment: "khero_contbo_fire_b_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_2',
+            bone: 'khero_contbo_fire_b_2',
+            attachment: 'khero_contbo_fire_b_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_b_1",
-            bone: "khero_contbo_fire_b_1",
-            attachment: "khero_contbo_fire_b_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_1',
+            bone: 'khero_contbo_fire_b_1',
+            attachment: 'khero_contbo_fire_b_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_fire_b_1: {
               khero_contbo_fire_b_1: {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_fire_b_2: {
@@ -15920,21 +16196,21 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_pf_03_1: {
               khero_contbo_pf_03_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_03_2: {
               khero_contbo_pf_03_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_fire_ms: {
@@ -15949,112 +16225,112 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_pf_02_1: {
               khero_contbo_pf_02_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_2: {
               khero_contbo_pf_02_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_3: {
               khero_contbo_pf_02_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_4: {
               khero_contbo_pf_02_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_5: {
               khero_contbo_pf_02_5: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_6: {
               khero_contbo_pf_02_6: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_7: {
               khero_contbo_pf_02_7: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_8: {
               khero_contbo_pf_02_8: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_9: {
               khero_contbo_pf_02_9: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_10: {
               khero_contbo_pf_02_10: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_11: {
               khero_contbo_pf_02_11: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_12: {
               khero_contbo_pf_02_12: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_fire_fg_01_1: {
               khero_contbo_fire_fg_01_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_fire_fg_01_2: {
               khero_contbo_fire_fg_01_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_fire_fg_01_3: {
               khero_contbo_fire_fg_01_3: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_pf_06_n_mask: {
@@ -16068,7 +16344,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_people_ani_0_3: {
@@ -16076,7 +16352,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_people_ani_0_4: {
@@ -16084,21 +16360,21 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_pf_05_1: {
               khero_contbo_pf_05_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_05_2: {
               khero_contbo_pf_05_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_cc: {
@@ -16117,28 +16393,28 @@ var resource = {
               khero_contbo_people_ani_2_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_2: {
               khero_contbo_people_ani_2_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_3: {
               khero_contbo_people_ani_2_3: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_4: {
               khero_contbo_people_ani_2_4: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_pf_08: {
@@ -16151,336 +16427,336 @@ var resource = {
               khero_contbo_fire_fg_02_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_02"
+                name: 'khero_contbo_fire_fg_02'
               }
             },
             khero_contbo_fire_fg_02_2: {
               khero_contbo_fire_fg_02_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_02"
+                name: 'khero_contbo_fire_fg_02'
               }
             },
             khero_contbo_fire_fg_11_1: {
               khero_contbo_fire_fg_11_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_11"
+                name: 'khero_contbo_fire_fg_11'
               }
             },
             khero_contbo_fire_fg_11_2: {
               khero_contbo_fire_fg_11_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_11"
+                name: 'khero_contbo_fire_fg_11'
               }
             },
             khero_contbo_fire_fg_13_1: {
               khero_contbo_fire_fg_13_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_13"
+                name: 'khero_contbo_fire_fg_13'
               }
             },
             khero_contbo_fire_fg_13_2: {
               khero_contbo_fire_fg_13_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_13"
+                name: 'khero_contbo_fire_fg_13'
               }
             },
             khero_contbo_fire_bk0_1: {
               khero_contbo_fire_bk0_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk0"
+                name: 'khero_contbo_fire_bk0'
               }
             },
             khero_contbo_fire_bk1_1: {
               khero_contbo_fire_bk1_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk1"
+                name: 'khero_contbo_fire_bk1'
               }
             },
             khero_contbo_fire_bk2_1: {
               khero_contbo_fire_bk2_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk2"
+                name: 'khero_contbo_fire_bk2'
               }
             },
             khero_contbo_fire_bk3_1: {
               khero_contbo_fire_bk3_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk3"
+                name: 'khero_contbo_fire_bk3'
               }
             },
             khero_contbo_fire_bk4_1: {
               khero_contbo_fire_bk4_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk4"
+                name: 'khero_contbo_fire_bk4'
               }
             },
             khero_contbo_fire_bk5_1: {
               khero_contbo_fire_bk5_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk5"
+                name: 'khero_contbo_fire_bk5'
               }
             },
             khero_contbo_fire_bk6_1: {
               khero_contbo_fire_bk6_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk6"
+                name: 'khero_contbo_fire_bk6'
               }
             },
             khero_contbo_fire_bk7_1: {
               khero_contbo_fire_bk7_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk7"
+                name: 'khero_contbo_fire_bk7'
               }
             },
             khero_contbo_fire_bk8_1: {
               khero_contbo_fire_bk8_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk8"
+                name: 'khero_contbo_fire_bk8'
               }
             },
             khero_contbo_fire_bk9_1: {
               khero_contbo_fire_bk9_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk9"
+                name: 'khero_contbo_fire_bk9'
               }
             },
             khero_contbo_fire_bk10_1: {
               khero_contbo_fire_bk10_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk10"
+                name: 'khero_contbo_fire_bk10'
               }
             },
             khero_contbo_fire_bk11_1: {
               khero_contbo_fire_bk11_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk11"
+                name: 'khero_contbo_fire_bk11'
               }
             },
             khero_contbo_fire_bk12_1: {
               khero_contbo_fire_bk12_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk12"
+                name: 'khero_contbo_fire_bk12'
               }
             },
             khero_contbo_fire_bk13_1: {
               khero_contbo_fire_bk13_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk13"
+                name: 'khero_contbo_fire_bk13'
               }
             },
             khero_contbo_fire_bk14_1: {
               khero_contbo_fire_bk14_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk14"
+                name: 'khero_contbo_fire_bk14'
               }
             },
             khero_contbo_fire_bk15_1: {
               khero_contbo_fire_bk15_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk15"
+                name: 'khero_contbo_fire_bk15'
               }
             },
             khero_contbo_fire_bk16_1: {
               khero_contbo_fire_bk16_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk16"
+                name: 'khero_contbo_fire_bk16'
               }
             },
             khero_contbo_fire_bk17_1: {
               khero_contbo_fire_bk17_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk17"
+                name: 'khero_contbo_fire_bk17'
               }
             },
             khero_contbo_fire_bk18_1: {
               khero_contbo_fire_bk18_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk18"
+                name: 'khero_contbo_fire_bk18'
               }
             },
             khero_contbo_fire_bk19_1: {
               khero_contbo_fire_bk19_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk19"
+                name: 'khero_contbo_fire_bk19'
               }
             },
             khero_contbo_fire_bk20_1: {
               khero_contbo_fire_bk20_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk20"
+                name: 'khero_contbo_fire_bk20'
               }
             },
             khero_contbo_fire_bk0_2: {
               khero_contbo_fire_bk0_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk0"
+                name: 'khero_contbo_fire_bk0'
               }
             },
             khero_contbo_fire_bk1_2: {
               khero_contbo_fire_bk1_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk1"
+                name: 'khero_contbo_fire_bk1'
               }
             },
             khero_contbo_fire_bk2_2: {
               khero_contbo_fire_bk2_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk2"
+                name: 'khero_contbo_fire_bk2'
               }
             },
             khero_contbo_fire_bk3_2: {
               khero_contbo_fire_bk3_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk3"
+                name: 'khero_contbo_fire_bk3'
               }
             },
             khero_contbo_fire_bk4_2: {
               khero_contbo_fire_bk4_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk4"
+                name: 'khero_contbo_fire_bk4'
               }
             },
             khero_contbo_fire_bk5_2: {
               khero_contbo_fire_bk5_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk5"
+                name: 'khero_contbo_fire_bk5'
               }
             },
             khero_contbo_fire_bk6_2: {
               khero_contbo_fire_bk6_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk6"
+                name: 'khero_contbo_fire_bk6'
               }
             },
             khero_contbo_fire_bk7_2: {
               khero_contbo_fire_bk7_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk7"
+                name: 'khero_contbo_fire_bk7'
               }
             },
             khero_contbo_fire_bk8_2: {
               khero_contbo_fire_bk8_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk8"
+                name: 'khero_contbo_fire_bk8'
               }
             },
             khero_contbo_fire_bk9_2: {
               khero_contbo_fire_bk9_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk9"
+                name: 'khero_contbo_fire_bk9'
               }
             },
             khero_contbo_fire_bk10_2: {
               khero_contbo_fire_bk10_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk10"
+                name: 'khero_contbo_fire_bk10'
               }
             },
             khero_contbo_fire_bk11_2: {
               khero_contbo_fire_bk11_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk11"
+                name: 'khero_contbo_fire_bk11'
               }
             },
             khero_contbo_fire_bk12_2: {
               khero_contbo_fire_bk12_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk12"
+                name: 'khero_contbo_fire_bk12'
               }
             },
             khero_contbo_fire_bk13_2: {
               khero_contbo_fire_bk13_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk13"
+                name: 'khero_contbo_fire_bk13'
               }
             },
             khero_contbo_fire_bk14_2: {
               khero_contbo_fire_bk14_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk14"
+                name: 'khero_contbo_fire_bk14'
               }
             },
             khero_contbo_fire_bk15_2: {
               khero_contbo_fire_bk15_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk15"
+                name: 'khero_contbo_fire_bk15'
               }
             },
             khero_contbo_fire_bk16_2: {
               khero_contbo_fire_bk16_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk16"
+                name: 'khero_contbo_fire_bk16'
               }
             },
             khero_contbo_fire_bk17_2: {
               khero_contbo_fire_bk17_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk17"
+                name: 'khero_contbo_fire_bk17'
               }
             },
             khero_contbo_fire_bk18_2: {
               khero_contbo_fire_bk18_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk18"
+                name: 'khero_contbo_fire_bk18'
               }
             },
             khero_contbo_fire_bk19_2: {
               khero_contbo_fire_bk19_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk19"
+                name: 'khero_contbo_fire_bk19'
               }
             },
             khero_contbo_fire_bk20_2: {
               khero_contbo_fire_bk20_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk20"
+                name: 'khero_contbo_fire_bk20'
               }
             },
             khero_contbo_fire_b_3: {
@@ -16488,7 +16764,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_fire_b_4: {
@@ -16496,35 +16772,35 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_pf_05_3: {
               khero_contbo_pf_05_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_05_4: {
               khero_contbo_pf_05_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_03_3: {
               khero_contbo_pf_03_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_03_4: {
               khero_contbo_pf_03_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_04: {
@@ -20003,21 +20279,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.167,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_b_1"
+                    name: 'khero_contbo_fire_b_1'
                   },
                   {
                     time: 0.267,
@@ -20029,21 +20305,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.167,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_b_2"
+                    name: 'khero_contbo_fire_b_2'
                   },
                   {
                     time: 0.267,
@@ -20055,21 +20331,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_03_1"
+                    name: 'khero_contbo_pf_03_1'
                   },
                   {
                     time: 0.683,
@@ -20081,21 +20357,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_03_2"
+                    name: 'khero_contbo_pf_03_2'
                   },
                   {
                     time: 0.683,
@@ -20107,17 +20383,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_ms"
+                    name: 'khero_contbo_fire_ms'
                   },
                   {
                     time: 0.467,
@@ -20129,21 +20405,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF02"
+                    color: 'FFFFFF02'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_1"
+                    name: 'khero_contbo_people_ani_0_1'
                   },
                   {
                     time: 0.467,
@@ -20155,19 +20431,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.467,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.7,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.917,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20177,7 +20453,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_pf_02_1"
+                    name: 'khero_contbo_pf_02_1'
                   },
                   {
                     time: 0.95,
@@ -20189,19 +20465,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.467,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.7,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.917,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20211,7 +20487,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_pf_02_2"
+                    name: 'khero_contbo_pf_02_2'
                   },
                   {
                     time: 0.95,
@@ -20223,19 +20499,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20245,7 +20521,7 @@ var resource = {
                   },
                   {
                     time: 0.617,
-                    name: "khero_contbo_pf_02_3"
+                    name: 'khero_contbo_pf_02_3'
                   }
                 ]
               },
@@ -20253,19 +20529,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20275,7 +20551,7 @@ var resource = {
                   },
                   {
                     time: 0.617,
-                    name: "khero_contbo_pf_02_4"
+                    name: 'khero_contbo_pf_02_4'
                   }
                 ]
               },
@@ -20283,19 +20559,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.783,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20305,7 +20581,7 @@ var resource = {
                   },
                   {
                     time: 0.55,
-                    name: "khero_contbo_pf_02_5"
+                    name: 'khero_contbo_pf_02_5'
                   },
                   {
                     time: 1.033,
@@ -20317,19 +20593,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.783,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20339,7 +20615,7 @@ var resource = {
                   },
                   {
                     time: 0.55,
-                    name: "khero_contbo_pf_02_6"
+                    name: 'khero_contbo_pf_02_6'
                   },
                   {
                     time: 1.033,
@@ -20351,19 +20627,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.9,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.117,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20373,7 +20649,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_pf_02_7"
+                    name: 'khero_contbo_pf_02_7'
                   }
                 ]
               },
@@ -20381,19 +20657,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.9,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.117,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20403,7 +20679,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_pf_02_8"
+                    name: 'khero_contbo_pf_02_8'
                   }
                 ]
               },
@@ -20411,19 +20687,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20433,7 +20709,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_9"
+                    name: 'khero_contbo_pf_02_9'
                   }
                 ]
               },
@@ -20441,19 +20717,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20463,7 +20739,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_10"
+                    name: 'khero_contbo_pf_02_10'
                   }
                 ]
               },
@@ -20471,19 +20747,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20493,7 +20769,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_11"
+                    name: 'khero_contbo_pf_02_11'
                   }
                 ]
               },
@@ -20501,19 +20777,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20523,7 +20799,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_12"
+                    name: 'khero_contbo_pf_02_12'
                   }
                 ]
               },
@@ -20535,7 +20811,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_1"
+                    name: 'khero_contbo_fire_fg_01_1'
                   },
                   {
                     time: 0.533,
@@ -20551,7 +20827,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_2"
+                    name: 'khero_contbo_fire_fg_01_2'
                   },
                   {
                     time: 0.533,
@@ -20567,7 +20843,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_3"
+                    name: 'khero_contbo_fire_fg_01_3'
                   },
                   {
                     time: 0.533,
@@ -20579,25 +20855,25 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_06_n_mask"
+                    name: 'khero_contbo_pf_06_n_mask'
                   },
                   {
                     time: 0.467,
@@ -20609,17 +20885,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_2"
+                    name: 'khero_contbo_people_ani_0_2'
                   },
                   {
                     time: 0.467,
@@ -20631,17 +20907,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_3"
+                    name: 'khero_contbo_people_ani_0_3'
                   },
                   {
                     time: 0.467,
@@ -20653,17 +20929,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_4"
+                    name: 'khero_contbo_people_ani_0_4'
                   },
                   {
                     time: 0.467,
@@ -20675,21 +20951,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_05_1"
+                    name: 'khero_contbo_pf_05_1'
                   },
                   {
                     time: 0.533,
@@ -20701,21 +20977,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_05_2"
+                    name: 'khero_contbo_pf_05_2'
                   },
                   {
                     time: 0.533,
@@ -20727,23 +21003,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.55,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.6,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20753,7 +21029,7 @@ var resource = {
                   },
                   {
                     time: 0.4,
-                    name: "khero_contbo_cc"
+                    name: 'khero_contbo_cc'
                   }
                 ]
               },
@@ -20765,7 +21041,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_people_ani_1"
+                    name: 'khero_contbo_people_ani_1'
                   },
                   {
                     time: 0.533,
@@ -20777,15 +21053,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF3F"
+                    color: 'FFFFFF3F'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFF3F"
+                    color: 'FFFFFF3F'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20795,7 +21071,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_1"
+                    name: 'khero_contbo_people_ani_2_1'
                   }
                 ]
               },
@@ -20803,15 +21079,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20821,7 +21097,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_2"
+                    name: 'khero_contbo_people_ani_2_2'
                   }
                 ]
               },
@@ -20829,15 +21105,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20847,7 +21123,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_3"
+                    name: 'khero_contbo_people_ani_2_3'
                   }
                 ]
               },
@@ -20855,15 +21131,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20873,7 +21149,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_4"
+                    name: 'khero_contbo_people_ani_2_4'
                   }
                 ]
               },
@@ -20885,7 +21161,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_pf_08"
+                    name: 'khero_contbo_pf_08'
                   },
                   {
                     time: 1.017,
@@ -20897,15 +21173,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20915,7 +21191,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_02_1"
+                    name: 'khero_contbo_fire_fg_02_1'
                   },
                   {
                     time: 0.75,
@@ -20927,15 +21203,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20945,7 +21221,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_02_2"
+                    name: 'khero_contbo_fire_fg_02_2'
                   },
                   {
                     time: 0.75,
@@ -20957,19 +21233,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -20979,7 +21255,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_11_1"
+                    name: 'khero_contbo_fire_fg_11_1'
                   },
                   {
                     time: 0.883,
@@ -20991,19 +21267,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21013,7 +21289,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_11_2"
+                    name: 'khero_contbo_fire_fg_11_2'
                   },
                   {
                     time: 0.883,
@@ -21025,19 +21301,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21047,7 +21323,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_fg_13_1"
+                    name: 'khero_contbo_fire_fg_13_1'
                   },
                   {
                     time: 1.017,
@@ -21059,19 +21335,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21081,7 +21357,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_fg_13_2"
+                    name: 'khero_contbo_fire_fg_13_2'
                   },
                   {
                     time: 1.017,
@@ -21093,23 +21369,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21119,7 +21395,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_bk0_1"
+                    name: 'khero_contbo_fire_bk0_1'
                   },
                   {
                     time: 0.567,
@@ -21131,23 +21407,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21157,7 +21433,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_fire_bk1_1"
+                    name: 'khero_contbo_fire_bk1_1'
                   },
                   {
                     time: 0.6,
@@ -21169,23 +21445,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21195,7 +21471,7 @@ var resource = {
                   },
                   {
                     time: 0.6,
-                    name: "khero_contbo_fire_bk2_1"
+                    name: 'khero_contbo_fire_bk2_1'
                   },
                   {
                     time: 0.633,
@@ -21207,23 +21483,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21233,7 +21509,7 @@ var resource = {
                   },
                   {
                     time: 0.633,
-                    name: "khero_contbo_fire_bk3_1"
+                    name: 'khero_contbo_fire_bk3_1'
                   },
                   {
                     time: 0.65,
@@ -21245,23 +21521,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21271,7 +21547,7 @@ var resource = {
                   },
                   {
                     time: 0.65,
-                    name: "khero_contbo_fire_bk4_1"
+                    name: 'khero_contbo_fire_bk4_1'
                   },
                   {
                     time: 0.667,
@@ -21283,23 +21559,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21309,7 +21585,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_fire_bk5_1"
+                    name: 'khero_contbo_fire_bk5_1'
                   },
                   {
                     time: 0.683,
@@ -21321,23 +21597,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21347,7 +21623,7 @@ var resource = {
                   },
                   {
                     time: 0.683,
-                    name: "khero_contbo_fire_bk6_1"
+                    name: 'khero_contbo_fire_bk6_1'
                   },
                   {
                     time: 0.7,
@@ -21359,23 +21635,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21385,7 +21661,7 @@ var resource = {
                   },
                   {
                     time: 0.7,
-                    name: "khero_contbo_fire_bk7_1"
+                    name: 'khero_contbo_fire_bk7_1'
                   },
                   {
                     time: 0.717,
@@ -21397,23 +21673,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21423,7 +21699,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_fire_bk8_1"
+                    name: 'khero_contbo_fire_bk8_1'
                   },
                   {
                     time: 0.733,
@@ -21435,23 +21711,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21461,7 +21737,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_bk9_1"
+                    name: 'khero_contbo_fire_bk9_1'
                   },
                   {
                     time: 0.75,
@@ -21473,23 +21749,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21499,7 +21775,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "khero_contbo_fire_bk10_1"
+                    name: 'khero_contbo_fire_bk10_1'
                   },
                   {
                     time: 0.767,
@@ -21511,23 +21787,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21537,7 +21813,7 @@ var resource = {
                   },
                   {
                     time: 0.767,
-                    name: "khero_contbo_fire_bk11_1"
+                    name: 'khero_contbo_fire_bk11_1'
                   },
                   {
                     time: 0.783,
@@ -21549,23 +21825,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21575,7 +21851,7 @@ var resource = {
                   },
                   {
                     time: 0.783,
-                    name: "khero_contbo_fire_bk12_1"
+                    name: 'khero_contbo_fire_bk12_1'
                   },
                   {
                     time: 0.8,
@@ -21587,23 +21863,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21613,7 +21889,7 @@ var resource = {
                   },
                   {
                     time: 0.8,
-                    name: "khero_contbo_fire_bk13_1"
+                    name: 'khero_contbo_fire_bk13_1'
                   },
                   {
                     time: 0.817,
@@ -21625,23 +21901,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21651,7 +21927,7 @@ var resource = {
                   },
                   {
                     time: 0.817,
-                    name: "khero_contbo_fire_bk14_1"
+                    name: 'khero_contbo_fire_bk14_1'
                   },
                   {
                     time: 0.833,
@@ -21663,23 +21939,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21689,7 +21965,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_bk15_1"
+                    name: 'khero_contbo_fire_bk15_1'
                   },
                   {
                     time: 0.85,
@@ -21701,23 +21977,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21727,7 +22003,7 @@ var resource = {
                   },
                   {
                     time: 0.85,
-                    name: "khero_contbo_fire_bk16_1"
+                    name: 'khero_contbo_fire_bk16_1'
                   },
                   {
                     time: 0.867,
@@ -21739,23 +22015,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21765,7 +22041,7 @@ var resource = {
                   },
                   {
                     time: 0.867,
-                    name: "khero_contbo_fire_bk17_1"
+                    name: 'khero_contbo_fire_bk17_1'
                   },
                   {
                     time: 0.9,
@@ -21777,23 +22053,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21803,7 +22079,7 @@ var resource = {
                   },
                   {
                     time: 0.9,
-                    name: "khero_contbo_fire_bk18_1"
+                    name: 'khero_contbo_fire_bk18_1'
                   },
                   {
                     time: 0.933,
@@ -21815,23 +22091,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21841,7 +22117,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_bk19_1"
+                    name: 'khero_contbo_fire_bk19_1'
                   },
                   {
                     time: 0.967,
@@ -21853,23 +22129,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21879,7 +22155,7 @@ var resource = {
                   },
                   {
                     time: 0.967,
-                    name: "khero_contbo_fire_bk20_1"
+                    name: 'khero_contbo_fire_bk20_1'
                   },
                   {
                     time: 1,
@@ -21891,23 +22167,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21917,7 +22193,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_bk0_2"
+                    name: 'khero_contbo_fire_bk0_2'
                   },
                   {
                     time: 0.567,
@@ -21929,23 +22205,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21955,7 +22231,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_fire_bk1_2"
+                    name: 'khero_contbo_fire_bk1_2'
                   },
                   {
                     time: 0.6,
@@ -21967,23 +22243,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -21993,7 +22269,7 @@ var resource = {
                   },
                   {
                     time: 0.6,
-                    name: "khero_contbo_fire_bk2_2"
+                    name: 'khero_contbo_fire_bk2_2'
                   },
                   {
                     time: 0.633,
@@ -22005,23 +22281,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22031,7 +22307,7 @@ var resource = {
                   },
                   {
                     time: 0.633,
-                    name: "khero_contbo_fire_bk3_2"
+                    name: 'khero_contbo_fire_bk3_2'
                   },
                   {
                     time: 0.65,
@@ -22043,23 +22319,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22069,7 +22345,7 @@ var resource = {
                   },
                   {
                     time: 0.65,
-                    name: "khero_contbo_fire_bk4_2"
+                    name: 'khero_contbo_fire_bk4_2'
                   },
                   {
                     time: 0.667,
@@ -22081,23 +22357,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22107,7 +22383,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_fire_bk5_2"
+                    name: 'khero_contbo_fire_bk5_2'
                   },
                   {
                     time: 0.683,
@@ -22119,23 +22395,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22145,7 +22421,7 @@ var resource = {
                   },
                   {
                     time: 0.683,
-                    name: "khero_contbo_fire_bk6_2"
+                    name: 'khero_contbo_fire_bk6_2'
                   },
                   {
                     time: 0.7,
@@ -22157,23 +22433,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22183,7 +22459,7 @@ var resource = {
                   },
                   {
                     time: 0.7,
-                    name: "khero_contbo_fire_bk7_2"
+                    name: 'khero_contbo_fire_bk7_2'
                   },
                   {
                     time: 0.717,
@@ -22195,23 +22471,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22221,7 +22497,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_fire_bk8_2"
+                    name: 'khero_contbo_fire_bk8_2'
                   },
                   {
                     time: 0.733,
@@ -22233,23 +22509,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22259,7 +22535,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_bk9_2"
+                    name: 'khero_contbo_fire_bk9_2'
                   },
                   {
                     time: 0.75,
@@ -22271,23 +22547,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22297,7 +22573,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "khero_contbo_fire_bk10_2"
+                    name: 'khero_contbo_fire_bk10_2'
                   },
                   {
                     time: 0.767,
@@ -22309,23 +22585,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22335,7 +22611,7 @@ var resource = {
                   },
                   {
                     time: 0.767,
-                    name: "khero_contbo_fire_bk11_2"
+                    name: 'khero_contbo_fire_bk11_2'
                   },
                   {
                     time: 0.783,
@@ -22347,23 +22623,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22373,7 +22649,7 @@ var resource = {
                   },
                   {
                     time: 0.783,
-                    name: "khero_contbo_fire_bk12_2"
+                    name: 'khero_contbo_fire_bk12_2'
                   },
                   {
                     time: 0.8,
@@ -22385,23 +22661,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22411,7 +22687,7 @@ var resource = {
                   },
                   {
                     time: 0.8,
-                    name: "khero_contbo_fire_bk13_2"
+                    name: 'khero_contbo_fire_bk13_2'
                   },
                   {
                     time: 0.817,
@@ -22423,23 +22699,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22449,7 +22725,7 @@ var resource = {
                   },
                   {
                     time: 0.817,
-                    name: "khero_contbo_fire_bk14_2"
+                    name: 'khero_contbo_fire_bk14_2'
                   },
                   {
                     time: 0.833,
@@ -22461,23 +22737,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22487,7 +22763,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_bk15_2"
+                    name: 'khero_contbo_fire_bk15_2'
                   },
                   {
                     time: 0.85,
@@ -22499,23 +22775,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22525,7 +22801,7 @@ var resource = {
                   },
                   {
                     time: 0.85,
-                    name: "khero_contbo_fire_bk16_2"
+                    name: 'khero_contbo_fire_bk16_2'
                   },
                   {
                     time: 0.867,
@@ -22537,23 +22813,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22563,7 +22839,7 @@ var resource = {
                   },
                   {
                     time: 0.867,
-                    name: "khero_contbo_fire_bk17_2"
+                    name: 'khero_contbo_fire_bk17_2'
                   },
                   {
                     time: 0.9,
@@ -22575,23 +22851,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22601,7 +22877,7 @@ var resource = {
                   },
                   {
                     time: 0.9,
-                    name: "khero_contbo_fire_bk18_2"
+                    name: 'khero_contbo_fire_bk18_2'
                   },
                   {
                     time: 0.933,
@@ -22613,23 +22889,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22639,7 +22915,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_bk19_2"
+                    name: 'khero_contbo_fire_bk19_2'
                   },
                   {
                     time: 0.967,
@@ -22651,23 +22927,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22677,7 +22953,7 @@ var resource = {
                   },
                   {
                     time: 0.967,
-                    name: "khero_contbo_fire_bk20_2"
+                    name: 'khero_contbo_fire_bk20_2'
                   },
                   {
                     time: 1,
@@ -22689,19 +22965,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.833,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22711,7 +22987,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_b_3"
+                    name: 'khero_contbo_fire_b_3'
                   }
                 ]
               },
@@ -22719,19 +22995,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.833,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22741,7 +23017,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_b_4"
+                    name: 'khero_contbo_fire_b_4'
                   }
                 ]
               },
@@ -22749,15 +23025,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22767,7 +23043,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_05_3"
+                    name: 'khero_contbo_pf_05_3'
                   }
                 ]
               },
@@ -22775,15 +23051,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22793,7 +23069,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_05_4"
+                    name: 'khero_contbo_pf_05_4'
                   }
                 ]
               },
@@ -22801,15 +23077,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22819,7 +23095,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_03_3"
+                    name: 'khero_contbo_pf_03_3'
                   }
                 ]
               },
@@ -22827,15 +23103,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.083,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22845,7 +23121,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_pf_03_4"
+                    name: 'khero_contbo_pf_03_4'
                   }
                 ]
               },
@@ -22853,19 +23129,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.767,
-                    color: "FFFFFF99"
+                    color: 'FFFFFF99'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -22875,7 +23151,7 @@ var resource = {
                   },
                   {
                     time: 0.15,
-                    name: "khero_contbo_pf_04"
+                    name: 'khero_contbo_pf_04'
                   }
                 ]
               }
@@ -22883,1102 +23159,1102 @@ var resource = {
           }
         }
       },
-      "data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.json": {
+      'res/sub/spine/contbo/khero_tom_star_05.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_fire_b_1",
-            parent: "root",
+            name: 'khero_contbo_fire_b_1',
+            parent: 'root',
             x: -14,
             y: 14
           },
           {
-            name: "khero_contbo_fire_b_2",
-            parent: "root",
+            name: 'khero_contbo_fire_b_2',
+            parent: 'root',
             x: 8,
             y: 14
           },
           {
-            name: "khero_contbo_pf_03_1",
-            parent: "root",
+            name: 'khero_contbo_pf_03_1',
+            parent: 'root',
             x: -6,
             y: 9
           },
           {
-            name: "khero_contbo_pf_03_2",
-            parent: "root",
+            name: 'khero_contbo_pf_03_2',
+            parent: 'root',
             x: -6,
             y: 9
           },
           {
-            name: "khero_contbo_fire_ms",
-            parent: "root",
+            name: 'khero_contbo_fire_ms',
+            parent: 'root',
             x: -11,
             y: 11
           },
           {
-            name: "khero_contbo_people_ani_0_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_1',
+            parent: 'root',
             x: -11,
             y: 11
           },
           {
-            name: "khero_contbo_pf_02_1",
-            parent: "root",
+            name: 'khero_contbo_pf_02_1',
+            parent: 'root',
             x: -1,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_2",
-            parent: "root",
+            name: 'khero_contbo_pf_02_2',
+            parent: 'root',
             x: -1,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_3",
-            parent: "root",
+            name: 'khero_contbo_pf_02_3',
+            parent: 'root',
             x: 83,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_4",
-            parent: "root",
+            name: 'khero_contbo_pf_02_4',
+            parent: 'root',
             x: 83,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_5",
-            parent: "root",
+            name: 'khero_contbo_pf_02_5',
+            parent: 'root',
             x: 160,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_6",
-            parent: "root",
+            name: 'khero_contbo_pf_02_6',
+            parent: 'root',
             x: 160,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_7",
-            parent: "root",
+            name: 'khero_contbo_pf_02_7',
+            parent: 'root',
             x: 239,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_8",
-            parent: "root",
+            name: 'khero_contbo_pf_02_8',
+            parent: 'root',
             x: 239,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_9",
-            parent: "root",
+            name: 'khero_contbo_pf_02_9',
+            parent: 'root',
             x: 319,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_10",
-            parent: "root",
+            name: 'khero_contbo_pf_02_10',
+            parent: 'root',
             x: 319,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_11",
-            parent: "root",
+            name: 'khero_contbo_pf_02_11',
+            parent: 'root',
             x: 394,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_12",
-            parent: "root",
+            name: 'khero_contbo_pf_02_12',
+            parent: 'root',
             x: 394,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_13",
-            parent: "root",
+            name: 'khero_contbo_pf_02_13',
+            parent: 'root',
             x: 459,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_14",
-            parent: "root",
+            name: 'khero_contbo_pf_02_14',
+            parent: 'root',
             x: 459,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_15",
-            parent: "root",
+            name: 'khero_contbo_pf_02_15',
+            parent: 'root',
             x: 459,
             y: 12
           },
           {
-            name: "khero_contbo_pf_02_16",
-            parent: "root",
+            name: 'khero_contbo_pf_02_16',
+            parent: 'root',
             x: 459,
             y: 12
           },
           {
-            name: "khero_contbo_fire_fg_01_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_1',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_fire_fg_01_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_2',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_fire_fg_01_3",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_01_3',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_pf_06_n_mask",
-            parent: "root",
+            name: 'khero_contbo_pf_06_n_mask',
+            parent: 'root',
             x: -3,
             y: -8
           },
           {
-            name: "khero_contbo_people_ani_0_2",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_2',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_people_ani_0_3",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_3',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_people_ani_0_4",
-            parent: "root",
+            name: 'khero_contbo_people_ani_0_4',
+            parent: 'root',
             x: -11,
             y: 1
           },
           {
-            name: "khero_contbo_pf_05_1",
-            parent: "root",
+            name: 'khero_contbo_pf_05_1',
+            parent: 'root',
             x: -6,
             y: 16
           },
           {
-            name: "khero_contbo_pf_05_2",
-            parent: "root",
+            name: 'khero_contbo_pf_05_2',
+            parent: 'root',
             x: -6,
             y: 16
           },
           {
-            name: "khero_contbo_cc",
-            parent: "root",
+            name: 'khero_contbo_cc',
+            parent: 'root',
             x: 135,
             y: 16,
             rotation: 90
           },
           {
-            name: "khero_contbo_people_ani_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_1',
+            parent: 'root',
             x: 28,
             y: -5,
             rotation: -11
           },
           {
-            name: "khero_contbo_people_ani_2_1",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_1',
+            parent: 'root',
             x: 153,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_2",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_2',
+            parent: 'root',
             x: 153,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_3",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_3',
+            parent: 'root',
             x: 153,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_people_ani_2_4",
-            parent: "root",
+            name: 'khero_contbo_people_ani_2_4',
+            parent: 'root',
             x: 153,
             y: 11,
             rotation: -17
           },
           {
-            name: "khero_contbo_pf_08",
-            parent: "root",
+            name: 'khero_contbo_pf_08',
+            parent: 'root',
             x: 159
           },
           {
-            name: "khero_contbo_fire_fg_02_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_02_1',
+            parent: 'root',
             x: 149,
             y: 9,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_02_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_02_2',
+            parent: 'root',
             x: 149,
             y: 9,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_11_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_11_1',
+            parent: 'root',
             x: 149,
             y: 9,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_11_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_11_2',
+            parent: 'root',
             x: 149,
             y: 9,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_13_1",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_13_1',
+            parent: 'root',
             x: 149,
             y: 9,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_fg_13_2",
-            parent: "root",
+            name: 'khero_contbo_fire_fg_13_2',
+            parent: 'root',
             x: 149,
             y: 9,
             rotation: -17
           },
           {
-            name: "khero_contbo_fire_bk0_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk0_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk1_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk1_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk2_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk2_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk3_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk3_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk4_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk4_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk5_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk5_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk6_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk6_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk7_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk7_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk8_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk8_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk9_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk9_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk10_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk10_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk11_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk11_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk12_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk12_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk13_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk13_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk14_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk14_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk15_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk15_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk16_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk16_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk17_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk17_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk18_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk18_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk19_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk19_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk20_1",
-            parent: "root",
+            name: 'khero_contbo_fire_bk20_1',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk0_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk0_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk1_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk1_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk2_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk2_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk3_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk3_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk4_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk4_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk5_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk5_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk6_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk6_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk7_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk7_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk8_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk8_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk9_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk9_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk10_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk10_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk11_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk11_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk12_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk12_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk13_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk13_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk14_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk14_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk15_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk15_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk16_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk16_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk17_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk17_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk18_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk18_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk19_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk19_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_bk20_2",
-            parent: "root",
+            name: 'khero_contbo_fire_bk20_2',
+            parent: 'root',
             x: 187,
             y: 6
           },
           {
-            name: "khero_contbo_fire_b_3",
-            parent: "root",
+            name: 'khero_contbo_fire_b_3',
+            parent: 'root',
             x: 609,
             y: 9
           },
           {
-            name: "khero_contbo_fire_b_4",
-            parent: "root",
+            name: 'khero_contbo_fire_b_4',
+            parent: 'root',
             x: 631,
             y: 9
           },
           {
-            name: "khero_contbo_pf_05_3",
-            parent: "root",
+            name: 'khero_contbo_pf_05_3',
+            parent: 'root',
             x: 617,
             y: 11
           },
           {
-            name: "khero_contbo_pf_05_4",
-            parent: "root",
+            name: 'khero_contbo_pf_05_4',
+            parent: 'root',
             x: 617,
             y: 11
           },
           {
-            name: "khero_contbo_pf_03_3",
-            parent: "root",
+            name: 'khero_contbo_pf_03_3',
+            parent: 'root',
             x: 617,
             y: 4
           },
           {
-            name: "khero_contbo_pf_03_4",
-            parent: "root",
+            name: 'khero_contbo_pf_03_4',
+            parent: 'root',
             x: 617,
             y: 4
           },
           {
-            name: "khero_contbo_pf_04",
-            parent: "root",
+            name: 'khero_contbo_pf_04',
+            parent: 'root',
             y: 2
           }
         ],
         slots: [
           {
-            name: "khero_contbo_pf_04",
-            bone: "khero_contbo_pf_04",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_04',
+            bone: 'khero_contbo_pf_04',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_03_4",
-            bone: "khero_contbo_pf_03_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_4',
+            bone: 'khero_contbo_pf_03_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_03_3",
-            bone: "khero_contbo_pf_03_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_3',
+            bone: 'khero_contbo_pf_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_4",
-            bone: "khero_contbo_pf_05_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_4',
+            bone: 'khero_contbo_pf_05_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_3",
-            bone: "khero_contbo_pf_05_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_3',
+            bone: 'khero_contbo_pf_05_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_b_4",
-            bone: "khero_contbo_fire_b_4",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_4',
+            bone: 'khero_contbo_fire_b_4',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_b_3",
-            bone: "khero_contbo_fire_b_3",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_3',
+            bone: 'khero_contbo_fire_b_3',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk20_2",
-            bone: "khero_contbo_fire_bk20_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk20_2',
+            bone: 'khero_contbo_fire_bk20_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk19_2",
-            bone: "khero_contbo_fire_bk19_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk19_2',
+            bone: 'khero_contbo_fire_bk19_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk18_2",
-            bone: "khero_contbo_fire_bk18_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk18_2',
+            bone: 'khero_contbo_fire_bk18_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk17_2",
-            bone: "khero_contbo_fire_bk17_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk17_2',
+            bone: 'khero_contbo_fire_bk17_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk16_2",
-            bone: "khero_contbo_fire_bk16_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk16_2',
+            bone: 'khero_contbo_fire_bk16_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk15_2",
-            bone: "khero_contbo_fire_bk15_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk15_2',
+            bone: 'khero_contbo_fire_bk15_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk14_2",
-            bone: "khero_contbo_fire_bk14_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk14_2',
+            bone: 'khero_contbo_fire_bk14_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk13_2",
-            bone: "khero_contbo_fire_bk13_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk13_2',
+            bone: 'khero_contbo_fire_bk13_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk12_2",
-            bone: "khero_contbo_fire_bk12_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk12_2',
+            bone: 'khero_contbo_fire_bk12_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk11_2",
-            bone: "khero_contbo_fire_bk11_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk11_2',
+            bone: 'khero_contbo_fire_bk11_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk10_2",
-            bone: "khero_contbo_fire_bk10_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk10_2',
+            bone: 'khero_contbo_fire_bk10_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk9_2",
-            bone: "khero_contbo_fire_bk9_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk9_2',
+            bone: 'khero_contbo_fire_bk9_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk8_2",
-            bone: "khero_contbo_fire_bk8_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk8_2',
+            bone: 'khero_contbo_fire_bk8_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk7_2",
-            bone: "khero_contbo_fire_bk7_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk7_2',
+            bone: 'khero_contbo_fire_bk7_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk6_2",
-            bone: "khero_contbo_fire_bk6_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk6_2',
+            bone: 'khero_contbo_fire_bk6_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk5_2",
-            bone: "khero_contbo_fire_bk5_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk5_2',
+            bone: 'khero_contbo_fire_bk5_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk4_2",
-            bone: "khero_contbo_fire_bk4_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk4_2',
+            bone: 'khero_contbo_fire_bk4_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk3_2",
-            bone: "khero_contbo_fire_bk3_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk3_2',
+            bone: 'khero_contbo_fire_bk3_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk2_2",
-            bone: "khero_contbo_fire_bk2_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk2_2',
+            bone: 'khero_contbo_fire_bk2_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk1_2",
-            bone: "khero_contbo_fire_bk1_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk1_2',
+            bone: 'khero_contbo_fire_bk1_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk0_2",
-            bone: "khero_contbo_fire_bk0_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk0_2',
+            bone: 'khero_contbo_fire_bk0_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk20_1",
-            bone: "khero_contbo_fire_bk20_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk20_1',
+            bone: 'khero_contbo_fire_bk20_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk19_1",
-            bone: "khero_contbo_fire_bk19_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk19_1',
+            bone: 'khero_contbo_fire_bk19_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk18_1",
-            bone: "khero_contbo_fire_bk18_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk18_1',
+            bone: 'khero_contbo_fire_bk18_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk17_1",
-            bone: "khero_contbo_fire_bk17_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk17_1',
+            bone: 'khero_contbo_fire_bk17_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk16_1",
-            bone: "khero_contbo_fire_bk16_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk16_1',
+            bone: 'khero_contbo_fire_bk16_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk15_1",
-            bone: "khero_contbo_fire_bk15_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk15_1',
+            bone: 'khero_contbo_fire_bk15_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk14_1",
-            bone: "khero_contbo_fire_bk14_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk14_1',
+            bone: 'khero_contbo_fire_bk14_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk13_1",
-            bone: "khero_contbo_fire_bk13_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk13_1',
+            bone: 'khero_contbo_fire_bk13_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk12_1",
-            bone: "khero_contbo_fire_bk12_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk12_1',
+            bone: 'khero_contbo_fire_bk12_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk11_1",
-            bone: "khero_contbo_fire_bk11_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk11_1',
+            bone: 'khero_contbo_fire_bk11_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk10_1",
-            bone: "khero_contbo_fire_bk10_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk10_1',
+            bone: 'khero_contbo_fire_bk10_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk9_1",
-            bone: "khero_contbo_fire_bk9_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk9_1',
+            bone: 'khero_contbo_fire_bk9_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk8_1",
-            bone: "khero_contbo_fire_bk8_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk8_1',
+            bone: 'khero_contbo_fire_bk8_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk7_1",
-            bone: "khero_contbo_fire_bk7_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk7_1',
+            bone: 'khero_contbo_fire_bk7_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk6_1",
-            bone: "khero_contbo_fire_bk6_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk6_1',
+            bone: 'khero_contbo_fire_bk6_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk5_1",
-            bone: "khero_contbo_fire_bk5_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk5_1',
+            bone: 'khero_contbo_fire_bk5_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk4_1",
-            bone: "khero_contbo_fire_bk4_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk4_1',
+            bone: 'khero_contbo_fire_bk4_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk3_1",
-            bone: "khero_contbo_fire_bk3_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk3_1',
+            bone: 'khero_contbo_fire_bk3_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk2_1",
-            bone: "khero_contbo_fire_bk2_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk2_1',
+            bone: 'khero_contbo_fire_bk2_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk1_1",
-            bone: "khero_contbo_fire_bk1_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk1_1',
+            bone: 'khero_contbo_fire_bk1_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_bk0_1",
-            bone: "khero_contbo_fire_bk0_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_bk0_1',
+            bone: 'khero_contbo_fire_bk0_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_13_2",
-            bone: "khero_contbo_fire_fg_13_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_13_2',
+            bone: 'khero_contbo_fire_fg_13_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_13_1",
-            bone: "khero_contbo_fire_fg_13_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_13_1',
+            bone: 'khero_contbo_fire_fg_13_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_11_2",
-            bone: "khero_contbo_fire_fg_11_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_11_2',
+            bone: 'khero_contbo_fire_fg_11_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_11_1",
-            bone: "khero_contbo_fire_fg_11_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_fg_11_1',
+            bone: 'khero_contbo_fire_fg_11_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_02_2",
-            bone: "khero_contbo_fire_fg_02_2"
+            name: 'khero_contbo_fire_fg_02_2',
+            bone: 'khero_contbo_fire_fg_02_2'
           },
           {
-            name: "khero_contbo_fire_fg_02_1",
-            bone: "khero_contbo_fire_fg_02_1",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_02_1',
+            bone: 'khero_contbo_fire_fg_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_08",
-            bone: "khero_contbo_pf_08"
+            name: 'khero_contbo_pf_08',
+            bone: 'khero_contbo_pf_08'
           },
           {
-            name: "khero_contbo_people_ani_2_4",
-            bone: "khero_contbo_people_ani_2_4"
+            name: 'khero_contbo_people_ani_2_4',
+            bone: 'khero_contbo_people_ani_2_4'
           },
           {
-            name: "khero_contbo_people_ani_2_3",
-            bone: "khero_contbo_people_ani_2_3"
+            name: 'khero_contbo_people_ani_2_3',
+            bone: 'khero_contbo_people_ani_2_3'
           },
           {
-            name: "khero_contbo_people_ani_2_2",
-            bone: "khero_contbo_people_ani_2_2"
+            name: 'khero_contbo_people_ani_2_2',
+            bone: 'khero_contbo_people_ani_2_2'
           },
           {
-            name: "khero_contbo_people_ani_2_1",
-            bone: "khero_contbo_people_ani_2_1",
-            blend: "additive",
-            color: "FFFFFF3F"
+            name: 'khero_contbo_people_ani_2_1',
+            bone: 'khero_contbo_people_ani_2_1',
+            blend: 'additive',
+            color: 'FFFFFF3F'
           },
           {
-            name: "khero_contbo_people_ani_1",
-            bone: "khero_contbo_people_ani_1"
+            name: 'khero_contbo_people_ani_1',
+            bone: 'khero_contbo_people_ani_1'
           },
           {
-            name: "khero_contbo_cc",
-            bone: "khero_contbo_cc",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_cc',
+            bone: 'khero_contbo_cc',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_05_2",
-            bone: "khero_contbo_pf_05_2",
-            attachment: "khero_contbo_pf_05_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_2',
+            bone: 'khero_contbo_pf_05_2',
+            attachment: 'khero_contbo_pf_05_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_05_1",
-            bone: "khero_contbo_pf_05_1",
-            attachment: "khero_contbo_pf_05_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_05_1',
+            bone: 'khero_contbo_pf_05_1',
+            attachment: 'khero_contbo_pf_05_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_people_ani_0_4",
-            bone: "khero_contbo_people_ani_0_4",
-            attachment: "khero_contbo_people_ani_0_4",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_4',
+            bone: 'khero_contbo_people_ani_0_4',
+            attachment: 'khero_contbo_people_ani_0_4',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_3",
-            bone: "khero_contbo_people_ani_0_3",
-            attachment: "khero_contbo_people_ani_0_3",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_3',
+            bone: 'khero_contbo_people_ani_0_3',
+            attachment: 'khero_contbo_people_ani_0_3',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_2",
-            bone: "khero_contbo_people_ani_0_2",
-            attachment: "khero_contbo_people_ani_0_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_people_ani_0_2',
+            bone: 'khero_contbo_people_ani_0_2',
+            attachment: 'khero_contbo_people_ani_0_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_06_n_mask",
-            bone: "khero_contbo_pf_06_n_mask",
-            attachment: "khero_contbo_pf_06_n_mask",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_06_n_mask',
+            bone: 'khero_contbo_pf_06_n_mask',
+            attachment: 'khero_contbo_pf_06_n_mask',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_fg_01_3",
-            bone: "khero_contbo_fire_fg_01_3"
+            name: 'khero_contbo_fire_fg_01_3',
+            bone: 'khero_contbo_fire_fg_01_3'
           },
           {
-            name: "khero_contbo_fire_fg_01_2",
-            bone: "khero_contbo_fire_fg_01_2",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_01_2',
+            bone: 'khero_contbo_fire_fg_01_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_fg_01_1",
-            bone: "khero_contbo_fire_fg_01_1",
-            blend: "additive"
+            name: 'khero_contbo_fire_fg_01_1',
+            bone: 'khero_contbo_fire_fg_01_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_02_16",
-            bone: "khero_contbo_pf_02_16",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_16',
+            bone: 'khero_contbo_pf_02_16',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_15",
-            bone: "khero_contbo_pf_02_15",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_15',
+            bone: 'khero_contbo_pf_02_15',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_14",
-            bone: "khero_contbo_pf_02_14",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_14',
+            bone: 'khero_contbo_pf_02_14',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_13",
-            bone: "khero_contbo_pf_02_13",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_13',
+            bone: 'khero_contbo_pf_02_13',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_12",
-            bone: "khero_contbo_pf_02_12",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_12',
+            bone: 'khero_contbo_pf_02_12',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_11",
-            bone: "khero_contbo_pf_02_11",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_11',
+            bone: 'khero_contbo_pf_02_11',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_10",
-            bone: "khero_contbo_pf_02_10",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_10',
+            bone: 'khero_contbo_pf_02_10',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_9",
-            bone: "khero_contbo_pf_02_9",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_9',
+            bone: 'khero_contbo_pf_02_9',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_8",
-            bone: "khero_contbo_pf_02_8",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_8',
+            bone: 'khero_contbo_pf_02_8',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_7",
-            bone: "khero_contbo_pf_02_7",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_7',
+            bone: 'khero_contbo_pf_02_7',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_6",
-            bone: "khero_contbo_pf_02_6",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_6',
+            bone: 'khero_contbo_pf_02_6',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_5",
-            bone: "khero_contbo_pf_02_5",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_5',
+            bone: 'khero_contbo_pf_02_5',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_4",
-            bone: "khero_contbo_pf_02_4",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_4',
+            bone: 'khero_contbo_pf_02_4',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_3",
-            bone: "khero_contbo_pf_02_3",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_3',
+            bone: 'khero_contbo_pf_02_3',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_2",
-            bone: "khero_contbo_pf_02_2",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_2',
+            bone: 'khero_contbo_pf_02_2',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_02_1",
-            bone: "khero_contbo_pf_02_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_pf_02_1',
+            bone: 'khero_contbo_pf_02_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_people_ani_0_1",
-            bone: "khero_contbo_people_ani_0_1",
-            attachment: "khero_contbo_people_ani_0_1",
-            color: "FFFFFF02"
+            name: 'khero_contbo_people_ani_0_1',
+            bone: 'khero_contbo_people_ani_0_1',
+            attachment: 'khero_contbo_people_ani_0_1',
+            color: 'FFFFFF02'
           },
           {
-            name: "khero_contbo_fire_ms",
-            bone: "khero_contbo_fire_ms",
-            attachment: "khero_contbo_fire_ms",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_ms',
+            bone: 'khero_contbo_fire_ms',
+            attachment: 'khero_contbo_fire_ms',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_03_2",
-            bone: "khero_contbo_pf_03_2",
-            attachment: "khero_contbo_pf_03_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_2',
+            bone: 'khero_contbo_pf_03_2',
+            attachment: 'khero_contbo_pf_03_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_03_1",
-            bone: "khero_contbo_pf_03_1",
-            attachment: "khero_contbo_pf_03_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_03_1',
+            bone: 'khero_contbo_pf_03_1',
+            attachment: 'khero_contbo_pf_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_fire_b_2",
-            bone: "khero_contbo_fire_b_2",
-            attachment: "khero_contbo_fire_b_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_2',
+            bone: 'khero_contbo_fire_b_2',
+            attachment: 'khero_contbo_fire_b_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_fire_b_1",
-            bone: "khero_contbo_fire_b_1",
-            attachment: "khero_contbo_fire_b_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_fire_b_1',
+            bone: 'khero_contbo_fire_b_1',
+            attachment: 'khero_contbo_fire_b_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_fire_b_1: {
               khero_contbo_fire_b_1: {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_fire_b_2: {
@@ -23986,21 +24262,21 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_pf_03_1: {
               khero_contbo_pf_03_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_03_2: {
               khero_contbo_pf_03_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_fire_ms: {
@@ -24015,140 +24291,140 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_pf_02_1: {
               khero_contbo_pf_02_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_2: {
               khero_contbo_pf_02_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_3: {
               khero_contbo_pf_02_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_4: {
               khero_contbo_pf_02_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_5: {
               khero_contbo_pf_02_5: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_6: {
               khero_contbo_pf_02_6: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_7: {
               khero_contbo_pf_02_7: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_8: {
               khero_contbo_pf_02_8: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_9: {
               khero_contbo_pf_02_9: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_10: {
               khero_contbo_pf_02_10: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_11: {
               khero_contbo_pf_02_11: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_12: {
               khero_contbo_pf_02_12: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_13: {
               khero_contbo_pf_02_13: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_14: {
               khero_contbo_pf_02_14: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_15: {
               khero_contbo_pf_02_15: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_pf_02_16: {
               khero_contbo_pf_02_16: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_02"
+                name: 'khero_contbo_pf_02'
               }
             },
             khero_contbo_fire_fg_01_1: {
               khero_contbo_fire_fg_01_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_fire_fg_01_2: {
               khero_contbo_fire_fg_01_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_fire_fg_01_3: {
               khero_contbo_fire_fg_01_3: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_01"
+                name: 'khero_contbo_fire_fg_01'
               }
             },
             khero_contbo_pf_06_n_mask: {
@@ -24162,7 +24438,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_people_ani_0_3: {
@@ -24170,7 +24446,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_people_ani_0_4: {
@@ -24178,21 +24454,21 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_people_ani_0"
+                name: 'khero_contbo_people_ani_0'
               }
             },
             khero_contbo_pf_05_1: {
               khero_contbo_pf_05_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_05_2: {
               khero_contbo_pf_05_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_cc: {
@@ -24211,28 +24487,28 @@ var resource = {
               khero_contbo_people_ani_2_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_2: {
               khero_contbo_people_ani_2_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_3: {
               khero_contbo_people_ani_2_3: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_people_ani_2_4: {
               khero_contbo_people_ani_2_4: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_people_ani_2"
+                name: 'khero_contbo_people_ani_2'
               }
             },
             khero_contbo_pf_08: {
@@ -24245,336 +24521,336 @@ var resource = {
               khero_contbo_fire_fg_02_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_02"
+                name: 'khero_contbo_fire_fg_02'
               }
             },
             khero_contbo_fire_fg_02_2: {
               khero_contbo_fire_fg_02_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_02"
+                name: 'khero_contbo_fire_fg_02'
               }
             },
             khero_contbo_fire_fg_11_1: {
               khero_contbo_fire_fg_11_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_11"
+                name: 'khero_contbo_fire_fg_11'
               }
             },
             khero_contbo_fire_fg_11_2: {
               khero_contbo_fire_fg_11_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_11"
+                name: 'khero_contbo_fire_fg_11'
               }
             },
             khero_contbo_fire_fg_13_1: {
               khero_contbo_fire_fg_13_1: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_13"
+                name: 'khero_contbo_fire_fg_13'
               }
             },
             khero_contbo_fire_fg_13_2: {
               khero_contbo_fire_fg_13_2: {
                 width: 300,
                 height: 200,
-                name: "khero_contbo_fire_fg_13"
+                name: 'khero_contbo_fire_fg_13'
               }
             },
             khero_contbo_fire_bk0_1: {
               khero_contbo_fire_bk0_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk0"
+                name: 'khero_contbo_fire_bk0'
               }
             },
             khero_contbo_fire_bk1_1: {
               khero_contbo_fire_bk1_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk1"
+                name: 'khero_contbo_fire_bk1'
               }
             },
             khero_contbo_fire_bk2_1: {
               khero_contbo_fire_bk2_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk2"
+                name: 'khero_contbo_fire_bk2'
               }
             },
             khero_contbo_fire_bk3_1: {
               khero_contbo_fire_bk3_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk3"
+                name: 'khero_contbo_fire_bk3'
               }
             },
             khero_contbo_fire_bk4_1: {
               khero_contbo_fire_bk4_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk4"
+                name: 'khero_contbo_fire_bk4'
               }
             },
             khero_contbo_fire_bk5_1: {
               khero_contbo_fire_bk5_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk5"
+                name: 'khero_contbo_fire_bk5'
               }
             },
             khero_contbo_fire_bk6_1: {
               khero_contbo_fire_bk6_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk6"
+                name: 'khero_contbo_fire_bk6'
               }
             },
             khero_contbo_fire_bk7_1: {
               khero_contbo_fire_bk7_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk7"
+                name: 'khero_contbo_fire_bk7'
               }
             },
             khero_contbo_fire_bk8_1: {
               khero_contbo_fire_bk8_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk8"
+                name: 'khero_contbo_fire_bk8'
               }
             },
             khero_contbo_fire_bk9_1: {
               khero_contbo_fire_bk9_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk9"
+                name: 'khero_contbo_fire_bk9'
               }
             },
             khero_contbo_fire_bk10_1: {
               khero_contbo_fire_bk10_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk10"
+                name: 'khero_contbo_fire_bk10'
               }
             },
             khero_contbo_fire_bk11_1: {
               khero_contbo_fire_bk11_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk11"
+                name: 'khero_contbo_fire_bk11'
               }
             },
             khero_contbo_fire_bk12_1: {
               khero_contbo_fire_bk12_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk12"
+                name: 'khero_contbo_fire_bk12'
               }
             },
             khero_contbo_fire_bk13_1: {
               khero_contbo_fire_bk13_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk13"
+                name: 'khero_contbo_fire_bk13'
               }
             },
             khero_contbo_fire_bk14_1: {
               khero_contbo_fire_bk14_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk14"
+                name: 'khero_contbo_fire_bk14'
               }
             },
             khero_contbo_fire_bk15_1: {
               khero_contbo_fire_bk15_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk15"
+                name: 'khero_contbo_fire_bk15'
               }
             },
             khero_contbo_fire_bk16_1: {
               khero_contbo_fire_bk16_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk16"
+                name: 'khero_contbo_fire_bk16'
               }
             },
             khero_contbo_fire_bk17_1: {
               khero_contbo_fire_bk17_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk17"
+                name: 'khero_contbo_fire_bk17'
               }
             },
             khero_contbo_fire_bk18_1: {
               khero_contbo_fire_bk18_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk18"
+                name: 'khero_contbo_fire_bk18'
               }
             },
             khero_contbo_fire_bk19_1: {
               khero_contbo_fire_bk19_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk19"
+                name: 'khero_contbo_fire_bk19'
               }
             },
             khero_contbo_fire_bk20_1: {
               khero_contbo_fire_bk20_1: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk20"
+                name: 'khero_contbo_fire_bk20'
               }
             },
             khero_contbo_fire_bk0_2: {
               khero_contbo_fire_bk0_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk0"
+                name: 'khero_contbo_fire_bk0'
               }
             },
             khero_contbo_fire_bk1_2: {
               khero_contbo_fire_bk1_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk1"
+                name: 'khero_contbo_fire_bk1'
               }
             },
             khero_contbo_fire_bk2_2: {
               khero_contbo_fire_bk2_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk2"
+                name: 'khero_contbo_fire_bk2'
               }
             },
             khero_contbo_fire_bk3_2: {
               khero_contbo_fire_bk3_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk3"
+                name: 'khero_contbo_fire_bk3'
               }
             },
             khero_contbo_fire_bk4_2: {
               khero_contbo_fire_bk4_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk4"
+                name: 'khero_contbo_fire_bk4'
               }
             },
             khero_contbo_fire_bk5_2: {
               khero_contbo_fire_bk5_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk5"
+                name: 'khero_contbo_fire_bk5'
               }
             },
             khero_contbo_fire_bk6_2: {
               khero_contbo_fire_bk6_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk6"
+                name: 'khero_contbo_fire_bk6'
               }
             },
             khero_contbo_fire_bk7_2: {
               khero_contbo_fire_bk7_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk7"
+                name: 'khero_contbo_fire_bk7'
               }
             },
             khero_contbo_fire_bk8_2: {
               khero_contbo_fire_bk8_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk8"
+                name: 'khero_contbo_fire_bk8'
               }
             },
             khero_contbo_fire_bk9_2: {
               khero_contbo_fire_bk9_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk9"
+                name: 'khero_contbo_fire_bk9'
               }
             },
             khero_contbo_fire_bk10_2: {
               khero_contbo_fire_bk10_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk10"
+                name: 'khero_contbo_fire_bk10'
               }
             },
             khero_contbo_fire_bk11_2: {
               khero_contbo_fire_bk11_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk11"
+                name: 'khero_contbo_fire_bk11'
               }
             },
             khero_contbo_fire_bk12_2: {
               khero_contbo_fire_bk12_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk12"
+                name: 'khero_contbo_fire_bk12'
               }
             },
             khero_contbo_fire_bk13_2: {
               khero_contbo_fire_bk13_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk13"
+                name: 'khero_contbo_fire_bk13'
               }
             },
             khero_contbo_fire_bk14_2: {
               khero_contbo_fire_bk14_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk14"
+                name: 'khero_contbo_fire_bk14'
               }
             },
             khero_contbo_fire_bk15_2: {
               khero_contbo_fire_bk15_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk15"
+                name: 'khero_contbo_fire_bk15'
               }
             },
             khero_contbo_fire_bk16_2: {
               khero_contbo_fire_bk16_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk16"
+                name: 'khero_contbo_fire_bk16'
               }
             },
             khero_contbo_fire_bk17_2: {
               khero_contbo_fire_bk17_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk17"
+                name: 'khero_contbo_fire_bk17'
               }
             },
             khero_contbo_fire_bk18_2: {
               khero_contbo_fire_bk18_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk18"
+                name: 'khero_contbo_fire_bk18'
               }
             },
             khero_contbo_fire_bk19_2: {
               khero_contbo_fire_bk19_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk19"
+                name: 'khero_contbo_fire_bk19'
               }
             },
             khero_contbo_fire_bk20_2: {
               khero_contbo_fire_bk20_2: {
                 width: 297,
                 height: 100,
-                name: "khero_contbo_fire_bk20"
+                name: 'khero_contbo_fire_bk20'
               }
             },
             khero_contbo_fire_b_3: {
@@ -24582,7 +24858,7 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_fire_b_4: {
@@ -24590,35 +24866,35 @@ var resource = {
                 width: 300,
                 height: 200,
                 x: -14.062,
-                name: "khero_contbo_fire_b"
+                name: 'khero_contbo_fire_b'
               }
             },
             khero_contbo_pf_05_3: {
               khero_contbo_pf_05_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_05_4: {
               khero_contbo_pf_05_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_05"
+                name: 'khero_contbo_pf_05'
               }
             },
             khero_contbo_pf_03_3: {
               khero_contbo_pf_03_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_03_4: {
               khero_contbo_pf_03_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_03"
+                name: 'khero_contbo_pf_03'
               }
             },
             khero_contbo_pf_04: {
@@ -28337,21 +28613,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.167,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_b_1"
+                    name: 'khero_contbo_fire_b_1'
                   },
                   {
                     time: 0.267,
@@ -28363,21 +28639,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.167,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_b_2"
+                    name: 'khero_contbo_fire_b_2'
                   },
                   {
                     time: 0.267,
@@ -28389,21 +28665,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_03_1"
+                    name: 'khero_contbo_pf_03_1'
                   },
                   {
                     time: 0.683,
@@ -28415,21 +28691,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_03_2"
+                    name: 'khero_contbo_pf_03_2'
                   },
                   {
                     time: 0.683,
@@ -28441,17 +28717,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_fire_ms"
+                    name: 'khero_contbo_fire_ms'
                   },
                   {
                     time: 0.467,
@@ -28463,21 +28739,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF02"
+                    color: 'FFFFFF02'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFB2"
+                    color: 'FFFFFFB2'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_1"
+                    name: 'khero_contbo_people_ani_0_1'
                   },
                   {
                     time: 0.467,
@@ -28489,19 +28765,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.467,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.7,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.917,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28511,7 +28787,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_pf_02_1"
+                    name: 'khero_contbo_pf_02_1'
                   },
                   {
                     time: 0.95,
@@ -28523,19 +28799,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.467,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.7,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.917,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28545,7 +28821,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_pf_02_2"
+                    name: 'khero_contbo_pf_02_2'
                   },
                   {
                     time: 0.95,
@@ -28557,19 +28833,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28579,7 +28855,7 @@ var resource = {
                   },
                   {
                     time: 0.517,
-                    name: "khero_contbo_pf_02_3"
+                    name: 'khero_contbo_pf_02_3'
                   },
                   {
                     time: 1,
@@ -28591,19 +28867,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.967,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28613,7 +28889,7 @@ var resource = {
                   },
                   {
                     time: 0.517,
-                    name: "khero_contbo_pf_02_4"
+                    name: 'khero_contbo_pf_02_4'
                   },
                   {
                     time: 1,
@@ -28625,19 +28901,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.567,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.8,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.017,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28647,7 +28923,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_pf_02_5"
+                    name: 'khero_contbo_pf_02_5'
                   },
                   {
                     time: 1.05,
@@ -28659,19 +28935,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.567,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.8,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.017,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28681,7 +28957,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_pf_02_6"
+                    name: 'khero_contbo_pf_02_6'
                   },
                   {
                     time: 1.05,
@@ -28693,19 +28969,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28715,7 +28991,7 @@ var resource = {
                   },
                   {
                     time: 0.617,
-                    name: "khero_contbo_pf_02_7"
+                    name: 'khero_contbo_pf_02_7'
                   }
                 ]
               },
@@ -28723,19 +28999,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.85,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28745,7 +29021,7 @@ var resource = {
                   },
                   {
                     time: 0.617,
-                    name: "khero_contbo_pf_02_8"
+                    name: 'khero_contbo_pf_02_8'
                   }
                 ]
               },
@@ -28753,19 +29029,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.9,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.117,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28775,7 +29051,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_pf_02_9"
+                    name: 'khero_contbo_pf_02_9'
                   }
                 ]
               },
@@ -28783,19 +29059,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.9,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.117,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28805,7 +29081,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_pf_02_10"
+                    name: 'khero_contbo_pf_02_10'
                   }
                 ]
               },
@@ -28813,19 +29089,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28835,7 +29111,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_11"
+                    name: 'khero_contbo_pf_02_11'
                   }
                 ]
               },
@@ -28843,19 +29119,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28865,7 +29141,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_12"
+                    name: 'khero_contbo_pf_02_12'
                   }
                 ]
               },
@@ -28873,19 +29149,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28895,7 +29171,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_13"
+                    name: 'khero_contbo_pf_02_13'
                   }
                 ]
               },
@@ -28903,19 +29179,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28925,7 +29201,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_14"
+                    name: 'khero_contbo_pf_02_14'
                   }
                 ]
               },
@@ -28933,19 +29209,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28955,7 +29231,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_15"
+                    name: 'khero_contbo_pf_02_15'
                   }
                 ]
               },
@@ -28963,19 +29239,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.717,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.95,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -28985,7 +29261,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_pf_02_16"
+                    name: 'khero_contbo_pf_02_16'
                   }
                 ]
               },
@@ -28997,7 +29273,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_1"
+                    name: 'khero_contbo_fire_fg_01_1'
                   },
                   {
                     time: 0.533,
@@ -29013,7 +29289,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_2"
+                    name: 'khero_contbo_fire_fg_01_2'
                   },
                   {
                     time: 0.533,
@@ -29029,7 +29305,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_fire_fg_01_3"
+                    name: 'khero_contbo_fire_fg_01_3'
                   },
                   {
                     time: 0.533,
@@ -29041,25 +29317,25 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.25,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_06_n_mask"
+                    name: 'khero_contbo_pf_06_n_mask'
                   },
                   {
                     time: 0.467,
@@ -29071,17 +29347,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_2"
+                    name: 'khero_contbo_people_ani_0_2'
                   },
                   {
                     time: 0.467,
@@ -29093,17 +29369,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_3"
+                    name: 'khero_contbo_people_ani_0_3'
                   },
                   {
                     time: 0.467,
@@ -29115,17 +29391,17 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.083,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_people_ani_0_4"
+                    name: 'khero_contbo_people_ani_0_4'
                   },
                   {
                     time: 0.467,
@@ -29137,21 +29413,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_05_1"
+                    name: 'khero_contbo_pf_05_1'
                   },
                   {
                     time: 0.533,
@@ -29163,21 +29439,21 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.333,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_pf_05_2"
+                    name: 'khero_contbo_pf_05_2'
                   },
                   {
                     time: 0.533,
@@ -29189,23 +29465,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.517,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.617,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.833,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29215,7 +29491,7 @@ var resource = {
                   },
                   {
                     time: 0.4,
-                    name: "khero_contbo_cc"
+                    name: 'khero_contbo_cc'
                   }
                 ]
               },
@@ -29227,7 +29503,7 @@ var resource = {
                   },
                   {
                     time: 0.467,
-                    name: "khero_contbo_people_ani_1"
+                    name: 'khero_contbo_people_ani_1'
                   },
                   {
                     time: 0.533,
@@ -29239,15 +29515,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF3F"
+                    color: 'FFFFFF3F'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFF3F"
+                    color: 'FFFFFF3F'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29257,7 +29533,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_1"
+                    name: 'khero_contbo_people_ani_2_1'
                   }
                 ]
               },
@@ -29265,15 +29541,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29283,7 +29559,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_2"
+                    name: 'khero_contbo_people_ani_2_2'
                   }
                 ]
               },
@@ -29291,15 +29567,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29309,7 +29585,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_3"
+                    name: 'khero_contbo_people_ani_2_3'
                   }
                 ]
               },
@@ -29317,15 +29593,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.867,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29335,7 +29611,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_people_ani_2_4"
+                    name: 'khero_contbo_people_ani_2_4'
                   }
                 ]
               },
@@ -29347,7 +29623,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_pf_08"
+                    name: 'khero_contbo_pf_08'
                   },
                   {
                     time: 1.017,
@@ -29359,15 +29635,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29377,7 +29653,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_02_1"
+                    name: 'khero_contbo_fire_fg_02_1'
                   },
                   {
                     time: 0.75,
@@ -29389,15 +29665,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29407,7 +29683,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_02_2"
+                    name: 'khero_contbo_fire_fg_02_2'
                   },
                   {
                     time: 0.75,
@@ -29419,19 +29695,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29441,7 +29717,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_11_1"
+                    name: 'khero_contbo_fire_fg_11_1'
                   },
                   {
                     time: 0.883,
@@ -29453,19 +29729,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29475,7 +29751,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_fg_11_2"
+                    name: 'khero_contbo_fire_fg_11_2'
                   },
                   {
                     time: 0.883,
@@ -29487,19 +29763,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29509,7 +29785,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_fg_13_1"
+                    name: 'khero_contbo_fire_fg_13_1'
                   },
                   {
                     time: 1.017,
@@ -29521,19 +29797,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.733,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.883,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29543,7 +29819,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_fg_13_2"
+                    name: 'khero_contbo_fire_fg_13_2'
                   },
                   {
                     time: 1.017,
@@ -29555,23 +29831,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29581,7 +29857,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_bk0_1"
+                    name: 'khero_contbo_fire_bk0_1'
                   },
                   {
                     time: 0.567,
@@ -29593,23 +29869,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29619,7 +29895,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_fire_bk1_1"
+                    name: 'khero_contbo_fire_bk1_1'
                   },
                   {
                     time: 0.6,
@@ -29631,23 +29907,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29657,7 +29933,7 @@ var resource = {
                   },
                   {
                     time: 0.6,
-                    name: "khero_contbo_fire_bk2_1"
+                    name: 'khero_contbo_fire_bk2_1'
                   },
                   {
                     time: 0.633,
@@ -29669,23 +29945,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29695,7 +29971,7 @@ var resource = {
                   },
                   {
                     time: 0.633,
-                    name: "khero_contbo_fire_bk3_1"
+                    name: 'khero_contbo_fire_bk3_1'
                   },
                   {
                     time: 0.65,
@@ -29707,23 +29983,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29733,7 +30009,7 @@ var resource = {
                   },
                   {
                     time: 0.65,
-                    name: "khero_contbo_fire_bk4_1"
+                    name: 'khero_contbo_fire_bk4_1'
                   },
                   {
                     time: 0.667,
@@ -29745,23 +30021,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29771,7 +30047,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_fire_bk5_1"
+                    name: 'khero_contbo_fire_bk5_1'
                   },
                   {
                     time: 0.683,
@@ -29783,23 +30059,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29809,7 +30085,7 @@ var resource = {
                   },
                   {
                     time: 0.683,
-                    name: "khero_contbo_fire_bk6_1"
+                    name: 'khero_contbo_fire_bk6_1'
                   },
                   {
                     time: 0.7,
@@ -29821,23 +30097,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29847,7 +30123,7 @@ var resource = {
                   },
                   {
                     time: 0.7,
-                    name: "khero_contbo_fire_bk7_1"
+                    name: 'khero_contbo_fire_bk7_1'
                   },
                   {
                     time: 0.717,
@@ -29859,23 +30135,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29885,7 +30161,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_fire_bk8_1"
+                    name: 'khero_contbo_fire_bk8_1'
                   },
                   {
                     time: 0.733,
@@ -29897,23 +30173,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29923,7 +30199,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_bk9_1"
+                    name: 'khero_contbo_fire_bk9_1'
                   },
                   {
                     time: 0.75,
@@ -29935,23 +30211,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29961,7 +30237,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "khero_contbo_fire_bk10_1"
+                    name: 'khero_contbo_fire_bk10_1'
                   },
                   {
                     time: 0.767,
@@ -29973,23 +30249,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -29999,7 +30275,7 @@ var resource = {
                   },
                   {
                     time: 0.767,
-                    name: "khero_contbo_fire_bk11_1"
+                    name: 'khero_contbo_fire_bk11_1'
                   },
                   {
                     time: 0.783,
@@ -30011,23 +30287,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30037,7 +30313,7 @@ var resource = {
                   },
                   {
                     time: 0.783,
-                    name: "khero_contbo_fire_bk12_1"
+                    name: 'khero_contbo_fire_bk12_1'
                   },
                   {
                     time: 0.8,
@@ -30049,23 +30325,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30075,7 +30351,7 @@ var resource = {
                   },
                   {
                     time: 0.8,
-                    name: "khero_contbo_fire_bk13_1"
+                    name: 'khero_contbo_fire_bk13_1'
                   },
                   {
                     time: 0.817,
@@ -30087,23 +30363,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30113,7 +30389,7 @@ var resource = {
                   },
                   {
                     time: 0.817,
-                    name: "khero_contbo_fire_bk14_1"
+                    name: 'khero_contbo_fire_bk14_1'
                   },
                   {
                     time: 0.833,
@@ -30125,23 +30401,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30151,7 +30427,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_bk15_1"
+                    name: 'khero_contbo_fire_bk15_1'
                   },
                   {
                     time: 0.85,
@@ -30163,23 +30439,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30189,7 +30465,7 @@ var resource = {
                   },
                   {
                     time: 0.85,
-                    name: "khero_contbo_fire_bk16_1"
+                    name: 'khero_contbo_fire_bk16_1'
                   },
                   {
                     time: 0.867,
@@ -30201,23 +30477,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30227,7 +30503,7 @@ var resource = {
                   },
                   {
                     time: 0.867,
-                    name: "khero_contbo_fire_bk17_1"
+                    name: 'khero_contbo_fire_bk17_1'
                   },
                   {
                     time: 0.9,
@@ -30239,23 +30515,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30265,7 +30541,7 @@ var resource = {
                   },
                   {
                     time: 0.9,
-                    name: "khero_contbo_fire_bk18_1"
+                    name: 'khero_contbo_fire_bk18_1'
                   },
                   {
                     time: 0.933,
@@ -30277,23 +30553,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30303,7 +30579,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_bk19_1"
+                    name: 'khero_contbo_fire_bk19_1'
                   },
                   {
                     time: 0.967,
@@ -30315,23 +30591,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFF4C"
+                    color: 'FFFFFF4C'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF26"
+                    color: 'FFFFFF26'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30341,7 +30617,7 @@ var resource = {
                   },
                   {
                     time: 0.967,
-                    name: "khero_contbo_fire_bk20_1"
+                    name: 'khero_contbo_fire_bk20_1'
                   }
                 ]
               },
@@ -30349,23 +30625,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30375,7 +30651,7 @@ var resource = {
                   },
                   {
                     time: 0.533,
-                    name: "khero_contbo_fire_bk0_2"
+                    name: 'khero_contbo_fire_bk0_2'
                   },
                   {
                     time: 0.567,
@@ -30387,23 +30663,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30413,7 +30689,7 @@ var resource = {
                   },
                   {
                     time: 0.567,
-                    name: "khero_contbo_fire_bk1_2"
+                    name: 'khero_contbo_fire_bk1_2'
                   },
                   {
                     time: 0.6,
@@ -30425,23 +30701,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30451,7 +30727,7 @@ var resource = {
                   },
                   {
                     time: 0.6,
-                    name: "khero_contbo_fire_bk2_2"
+                    name: 'khero_contbo_fire_bk2_2'
                   },
                   {
                     time: 0.633,
@@ -30463,23 +30739,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30489,7 +30765,7 @@ var resource = {
                   },
                   {
                     time: 0.633,
-                    name: "khero_contbo_fire_bk3_2"
+                    name: 'khero_contbo_fire_bk3_2'
                   },
                   {
                     time: 0.65,
@@ -30501,23 +30777,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30527,7 +30803,7 @@ var resource = {
                   },
                   {
                     time: 0.65,
-                    name: "khero_contbo_fire_bk4_2"
+                    name: 'khero_contbo_fire_bk4_2'
                   },
                   {
                     time: 0.667,
@@ -30539,23 +30815,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30565,7 +30841,7 @@ var resource = {
                   },
                   {
                     time: 0.667,
-                    name: "khero_contbo_fire_bk5_2"
+                    name: 'khero_contbo_fire_bk5_2'
                   },
                   {
                     time: 0.683,
@@ -30577,23 +30853,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30603,7 +30879,7 @@ var resource = {
                   },
                   {
                     time: 0.683,
-                    name: "khero_contbo_fire_bk6_2"
+                    name: 'khero_contbo_fire_bk6_2'
                   },
                   {
                     time: 0.7,
@@ -30615,23 +30891,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30641,7 +30917,7 @@ var resource = {
                   },
                   {
                     time: 0.7,
-                    name: "khero_contbo_fire_bk7_2"
+                    name: 'khero_contbo_fire_bk7_2'
                   },
                   {
                     time: 0.717,
@@ -30653,23 +30929,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30679,7 +30955,7 @@ var resource = {
                   },
                   {
                     time: 0.717,
-                    name: "khero_contbo_fire_bk8_2"
+                    name: 'khero_contbo_fire_bk8_2'
                   },
                   {
                     time: 0.733,
@@ -30691,23 +30967,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30717,7 +30993,7 @@ var resource = {
                   },
                   {
                     time: 0.733,
-                    name: "khero_contbo_fire_bk9_2"
+                    name: 'khero_contbo_fire_bk9_2'
                   },
                   {
                     time: 0.75,
@@ -30729,23 +31005,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30755,7 +31031,7 @@ var resource = {
                   },
                   {
                     time: 0.75,
-                    name: "khero_contbo_fire_bk10_2"
+                    name: 'khero_contbo_fire_bk10_2'
                   },
                   {
                     time: 0.767,
@@ -30767,23 +31043,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30793,7 +31069,7 @@ var resource = {
                   },
                   {
                     time: 0.767,
-                    name: "khero_contbo_fire_bk11_2"
+                    name: 'khero_contbo_fire_bk11_2'
                   },
                   {
                     time: 0.783,
@@ -30805,23 +31081,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30831,7 +31107,7 @@ var resource = {
                   },
                   {
                     time: 0.783,
-                    name: "khero_contbo_fire_bk12_2"
+                    name: 'khero_contbo_fire_bk12_2'
                   },
                   {
                     time: 0.8,
@@ -30843,23 +31119,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30869,7 +31145,7 @@ var resource = {
                   },
                   {
                     time: 0.8,
-                    name: "khero_contbo_fire_bk13_2"
+                    name: 'khero_contbo_fire_bk13_2'
                   },
                   {
                     time: 0.817,
@@ -30881,23 +31157,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30907,7 +31183,7 @@ var resource = {
                   },
                   {
                     time: 0.817,
-                    name: "khero_contbo_fire_bk14_2"
+                    name: 'khero_contbo_fire_bk14_2'
                   },
                   {
                     time: 0.833,
@@ -30919,23 +31195,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30945,7 +31221,7 @@ var resource = {
                   },
                   {
                     time: 0.833,
-                    name: "khero_contbo_fire_bk15_2"
+                    name: 'khero_contbo_fire_bk15_2'
                   },
                   {
                     time: 0.85,
@@ -30957,23 +31233,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -30983,7 +31259,7 @@ var resource = {
                   },
                   {
                     time: 0.85,
-                    name: "khero_contbo_fire_bk16_2"
+                    name: 'khero_contbo_fire_bk16_2'
                   },
                   {
                     time: 0.867,
@@ -30995,23 +31271,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31021,7 +31297,7 @@ var resource = {
                   },
                   {
                     time: 0.867,
-                    name: "khero_contbo_fire_bk17_2"
+                    name: 'khero_contbo_fire_bk17_2'
                   },
                   {
                     time: 0.9,
@@ -31033,23 +31309,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31059,7 +31335,7 @@ var resource = {
                   },
                   {
                     time: 0.9,
-                    name: "khero_contbo_fire_bk18_2"
+                    name: 'khero_contbo_fire_bk18_2'
                   },
                   {
                     time: 0.933,
@@ -31071,23 +31347,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31097,7 +31373,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_bk19_2"
+                    name: 'khero_contbo_fire_bk19_2'
                   },
                   {
                     time: 0.967,
@@ -31109,23 +31385,23 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.533,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.667,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFFCC"
+                    color: 'FFFFFFCC'
                   },
                   {
                     time: 1.05,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31135,7 +31411,7 @@ var resource = {
                   },
                   {
                     time: 0.967,
-                    name: "khero_contbo_fire_bk20_2"
+                    name: 'khero_contbo_fire_bk20_2'
                   }
                 ]
               },
@@ -31143,19 +31419,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.1,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31165,7 +31441,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_b_3"
+                    name: 'khero_contbo_fire_b_3'
                   }
                 ]
               },
@@ -31173,19 +31449,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.933,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 1.1,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31195,7 +31471,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_fire_b_4"
+                    name: 'khero_contbo_fire_b_4'
                   }
                 ]
               },
@@ -31203,15 +31479,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31221,7 +31497,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_pf_05_3"
+                    name: 'khero_contbo_pf_05_3'
                   }
                 ]
               },
@@ -31229,15 +31505,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31247,7 +31523,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_pf_05_4"
+                    name: 'khero_contbo_pf_05_4'
                   }
                 ]
               },
@@ -31255,15 +31531,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31273,7 +31549,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_pf_03_3"
+                    name: 'khero_contbo_pf_03_3'
                   }
                 ]
               },
@@ -31281,15 +31557,15 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.067,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 1.183,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31299,7 +31575,7 @@ var resource = {
                   },
                   {
                     time: 0.933,
-                    name: "khero_contbo_pf_03_4"
+                    name: 'khero_contbo_pf_03_4'
                   }
                 ]
               },
@@ -31307,19 +31583,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.15,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.767,
-                    color: "FFFFFF99"
+                    color: 'FFFFFF99'
                   },
                   {
                     time: 1.167,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ],
                 attachment: [
@@ -31329,7 +31605,7 @@ var resource = {
                   },
                   {
                     time: 0.15,
-                    name: "khero_contbo_pf_04"
+                    name: 'khero_contbo_pf_04'
                   }
                 ]
               }
@@ -31337,304 +31613,304 @@ var resource = {
           }
         }
       },
-      "data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.json": {
+      'res/sub/spine/contbo/khero_tom_loop_01.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            parent: "root",
+            name: 'khero_contbo_pf_07_1',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_2",
-            parent: "root",
+            name: 'khero_contbo_pf_07_2',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_3",
-            parent: "root",
+            name: 'khero_contbo_pf_07_3',
+            parent: 'root',
             x: 74,
             y: -59
           },
           {
-            name: "khero_contbo_pf_07_4",
-            parent: "root",
+            name: 'khero_contbo_pf_07_4',
+            parent: 'root',
             x: 74,
             y: -59
           },
           {
-            name: "khero_contbo_line_04_1",
-            parent: "root",
+            name: 'khero_contbo_line_04_1',
+            parent: 'root',
             x: -71,
             y: 58
           },
           {
-            name: "khero_contbo_line_04_2",
-            parent: "root",
+            name: 'khero_contbo_line_04_2',
+            parent: 'root',
             x: 67,
             y: -58
           },
           {
-            name: "khero_contbo_line_03_1",
-            parent: "root",
+            name: 'khero_contbo_line_03_1',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_2",
-            parent: "root",
+            name: 'khero_contbo_line_03_2',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_1",
-            parent: "root",
+            name: 'khero_contbo_line_02_1',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_2",
-            parent: "root",
+            name: 'khero_contbo_line_02_2',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_03_3",
-            parent: "root",
+            name: 'khero_contbo_line_03_3',
+            parent: 'root',
             x: 74,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_4",
-            parent: "root",
+            name: 'khero_contbo_line_03_4',
+            parent: 'root',
             x: 74,
             y: 62
           },
           {
-            name: "khero_contbo_line_02_3",
-            parent: "root",
+            name: 'khero_contbo_line_02_3',
+            parent: 'root',
             x: 76,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_4",
-            parent: "root",
+            name: 'khero_contbo_line_02_4',
+            parent: 'root',
             x: 76,
             y: -59
           },
           {
-            name: "khero_contbo_line_03_5",
-            parent: "root",
+            name: 'khero_contbo_line_03_5',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_6",
-            parent: "root",
+            name: 'khero_contbo_line_03_6',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_7",
-            parent: "root",
+            name: 'khero_contbo_line_03_7',
+            parent: 'root',
             x: 74,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_8",
-            parent: "root",
+            name: 'khero_contbo_line_03_8',
+            parent: 'root',
             x: 74,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_5",
-            parent: "root",
+            name: 'khero_contbo_line_02_5',
+            parent: 'root',
             x: 78,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_6",
-            parent: "root",
+            name: 'khero_contbo_line_02_6',
+            parent: 'root',
             x: 78,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_7",
-            parent: "root",
+            name: 'khero_contbo_line_02_7',
+            parent: 'root',
             x: -79,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_8",
-            parent: "root",
+            name: 'khero_contbo_line_02_8',
+            parent: 'root',
             x: -79,
             y: -59
           }
         ],
         slots: [
           {
-            name: "khero_contbo_line_02_8",
-            bone: "khero_contbo_line_02_8"
+            name: 'khero_contbo_line_02_8',
+            bone: 'khero_contbo_line_02_8'
           },
           {
-            name: "khero_contbo_line_02_7",
-            bone: "khero_contbo_line_02_7",
-            blend: "additive"
+            name: 'khero_contbo_line_02_7',
+            bone: 'khero_contbo_line_02_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_6",
-            bone: "khero_contbo_line_02_6"
+            name: 'khero_contbo_line_02_6',
+            bone: 'khero_contbo_line_02_6'
           },
           {
-            name: "khero_contbo_line_02_5",
-            bone: "khero_contbo_line_02_5",
-            blend: "additive"
+            name: 'khero_contbo_line_02_5',
+            bone: 'khero_contbo_line_02_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_8",
-            bone: "khero_contbo_line_03_8"
+            name: 'khero_contbo_line_03_8',
+            bone: 'khero_contbo_line_03_8'
           },
           {
-            name: "khero_contbo_line_03_7",
-            bone: "khero_contbo_line_03_7",
-            blend: "additive"
+            name: 'khero_contbo_line_03_7',
+            bone: 'khero_contbo_line_03_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_6",
-            bone: "khero_contbo_line_03_6"
+            name: 'khero_contbo_line_03_6',
+            bone: 'khero_contbo_line_03_6'
           },
           {
-            name: "khero_contbo_line_03_5",
-            bone: "khero_contbo_line_03_5",
-            blend: "additive"
+            name: 'khero_contbo_line_03_5',
+            bone: 'khero_contbo_line_03_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_4",
-            bone: "khero_contbo_line_02_4",
-            attachment: "khero_contbo_line_02_4"
+            name: 'khero_contbo_line_02_4',
+            bone: 'khero_contbo_line_02_4',
+            attachment: 'khero_contbo_line_02_4'
           },
           {
-            name: "khero_contbo_line_02_3",
-            bone: "khero_contbo_line_02_3",
-            attachment: "khero_contbo_line_02_3",
-            blend: "additive"
+            name: 'khero_contbo_line_02_3',
+            bone: 'khero_contbo_line_02_3',
+            attachment: 'khero_contbo_line_02_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_4",
-            bone: "khero_contbo_line_03_4"
+            name: 'khero_contbo_line_03_4',
+            bone: 'khero_contbo_line_03_4'
           },
           {
-            name: "khero_contbo_line_03_3",
-            bone: "khero_contbo_line_03_3",
-            blend: "additive"
+            name: 'khero_contbo_line_03_3',
+            bone: 'khero_contbo_line_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_2",
-            bone: "khero_contbo_line_02_2",
-            attachment: "khero_contbo_line_02_2"
+            name: 'khero_contbo_line_02_2',
+            bone: 'khero_contbo_line_02_2',
+            attachment: 'khero_contbo_line_02_2'
           },
           {
-            name: "khero_contbo_line_02_1",
-            bone: "khero_contbo_line_02_1",
-            attachment: "khero_contbo_line_02_1",
-            blend: "additive"
+            name: 'khero_contbo_line_02_1',
+            bone: 'khero_contbo_line_02_1',
+            attachment: 'khero_contbo_line_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_2",
-            bone: "khero_contbo_line_03_2",
-            attachment: "khero_contbo_line_03_2"
+            name: 'khero_contbo_line_03_2',
+            bone: 'khero_contbo_line_03_2',
+            attachment: 'khero_contbo_line_03_2'
           },
           {
-            name: "khero_contbo_line_03_1",
-            bone: "khero_contbo_line_03_1",
-            attachment: "khero_contbo_line_03_1",
-            blend: "additive"
+            name: 'khero_contbo_line_03_1',
+            bone: 'khero_contbo_line_03_1',
+            attachment: 'khero_contbo_line_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_04_2",
-            bone: "khero_contbo_line_04_2",
-            attachment: "khero_contbo_line_04_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_2',
+            bone: 'khero_contbo_line_04_2',
+            attachment: 'khero_contbo_line_04_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_line_04_1",
-            bone: "khero_contbo_line_04_1",
-            attachment: "khero_contbo_line_04_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_1',
+            bone: 'khero_contbo_line_04_1',
+            attachment: 'khero_contbo_line_04_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_07_4",
-            bone: "khero_contbo_pf_07_4",
-            attachment: "khero_contbo_pf_07_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_4',
+            bone: 'khero_contbo_pf_07_4',
+            attachment: 'khero_contbo_pf_07_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_3",
-            bone: "khero_contbo_pf_07_3",
-            attachment: "khero_contbo_pf_07_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_3',
+            bone: 'khero_contbo_pf_07_3',
+            attachment: 'khero_contbo_pf_07_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_2",
-            bone: "khero_contbo_pf_07_2",
-            attachment: "khero_contbo_pf_07_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_2',
+            bone: 'khero_contbo_pf_07_2',
+            attachment: 'khero_contbo_pf_07_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            bone: "khero_contbo_pf_07_1",
-            attachment: "khero_contbo_pf_07_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_1',
+            bone: 'khero_contbo_pf_07_1',
+            attachment: 'khero_contbo_pf_07_1',
+            blend: 'additive'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_pf_07_1: {
               khero_contbo_pf_07_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_2: {
               khero_contbo_pf_07_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_3: {
               khero_contbo_pf_07_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_4: {
               khero_contbo_pf_07_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_line_04_1: {
               khero_contbo_line_04_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_04_2: {
               khero_contbo_line_04_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_03_1: {
@@ -31643,7 +31919,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_2: {
@@ -31652,7 +31928,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_1: {
@@ -31661,7 +31937,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_2: {
@@ -31670,7 +31946,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_3: {
@@ -31679,7 +31955,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_4: {
@@ -31688,7 +31964,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_3: {
@@ -31697,7 +31973,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_4: {
@@ -31706,7 +31982,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_5: {
@@ -31715,7 +31991,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_6: {
@@ -31724,7 +32000,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_7: {
@@ -31733,7 +32009,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_8: {
@@ -31742,7 +32018,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_5: {
@@ -31751,7 +32027,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_6: {
@@ -31760,7 +32036,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_7: {
@@ -31769,7 +32045,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_8: {
@@ -31778,7 +32054,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             }
           }
@@ -32372,19 +32648,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -32392,19 +32668,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -32412,7 +32688,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_1"
+                    name: 'khero_contbo_line_03_1'
                   },
                   {
                     time: 0.5,
@@ -32424,7 +32700,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_2"
+                    name: 'khero_contbo_line_03_2'
                   },
                   {
                     time: 0.5,
@@ -32436,7 +32712,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_1"
+                    name: 'khero_contbo_line_02_1'
                   },
                   {
                     time: 0.5,
@@ -32448,7 +32724,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_2"
+                    name: 'khero_contbo_line_02_2'
                   },
                   {
                     time: 0.5,
@@ -32464,7 +32740,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_3"
+                    name: 'khero_contbo_line_03_3'
                   },
                   {
                     time: 0.5,
@@ -32480,7 +32756,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_4"
+                    name: 'khero_contbo_line_03_4'
                   },
                   {
                     time: 0.5,
@@ -32492,7 +32768,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_3"
+                    name: 'khero_contbo_line_02_3'
                   },
                   {
                     time: 0.5,
@@ -32504,7 +32780,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_4"
+                    name: 'khero_contbo_line_02_4'
                   },
                   {
                     time: 0.5,
@@ -32520,7 +32796,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_5"
+                    name: 'khero_contbo_line_03_5'
                   }
                 ]
               },
@@ -32532,7 +32808,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_6"
+                    name: 'khero_contbo_line_03_6'
                   }
                 ]
               },
@@ -32544,7 +32820,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_7"
+                    name: 'khero_contbo_line_03_7'
                   }
                 ]
               },
@@ -32556,7 +32832,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_8"
+                    name: 'khero_contbo_line_03_8'
                   }
                 ]
               },
@@ -32568,7 +32844,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_5"
+                    name: 'khero_contbo_line_02_5'
                   }
                 ]
               },
@@ -32580,7 +32856,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_6"
+                    name: 'khero_contbo_line_02_6'
                   }
                 ]
               },
@@ -32592,7 +32868,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_7"
+                    name: 'khero_contbo_line_02_7'
                   }
                 ]
               },
@@ -32604,7 +32880,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_8"
+                    name: 'khero_contbo_line_02_8'
                   }
                 ]
               }
@@ -32612,304 +32888,304 @@ var resource = {
           }
         }
       },
-      "data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.json": {
+      'res/sub/spine/contbo/khero_tom_loop_02.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            parent: "root",
+            name: 'khero_contbo_pf_07_1',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_2",
-            parent: "root",
+            name: 'khero_contbo_pf_07_2',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_3",
-            parent: "root",
+            name: 'khero_contbo_pf_07_3',
+            parent: 'root',
             x: 227,
             y: -59
           },
           {
-            name: "khero_contbo_pf_07_4",
-            parent: "root",
+            name: 'khero_contbo_pf_07_4',
+            parent: 'root',
             x: 227,
             y: -59
           },
           {
-            name: "khero_contbo_line_04_1",
-            parent: "root",
+            name: 'khero_contbo_line_04_1',
+            parent: 'root',
             x: -72,
             y: 58
           },
           {
-            name: "khero_contbo_line_04_2",
-            parent: "root",
+            name: 'khero_contbo_line_04_2',
+            parent: 'root',
             x: 224,
             y: -58
           },
           {
-            name: "khero_contbo_line_03_1",
-            parent: "root",
+            name: 'khero_contbo_line_03_1',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_2",
-            parent: "root",
+            name: 'khero_contbo_line_03_2',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_1",
-            parent: "root",
+            name: 'khero_contbo_line_02_1',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_2",
-            parent: "root",
+            name: 'khero_contbo_line_02_2',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_03_3",
-            parent: "root",
+            name: 'khero_contbo_line_03_3',
+            parent: 'root',
             x: 228,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_4",
-            parent: "root",
+            name: 'khero_contbo_line_03_4',
+            parent: 'root',
             x: 228,
             y: 62
           },
           {
-            name: "khero_contbo_line_02_3",
-            parent: "root",
+            name: 'khero_contbo_line_02_3',
+            parent: 'root',
             x: 231,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_4",
-            parent: "root",
+            name: 'khero_contbo_line_02_4',
+            parent: 'root',
             x: 231,
             y: -59
           },
           {
-            name: "khero_contbo_line_03_5",
-            parent: "root",
+            name: 'khero_contbo_line_03_5',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_6",
-            parent: "root",
+            name: 'khero_contbo_line_03_6',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_7",
-            parent: "root",
+            name: 'khero_contbo_line_03_7',
+            parent: 'root',
             x: 228,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_8",
-            parent: "root",
+            name: 'khero_contbo_line_03_8',
+            parent: 'root',
             x: 228,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_5",
-            parent: "root",
+            name: 'khero_contbo_line_02_5',
+            parent: 'root',
             x: 230,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_6",
-            parent: "root",
+            name: 'khero_contbo_line_02_6',
+            parent: 'root',
             x: 230,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_7",
-            parent: "root",
+            name: 'khero_contbo_line_02_7',
+            parent: 'root',
             x: -79,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_8",
-            parent: "root",
+            name: 'khero_contbo_line_02_8',
+            parent: 'root',
             x: -79,
             y: -59
           }
         ],
         slots: [
           {
-            name: "khero_contbo_line_02_8",
-            bone: "khero_contbo_line_02_8"
+            name: 'khero_contbo_line_02_8',
+            bone: 'khero_contbo_line_02_8'
           },
           {
-            name: "khero_contbo_line_02_7",
-            bone: "khero_contbo_line_02_7",
-            blend: "additive"
+            name: 'khero_contbo_line_02_7',
+            bone: 'khero_contbo_line_02_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_6",
-            bone: "khero_contbo_line_02_6"
+            name: 'khero_contbo_line_02_6',
+            bone: 'khero_contbo_line_02_6'
           },
           {
-            name: "khero_contbo_line_02_5",
-            bone: "khero_contbo_line_02_5",
-            blend: "additive"
+            name: 'khero_contbo_line_02_5',
+            bone: 'khero_contbo_line_02_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_8",
-            bone: "khero_contbo_line_03_8"
+            name: 'khero_contbo_line_03_8',
+            bone: 'khero_contbo_line_03_8'
           },
           {
-            name: "khero_contbo_line_03_7",
-            bone: "khero_contbo_line_03_7",
-            blend: "additive"
+            name: 'khero_contbo_line_03_7',
+            bone: 'khero_contbo_line_03_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_6",
-            bone: "khero_contbo_line_03_6"
+            name: 'khero_contbo_line_03_6',
+            bone: 'khero_contbo_line_03_6'
           },
           {
-            name: "khero_contbo_line_03_5",
-            bone: "khero_contbo_line_03_5",
-            blend: "additive"
+            name: 'khero_contbo_line_03_5',
+            bone: 'khero_contbo_line_03_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_4",
-            bone: "khero_contbo_line_02_4",
-            attachment: "khero_contbo_line_02_4"
+            name: 'khero_contbo_line_02_4',
+            bone: 'khero_contbo_line_02_4',
+            attachment: 'khero_contbo_line_02_4'
           },
           {
-            name: "khero_contbo_line_02_3",
-            bone: "khero_contbo_line_02_3",
-            attachment: "khero_contbo_line_02_3",
-            blend: "additive"
+            name: 'khero_contbo_line_02_3',
+            bone: 'khero_contbo_line_02_3',
+            attachment: 'khero_contbo_line_02_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_4",
-            bone: "khero_contbo_line_03_4"
+            name: 'khero_contbo_line_03_4',
+            bone: 'khero_contbo_line_03_4'
           },
           {
-            name: "khero_contbo_line_03_3",
-            bone: "khero_contbo_line_03_3",
-            blend: "additive"
+            name: 'khero_contbo_line_03_3',
+            bone: 'khero_contbo_line_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_2",
-            bone: "khero_contbo_line_02_2",
-            attachment: "khero_contbo_line_02_2"
+            name: 'khero_contbo_line_02_2',
+            bone: 'khero_contbo_line_02_2',
+            attachment: 'khero_contbo_line_02_2'
           },
           {
-            name: "khero_contbo_line_02_1",
-            bone: "khero_contbo_line_02_1",
-            attachment: "khero_contbo_line_02_1",
-            blend: "additive"
+            name: 'khero_contbo_line_02_1',
+            bone: 'khero_contbo_line_02_1',
+            attachment: 'khero_contbo_line_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_2",
-            bone: "khero_contbo_line_03_2",
-            attachment: "khero_contbo_line_03_2"
+            name: 'khero_contbo_line_03_2',
+            bone: 'khero_contbo_line_03_2',
+            attachment: 'khero_contbo_line_03_2'
           },
           {
-            name: "khero_contbo_line_03_1",
-            bone: "khero_contbo_line_03_1",
-            attachment: "khero_contbo_line_03_1",
-            blend: "additive"
+            name: 'khero_contbo_line_03_1',
+            bone: 'khero_contbo_line_03_1',
+            attachment: 'khero_contbo_line_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_04_2",
-            bone: "khero_contbo_line_04_2",
-            attachment: "khero_contbo_line_04_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_2',
+            bone: 'khero_contbo_line_04_2',
+            attachment: 'khero_contbo_line_04_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_line_04_1",
-            bone: "khero_contbo_line_04_1",
-            attachment: "khero_contbo_line_04_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_1',
+            bone: 'khero_contbo_line_04_1',
+            attachment: 'khero_contbo_line_04_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_07_4",
-            bone: "khero_contbo_pf_07_4",
-            attachment: "khero_contbo_pf_07_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_4',
+            bone: 'khero_contbo_pf_07_4',
+            attachment: 'khero_contbo_pf_07_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_3",
-            bone: "khero_contbo_pf_07_3",
-            attachment: "khero_contbo_pf_07_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_3',
+            bone: 'khero_contbo_pf_07_3',
+            attachment: 'khero_contbo_pf_07_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_2",
-            bone: "khero_contbo_pf_07_2",
-            attachment: "khero_contbo_pf_07_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_2',
+            bone: 'khero_contbo_pf_07_2',
+            attachment: 'khero_contbo_pf_07_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            bone: "khero_contbo_pf_07_1",
-            attachment: "khero_contbo_pf_07_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_1',
+            bone: 'khero_contbo_pf_07_1',
+            attachment: 'khero_contbo_pf_07_1',
+            blend: 'additive'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_pf_07_1: {
               khero_contbo_pf_07_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_2: {
               khero_contbo_pf_07_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_3: {
               khero_contbo_pf_07_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_4: {
               khero_contbo_pf_07_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_line_04_1: {
               khero_contbo_line_04_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_04_2: {
               khero_contbo_line_04_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_03_1: {
@@ -32918,7 +33194,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_2: {
@@ -32927,7 +33203,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_1: {
@@ -32936,7 +33212,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_2: {
@@ -32945,7 +33221,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_3: {
@@ -32954,7 +33230,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_4: {
@@ -32963,7 +33239,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_3: {
@@ -32972,7 +33248,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_4: {
@@ -32981,7 +33257,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_5: {
@@ -32990,7 +33266,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_6: {
@@ -32999,7 +33275,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_7: {
@@ -33008,7 +33284,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_8: {
@@ -33017,7 +33293,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_5: {
@@ -33026,7 +33302,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_6: {
@@ -33035,7 +33311,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_7: {
@@ -33044,7 +33320,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_8: {
@@ -33053,7 +33329,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             }
           }
@@ -33647,19 +33923,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -33667,19 +33943,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.5,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -33687,7 +33963,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_1"
+                    name: 'khero_contbo_line_03_1'
                   },
                   {
                     time: 0.5,
@@ -33699,7 +33975,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_2"
+                    name: 'khero_contbo_line_03_2'
                   },
                   {
                     time: 0.5,
@@ -33711,7 +33987,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_1"
+                    name: 'khero_contbo_line_02_1'
                   },
                   {
                     time: 0.5,
@@ -33723,7 +33999,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_2"
+                    name: 'khero_contbo_line_02_2'
                   },
                   {
                     time: 0.5,
@@ -33739,7 +34015,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_3"
+                    name: 'khero_contbo_line_03_3'
                   },
                   {
                     time: 0.5,
@@ -33755,7 +34031,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_4"
+                    name: 'khero_contbo_line_03_4'
                   },
                   {
                     time: 0.5,
@@ -33767,7 +34043,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_3"
+                    name: 'khero_contbo_line_02_3'
                   },
                   {
                     time: 0.5,
@@ -33779,7 +34055,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_4"
+                    name: 'khero_contbo_line_02_4'
                   },
                   {
                     time: 0.5,
@@ -33795,7 +34071,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_5"
+                    name: 'khero_contbo_line_03_5'
                   }
                 ]
               },
@@ -33807,7 +34083,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_6"
+                    name: 'khero_contbo_line_03_6'
                   }
                 ]
               },
@@ -33819,7 +34095,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_7"
+                    name: 'khero_contbo_line_03_7'
                   }
                 ]
               },
@@ -33831,7 +34107,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_8"
+                    name: 'khero_contbo_line_03_8'
                   }
                 ]
               },
@@ -33843,7 +34119,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_5"
+                    name: 'khero_contbo_line_02_5'
                   }
                 ]
               },
@@ -33855,7 +34131,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_6"
+                    name: 'khero_contbo_line_02_6'
                   }
                 ]
               },
@@ -33867,7 +34143,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_7"
+                    name: 'khero_contbo_line_02_7'
                   }
                 ]
               },
@@ -33879,7 +34155,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_8"
+                    name: 'khero_contbo_line_02_8'
                   }
                 ]
               }
@@ -33887,306 +34163,306 @@ var resource = {
           }
         }
       },
-      "data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.json": {
+      'res/sub/spine/contbo/khero_tom_loop_03.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            parent: "root",
+            name: 'khero_contbo_pf_07_1',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_2",
-            parent: "root",
+            name: 'khero_contbo_pf_07_2',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_3",
-            parent: "root",
+            name: 'khero_contbo_pf_07_3',
+            parent: 'root',
             x: 382,
             y: -59
           },
           {
-            name: "khero_contbo_pf_07_4",
-            parent: "root",
+            name: 'khero_contbo_pf_07_4',
+            parent: 'root',
             x: 382,
             y: -59
           },
           {
-            name: "khero_contbo_line_04_1",
-            parent: "root",
+            name: 'khero_contbo_line_04_1',
+            parent: 'root',
             x: -61,
             y: 58
           },
           {
-            name: "khero_contbo_line_04_2",
-            parent: "root",
+            name: 'khero_contbo_line_04_2',
+            parent: 'root',
             x: 365,
             y: -58
           },
           {
-            name: "khero_contbo_line_03_1",
-            parent: "root",
+            name: 'khero_contbo_line_03_1',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_2",
-            parent: "root",
+            name: 'khero_contbo_line_03_2',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_1",
-            parent: "root",
+            name: 'khero_contbo_line_02_1',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_2",
-            parent: "root",
+            name: 'khero_contbo_line_02_2',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_03_3",
-            parent: "root",
+            name: 'khero_contbo_line_03_3',
+            parent: 'root',
             x: 382,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_4",
-            parent: "root",
+            name: 'khero_contbo_line_03_4',
+            parent: 'root',
             x: 382,
             y: 62
           },
           {
-            name: "khero_contbo_line_02_3",
-            parent: "root",
+            name: 'khero_contbo_line_02_3',
+            parent: 'root',
             x: 385,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_4",
-            parent: "root",
+            name: 'khero_contbo_line_02_4',
+            parent: 'root',
             x: 385,
             y: -59
           },
           {
-            name: "khero_contbo_line_03_5",
-            parent: "root",
+            name: 'khero_contbo_line_03_5',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_6",
-            parent: "root",
+            name: 'khero_contbo_line_03_6',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_7",
-            parent: "root",
+            name: 'khero_contbo_line_03_7',
+            parent: 'root',
             x: 382,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_8",
-            parent: "root",
+            name: 'khero_contbo_line_03_8',
+            parent: 'root',
             x: 382,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_5",
-            parent: "root",
+            name: 'khero_contbo_line_02_5',
+            parent: 'root',
             x: 385,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_6",
-            parent: "root",
+            name: 'khero_contbo_line_02_6',
+            parent: 'root',
             x: 385,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_7",
-            parent: "root",
+            name: 'khero_contbo_line_02_7',
+            parent: 'root',
             x: -79,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_8",
-            parent: "root",
+            name: 'khero_contbo_line_02_8',
+            parent: 'root',
             x: -79,
             y: -59
           }
         ],
         slots: [
           {
-            name: "khero_contbo_line_02_8",
-            bone: "khero_contbo_line_02_8"
+            name: 'khero_contbo_line_02_8',
+            bone: 'khero_contbo_line_02_8'
           },
           {
-            name: "khero_contbo_line_02_7",
-            bone: "khero_contbo_line_02_7",
-            blend: "additive"
+            name: 'khero_contbo_line_02_7',
+            bone: 'khero_contbo_line_02_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_6",
-            bone: "khero_contbo_line_02_6"
+            name: 'khero_contbo_line_02_6',
+            bone: 'khero_contbo_line_02_6'
           },
           {
-            name: "khero_contbo_line_02_5",
-            bone: "khero_contbo_line_02_5",
-            blend: "additive"
+            name: 'khero_contbo_line_02_5',
+            bone: 'khero_contbo_line_02_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_8",
-            bone: "khero_contbo_line_03_8"
+            name: 'khero_contbo_line_03_8',
+            bone: 'khero_contbo_line_03_8'
           },
           {
-            name: "khero_contbo_line_03_7",
-            bone: "khero_contbo_line_03_7",
-            blend: "additive"
+            name: 'khero_contbo_line_03_7',
+            bone: 'khero_contbo_line_03_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_6",
-            bone: "khero_contbo_line_03_6"
+            name: 'khero_contbo_line_03_6',
+            bone: 'khero_contbo_line_03_6'
           },
           {
-            name: "khero_contbo_line_03_5",
-            bone: "khero_contbo_line_03_5",
-            blend: "additive"
+            name: 'khero_contbo_line_03_5',
+            bone: 'khero_contbo_line_03_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_4",
-            bone: "khero_contbo_line_02_4",
-            attachment: "khero_contbo_line_02_4"
+            name: 'khero_contbo_line_02_4',
+            bone: 'khero_contbo_line_02_4',
+            attachment: 'khero_contbo_line_02_4'
           },
           {
-            name: "khero_contbo_line_02_3",
-            bone: "khero_contbo_line_02_3",
-            attachment: "khero_contbo_line_02_3",
-            blend: "additive"
+            name: 'khero_contbo_line_02_3',
+            bone: 'khero_contbo_line_02_3',
+            attachment: 'khero_contbo_line_02_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_4",
-            bone: "khero_contbo_line_03_4",
-            attachment: "khero_contbo_line_03_4"
+            name: 'khero_contbo_line_03_4',
+            bone: 'khero_contbo_line_03_4',
+            attachment: 'khero_contbo_line_03_4'
           },
           {
-            name: "khero_contbo_line_03_3",
-            bone: "khero_contbo_line_03_3",
-            attachment: "khero_contbo_line_03_3",
-            blend: "additive"
+            name: 'khero_contbo_line_03_3',
+            bone: 'khero_contbo_line_03_3',
+            attachment: 'khero_contbo_line_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_2",
-            bone: "khero_contbo_line_02_2",
-            attachment: "khero_contbo_line_02_2"
+            name: 'khero_contbo_line_02_2',
+            bone: 'khero_contbo_line_02_2',
+            attachment: 'khero_contbo_line_02_2'
           },
           {
-            name: "khero_contbo_line_02_1",
-            bone: "khero_contbo_line_02_1",
-            attachment: "khero_contbo_line_02_1",
-            blend: "additive"
+            name: 'khero_contbo_line_02_1',
+            bone: 'khero_contbo_line_02_1',
+            attachment: 'khero_contbo_line_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_2",
-            bone: "khero_contbo_line_03_2",
-            attachment: "khero_contbo_line_03_2"
+            name: 'khero_contbo_line_03_2',
+            bone: 'khero_contbo_line_03_2',
+            attachment: 'khero_contbo_line_03_2'
           },
           {
-            name: "khero_contbo_line_03_1",
-            bone: "khero_contbo_line_03_1",
-            attachment: "khero_contbo_line_03_1",
-            blend: "additive"
+            name: 'khero_contbo_line_03_1',
+            bone: 'khero_contbo_line_03_1',
+            attachment: 'khero_contbo_line_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_04_2",
-            bone: "khero_contbo_line_04_2",
-            attachment: "khero_contbo_line_04_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_2',
+            bone: 'khero_contbo_line_04_2',
+            attachment: 'khero_contbo_line_04_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_line_04_1",
-            bone: "khero_contbo_line_04_1",
-            attachment: "khero_contbo_line_04_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_1',
+            bone: 'khero_contbo_line_04_1',
+            attachment: 'khero_contbo_line_04_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_07_4",
-            bone: "khero_contbo_pf_07_4",
-            attachment: "khero_contbo_pf_07_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_4',
+            bone: 'khero_contbo_pf_07_4',
+            attachment: 'khero_contbo_pf_07_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_3",
-            bone: "khero_contbo_pf_07_3",
-            attachment: "khero_contbo_pf_07_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_3',
+            bone: 'khero_contbo_pf_07_3',
+            attachment: 'khero_contbo_pf_07_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_2",
-            bone: "khero_contbo_pf_07_2",
-            attachment: "khero_contbo_pf_07_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_2',
+            bone: 'khero_contbo_pf_07_2',
+            attachment: 'khero_contbo_pf_07_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            bone: "khero_contbo_pf_07_1",
-            attachment: "khero_contbo_pf_07_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_1',
+            bone: 'khero_contbo_pf_07_1',
+            attachment: 'khero_contbo_pf_07_1',
+            blend: 'additive'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_pf_07_1: {
               khero_contbo_pf_07_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_2: {
               khero_contbo_pf_07_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_3: {
               khero_contbo_pf_07_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_4: {
               khero_contbo_pf_07_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_line_04_1: {
               khero_contbo_line_04_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_04_2: {
               khero_contbo_line_04_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_03_1: {
@@ -34195,7 +34471,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_2: {
@@ -34204,7 +34480,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_1: {
@@ -34213,7 +34489,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_2: {
@@ -34222,7 +34498,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_3: {
@@ -34231,7 +34507,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_4: {
@@ -34240,7 +34516,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_3: {
@@ -34249,7 +34525,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_4: {
@@ -34258,7 +34534,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_5: {
@@ -34267,7 +34543,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_6: {
@@ -34276,7 +34552,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_7: {
@@ -34285,7 +34561,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_8: {
@@ -34294,7 +34570,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_5: {
@@ -34303,7 +34579,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_6: {
@@ -34312,7 +34588,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_7: {
@@ -34321,7 +34597,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_8: {
@@ -34330,7 +34606,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             }
           }
@@ -35004,19 +35280,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -35024,19 +35300,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -35044,7 +35320,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_1"
+                    name: 'khero_contbo_line_03_1'
                   },
                   {
                     time: 0.5,
@@ -35056,7 +35332,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_2"
+                    name: 'khero_contbo_line_03_2'
                   },
                   {
                     time: 0.5,
@@ -35068,7 +35344,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_1"
+                    name: 'khero_contbo_line_02_1'
                   },
                   {
                     time: 0.5,
@@ -35080,7 +35356,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_2"
+                    name: 'khero_contbo_line_02_2'
                   },
                   {
                     time: 0.5,
@@ -35092,7 +35368,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_3"
+                    name: 'khero_contbo_line_03_3'
                   },
                   {
                     time: 0.5,
@@ -35104,7 +35380,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_4"
+                    name: 'khero_contbo_line_03_4'
                   },
                   {
                     time: 0.5,
@@ -35116,7 +35392,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_3"
+                    name: 'khero_contbo_line_02_3'
                   },
                   {
                     time: 0.5,
@@ -35128,7 +35404,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_4"
+                    name: 'khero_contbo_line_02_4'
                   },
                   {
                     time: 0.5,
@@ -35144,7 +35420,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_5"
+                    name: 'khero_contbo_line_03_5'
                   }
                 ]
               },
@@ -35156,7 +35432,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_6"
+                    name: 'khero_contbo_line_03_6'
                   }
                 ]
               },
@@ -35168,7 +35444,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_7"
+                    name: 'khero_contbo_line_03_7'
                   }
                 ]
               },
@@ -35180,7 +35456,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_8"
+                    name: 'khero_contbo_line_03_8'
                   }
                 ]
               },
@@ -35192,7 +35468,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_5"
+                    name: 'khero_contbo_line_02_5'
                   }
                 ]
               },
@@ -35204,7 +35480,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_6"
+                    name: 'khero_contbo_line_02_6'
                   }
                 ]
               },
@@ -35216,7 +35492,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_7"
+                    name: 'khero_contbo_line_02_7'
                   }
                 ]
               },
@@ -35228,7 +35504,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_8"
+                    name: 'khero_contbo_line_02_8'
                   }
                 ]
               }
@@ -35236,306 +35512,306 @@ var resource = {
           }
         }
       },
-      "data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.json": {
+      'res/sub/spine/contbo/khero_tom_loop_04.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            parent: "root",
+            name: 'khero_contbo_pf_07_1',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_2",
-            parent: "root",
+            name: 'khero_contbo_pf_07_2',
+            parent: 'root',
             x: -75,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_3",
-            parent: "root",
+            name: 'khero_contbo_pf_07_3',
+            parent: 'root',
             x: 535,
             y: -59
           },
           {
-            name: "khero_contbo_pf_07_4",
-            parent: "root",
+            name: 'khero_contbo_pf_07_4',
+            parent: 'root',
             x: 535,
             y: -59
           },
           {
-            name: "khero_contbo_line_04_1",
-            parent: "root",
+            name: 'khero_contbo_line_04_1',
+            parent: 'root',
             x: -68,
             y: 58
           },
           {
-            name: "khero_contbo_line_04_2",
-            parent: "root",
+            name: 'khero_contbo_line_04_2',
+            parent: 'root',
             x: 529,
             y: -58
           },
           {
-            name: "khero_contbo_line_03_1",
-            parent: "root",
+            name: 'khero_contbo_line_03_1',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_2",
-            parent: "root",
+            name: 'khero_contbo_line_03_2',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_1",
-            parent: "root",
+            name: 'khero_contbo_line_02_1',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_2",
-            parent: "root",
+            name: 'khero_contbo_line_02_2',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_03_3",
-            parent: "root",
+            name: 'khero_contbo_line_03_3',
+            parent: 'root',
             x: 536,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_4",
-            parent: "root",
+            name: 'khero_contbo_line_03_4',
+            parent: 'root',
             x: 536,
             y: 62
           },
           {
-            name: "khero_contbo_line_02_3",
-            parent: "root",
+            name: 'khero_contbo_line_02_3',
+            parent: 'root',
             x: 539,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_4",
-            parent: "root",
+            name: 'khero_contbo_line_02_4',
+            parent: 'root',
             x: 539,
             y: -59
           },
           {
-            name: "khero_contbo_line_03_5",
-            parent: "root",
+            name: 'khero_contbo_line_03_5',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_6",
-            parent: "root",
+            name: 'khero_contbo_line_03_6',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_7",
-            parent: "root",
+            name: 'khero_contbo_line_03_7',
+            parent: 'root',
             x: 536,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_8",
-            parent: "root",
+            name: 'khero_contbo_line_03_8',
+            parent: 'root',
             x: 536,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_5",
-            parent: "root",
+            name: 'khero_contbo_line_02_5',
+            parent: 'root',
             x: 539,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_6",
-            parent: "root",
+            name: 'khero_contbo_line_02_6',
+            parent: 'root',
             x: 539,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_7",
-            parent: "root",
+            name: 'khero_contbo_line_02_7',
+            parent: 'root',
             x: -79,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_8",
-            parent: "root",
+            name: 'khero_contbo_line_02_8',
+            parent: 'root',
             x: -79,
             y: -59
           }
         ],
         slots: [
           {
-            name: "khero_contbo_line_02_8",
-            bone: "khero_contbo_line_02_8"
+            name: 'khero_contbo_line_02_8',
+            bone: 'khero_contbo_line_02_8'
           },
           {
-            name: "khero_contbo_line_02_7",
-            bone: "khero_contbo_line_02_7",
-            blend: "additive"
+            name: 'khero_contbo_line_02_7',
+            bone: 'khero_contbo_line_02_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_6",
-            bone: "khero_contbo_line_02_6"
+            name: 'khero_contbo_line_02_6',
+            bone: 'khero_contbo_line_02_6'
           },
           {
-            name: "khero_contbo_line_02_5",
-            bone: "khero_contbo_line_02_5",
-            blend: "additive"
+            name: 'khero_contbo_line_02_5',
+            bone: 'khero_contbo_line_02_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_8",
-            bone: "khero_contbo_line_03_8"
+            name: 'khero_contbo_line_03_8',
+            bone: 'khero_contbo_line_03_8'
           },
           {
-            name: "khero_contbo_line_03_7",
-            bone: "khero_contbo_line_03_7",
-            blend: "additive"
+            name: 'khero_contbo_line_03_7',
+            bone: 'khero_contbo_line_03_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_6",
-            bone: "khero_contbo_line_03_6"
+            name: 'khero_contbo_line_03_6',
+            bone: 'khero_contbo_line_03_6'
           },
           {
-            name: "khero_contbo_line_03_5",
-            bone: "khero_contbo_line_03_5",
-            blend: "additive"
+            name: 'khero_contbo_line_03_5',
+            bone: 'khero_contbo_line_03_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_4",
-            bone: "khero_contbo_line_02_4",
-            attachment: "khero_contbo_line_02_4"
+            name: 'khero_contbo_line_02_4',
+            bone: 'khero_contbo_line_02_4',
+            attachment: 'khero_contbo_line_02_4'
           },
           {
-            name: "khero_contbo_line_02_3",
-            bone: "khero_contbo_line_02_3",
-            attachment: "khero_contbo_line_02_3",
-            blend: "additive"
+            name: 'khero_contbo_line_02_3',
+            bone: 'khero_contbo_line_02_3',
+            attachment: 'khero_contbo_line_02_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_4",
-            bone: "khero_contbo_line_03_4",
-            attachment: "khero_contbo_line_03_4"
+            name: 'khero_contbo_line_03_4',
+            bone: 'khero_contbo_line_03_4',
+            attachment: 'khero_contbo_line_03_4'
           },
           {
-            name: "khero_contbo_line_03_3",
-            bone: "khero_contbo_line_03_3",
-            attachment: "khero_contbo_line_03_3",
-            blend: "additive"
+            name: 'khero_contbo_line_03_3',
+            bone: 'khero_contbo_line_03_3',
+            attachment: 'khero_contbo_line_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_2",
-            bone: "khero_contbo_line_02_2",
-            attachment: "khero_contbo_line_02_2"
+            name: 'khero_contbo_line_02_2',
+            bone: 'khero_contbo_line_02_2',
+            attachment: 'khero_contbo_line_02_2'
           },
           {
-            name: "khero_contbo_line_02_1",
-            bone: "khero_contbo_line_02_1",
-            attachment: "khero_contbo_line_02_1",
-            blend: "additive"
+            name: 'khero_contbo_line_02_1',
+            bone: 'khero_contbo_line_02_1',
+            attachment: 'khero_contbo_line_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_2",
-            bone: "khero_contbo_line_03_2",
-            attachment: "khero_contbo_line_03_2"
+            name: 'khero_contbo_line_03_2',
+            bone: 'khero_contbo_line_03_2',
+            attachment: 'khero_contbo_line_03_2'
           },
           {
-            name: "khero_contbo_line_03_1",
-            bone: "khero_contbo_line_03_1",
-            attachment: "khero_contbo_line_03_1",
-            blend: "additive"
+            name: 'khero_contbo_line_03_1',
+            bone: 'khero_contbo_line_03_1',
+            attachment: 'khero_contbo_line_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_04_2",
-            bone: "khero_contbo_line_04_2",
-            attachment: "khero_contbo_line_04_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_2',
+            bone: 'khero_contbo_line_04_2',
+            attachment: 'khero_contbo_line_04_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_line_04_1",
-            bone: "khero_contbo_line_04_1",
-            attachment: "khero_contbo_line_04_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_1',
+            bone: 'khero_contbo_line_04_1',
+            attachment: 'khero_contbo_line_04_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_07_4",
-            bone: "khero_contbo_pf_07_4",
-            attachment: "khero_contbo_pf_07_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_4',
+            bone: 'khero_contbo_pf_07_4',
+            attachment: 'khero_contbo_pf_07_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_3",
-            bone: "khero_contbo_pf_07_3",
-            attachment: "khero_contbo_pf_07_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_3',
+            bone: 'khero_contbo_pf_07_3',
+            attachment: 'khero_contbo_pf_07_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_2",
-            bone: "khero_contbo_pf_07_2",
-            attachment: "khero_contbo_pf_07_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_2',
+            bone: 'khero_contbo_pf_07_2',
+            attachment: 'khero_contbo_pf_07_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            bone: "khero_contbo_pf_07_1",
-            attachment: "khero_contbo_pf_07_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_1',
+            bone: 'khero_contbo_pf_07_1',
+            attachment: 'khero_contbo_pf_07_1',
+            blend: 'additive'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_pf_07_1: {
               khero_contbo_pf_07_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_2: {
               khero_contbo_pf_07_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_3: {
               khero_contbo_pf_07_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_4: {
               khero_contbo_pf_07_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_line_04_1: {
               khero_contbo_line_04_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_04_2: {
               khero_contbo_line_04_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_03_1: {
@@ -35544,7 +35820,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_2: {
@@ -35553,7 +35829,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_1: {
@@ -35562,7 +35838,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_2: {
@@ -35571,7 +35847,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_3: {
@@ -35580,7 +35856,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_4: {
@@ -35589,7 +35865,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_3: {
@@ -35598,7 +35874,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_4: {
@@ -35607,7 +35883,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_5: {
@@ -35616,7 +35892,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_6: {
@@ -35625,7 +35901,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_7: {
@@ -35634,7 +35910,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_8: {
@@ -35643,7 +35919,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_5: {
@@ -35652,7 +35928,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_6: {
@@ -35661,7 +35937,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_7: {
@@ -35670,7 +35946,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_8: {
@@ -35679,7 +35955,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             }
           }
@@ -36353,19 +36629,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -36373,19 +36649,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -36393,7 +36669,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_1"
+                    name: 'khero_contbo_line_03_1'
                   },
                   {
                     time: 0.5,
@@ -36405,7 +36681,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_2"
+                    name: 'khero_contbo_line_03_2'
                   },
                   {
                     time: 0.5,
@@ -36417,7 +36693,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_1"
+                    name: 'khero_contbo_line_02_1'
                   },
                   {
                     time: 0.5,
@@ -36429,7 +36705,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_2"
+                    name: 'khero_contbo_line_02_2'
                   },
                   {
                     time: 0.5,
@@ -36441,7 +36717,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_3"
+                    name: 'khero_contbo_line_03_3'
                   },
                   {
                     time: 0.5,
@@ -36453,7 +36729,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_03_4"
+                    name: 'khero_contbo_line_03_4'
                   },
                   {
                     time: 0.5,
@@ -36465,7 +36741,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_3"
+                    name: 'khero_contbo_line_02_3'
                   },
                   {
                     time: 0.5,
@@ -36477,7 +36753,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_4"
+                    name: 'khero_contbo_line_02_4'
                   },
                   {
                     time: 0.5,
@@ -36493,7 +36769,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_5"
+                    name: 'khero_contbo_line_03_5'
                   }
                 ]
               },
@@ -36505,7 +36781,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_6"
+                    name: 'khero_contbo_line_03_6'
                   }
                 ]
               },
@@ -36517,7 +36793,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_7"
+                    name: 'khero_contbo_line_03_7'
                   }
                 ]
               },
@@ -36529,7 +36805,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_8"
+                    name: 'khero_contbo_line_03_8'
                   }
                 ]
               },
@@ -36541,7 +36817,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_5"
+                    name: 'khero_contbo_line_02_5'
                   }
                 ]
               },
@@ -36553,7 +36829,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_6"
+                    name: 'khero_contbo_line_02_6'
                   }
                 ]
               },
@@ -36565,7 +36841,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_7"
+                    name: 'khero_contbo_line_02_7'
                   }
                 ]
               },
@@ -36577,7 +36853,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_8"
+                    name: 'khero_contbo_line_02_8'
                   }
                 ]
               }
@@ -36585,302 +36861,302 @@ var resource = {
           }
         }
       },
-      "data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.json": {
+      'res/sub/spine/contbo/khero_tom_loop_05.json': {
         bones: [
           {
-            name: "root"
+            name: 'root'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            parent: "root",
+            name: 'khero_contbo_pf_07_1',
+            parent: 'root',
             x: -74,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_2",
-            parent: "root",
+            name: 'khero_contbo_pf_07_2',
+            parent: 'root',
             x: -74,
             y: 60
           },
           {
-            name: "khero_contbo_pf_07_3",
-            parent: "root",
+            name: 'khero_contbo_pf_07_3',
+            parent: 'root',
             x: 689,
             y: -59
           },
           {
-            name: "khero_contbo_pf_07_4",
-            parent: "root",
+            name: 'khero_contbo_pf_07_4',
+            parent: 'root',
             x: 689,
             y: -59
           },
           {
-            name: "khero_contbo_line_04_1",
-            parent: "root",
+            name: 'khero_contbo_line_04_1',
+            parent: 'root',
             x: -68.609,
             y: 58
           },
           {
-            name: "khero_contbo_line_04_2",
-            parent: "root",
+            name: 'khero_contbo_line_04_2',
+            parent: 'root',
             x: 679.062,
             y: -58
           },
           {
-            name: "khero_contbo_line_03_1",
-            parent: "root",
+            name: 'khero_contbo_line_03_1',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_2",
-            parent: "root",
+            name: 'khero_contbo_line_03_2',
+            parent: 'root',
             x: -75,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_1",
-            parent: "root",
+            name: 'khero_contbo_line_02_1',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_2",
-            parent: "root",
+            name: 'khero_contbo_line_02_2',
+            parent: 'root',
             x: -79,
             y: 59
           },
           {
-            name: "khero_contbo_line_03_3",
-            parent: "root",
+            name: 'khero_contbo_line_03_3',
+            parent: 'root',
             x: 690,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_4",
-            parent: "root",
+            name: 'khero_contbo_line_03_4',
+            parent: 'root',
             x: 690,
             y: 62
           },
           {
-            name: "khero_contbo_line_02_3",
-            parent: "root",
+            name: 'khero_contbo_line_02_3',
+            parent: 'root',
             x: 694,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_4",
-            parent: "root",
+            name: 'khero_contbo_line_02_4',
+            parent: 'root',
             x: 694,
             y: -59
           },
           {
-            name: "khero_contbo_line_03_5",
-            parent: "root",
+            name: 'khero_contbo_line_03_5',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_6",
-            parent: "root",
+            name: 'khero_contbo_line_03_6',
+            parent: 'root',
             x: -75,
             y: 62
           },
           {
-            name: "khero_contbo_line_03_7",
-            parent: "root",
+            name: 'khero_contbo_line_03_7',
+            parent: 'root',
             x: 690,
             y: -62
           },
           {
-            name: "khero_contbo_line_03_8",
-            parent: "root",
+            name: 'khero_contbo_line_03_8',
+            parent: 'root',
             x: 690,
             y: -62
           },
           {
-            name: "khero_contbo_line_02_5",
-            parent: "root",
+            name: 'khero_contbo_line_02_5',
+            parent: 'root',
             x: 694,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_6",
-            parent: "root",
+            name: 'khero_contbo_line_02_6',
+            parent: 'root',
             x: 694,
             y: 59
           },
           {
-            name: "khero_contbo_line_02_7",
-            parent: "root",
+            name: 'khero_contbo_line_02_7',
+            parent: 'root',
             x: -79,
             y: -59
           },
           {
-            name: "khero_contbo_line_02_8",
-            parent: "root",
+            name: 'khero_contbo_line_02_8',
+            parent: 'root',
             x: -79,
             y: -59
           }
         ],
         slots: [
           {
-            name: "khero_contbo_line_02_8",
-            bone: "khero_contbo_line_02_8"
+            name: 'khero_contbo_line_02_8',
+            bone: 'khero_contbo_line_02_8'
           },
           {
-            name: "khero_contbo_line_02_7",
-            bone: "khero_contbo_line_02_7",
-            blend: "additive"
+            name: 'khero_contbo_line_02_7',
+            bone: 'khero_contbo_line_02_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_6",
-            bone: "khero_contbo_line_02_6"
+            name: 'khero_contbo_line_02_6',
+            bone: 'khero_contbo_line_02_6'
           },
           {
-            name: "khero_contbo_line_02_5",
-            bone: "khero_contbo_line_02_5",
-            blend: "additive"
+            name: 'khero_contbo_line_02_5',
+            bone: 'khero_contbo_line_02_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_8",
-            bone: "khero_contbo_line_03_8"
+            name: 'khero_contbo_line_03_8',
+            bone: 'khero_contbo_line_03_8'
           },
           {
-            name: "khero_contbo_line_03_7",
-            bone: "khero_contbo_line_03_7",
-            blend: "additive"
+            name: 'khero_contbo_line_03_7',
+            bone: 'khero_contbo_line_03_7',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_6",
-            bone: "khero_contbo_line_03_6"
+            name: 'khero_contbo_line_03_6',
+            bone: 'khero_contbo_line_03_6'
           },
           {
-            name: "khero_contbo_line_03_5",
-            bone: "khero_contbo_line_03_5",
-            blend: "additive"
+            name: 'khero_contbo_line_03_5',
+            bone: 'khero_contbo_line_03_5',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_4",
-            bone: "khero_contbo_line_02_4",
-            attachment: "khero_contbo_line_02_4"
+            name: 'khero_contbo_line_02_4',
+            bone: 'khero_contbo_line_02_4',
+            attachment: 'khero_contbo_line_02_4'
           },
           {
-            name: "khero_contbo_line_02_3",
-            bone: "khero_contbo_line_02_3",
-            attachment: "khero_contbo_line_02_3",
-            blend: "additive"
+            name: 'khero_contbo_line_02_3',
+            bone: 'khero_contbo_line_02_3',
+            attachment: 'khero_contbo_line_02_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_4",
-            bone: "khero_contbo_line_03_4"
+            name: 'khero_contbo_line_03_4',
+            bone: 'khero_contbo_line_03_4'
           },
           {
-            name: "khero_contbo_line_03_3",
-            bone: "khero_contbo_line_03_3",
-            blend: "additive"
+            name: 'khero_contbo_line_03_3',
+            bone: 'khero_contbo_line_03_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_02_2",
-            bone: "khero_contbo_line_02_2",
-            attachment: "khero_contbo_line_02_2"
+            name: 'khero_contbo_line_02_2',
+            bone: 'khero_contbo_line_02_2',
+            attachment: 'khero_contbo_line_02_2'
           },
           {
-            name: "khero_contbo_line_02_1",
-            bone: "khero_contbo_line_02_1",
-            attachment: "khero_contbo_line_02_1",
-            blend: "additive"
+            name: 'khero_contbo_line_02_1',
+            bone: 'khero_contbo_line_02_1',
+            attachment: 'khero_contbo_line_02_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_03_2",
-            bone: "khero_contbo_line_03_2"
+            name: 'khero_contbo_line_03_2',
+            bone: 'khero_contbo_line_03_2'
           },
           {
-            name: "khero_contbo_line_03_1",
-            bone: "khero_contbo_line_03_1",
-            blend: "additive"
+            name: 'khero_contbo_line_03_1',
+            bone: 'khero_contbo_line_03_1',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_line_04_2",
-            bone: "khero_contbo_line_04_2",
-            attachment: "khero_contbo_line_04_2",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_2',
+            bone: 'khero_contbo_line_04_2',
+            attachment: 'khero_contbo_line_04_2',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_line_04_1",
-            bone: "khero_contbo_line_04_1",
-            attachment: "khero_contbo_line_04_1",
-            blend: "additive",
-            color: "FFFFFF00"
+            name: 'khero_contbo_line_04_1',
+            bone: 'khero_contbo_line_04_1',
+            attachment: 'khero_contbo_line_04_1',
+            blend: 'additive',
+            color: 'FFFFFF00'
           },
           {
-            name: "khero_contbo_pf_07_4",
-            bone: "khero_contbo_pf_07_4",
-            attachment: "khero_contbo_pf_07_4",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_4',
+            bone: 'khero_contbo_pf_07_4',
+            attachment: 'khero_contbo_pf_07_4',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_3",
-            bone: "khero_contbo_pf_07_3",
-            attachment: "khero_contbo_pf_07_3",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_3',
+            bone: 'khero_contbo_pf_07_3',
+            attachment: 'khero_contbo_pf_07_3',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_2",
-            bone: "khero_contbo_pf_07_2",
-            attachment: "khero_contbo_pf_07_2",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_2',
+            bone: 'khero_contbo_pf_07_2',
+            attachment: 'khero_contbo_pf_07_2',
+            blend: 'additive'
           },
           {
-            name: "khero_contbo_pf_07_1",
-            bone: "khero_contbo_pf_07_1",
-            attachment: "khero_contbo_pf_07_1",
-            blend: "additive"
+            name: 'khero_contbo_pf_07_1',
+            bone: 'khero_contbo_pf_07_1',
+            attachment: 'khero_contbo_pf_07_1',
+            blend: 'additive'
           }
         ],
         skins: {
-          "default": {
+          default: {
             khero_contbo_pf_07_1: {
               khero_contbo_pf_07_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_2: {
               khero_contbo_pf_07_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_3: {
               khero_contbo_pf_07_3: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_pf_07_4: {
               khero_contbo_pf_07_4: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_pf_07"
+                name: 'khero_contbo_pf_07'
               }
             },
             khero_contbo_line_04_1: {
               khero_contbo_line_04_1: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_04_2: {
               khero_contbo_line_04_2: {
                 width: 128,
                 height: 128,
-                name: "khero_contbo_line_04"
+                name: 'khero_contbo_line_04'
               }
             },
             khero_contbo_line_03_1: {
@@ -36889,7 +37165,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_2: {
@@ -36898,7 +37174,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_1: {
@@ -36907,7 +37183,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_2: {
@@ -36916,7 +37192,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_3: {
@@ -36925,7 +37201,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_4: {
@@ -36934,7 +37210,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_3: {
@@ -36943,7 +37219,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_4: {
@@ -36952,7 +37228,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_03_5: {
@@ -36961,7 +37237,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_6: {
@@ -36970,7 +37246,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: -79,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_7: {
@@ -36979,7 +37255,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_03_8: {
@@ -36988,7 +37264,7 @@ var resource = {
                 height: 540,
                 x: -382,
                 y: 54,
-                name: "khero_contbo_line_03"
+                name: 'khero_contbo_line_03'
               }
             },
             khero_contbo_line_02_5: {
@@ -36997,7 +37273,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_6: {
@@ -37006,7 +37282,7 @@ var resource = {
                 height: 540,
                 x: -386,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_7: {
@@ -37015,7 +37291,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             },
             khero_contbo_line_02_8: {
@@ -37024,7 +37300,7 @@ var resource = {
                 height: 540,
                 x: 387,
                 y: -76,
-                name: "khero_contbo_line_02"
+                name: 'khero_contbo_line_02'
               }
             }
           }
@@ -37698,19 +37974,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -37718,19 +37994,19 @@ var resource = {
                 color: [
                   {
                     time: 0,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   },
                   {
                     time: 0.025,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.583,
-                    color: "FFFFFFFF"
+                    color: 'FFFFFFFF'
                   },
                   {
                     time: 0.75,
-                    color: "FFFFFF00"
+                    color: 'FFFFFF00'
                   }
                 ]
               },
@@ -37742,7 +38018,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_1"
+                    name: 'khero_contbo_line_03_1'
                   },
                   {
                     time: 0.5,
@@ -37758,7 +38034,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_2"
+                    name: 'khero_contbo_line_03_2'
                   },
                   {
                     time: 0.5,
@@ -37770,7 +38046,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_1"
+                    name: 'khero_contbo_line_02_1'
                   },
                   {
                     time: 0.5,
@@ -37782,7 +38058,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_2"
+                    name: 'khero_contbo_line_02_2'
                   },
                   {
                     time: 0.5,
@@ -37798,7 +38074,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_3"
+                    name: 'khero_contbo_line_03_3'
                   },
                   {
                     time: 0.5,
@@ -37814,7 +38090,7 @@ var resource = {
                   },
                   {
                     time: 0.25,
-                    name: "khero_contbo_line_03_4"
+                    name: 'khero_contbo_line_03_4'
                   },
                   {
                     time: 0.5,
@@ -37826,7 +38102,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_3"
+                    name: 'khero_contbo_line_02_3'
                   },
                   {
                     time: 0.5,
@@ -37838,7 +38114,7 @@ var resource = {
                 attachment: [
                   {
                     time: 0,
-                    name: "khero_contbo_line_02_4"
+                    name: 'khero_contbo_line_02_4'
                   },
                   {
                     time: 0.5,
@@ -37854,7 +38130,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_5"
+                    name: 'khero_contbo_line_03_5'
                   }
                 ]
               },
@@ -37866,7 +38142,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_6"
+                    name: 'khero_contbo_line_03_6'
                   }
                 ]
               },
@@ -37878,7 +38154,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_7"
+                    name: 'khero_contbo_line_03_7'
                   }
                 ]
               },
@@ -37890,7 +38166,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_03_8"
+                    name: 'khero_contbo_line_03_8'
                   }
                 ]
               },
@@ -37902,7 +38178,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_5"
+                    name: 'khero_contbo_line_02_5'
                   }
                 ]
               },
@@ -37914,7 +38190,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_6"
+                    name: 'khero_contbo_line_02_6'
                   }
                 ]
               },
@@ -37926,7 +38202,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_7"
+                    name: 'khero_contbo_line_02_7'
                   }
                 ]
               },
@@ -37938,7 +38214,7 @@ var resource = {
                   },
                   {
                     time: 0.5,
-                    name: "khero_contbo_line_02_8"
+                    name: 'khero_contbo_line_02_8'
                   }
                 ]
               }
@@ -37950,55 +38226,55 @@ var resource = {
   }
 };
 
-var mainAtlas0 = "8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var mainAtlas0 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas1 = "8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var mainAtlas1 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas2 = "8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var mainAtlas2 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas3 = "8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var mainAtlas3 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas4 = "d540c8f094730b33.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_wildshine_11a\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9f23aeb18c6d9d47.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ne2ea37efd5682786.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ne959b075d2cd3c53.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ne9e530cfc26a8c9f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n34ecdef284dd9d00.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0074b5c9eba6022e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ncd336b84e547063c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n598c6d69fceaf4ad.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na98b22b084ce20f9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n246265e9a1209205.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9ae8c6510f04d50b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a4806169c771f56.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n2bf38547a93c7e17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n49d0e9719b037f60.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7ad9e074d0065f72.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7887c8141e1915cb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3ab5bc65c77e29ea.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0e7808fa381fb10c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nfe4b82d7c90b6c82.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nab1c710c560bd798.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3f175f9c77b7c73c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nebd063ba2b40e845.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var mainAtlas4 = 'odinjolly_wildshine_11a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_wildshine_11a\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildwildshine_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_lighting_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_lighting_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_lighting_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjollywild_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildsword_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_fire3_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_06.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_09.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildicon_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas5 = "4100c4b9e421347d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildparticle_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0074b5c9eba6022e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n2b1542a3a1bfb0d2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_falre\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 90, 90\r\n  orig: 90, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n70f8b75c1815e166.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n34ecdef284dd9d00.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ncd336b84e547063c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n598c6d69fceaf4ad.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na98b22b084ce20f9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n246265e9a1209205.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9ae8c6510f04d50b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a4806169c771f56.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n2bf38547a93c7e17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n49d0e9719b037f60.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7ad9e074d0065f72.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7887c8141e1915cb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3ab5bc65c77e29ea.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0e7808fa381fb10c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nebd063ba2b40e845.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var mainAtlas5 = 'odinwildparticle_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildparticle_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildsword_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_falre.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_falre\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 90, 90\r\n  orig: 90, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildshine_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjollywild_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_fire3_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_06.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_09.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildicon_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas0 = "3faa531f58bba637.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n94f68133eaffde85.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n90bbd5aab136412f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n171b8d685cb667e1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9c60dc6dfc9e69c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5a5ad3840e9f382e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf6be007b7a5db626.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n4f1a8dceaa43d15b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nada00c493480d47e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n663f046bbda7d1b1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nec93a57606d23d52.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n45f81c7fe508dbca.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n10bc9de61bf90311.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc2e1cbd53ea716d8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54e69d6d8489bdd9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8bf9ef1c3a778336.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n19eef0aab7ae3a44.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0778ed72f2cbf3fe.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9563c73a7bc33b08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd0503f560d1bd4ac.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54b58eccd3c8052a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n13241cec9cb3f8ae.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n649b4916906ead94.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc7650b0d683754fb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5c38d076bdc51da3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9d4bccf70a7f8b22.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n1d0a716287bb0150.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n82c3c26e395b9913.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a21e9b32d6197c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7c77fceea511e95.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf736977e4c98cab6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n561ea49abcfbe29f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda5c86f82c1664fa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd258471eb36950a6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7e704cbcdb34c29.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9fbe094f1e4037f7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na810d50150797c6f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas0 = 'khero_contbo_fire_b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_ms.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_06_n_mask.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_cc.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk4.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk16.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk18.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk20.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas1 = "3faa531f58bba637.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n94f68133eaffde85.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n90bbd5aab136412f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n171b8d685cb667e1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9c60dc6dfc9e69c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5a5ad3840e9f382e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf6be007b7a5db626.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n4f1a8dceaa43d15b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nada00c493480d47e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n663f046bbda7d1b1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nec93a57606d23d52.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n45f81c7fe508dbca.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n10bc9de61bf90311.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc2e1cbd53ea716d8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54e69d6d8489bdd9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8bf9ef1c3a778336.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n19eef0aab7ae3a44.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0778ed72f2cbf3fe.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9563c73a7bc33b08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd0503f560d1bd4ac.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54b58eccd3c8052a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n13241cec9cb3f8ae.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n649b4916906ead94.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc7650b0d683754fb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5c38d076bdc51da3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9d4bccf70a7f8b22.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n1d0a716287bb0150.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n82c3c26e395b9913.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a21e9b32d6197c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7c77fceea511e95.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf736977e4c98cab6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n561ea49abcfbe29f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda5c86f82c1664fa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd258471eb36950a6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7e704cbcdb34c29.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9fbe094f1e4037f7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na810d50150797c6f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas1 = 'khero_contbo_fire_b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_ms.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_06_n_mask.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_cc.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk4.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk16.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk18.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk20.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas2 = "3faa531f58bba637.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n94f68133eaffde85.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n90bbd5aab136412f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n171b8d685cb667e1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9c60dc6dfc9e69c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5a5ad3840e9f382e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf6be007b7a5db626.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n4f1a8dceaa43d15b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nada00c493480d47e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n663f046bbda7d1b1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nec93a57606d23d52.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n45f81c7fe508dbca.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n10bc9de61bf90311.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc2e1cbd53ea716d8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54e69d6d8489bdd9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8bf9ef1c3a778336.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n19eef0aab7ae3a44.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0778ed72f2cbf3fe.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9563c73a7bc33b08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd0503f560d1bd4ac.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54b58eccd3c8052a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n13241cec9cb3f8ae.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n649b4916906ead94.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc7650b0d683754fb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5c38d076bdc51da3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9d4bccf70a7f8b22.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n1d0a716287bb0150.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n82c3c26e395b9913.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a21e9b32d6197c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7c77fceea511e95.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf736977e4c98cab6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n561ea49abcfbe29f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda5c86f82c1664fa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd258471eb36950a6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7e704cbcdb34c29.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9fbe094f1e4037f7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na810d50150797c6f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas2 = 'khero_contbo_fire_b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_ms.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_06_n_mask.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_cc.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk4.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk16.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk18.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk20.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas3 = "f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas3 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas4 = "f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas4 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas5 = "f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas5 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas6 = "f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas6 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas7 = "f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n";
+var subAtlas7 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
 let mainAtlasMap = {
-  "data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.atlas": mainAtlas0,
-  "data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.atlas": mainAtlas1,
-  "data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.atlas": mainAtlas2,
-  "data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.atlas": mainAtlas3,
-  "data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.atlas": mainAtlas4,
-  "data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.atlas": mainAtlas5,
+  'res/main/spine/five/5kind.anim.atlas': mainAtlas0,
+  'res/main/spine/five/5kind.light1.atlas': mainAtlas1,
+  'res/main/spine/five/5kind.light2.atlas': mainAtlas2,
+  'res/main/spine/five/5kind.star.atlas': mainAtlas3,
+  'res/main/spine/wild/odin_wild_loop.atlas': mainAtlas4,
+  'res/main/spine/wild/odin_wild_open.atlas': mainAtlas5
 };
 
 resource.main.atlas = mainAtlasMap;
 
 
 let subAtlasMap = {
-  "data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.atlas": subAtlas0,
-  "data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.atlas": subAtlas1,
-  "data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.atlas": subAtlas2,
-  "data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.atlas": subAtlas3,
-  "data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.atlas": subAtlas4,
-  "data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.atlas": subAtlas5,
-  "data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.atlas": subAtlas6,
-  "data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.atlas": subAtlas7,
+  'res/sub/spine/contbo/khero_tom_star_03.atlas': subAtlas0,
+  'res/sub/spine/contbo/khero_tom_star_04.atlas': subAtlas1,
+  'res/sub/spine/contbo/khero_tom_star_05.atlas': subAtlas2,
+  'res/sub/spine/contbo/khero_tom_loop_01.atlas': subAtlas3,
+  'res/sub/spine/contbo/khero_tom_loop_02.atlas': subAtlas4,
+  'res/sub/spine/contbo/khero_tom_loop_03.atlas': subAtlas5,
+  'res/sub/spine/contbo/khero_tom_loop_04.atlas': subAtlas6,
+  'res/sub/spine/contbo/khero_tom_loop_05.atlas': subAtlas7
 };
 
 resource.sub.atlas = subAtlasMap;
