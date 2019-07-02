@@ -2,7 +2,7 @@
 baseURL: /project/demo/sample/
 id: sample # 遊戲代號 遊戲代號
 name:   # 遊戲名稱 (多語設定)
-  en: game sample
+  en-us: game sample
   zh-tw: 遊戲 sample
   zh-cn: 遊戲 sample
 sysTray: # 是否顯示系統選單

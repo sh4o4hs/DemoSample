@@ -19,7 +19,7 @@ removeKey: project/demo/sample/
 # 最佳化用
 vendor:
   custom:
-    - en
+    - en-us
     - zh-tw
     - zh-cn
   source: src/resource.js

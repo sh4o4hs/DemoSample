@@ -43,7 +43,7 @@ images:
         press: res/main/button/auto/enter.png
       start: #開始
         enter: res/main/button/start/enter.png
-        leave: res/main/button/start/leave.png
+        leave: res/main/button/start/enter.png
         press: res/main/button/start/press.png
       bet: #下注
         enter: res/main/button/bet/enter.png

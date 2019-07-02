@@ -35,7 +35,7 @@ images:
     button: #群組
       auto: #自動
         enter: res/main/button/auto/enter.png
-        leave: res/main/button/auto/leave.png
+        leave: res/main/button/auto/enter.png
         press: res/main/button/auto/press.png
       autoLight: #自動
         enter: res/main/button/auto/press.png

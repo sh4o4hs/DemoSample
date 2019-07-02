@@ -47,7 +47,7 @@ images:
         press: res/main/button/start/press.png
       bet: #下注
         enter: res/main/button/bet/enter.png
-        leave: res/main/button/bet/leave.png
+        leave: res/main/button/bet/enter.png
         press: res/main/button/bet/press.png
       rule: #規則
         enter: res/main/button/rule/enter.png

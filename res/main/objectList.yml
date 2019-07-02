@@ -33,7 +33,7 @@ objects:
   resource:
     group: null
     name: null
-  pos: {x: 46,y: 182}
+  pos: {x: 296,y: 182}
   width: 148
   height: 29
   text: nickname

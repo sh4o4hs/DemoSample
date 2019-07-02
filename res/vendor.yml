@@ -101,7 +101,7 @@ main:
         group: null
         name: null
       pos:
-        x: 46
+        x: 296
         'y': 182
       width: 148
       height: 29
@@ -666,7 +666,7 @@ main:
       button:
         auto:
           enter: data/main/button/auto/8f2907689ccc6f75.png
-          leave: data/main/button/auto/29e5d6f24a45c124.png
+          leave: data/main/button/auto/8f2907689ccc6f75.png
           press: data/main/button/auto/fa4f2de2fb814f5c.png
         autoLight:
           enter: data/main/button/auto/fa4f2de2fb814f5c.png
