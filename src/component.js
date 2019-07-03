@@ -42,8 +42,8 @@ export function run () {
           style
         },
         m(Application.main),
-        module.isVisible() ? m(module.Component,
-        ) : null,
+        module.isVisible() ? m(module.Component)
+          : null
       );
     }
   };

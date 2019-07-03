@@ -28,7 +28,7 @@ let Component = {
               background: `url(${attrs.imageName}) center`
             }
           }
-        ) : null,
+        ) : null
       )
     );
   }

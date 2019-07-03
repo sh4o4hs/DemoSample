@@ -81,7 +81,7 @@ let Component = {
               }
             },
             m.trust(buttonStart())
-          ),
+          )
         ),
 
         // 自動
@@ -97,7 +97,7 @@ let Component = {
               }
             },
             m.trust(buttonAuto())
-          ),
+          )
         ),
 
         // 一般
@@ -113,7 +113,7 @@ let Component = {
               }
             },
             m.trust(buttonAuto())
-          ),
+          )
         )
       ]
     );

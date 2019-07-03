@@ -721,9 +721,9 @@ var resource = {
           objName: 'click',
           config: {
             src: [
-              'res/main/sound/pbg_click.wav',
-              'res/main/sound/pbg_click.mp3',
-              'res/main/sound/pbg_click.ogg'
+              'data/main/sound/6adb0cf12169dc7f.wav',
+              'data/main/sound/3aa6966f71af17ca.mp3',
+              'data/main/sound/46c31e28ecc000d5.ogg'
             ],
             loop: false
           }
@@ -732,9 +732,9 @@ var resource = {
           objName: 'winBonus',
           config: {
             src: [
-              'res/main/sound/pbg_winbonus.wav',
-              'res/main/sound/pbg_winbonus.mp3',
-              'res/main/sound/pbg_winbonus.ogg'
+              'data/main/sound/b04575fe67b1ce35.wav',
+              'data/main/sound/8e10a184530b5ee2.mp3',
+              'data/main/sound/9330d6a723dae150.ogg'
             ],
             loop: false
           }
@@ -743,9 +743,9 @@ var resource = {
           objName: 'countDown',
           config: {
             src: [
-              'res/main/sound/pbg_countdown.wav',
-              'res/main/sound/pbg_countdown.mp3',
-              'res/main/sound/pbg_countdown.ogg'
+              'data/main/sound/14e2472fd975afac.wav',
+              'data/main/sound/e25c1c76dcc1ab4d.mp3',
+              'data/main/sound/5627cfb4a31f7648.ogg'
             ]
           },
           loop: false
@@ -754,7 +754,7 @@ var resource = {
           objName: 'music',
           config: {
             src: [
-              'res/main/sound/bgm.wav'
+              'data/main/sound/152910ad6c641833.wav'
             ],
             loop: true
           }
@@ -763,7 +763,7 @@ var resource = {
           objName: 'bomb',
           config: {
             src: [
-              'res/main/sound/bomb.wav'
+              'data/main/sound/f45a6440e96995f7.wav'
             ],
             loop: false
           }
@@ -772,7 +772,7 @@ var resource = {
           objName: 'light',
           config: {
             src: [
-              'res/main/sound/light.wav'
+              'data/main/sound/7673244f74012b52.wav'
             ],
             loop: false
           }
@@ -781,7 +781,7 @@ var resource = {
           objName: 'no0',
           config: {
             src: [
-              'res/main/sound/no-0.wav'
+              'data/main/sound/d12ae9c3d9ff5cde.wav'
             ],
             loop: false
           }
@@ -790,7 +790,7 @@ var resource = {
           objName: 'no1',
           config: {
             src: [
-              'res/main/sound/no-1.wav'
+              'data/main/sound/30e2828f096b3b9f.wav'
             ],
             loop: false
           }
@@ -799,7 +799,7 @@ var resource = {
           objName: 'no2',
           config: {
             src: [
-              'res/main/sound/no-2.wav'
+              'data/main/sound/79021e9bb288efd3.wav'
             ],
             loop: false
           }
@@ -808,7 +808,7 @@ var resource = {
           objName: 'no3',
           config: {
             src: [
-              'res/main/sound/no-3.wav'
+              'data/main/sound/861c4b56f30d39ac.wav'
             ],
             loop: false
           }
@@ -817,7 +817,7 @@ var resource = {
           objName: 'no4',
           config: {
             src: [
-              'res/main/sound/no-4.wav'
+              'data/main/sound/b007924cbfe41373.wav'
             ],
             loop: false
           }
@@ -826,7 +826,7 @@ var resource = {
           objName: 'no5',
           config: {
             src: [
-              'res/main/sound/no-5.wav'
+              'data/main/sound/c8660b631c572e25.wav'
             ],
             loop: false
           }
@@ -835,7 +835,7 @@ var resource = {
           objName: 'no6',
           config: {
             src: [
-              'res/main/sound/no-6.wav'
+              'data/main/sound/138439a5c72c5acc.wav'
             ],
             loop: false
           }
@@ -844,7 +844,7 @@ var resource = {
           objName: 'no7',
           config: {
             src: [
-              'res/main/sound/no-7.wav'
+              'data/main/sound/e7b8198365a5a1cb.wav'
             ],
             loop: false
           }
@@ -853,7 +853,7 @@ var resource = {
           objName: 'no8',
           config: {
             src: [
-              'res/main/sound/no-8.wav'
+              'data/main/sound/64ff3850b9fd5249.wav'
             ],
             loop: false
           }
@@ -862,7 +862,7 @@ var resource = {
           objName: 'no9',
           config: {
             src: [
-              'res/main/sound/no-9.wav'
+              'data/main/sound/ae76aa2d51b1ec43.wav'
             ],
             loop: false
           }
@@ -871,7 +871,7 @@ var resource = {
           objName: 'sndReverse',
           config: {
             src: [
-              'res/main/sound/reverse.wav'
+              'data/main/sound/6c0e35be91083f28.wav'
             ],
             loop: true
           }
@@ -880,7 +880,7 @@ var resource = {
           objName: 'sndRotate',
           config: {
             src: [
-              'res/main/sound/rotate.wav'
+              'data/main/sound/5405c00a62fc21ed.wav'
             ],
             loop: false
           }
@@ -889,7 +889,7 @@ var resource = {
           objName: 'star',
           config: {
             src: [
-              'res/main/sound/star.wav'
+              'data/main/sound/8ba6e15930d9be3c.wav'
             ],
             loop: false
           }
@@ -898,7 +898,7 @@ var resource = {
           objName: 'totem',
           config: {
             src: [
-              'res/main/sound/totem.wav'
+              'data/main/sound/f82550ea2e80cd97.wav'
             ],
             loop: false
           }
@@ -908,86 +908,78 @@ var resource = {
     images: {
       demo: {
         ring: [
-          'res/main/loading/Loading_01.png',
-          'res/main/loading/Loading_02.png',
-          'res/main/loading/Loading_03.png',
-          'res/main/loading/Loading_04.png',
-          'res/main/loading/Loading_05.png',
-          'res/main/loading/Loading_06.png',
-          'res/main/loading/Loading_07.png',
-          'res/main/loading/Loading_08.png',
-          'res/main/loading/Loading_09.png',
-          'res/main/loading/Loading_10.png',
-          'res/main/loading/Loading_11.png',
-          'res/main/loading/Loading_12.png'
+          'data/main/loading/5194d92e22d8f036.png',
+          'data/main/loading/18ce551957f56e22.png',
+          'data/main/loading/ff13b3ff9fd7990b.png',
+          'data/main/loading/5be33c170a708391.png',
+          'data/main/loading/20898c6ca3eed211.png',
+          'data/main/loading/6a8620a546ad4363.png',
+          'data/main/loading/1aa8deaac39b5da0.png',
+          'data/main/loading/535839ce0bed8517.png',
+          'data/main/loading/4474841b72c56deb.png',
+          'data/main/loading/40ee4fadb2a8f3be.png',
+          'data/main/loading/dc2dc25760fa8491.png',
+          'data/main/loading/c3bfd5f259340831.png'
         ],
         background: {
-          back: 'res/main/bg/background.png',
-          fore: 'res/main/bg/foreground.png',
-          t01: 'res/main/bg/foreground.png'
+          back: 'data/main/bg/01b23b049a27a49b.png',
+          fore: 'data/main/bg/cddc5a27241ad23f.png',
+          t02: 'data/main/bg/cddc5a27241ad23f.png'
         },
         coin: {
-          50: 'res/main/base/chip_50.png',
-          100: 'res/main/base/chip_100.png',
-          500: 'res/main/base/chip_500.png',
-          1000: 'res/main/base/chip_1k.png',
-          5000: 'res/main/base/chip_5k.png',
-          10000: 'res/main/base/chip_10k.png',
-          50000: 'res/main/base/chip_50k.png',
-          100000: 'res/main/base/chip_100k.png',
-          500000: 'res/main/base/chip_500k.png',
-          1000000: 'res/main/base/chip_1m.png'
+          50: 'data/main/base/20ce236a30490b87.png',
+          100: 'data/main/base/65c06bf9dab5f03a.png',
+          500: 'data/main/base/ebec19791cb97faf.png',
+          1000: 'data/main/base/a72c4993cc09f213.png',
+          5000: 'data/main/base/1c5b59163524d99c.png',
+          10000: 'data/main/base/af670bd7c8714960.png',
+          50000: 'data/main/base/07b5003036b8330a.png',
+          100000: 'data/main/base/8e6de2cd32b64c0c.png',
+          500000: 'data/main/base/91bde0260acbfc2f.png',
+          1000000: 'data/main/base/ea42938a58680542.png'
         },
         fiveofkind: {
           mask: {
-            gradient1: 'res/main/spine/five/gradient1_mask.png',
-            gradient2: 'res/main/spine/five/gradient2_mask.png'
+            gradient1: 'data/main/spine/five/9722e6a392b88699.png',
+            gradient2: 'data/main/spine/five/5a9bfdd6794a50be.png'
           }
         },
         button: {
           auto: {
-            enter: 'res/main/button/auto/enter.png',
-            leave: 'res/main/button/auto/leave.png',
-            press: 'res/main/button/auto/press.png'
+            enter: 'data/main/button/auto/8f2907689ccc6f75.png',
+            leave: 'data/main/button/auto/8f2907689ccc6f75.png',
+            press: 'data/main/button/auto/fa4f2de2fb814f5c.png'
           },
           autoLight: {
-            enter: 'res/main/button/auto/press.png',
-            leave: 'res/main/button/auto/press.png',
-            press: 'res/main/button/auto/enter.png'
+            enter: 'data/main/button/auto/fa4f2de2fb814f5c.png',
+            leave: 'data/main/button/auto/fa4f2de2fb814f5c.png',
+            press: 'data/main/button/auto/8f2907689ccc6f75.png'
           },
           start: {
-            enter: 'res/main/button/start/enter.png',
-            leave: 'res/main/button/start/leave.png',
-            press: 'res/main/button/start/press.png'
+            enter: 'data/main/button/start/ef70d3e41904c825.png',
+            leave: 'data/main/button/start/30ccb36d04b2ab42.png',
+            press: 'data/main/button/start/a40aae537f735379.png'
           },
           bet: {
-            enter: 'res/main/button/bet/enter.png',
-            leave: 'res/main/button/bet/enter.png',
-            press: 'res/main/button/bet/press.png'
+            enter: 'data/main/button/bet/2ff78c3691df51d5.png',
+            leave: 'data/main/button/bet/1d80e78cffe77850.png',
+            press: 'data/main/button/bet/50b2ccc5a9a2cda2.png'
           },
           rule: {
-            enter: 'res/main/button/rule/enter.png',
-            leave: 'res/main/button/rule/leave.png',
-            press: 'res/main/button/rule/press.png'
+            enter: 'data/main/button/rule/e8732dd1f3338986.png',
+            leave: 'data/main/button/rule/aa12fddde76b7101.png',
+            press: 'data/main/button/rule/350cc6bbd92f78bf.png'
           },
           leave: {
-            enter: 'res/main/button/leave/enter.png',
-            leave: 'res/main/button/leave/leave.png',
-            press: 'res/main/button/leave/press.png'
+            enter: 'data/main/button/leave/3bb32cc432aec70c.png',
+            leave: 'data/main/button/leave/ea824c85de726448.png',
+            press: 'data/main/button/leave/4a511febb44a506c.png'
           }
         }
       }
     },
-    frames: {
-      demo: {
-        bbbb: {
-          back: 'cnum9',
-          fore: 'cnum8'
-        }
-      }
-    },
     assets: {
-      'res/main/asset/cnum.json': {
+      'data/main/asset/1247313e3598518f.json': {
         frames: {
           'cnum.': {
             frame: {
@@ -1232,275 +1224,7 @@ var resource = {
         },
         meta: {
           app: 'GIMP',
-          image: 'cnum.png'
-        }
-      },
-      'res/main/asset/winNum.json': {
-        frames: {
-          'winNum,': {
-            frame: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          'winNum.': {
-            frame: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum0: {
-            frame: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum1: {
-            frame: {
-              x: 21,
-              y: 0,
-              w: 14,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 14,
-              h: 17
-            },
-            sourceSize: {
-              w: 14,
-              h: 17
-            }
-          },
-          winNum2: {
-            frame: {
-              x: 38,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum3: {
-            frame: {
-              x: 57,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum4: {
-            frame: {
-              x: 76,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum5: {
-            frame: {
-              x: 95,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum6: {
-            frame: {
-              x: 114,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum7: {
-            frame: {
-              x: 133,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum8: {
-            frame: {
-              x: 152,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNum9: {
-            frame: {
-              x: 172,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 18,
-              h: 17
-            },
-            sourceSize: {
-              w: 18,
-              h: 17
-            }
-          },
-          winNumX: {
-            frame: {
-              x: 192,
-              y: 3,
-              w: 17,
-              h: 13
-            },
-            rotated: false,
-            trimmed: false,
-            spriteSourceSize: {
-              x: 0,
-              y: 0,
-              w: 17,
-              h: 13
-            },
-            sourceSize: {
-              w: 17,
-              h: 13
-            }
-          }
-        },
-        meta: {
-          app: 'GIMP',
-          image: 'winNum.png'
+          image: '4a0d8beb9c938ffa.png'
         }
       }
     },
@@ -1508,20 +1232,20 @@ var resource = {
       spines: {
         demo: {
           fiveofkind: {
-            text: 'res/main/spine/five/5kind.anim.json',
-            light01: 'res/main/spine/five/5kind.light1.json',
-            light02: 'res/main/spine/five/5kind.light2.json',
-            star: 'res/main/spine/five/5kind.star.json'
+            text: 'data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.json',
+            light01: 'data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.json',
+            light02: 'data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.json',
+            star: 'data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.json'
           },
           wild: {
-            loop: 'res/main/spine/wild/odin_wild_loop.json',
-            open: 'res/main/spine/wild/odin_wild_open.json'
+            loop: 'data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.json',
+            open: 'data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.json'
           }
         }
       }
     },
     spines: {
-      'res/main/spine/five/5kind.anim.json': {
+      'data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.json': {
         bones: [
           {
             name: 'root'
@@ -2119,7 +1843,7 @@ var resource = {
           }
         }
       },
-      'res/main/spine/five/5kind.light1.json': {
+      'data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.json': {
         bones: [
           {
             name: 'root'
@@ -2778,7 +2502,7 @@ var resource = {
           }
         }
       },
-      'res/main/spine/five/5kind.light2.json': {
+      'data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.json': {
         bones: [
           {
             name: 'root'
@@ -3507,7 +3231,7 @@ var resource = {
           }
         }
       },
-      'res/main/spine/five/5kind.star.json': {
+      'data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.json': {
         bones: [
           {
             name: 'root'
@@ -4060,7 +3784,7 @@ var resource = {
           }
         }
       },
-      'res/main/spine/wild/odin_wild_loop.json': {
+      'data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.json': {
         bones: [
           {
             name: 'root'
@@ -5685,7 +5409,7 @@ var resource = {
           }
         }
       },
-      'res/main/spine/wild/odin_wild_open.json': {
+      'data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.json': {
         bones: [
           {
             name: 'root'
@@ -6932,23 +6656,23 @@ var resource = {
       sub: {
         button: {
           system: {
-            enter: 'res/sub/image/SYSTEM_256.png',
-            press: 'res/sub/image/SYSTEM_256_on.png',
-            leave: 'res/sub/image/SYSTEM_256_70.png',
-            disable: 'res/sub/image/SYSTEM_256_70.png'
+            enter: 'data/sub/image/f9bf6dc80452b523.png',
+            press: 'data/sub/image/2a32823e3294aee0.png',
+            leave: 'data/sub/image/b90ac7569d8bb74a.png',
+            disable: 'data/sub/image/b90ac7569d8bb74a.png'
           }
         },
         bones: {
           demon: {
-            texture: 'res/sub/bones/demon/texture.png'
+            texture: 'data/sub/bones/demon/b3588371b744754c.png'
           },
           ubbie: {
-            texture: 'res/sub/bones/ubbie/texture.png'
+            texture: 'data/sub/bones/ubbie/da002f162a0ec4ce.png'
           }
         },
         particle: {
-          cartoonSmoke: 'res/sub/image/CartoonSmoke.png',
-          test: 'res/sub/image/SYSTEM_256.png'
+          cartoonSmoke: 'data/sub/image/3781f9532e20268e.png',
+          test: 'data/sub/image/f9bf6dc80452b523.png'
         }
       }
     },
@@ -6958,16 +6682,16 @@ var resource = {
           contbo: {
             tom: {
               star: [
-                'res/sub/spine/contbo/khero_tom_star_03.json',
-                'res/sub/spine/contbo/khero_tom_star_04.json',
-                'res/sub/spine/contbo/khero_tom_star_05.json'
+                'data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.json',
+                'data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.json',
+                'data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.json'
               ],
               loop: [
-                'res/sub/spine/contbo/khero_tom_loop_01.json',
-                'res/sub/spine/contbo/khero_tom_loop_02.json',
-                'res/sub/spine/contbo/khero_tom_loop_03.json',
-                'res/sub/spine/contbo/khero_tom_loop_04.json',
-                'res/sub/spine/contbo/khero_tom_loop_05.json'
+                'data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.json',
+                'data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.json',
+                'data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.json',
+                'data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.json',
+                'data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.json'
               ]
             }
           }
@@ -6975,7 +6699,7 @@ var resource = {
       }
     },
     spines: {
-      'res/sub/spine/contbo/khero_tom_star_03.json': {
+      'data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.json': {
         bones: [
           {
             name: 'root'
@@ -15139,7 +14863,7 @@ var resource = {
           }
         }
       },
-      'res/sub/spine/contbo/khero_tom_star_04.json': {
+      'data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.json': {
         bones: [
           {
             name: 'root'
@@ -23159,7 +22883,7 @@ var resource = {
           }
         }
       },
-      'res/sub/spine/contbo/khero_tom_star_05.json': {
+      'data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.json': {
         bones: [
           {
             name: 'root'
@@ -31613,7 +31337,7 @@ var resource = {
           }
         }
       },
-      'res/sub/spine/contbo/khero_tom_loop_01.json': {
+      'data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.json': {
         bones: [
           {
             name: 'root'
@@ -32888,7 +32612,7 @@ var resource = {
           }
         }
       },
-      'res/sub/spine/contbo/khero_tom_loop_02.json': {
+      'data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.json': {
         bones: [
           {
             name: 'root'
@@ -34163,7 +33887,7 @@ var resource = {
           }
         }
       },
-      'res/sub/spine/contbo/khero_tom_loop_03.json': {
+      'data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.json': {
         bones: [
           {
             name: 'root'
@@ -35512,7 +35236,7 @@ var resource = {
           }
         }
       },
-      'res/sub/spine/contbo/khero_tom_loop_04.json': {
+      'data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.json': {
         bones: [
           {
             name: 'root'
@@ -36861,7 +36585,7 @@ var resource = {
           }
         }
       },
-      'res/sub/spine/contbo/khero_tom_loop_05.json': {
+      'data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.json': {
         bones: [
           {
             name: 'root'
@@ -38226,55 +37950,55 @@ var resource = {
   }
 };
 
-var mainAtlas0 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var mainAtlas0 = '8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas1 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var mainAtlas1 = '8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas2 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var mainAtlas2 = '8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas3 = 'star.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ngradient1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nof.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\naa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nshadow_kind.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var mainAtlas3 = '8aa1fd1aa547eab9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nstar\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 104, 90\r\n  orig: 104, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n22239f4b922cbe19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 396, 208\r\n  orig: 396, 208\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc0a2343bd428603b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\ngradient1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 274, 126\r\n  orig: 274, 126\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3b868086e82248f3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\n5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 252, 282\r\n  orig: 252, 282\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3122ece38be6d66e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 296, 124\r\n  orig: 296, 124\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd8da047e1aa170a2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nof\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 142, 78\r\n  orig: 142, 78\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n6b486d918dd44a97.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\na\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 66, 66\r\n  orig: 66, 66\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n97f403badcf87d88.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 208, 54\r\n  orig: 208, 54\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9a00ca4899da6aa9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nshadow_kind\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 304, 62\r\n  orig: 304, 62\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas4 = 'odinjolly_wildshine_11a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_wildshine_11a\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildwildshine_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_lighting_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_lighting_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_lighting_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjollywild_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildsword_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_fire3_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_06.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_09.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildicon_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var mainAtlas4 = 'd540c8f094730b33.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_wildshine_11a\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9f23aeb18c6d9d47.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 100\r\n  orig: 140, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ne2ea37efd5682786.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ne959b075d2cd3c53.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ne9e530cfc26a8c9f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_lighting_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 52\r\n  orig: 140, 52\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n34ecdef284dd9d00.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0074b5c9eba6022e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ncd336b84e547063c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n598c6d69fceaf4ad.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na98b22b084ce20f9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n246265e9a1209205.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9ae8c6510f04d50b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a4806169c771f56.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n2bf38547a93c7e17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n49d0e9719b037f60.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7ad9e074d0065f72.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7887c8141e1915cb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3ab5bc65c77e29ea.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0e7808fa381fb10c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nfe4b82d7c90b6c82.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nab1c710c560bd798.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3f175f9c77b7c73c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nebd063ba2b40e845.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var mainAtlas5 = 'odinwildparticle_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildparticle_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildsword_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_falre.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_falre\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 90, 90\r\n  orig: 90, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildshine_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjollywild_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinjolly_fire3_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_06.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_09.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildfire00_12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nodinwildicon_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var mainAtlas5 = '4100c4b9e421347d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildparticle_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0074b5c9eba6022e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildsword_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 110, 288\r\n  orig: 110, 288\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n2b1542a3a1bfb0d2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_falre\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 90, 90\r\n  orig: 90, 90\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n70f8b75c1815e166.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildshine_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 200, 200\r\n  orig: 200, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n34ecdef284dd9d00.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjollywild_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\ncd336b84e547063c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinjolly_fire3_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n598c6d69fceaf4ad.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na98b22b084ce20f9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n246265e9a1209205.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9ae8c6510f04d50b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a4806169c771f56.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_06\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n2bf38547a93c7e17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n49d0e9719b037f60.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7ad9e074d0065f72.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_09\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n7887c8141e1915cb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n3ab5bc65c77e29ea.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0e7808fa381fb10c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildfire00_12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 100, 160\r\n  orig: 100, 160\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nebd063ba2b40e845.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nodinwildicon_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 140, 140\r\n  orig: 140, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas0 = 'khero_contbo_fire_b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_ms.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_06_n_mask.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_cc.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk4.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk16.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk18.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk20.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas0 = '3faa531f58bba637.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n94f68133eaffde85.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n90bbd5aab136412f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n171b8d685cb667e1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9c60dc6dfc9e69c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5a5ad3840e9f382e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf6be007b7a5db626.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n4f1a8dceaa43d15b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nada00c493480d47e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n663f046bbda7d1b1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nec93a57606d23d52.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n45f81c7fe508dbca.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n10bc9de61bf90311.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc2e1cbd53ea716d8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54e69d6d8489bdd9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8bf9ef1c3a778336.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n19eef0aab7ae3a44.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0778ed72f2cbf3fe.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9563c73a7bc33b08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd0503f560d1bd4ac.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54b58eccd3c8052a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n13241cec9cb3f8ae.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n649b4916906ead94.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc7650b0d683754fb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5c38d076bdc51da3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9d4bccf70a7f8b22.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n1d0a716287bb0150.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n82c3c26e395b9913.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a21e9b32d6197c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7c77fceea511e95.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf736977e4c98cab6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n561ea49abcfbe29f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda5c86f82c1664fa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd258471eb36950a6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7e704cbcdb34c29.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9fbe094f1e4037f7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na810d50150797c6f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas1 = 'khero_contbo_fire_b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_ms.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_06_n_mask.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_cc.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk4.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk16.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk18.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk20.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas1 = '3faa531f58bba637.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n94f68133eaffde85.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n90bbd5aab136412f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n171b8d685cb667e1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9c60dc6dfc9e69c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5a5ad3840e9f382e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf6be007b7a5db626.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n4f1a8dceaa43d15b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nada00c493480d47e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n663f046bbda7d1b1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nec93a57606d23d52.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n45f81c7fe508dbca.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n10bc9de61bf90311.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc2e1cbd53ea716d8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54e69d6d8489bdd9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8bf9ef1c3a778336.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n19eef0aab7ae3a44.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0778ed72f2cbf3fe.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9563c73a7bc33b08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd0503f560d1bd4ac.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54b58eccd3c8052a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n13241cec9cb3f8ae.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n649b4916906ead94.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc7650b0d683754fb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5c38d076bdc51da3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9d4bccf70a7f8b22.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n1d0a716287bb0150.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n82c3c26e395b9913.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a21e9b32d6197c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7c77fceea511e95.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf736977e4c98cab6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n561ea49abcfbe29f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda5c86f82c1664fa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd258471eb36950a6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7e704cbcdb34c29.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9fbe094f1e4037f7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na810d50150797c6f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas2 = 'khero_contbo_fire_b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_ms.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_01.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_06_n_mask.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_cc.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_people_ani_2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_fg_13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk0.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk2.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk4.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk10.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk11.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk12.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk13.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk14.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk15.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk16.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk17.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk18.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk19.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_fire_bk20.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_pf_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas2 = '3faa531f58bba637.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_b\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n94f68133eaffde85.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n90bbd5aab136412f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_ms\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n171b8d685cb667e1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9c60dc6dfc9e69c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5a5ad3840e9f382e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_01\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf6be007b7a5db626.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_06_n_mask\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 170, 170\r\n  orig: 170, 170\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n4f1a8dceaa43d15b.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_05\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nada00c493480d47e.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_cc\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 256\r\n  orig: 128, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n663f046bbda7d1b1.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nec93a57606d23d52.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_people_ani_2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n45f81c7fe508dbca.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_08\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 350, 140\r\n  orig: 350, 140\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n10bc9de61bf90311.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc2e1cbd53ea716d8.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54e69d6d8489bdd9.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_fg_13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 300, 200\r\n  orig: 300, 200\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8bf9ef1c3a778336.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk0\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n19eef0aab7ae3a44.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk1\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n0778ed72f2cbf3fe.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk2\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9563c73a7bc33b08.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk3\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd0503f560d1bd4ac.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk4\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n54b58eccd3c8052a.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk5\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n13241cec9cb3f8ae.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk6\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n649b4916906ead94.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk7\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nc7650b0d683754fb.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk8\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n5c38d076bdc51da3.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk9\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9d4bccf70a7f8b22.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk10\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n1d0a716287bb0150.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk11\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n82c3c26e395b9913.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk12\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n8a21e9b32d6197c5.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk13\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7c77fceea511e95.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk14\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nf736977e4c98cab6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk15\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n561ea49abcfbe29f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk16\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda5c86f82c1664fa.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk17\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd258471eb36950a6.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk18\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na7e704cbcdb34c29.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk19\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n9fbe094f1e4037f7.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_fire_bk20\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 297, 100\r\n  orig: 297, 100\r\n  offset: 0, 0\r\n  index: -1\r\n\r\na810d50150797c6f.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 256, 256\r\n  orig: 256, 256\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas3 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas3 = 'f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas4 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas4 = 'f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas5 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas5 = 'f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas6 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas6 = 'f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
-var subAtlas7 = 'khero_contbo_pf_07.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_04.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_03.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nkhero_contbo_line_02.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
+var subAtlas7 = 'f068abf81f9d4600.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_pf_07\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n60bdb014b7639e4d.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_04\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 128, 128\r\n  orig: 128, 128\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nda739271f4d74c05.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_03\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\nd9860f995f61841c.png\r\nformat: RGBA8888\r\nfilter: Linear,Linear\r\nrepeat: none\r\nkhero_contbo_line_02\r\n  rotate: false\r\n  xy: 0, 0\r\n  size: 960, 540\r\n  orig: 960, 540\r\n  offset: 0, 0\r\n  index: -1\r\n\r\n';
 
 let mainAtlasMap = {
-  'res/main/spine/five/5kind.anim.atlas': mainAtlas0,
-  'res/main/spine/five/5kind.light1.atlas': mainAtlas1,
-  'res/main/spine/five/5kind.light2.atlas': mainAtlas2,
-  'res/main/spine/five/5kind.star.atlas': mainAtlas3,
-  'res/main/spine/wild/odin_wild_loop.atlas': mainAtlas4,
-  'res/main/spine/wild/odin_wild_open.atlas': mainAtlas5
+  'data/main/spine/five/a76c3a1ff6ce3db7f498199c555154a2.atlas': mainAtlas0,
+  'data/main/spine/five/a76c3a1ff6ce3db72ec24ec54d03f155.atlas': mainAtlas1,
+  'data/main/spine/five/a76c3a1ff6ce3db73322154cd8f4355d.atlas': mainAtlas2,
+  'data/main/spine/five/a76c3a1ff6ce3db70faff2d65b598b44.atlas': mainAtlas3,
+  'data/main/spine/wild/9df157a3f8608c6acf397c8576af6f22.atlas': mainAtlas4,
+  'data/main/spine/wild/3514527800f1c50c56416dcfa4b6d5d5.atlas': mainAtlas5
 };
 
 resource.main.atlas = mainAtlasMap;
 
 
 let subAtlasMap = {
-  'res/sub/spine/contbo/khero_tom_star_03.atlas': subAtlas0,
-  'res/sub/spine/contbo/khero_tom_star_04.atlas': subAtlas1,
-  'res/sub/spine/contbo/khero_tom_star_05.atlas': subAtlas2,
-  'res/sub/spine/contbo/khero_tom_loop_01.atlas': subAtlas3,
-  'res/sub/spine/contbo/khero_tom_loop_02.atlas': subAtlas4,
-  'res/sub/spine/contbo/khero_tom_loop_03.atlas': subAtlas5,
-  'res/sub/spine/contbo/khero_tom_loop_04.atlas': subAtlas6,
-  'res/sub/spine/contbo/khero_tom_loop_05.atlas': subAtlas7
+  'data/sub/spine/contbo/dcc259dd33b2ee8cde5094b475f00339.atlas': subAtlas0,
+  'data/sub/spine/contbo/dcc259dd33b2ee8c1bc290ff09dce4b8.atlas': subAtlas1,
+  'data/sub/spine/contbo/dcc259dd33b2ee8cbd1007b59866402f.atlas': subAtlas2,
+  'data/sub/spine/contbo/16854d27a6da7aec90f0e6d6a6933d6b.atlas': subAtlas3,
+  'data/sub/spine/contbo/16854d27a6da7aeca77c4f7231df20f3.atlas': subAtlas4,
+  'data/sub/spine/contbo/16854d27a6da7aec6cc615a878802b39.atlas': subAtlas5,
+  'data/sub/spine/contbo/16854d27a6da7aec67df616afbe96741.atlas': subAtlas6,
+  'data/sub/spine/contbo/16854d27a6da7aecd4876e8198735b3c.atlas': subAtlas7
 };
 
 resource.sub.atlas = subAtlasMap;

@@ -128,8 +128,8 @@ let Component = {
         }),
 
         // 共用操作界面
-        (useUI && visibleUI) ? m(comUI,
-        ) : null
+        (useUI && visibleUI) ? m(comUI)
+          : null
       ]
     );
   }
