@@ -13,7 +13,7 @@ import * as nuts from 'nuts';
 import * as subSet from 'entity/subSet';
 
 //import resource from 'src/res/sub';
-import vendor from 'src/res/vendor';
+import vendor from 'res/vendor';
 
 /**
  * 子場景

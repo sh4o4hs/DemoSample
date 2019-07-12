@@ -24,7 +24,7 @@ vendor:
     - zh-cn
   source: src/resource.js
   resource: res/vendor.yml
-  output: src/res/vendor.js
+  output: res/vendor.js
 
 
 #===================================================

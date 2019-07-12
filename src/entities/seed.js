@@ -13,7 +13,7 @@ import * as seedSet from 'entity/seedSet';
 // import * as strings from 'language/strings';
 // import resource from 'src/res/main';
 
-import vendor from 'src/res/vendor';
+import vendor from 'res/vendor';
 
 /**
  * 主場景

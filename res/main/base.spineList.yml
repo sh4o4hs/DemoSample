@@ -8,3 +8,12 @@ spines:
     wild: #野
       loop: res/main/spine/wild/odin_wild_loop.json
       open: res/main/spine/wild/odin_wild_open.json
+    test: #測試
+      b:
+        - res/main/spine/openball/openball_b_01.json
+        - res/main/spine/openball/openball_b_02.json
+        - res/main/spine/openball/openball_b_03.json
+      p:
+        - res/main/spine/openball/openball_p_01.json
+        - res/main/spine/openball/openball_p_02.json
+        - res/main/spine/openball/openball_p_03.json
