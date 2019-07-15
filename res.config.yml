@@ -102,4 +102,4 @@ bones:
 # 資源檔
 yml:
   src:
-    - res/**/*.{yml,js}
+    - res/**/*.{yml}
