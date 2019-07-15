@@ -10,5 +10,5 @@ statistics.html
 /release/
 /data/
 /raw/
-/res/vendor.js
+# /res/vendor.js
 /res/vendor.yml
