@@ -1,18 +1,6 @@
 stages:
 - check
-- build
 - deploy
-
-最佳化程式碼:
-  stage: build
-  environment:
-    name: build
-  variables:
-    STUFF_DEBUG: 1
-  script:
-  - stuff build
-  only:
-  - tags
 
 檢查程式碼:
   stage: check
@@ -63,3 +51,44 @@ stages:
   - stuff deploy
   only:
   - tags
+
+beta:
+  stage: deploy
+  environment:
+    name: beta/$CI_COMMIT_REF_NAME
+  variables:
+    STUFF_DEBUG: 0
+    STUFF_MODE: release
+    STUFF_UPLOAD: beta
+  script:
+  - stuff deploy
+  only:
+  - beta
+
+beta(log):
+  stage: deploy
+  environment:
+    name: beta/$CI_COMMIT_REF_NAME
+  variables:
+    STUFF_DEBUG: 0
+    STUFF_MODE: test
+    STUFF_UPLOAD: beta
+  when: manual
+  script:
+  - stuff deploy
+  only:
+  - beta
+
+beta(demo):
+  stage: deploy
+  environment:
+    name: beta/$CI_COMMIT_REF_NAME
+  variables:
+    STUFF_DEBUG: 0
+    STUFF_MODE: demo
+    STUFF_UPLOAD: beta
+  when: manual
+  script:
+  - stuff deploy
+  only:
+  - beta
