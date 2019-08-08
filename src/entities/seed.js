@@ -616,10 +616,17 @@ export default class Scene extends nuts.scene.Base {
     let self = this;
 
     // let res = resource[strings.getID()];
-
     let res = vendor.main;
 
     self.setInitMap(seedSet.normal);
+
+    /*
+    import('res/vendor').then(data => {
+      console.log('=============================');
+      console.log(data);
+      console.log('=============================');
+    });
+*/
 
     if (res) {
       console.log(res);
@@ -627,8 +634,6 @@ export default class Scene extends nuts.scene.Base {
       // 設定資訊
       let config = {
         infoList: [
-
-          { eventName: 'sound',   obj: res},
           { eventName: 'spine',   obj: res},
           { eventName: 'texture', obj: res},
           { eventName: 'object',  obj: res}

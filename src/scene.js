@@ -20,6 +20,7 @@ import * as comGame from 'component/game';
 import * as comUI from 'component/ui';
 
 import Seed from 'entity/seed';
+import * as SceneDemo from 'src/scenes/demo';
 
 
 /**
@@ -230,18 +231,14 @@ export function init (config) {
       let seed = Seed.getSingleton();
       if (seed) {
         seed.setEvent(event);
-
-        // 播放背景音樂
-        let sound = seed.getSound('demo');
-        if (sound && sound.music && sound.music.play) {
-          sound.music.play();
-        }
       }
 
       // todo: 網路斷線事件
       conf.game.disconnect = () => {
         console.log('!!!! game.disconnect !!!!');
       };
+
+      SceneDemo.create(conf.game, seed);
     },
 
     /**
