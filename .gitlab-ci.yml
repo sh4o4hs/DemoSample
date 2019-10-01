@@ -106,3 +106,16 @@ alpha 機組:
   - stuff deploy
   only:
   - alpha
+
+alpha機:
+  stage: deploy
+  variables:
+    STUFF_DEBUG: 1
+    STUFF_MODE: test
+    STUFF_UPLOAD: alpha1
+  script:
+  - stuff deploy
+  environment:
+    name: alpha/$CI_COMMIT_REF_NAME
+  only:
+  - alpha
