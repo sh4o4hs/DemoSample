@@ -76,6 +76,7 @@ export default class Scene extends nuts.scene.Base {
         isAuto = !isAuto;
         if (isAuto) {
           obj.setTexture(textures.button.autoLight);
+
           if (extendEvent.clickAuto) {
             extendEvent.clickAuto(obj);
           }
