@@ -93,20 +93,6 @@ beta(demo):
   only:
   - beta
 
-alpha 機組:
-  stage: deploy
-  environment:
-    name: beta/$CI_COMMIT_REF_NAME
-  variables:
-    STUFF_DEBUG: 0
-    STUFF_MODE: test
-    STUFF_UPLOAD: alpha1
-  when: manual
-  script:
-  - stuff deploy
-  only:
-  - alpha
-
 alpha機:
   stage: deploy
   variables:
