@@ -52,7 +52,7 @@ stages:
   only:
   - tags
 
-beta:
+測試機:
   stage: deploy
   environment:
     name: beta/$CI_COMMIT_REF_NAME
@@ -65,10 +65,10 @@ beta:
   only:
   - beta
 
-beta(log):
+測試機(log):
   stage: deploy
   environment:
-    name: beta/$CI_COMMIT_REF_NAME
+    name: alpha/$CI_COMMIT_REF_NAME
   variables:
     STUFF_DEBUG: 0
     STUFF_MODE: test
@@ -79,7 +79,7 @@ beta(log):
   only:
   - beta
 
-beta(demo):
+測試機(demo):
   stage: deploy
   environment:
     name: beta/$CI_COMMIT_REF_NAME
@@ -98,7 +98,7 @@ alpha機:
   variables:
     STUFF_DEBUG: 1
     STUFF_MODE: test
-    STUFF_UPLOAD: alpha1
+    STUFF_UPLOAD: alpha_gin
   script:
   - stuff deploy
   environment:
