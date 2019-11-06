@@ -1,5 +1,5 @@
 import m from 'mithril';
-import Loader from 'resource-loader';
+import * as Loader from 'resource-loader';
 import Stats from 'stats';
 
 import * as nuts from 'nuts';
