@@ -7,6 +7,7 @@ package:
 # config
 config:
   paths:
+    nuts: /dependence/nuts/nuts.2.0.0.js
     data/: demo/sample/data/
     res/: demo/sample/res/
     src/: demo/sample/src/
@@ -20,10 +21,10 @@ config:
 
   map:
     stats: depend:stats/stats.min.0.17.0.js
-    loader: depend:loader/resource-loader.min.2.2.4.js
-    mithril: depend:mithril/mithril.min.2.0.4.js
+    # loader: depend:loader/resource-loader.min.2.2.4.js
+    # mithril: depend:mithril/mithril.min.2.0.4.js
+    # nuts: depend:nuts/nuts.1.10.0.js
     tweenjs: depend:createjs/tweenjs.min.1.0.2.js
-    nuts: depend:nuts/nuts.1.10.0.js
     pixi: depend:pixi/pixi.min.4.8.8.js
     pixi-spine: depend:pixi/pixi-spine.1.5.22.js
     pixi-particles: depend:pixi/pixi-particles.2.0.0.js
@@ -41,9 +42,10 @@ build:
     DEBUG: true
   externals:
     - stats
-    - nuts
-    - loader
-    - mithril
+    # - nuts
+    # - loader
+    # - mithril
+    # - js-yaml
     - mustache
     - howler
     - io
@@ -52,5 +54,4 @@ build:
     - pixi-particles
     - dragonBones
     - dragonBonesPixi
-    - js-yaml
     - tweenjs

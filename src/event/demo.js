@@ -181,7 +181,7 @@ export function create (config) {
         loading = seed.getLoading();
       }
 
-      let sceneID = 'Jackpot';
+      let sceneID = 'other';
       let gameID = 'sample.0';
       let config = {
         style: {
@@ -286,6 +286,9 @@ export function create (config) {
      */
     clickRule () {
       console.log('說明');
+      game.scene.open('http://google.com');
+
+      /*
       module.setVisible(true);
 
       let set = {
@@ -293,6 +296,7 @@ export function create (config) {
         type: module.TYPE_FORM
       };
       module.add(set);
+*/
     },
 
     /**

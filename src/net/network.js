@@ -14,7 +14,6 @@ let game = null;
 
 /**
  * 網路相關
- *
  */
 export let id = null;
 export let cmdList = null;

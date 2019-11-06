@@ -4,10 +4,10 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 1.7.1
+version: 1.8.0
 framework:
   name: stuff
-  version: 3.0.0
+  version: 3.5.0
   builder: rollup
 author:
   name: astro
