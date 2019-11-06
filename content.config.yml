@@ -4,7 +4,7 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 1.8.2
+version: 1.8.3
 framework:
   name: stuff
   version: 3.5.0

@@ -181,7 +181,7 @@ export function create (config) {
         loading = seed.getLoading();
       }
 
-      let sceneID = 'other';
+      let sceneID = 'Jackpot';
       let gameID = 'sample.0';
       let config = {
         style: {
