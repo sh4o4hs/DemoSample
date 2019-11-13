@@ -250,33 +250,33 @@ export function create (config) {
       };
 
       // 是否已經建立完成
-      let scene = game.scene.getTheOther(testID);
-      if (scene) {
-        scene.localEvent.enter({
-          jackpot,
-          id: gameID,
-          from: game.scene.info.id
-        });
-        game.scene.localEvent.pause();
-      } else {
-        if (game.scene && game.scene.createTheOther) {
-          game.scene.createTheOther(config);
-          if (seed) {
-            seed.setLoadingVisible(true);
+      // let scene = game.scene.getTheOther(testID);
+      // if (scene) {
+      //   scene.localEvent.enter({
+      //     jackpot,
+      //     id: gameID,
+      //     from: game.scene.info.id
+      //   });
+      //   game.scene.localEvent.pause();
+      // } else {
+      // }
+      if (game.scene && game.scene.createTheOther) {
+        game.scene.createTheOther(config);
+        if (seed) {
+          seed.setLoadingVisible(true);
+        }
+        if (loading && loading.progress) {
+          if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {
+            let pixiConf = game.scene.gamecard.pixiConfig;
+            let pos = {
+              x: pixiConf.width / 2,
+              y: pixiConf.height / 2
+            };
+            loading.x = pos.x;
+            loading.y = pos.y;
           }
-          if (loading && loading.progress) {
-            if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {
-              let pixiConf = game.scene.gamecard.pixiConfig;
-              let pos = {
-                x: pixiConf.width / 2,
-                y: pixiConf.height / 2
-              };
-              loading.x = pos.x;
-              loading.y = pos.y;
-            }
 
-            loading.progress.setValue(0);
-          }
+          loading.progress.setValue(0);
         }
       }
     },
