@@ -18,13 +18,8 @@
  */
 export function normal (that) {
 
-  //let ui = nuts.ui;
-  //  const NUM = ui.Number.NUM;
-  //  let center = that.getCenter();
-  //  let textures = center.textures.demo;
+  //let ui = nuts.ui;        console.info(obj);
 
-
-  //--初始化對照表
   let set =  {
   };
 

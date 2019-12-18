@@ -24,13 +24,7 @@ export const CMD = {
 let isInit = false;
 let cmdList = null;
 
-/**
- * 初始化命令列表
- * @return {Object} 傳回命令清單
- */
-export function init () {
-  if (isInit) {
-    return cmdList;
+/**cmdList
   }
 
   isInit = true;
