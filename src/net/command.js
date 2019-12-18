@@ -24,7 +24,9 @@ export const CMD = {
 let isInit = false;
 let cmdList = null;
 
-/**cmdList
+export function init () {
+  if (isInit) {
+    return;
   }
 
   isInit = true;
