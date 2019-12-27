@@ -7,7 +7,7 @@ description: webapp demo sample
 version: 1.8.6
 framework:
   name: stuff
-  version: 3.6.0
+  version: 3.6.1
   builder: rollup
 author:
   name: astro
