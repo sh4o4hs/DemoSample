@@ -16,19 +16,23 @@ config:
     entity/: demo/sample/src/entities/
     language/: demo/sample/src/strings/
     loading/: demo/sample/src/loading/
-    net/: demo/sample/src/net/
+    net/: demo/sample/src/net/v1/
+    makeres/: demo/sample/src/makeres/v2/
+    scene/: demo/sample/src/scenes/
     style/: demo/sample/style/
+    schema/: demo/sample/schema/
 
   map:
     stats: depend:stats/stats.min.0.17.0.js
     # loader: depend:loader/resource-loader.min.2.2.4.js
     # mithril: depend:mithril/mithril.min.2.0.4.js
-    # nuts: depend:nuts/nuts.1.10.0.js
     tweenjs: depend:createjs/tweenjs.min.1.0.2.js
-    pixi: depend:pixi/pixi.min.4.8.8.js
+#    js-yaml: depend:yaml/js-yaml.min.3.13.1.js
+    # nuts: depend:nuts/nuts.1.10.0.js
+    pixi: depend:pixi/pixi.min.4.8.9.js
     pixi-spine: depend:pixi/pixi-spine.1.5.22.js
     pixi-particles: depend:pixi/pixi-particles.2.0.0.js
-#    js-yaml: depend:yaml/js-yaml.min.3.13.1.js
+#    howler: depend:howler/howler.min.2.1.2.js
 #    dragonBones: depend:pixi/dragonBones.min.3.0.5.js
 #    dragonBonesPixi: depend:pixi/dragonBonesPixi.min.3.0.5.js
 

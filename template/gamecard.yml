@@ -4,7 +4,7 @@ id: sample # 遊戲代號 遊戲代號
 name:   # 遊戲名稱 (多語設定)
   en-us: game sample
   zh-tw: 遊戲 sample
-  zh-cn: 遊戲 sample
+  zh-cn: 游戏 sample
 sysTray: # 是否顯示系統選單
   left: 40px         # 左邊界座標
   top: 40px          # 上邊界座標
@@ -21,31 +21,30 @@ options: # 功能開關設定
     progress: false      # 是否顯示 公版的進度條
   game:
     custom: false      # 是否顯示 場景設定選單 (pixi.js 初始化設定)
-    fps: false         # 是否顯示畫面更新率
+    fps: true          # 是否顯示畫面更新率
     debug: false       # 是否顯示 vConsole (目前沒作用)
     useDialog: true    # 是否使用共用對話視窗
 app: release/demo.sample.js   # 程式 (自動產生)
 group: demo                # 群組
 appConfig: sample             # 程式設定檔
-# theOther: Jackpot
 pixiConfig: #PIXI 設定
-  width: &WIDTH 640
-  height: &HEIGHT 780
+  legacy: false
+  width: &WIDTH 1024
+  height: &HEIGHT 768
   resolution: 1.0
   antialias: false
   transparent: true
 screen:   # 螢幕設定
-  isLock: true             # 是否鎖定
-  #orientation: portrait    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
-  #width: 6400               # 寬
-  #height: 7800              # 高
-  portrait: # 垂直鎖定設定
-    width: 6400               # 寬
-    height: 7800              # 高
-  landscape: # 水平鎖定設定
-    width: 7800               # 寬
-    height: 6400              # 高
-    
+  isLock: false             # 是否鎖定
+  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
+  width: *WIDTH               # 寬
+  height: *HEIGHT              # 高
+  # portrait: # 垂直鎖定設定
+  #   width: 800               # 寬
+  #   height: 960              # 高
+  # landscape: # 水平鎖定設定
+  #   width: 960               # 寬
+  #   height: 800              # 高  
 resize: # 畫面尺寸改變用
   horizontal:     # 水平
     width: *WIDTH   # 寬
@@ -54,13 +53,13 @@ resize: # 畫面尺寸改變用
     width: *HEIGHT    # 寬
     height: *WIDTH  # 高
 images:   # 圖檔設定
-  useBackground: true
   icon: gamecard/icon.png
   logo: gamecard/logo.png
   background: gamecard/background.jpg
+  #useBackground: true # 是否顯示背景圖片
 overview: # 預覽用
   width: 960  # 畫面的寬
-  height: 540 # 畫面的高
+  height: 580 # 畫面的高
   spine: # 動畫設定
     pos: # 座標
       x: 0
@@ -73,3 +72,4 @@ overview: # 預覽用
       progress: progress  # 進度
 type: sports               # 目前沒使用
 doc: slotTest 說明         # 目前沒使用
+

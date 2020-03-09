@@ -9,16 +9,30 @@
  ************************************************************************ */
 
 import m from 'mithril';
+import * as comGame from 'component/gamePIXI';
 
-import * as game from 'component/game';
-import * as module from 'component/module';
+let objList = [];
+
+export function add (obj, index = 0) {
+  objList[index] = obj;
+  m.redraw();
+}
+
+export function remove (index = 0) {
+  objList[index] = null;
+  let last = objList.pop();
+  if (index < objList.length) {
+    objList[index] = last;
+  }
+  m.redraw();
+}
 
 
 /**
  * 啟動程式
  * @returns {void}
  */
-export function run () {
+export async function run () {
 
   // 設定最大顯示畫面
   let style = {
@@ -30,30 +44,20 @@ export function run () {
   };
 
   let Application = {
-    main: {
-      view () {
-        return m('.bg-white red', 'init');
-      }
-    },
-
     view () {
       return m('.',
         {
           style
         },
-        m(Application.main),
-        module.isVisible() ? m(module.Component)
-          : null
+        objList.map(obj => {
+          return m(obj.com, obj.attrs);
+        })
       );
     }
   };
+
   m.mount(document.body, Application);
 
   // 初始化
-  game.init().then(component => {
-    if (component) {
-      Application.main = component;
-      m.redraw();
-    }
-  });
+  await comGame.init();
 }

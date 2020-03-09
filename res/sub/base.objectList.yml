@@ -5,49 +5,40 @@ objects:
   type: button
   isInScene: true
   resource:
-    group: sub.button
+    group: demo.button
     name: system
     enter: enter
     press: press
     leave: leave
     disable: disable
-  pos: {x: 140,y: 140}
-  width: 255
-  height: 255
-  init: clickSys
-- #動畫 boy
-  objName: boy
-  name: 動畫 boy
-  type: bone
-  isInScene: true
-  resource:
-    name: ubbie
-  pos: {x: 500,y: 600}
-  animation:
-    name: turn face
-    timeScale: 1.0
-  width: 128
-  height: 32
-  init: null
-- #粒子
-  objName: aaaa
-  name: 粒子
-  type: particle
-  isInScene: true
-  config:
-    name: cartoonSmoke
-  resource:
-    group: sub.particle
-    name: test
-  pos: {x: 200,y: 400}
+  pos: {x: 40,y: 150}
   width: 255
   height: 255
   init: null
+
+- #金額
+  objName: cash
+  name: 金額
+  type: number
+  isInScene: true
+  resource:
+    texture: NumMPurple
+    group: null
+  charMap: '0123456789.'
+  pos: {x: 100,y: 300}
+  anchor: {x: 0.0,y: 0.5}
+  width: 480
+  height: 96
+  numCounts: 12
+  offset: 64
+  autoHide: true
+  init: null
+
 - #動畫-TOM STAR
   objName: contboTomStar
   name: 動畫-contbo TOM STAR
   type: spine
-  isInScene: true
+  isInScene: false
   resource:
     spineData: demo.contbo.tom.star  # spine data 群組
     texture: null                    # texture    群組
@@ -76,7 +67,7 @@ objects:
   objName: contboTomLoop
   name: 動畫-contbo TOM LOOP
   type: spine
-  isInScene: true
+  isInScene: false
   resource:
     spineData: demo.contbo.tom.loop  # spine data 群組
     texture: null                    # texture    群組

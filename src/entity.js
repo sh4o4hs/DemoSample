@@ -10,27 +10,24 @@
 
 import * as nuts from 'nuts';
 import * as strings from 'language/strings';
-import Seed from 'entity/seed';
 
 /**
  * 建立場景
  * @param conf {Object} lobby 傳入建立場景設定檔
  */
-export function create (conf) {
+export async function create (conf) {
   let game = conf.game;
-  let loadingMgr = nuts.scene.loadingManager;
-  let sceneList;
+
+  // let isChild = conf.isChild;
+  // let sceneList;
 
   // 設定多語
   strings.setLanguage(conf.langID);
-  console.log(strings.get('loading'));
+  console.log('zzzz: ' + strings.get('loading'));
 
   // 設定 base URL
   let baseURL = conf.baseURL || '';
   nuts.scene.sceneManager.setBaseURL(baseURL);
-
-  let seed = new Seed(game);
-  Seed.setSingleton(seed);
 
   //--設定讀取畫面
   let loading = nuts.ui.loading;
@@ -49,56 +46,25 @@ export function create (conf) {
     baseURL + 'res/loading/Loading_12.png'
   ];
   loading.setScene(resource);
-  if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {
-    let pixiConf = game.scene.gamecard.pixiConfig;
-    let pos = {
-      x: pixiConf.width / 2,
-      y: pixiConf.height / 2
-    };
-    loading.setPosition(pos);
-  }
-  loadingMgr.setDisplayLoading(loading);
 
-  let createFinish = function () {
-    seed.eventFinish();
-    seed.addToScene();
-    game.play();
-  };
+  // 設定使用 lobby 的更新畫面
+  let loadingMgr = nuts.scene.loadingManager;
+  loadingMgr.setGame(game);
+  loadingMgr.setUseLobbyState(true);
 
-  // 設定場景更新方式
-  let loadingEvent = conf.loadingEvent;
-  if (loadingEvent) {
+  // 建立場景
+  let scene = await import('scene/main');
+  await scene.create(game, conf.loadingEvent);
 
-    // 場景建立完成
-    createFinish = function () {
-
-      // reset
-      loadingMgr.setGame(game);
-      loadingMgr.setUseLobbyState(false);
-      game.play();
-
-      // 通知 lobby 遊戲場景建立完成
-      if (loadingEvent.finish) {
-        loadingEvent.finish();
-      }
-    };
-
-    // 通知 lobby 開始建立遊戲場景
-    if (loadingEvent.start) {
-      loadingEvent.start();
-    }
-  }
-
-  // 場景清單
-  sceneList = [];
-  sceneList.push({ scene: seed });
-  loadingMgr.go(sceneList, createFinish);
+  // reset
+  loadingMgr.setGame(null);
+  loadingMgr.setUseLobbyState(false);
 }
 
 /**
  * 銷毀場景 (目前沒使用)
  */
-export function destroy () {
+export async function destroy () {
 
   // todo: 釋放資源
   // 銷毀音樂音效

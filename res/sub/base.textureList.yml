@@ -1,5 +1,5 @@
 images:
-  sub: #群組
+  demo: #群組
     button: #系統按鈕
       system:
         enter: res/sub/image/SYSTEM_256.png

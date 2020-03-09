@@ -1,12 +1,11 @@
-import main from 'src/res/main.js';
-import sub from 'src/res/sub.js';
-import info from 'src/res/info.js';
+import * as main from 'makeres/main';
+import * as sub from 'makeres/sub';
+import * as load from 'makeres/load';
+import * as info from 'makeres/info';
 
-let resources = {
-  info,
+export {
   main,
-  sub
+  sub,
+  load,
+  info
 };
-
-
-export default resources;

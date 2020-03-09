@@ -25,97 +25,53 @@ objects:
   height: 780
   init: null
 
-- #暱稱
-  objName: nickname
-  name: 暱稱
-  type: text
-  isInScene: true
-  resource:
-    group: null
-    name: null
-  pos: {x: 296,y: 182}
-  width: 148
-  height: 29
-  text: nickname
-  init: setText
-
-- #訊息
-  objName: null
-  name: 訊息
-  type: info
-  isInScene: true
-  resource:
-    group: demo.background
-    name: fore
-  pos: {x: 0,y: 0}
-  width: 640
-  height: 780
-  init: setInfo
-
-- #籌碼
-  objName: coin
-  name: 籌碼
-  type: image
-  isInScene: false
-  resource:
-    group: demo.coin
-    name: 50
-  pos: {x: 0,y: 0}
-  anchor: {x: 0.5, y: 0.5}
-  width: 76
-  height: 66
-  index: 3
-  init: setCoin
-
-- #旋轉
+- #動畫-連續圖
   objName: ring
-  name: 旋轉
+  name: 前景
   type: animation
   isInScene: true
   resource:
     group: demo
     name: ring
   pos: {x: 160,y: 160}
-  anchor: {x: 0.5, y: 0.5}
   width: 212
   height: 222
   loop: true
-  init: play
-#--------------------------------------------------
-- #動畫-野
-  objName: wildOpen
-  name: 動畫-野 open
-  type: spine
-  isInScene: false
+  init: setAnim
+
+- #籌碼
+  objName: coin
+  name: 籌碼
+  type: image
+  isInScene: true
   resource:
-    spineData: demo.wild             # spine data 群組
-    texture: null                    # texture    群組
-  configList: #動畫設定用
-  - #動畫之一 (文字)
-    name: open                  #物件名稱
-    dataName: open              #資源名稱
-    timeScale: 1.0              #播放速度
-    loop: true
-    animationName: demo         #播放名稱
-  pos: {x: 400,y: 400}
+    group: demo.coin
+    name: 50
+  pos: {x: 350,y: 50}
+  anchor: {x: 0.5, y: 0.5}
+  width: 76
+  height: 66
+  index: 3
   init: null
-- #動畫-野
-  objName: wildLoop
-  name: 動畫-野 loop
-  type: spine
-  isInScene: false
+
+- #金額
+  objName: cash
+  name: 金額
+  type: number
+  isInScene: true
   resource:
-    spineData: demo.wild             # spine data 群組
-    texture: null                    # texture    群組
-  configList: #動畫設定用
-  - #動畫之一 (文字)
-    name: loop                  #物件名稱
-    dataName: loop              #資源名稱
-    timeScale: 1.0              #播放速度
-    loop: true
-    animationName: demo         #播放名稱
-  pos: {x: 300,y: 200}
-  init: play
+    texture: cnum
+    group: null
+  charMap: '0123456789.'
+  pos: {x: 350,y: 10}
+  anchor: {x: 0.0,y: 0.5}
+  width: 212
+  height: 40
+  numCounts: 6
+  offset: 18
+  autoHide: true
+  init: setNum
+
 - #動畫-五連線獎
   objName: fiveOfKind
   name: 動畫-五連線獎
@@ -157,101 +113,12 @@ objects:
   childName: star_7
   init: setSpine
 
-#--------------------------------------------------
-- #籌碼堆
-  objName: null
-  name: 籌碼堆
+- #操作界面
+  objName: gui
+  name: 操作界面
   type: group
   isInScene: true
-#  resource:
-#    group: null
-#    name: null
-  pos: {x: 360, y: 400}
-  width: 120
-  height: 100
-  init: createCoin
-  childList:
-  - #籌碼
-    objName: coin
-    name: 籌碼
-    type: image
-    isInScene: true
-    resource:
-      group: demo.coin
-      name: 500
-    pos: {x: 0,y: 0}
-    anchor: {x: 0.5, y: 0.5}
-    width: 76
-    height: 66
-    index: 10000
-    init: aa
-  - #金額
-    objName: cash
-    name: 金額
-    type: number
-    isInScene: true
-    resource:
-      texture: cnum
-      group: null
-      background: null
-    charMap: '0123456789,.'
-    pos: {x: -87,y: 66}
-    anchor: {x: 0,y: 0.5}
-    width: 174
-    height: 40
-    numCounts: 8
-    offset: 18
-    debug: true
-    autoHide: true
-    init: setCash
-
-- #讀取進度
-  objName: loading
-  name: 讀取進度
-  type: group
-  isInScene: false
-  pos: {x: 400, y: 200}
-  init: null
-  childList:
-  - #旋轉
-    objName: ring
-    name: 旋轉
-    type: animation
-    isInScene: true
-    resource:
-      group: demo
-      name: ring
-    pos: {x: 0,y: 0}
-    anchor: {x: 0.5, y: 0.5}
-    width: 212
-    height: 222
-    loop: true
-    init: play
-  - #金額
-    objName: progress
-    name: 金額
-    type: number
-    isInScene: true
-    resource:
-      texture: cnum
-      group: null
-      background: null
-    charMap: '0123456789.'
-    pos: {x: -106,y: 10}
-    anchor: {x: 0.0,y: 0.5}
-    width: 212
-    height: 40
-    numCounts: 6
-    offset: 18
-    debug: true
-    autoHide: true
-    init: setNum
-- #水平群組
-  objName: groupHorizontal
-  name: 水平群組
-  type: group
-  isInScene: true
-  pos: {x: 0, y: 400}
+  pos: {x: 0, y: 200}
   width: 120
   height: 100
   init: null
@@ -271,7 +138,7 @@ objects:
     pos: {x: 707,y: 0}
     width: 88
     height: 82
-    init: clickStart
+    init: setPlay
   - #自動
     objName: btnAuto
     name: 自動
@@ -287,7 +154,7 @@ objects:
     pos: {x: 618,y: 0}
     width: 88
     height: 82
-    init: clickAuto
+    init: null
   - #下注
     objName: btnBet
     name: 下注
@@ -304,7 +171,7 @@ objects:
     debug: false
     width: 212
     height: 82
-    init: clickBet
+    init: null
   - #規則
     objName: btnRule
     name: 規則
@@ -321,7 +188,7 @@ objects:
     debug: false
     width: 88
     height: 82
-    init: clickRule
+    init: setInfo
   - #離開
     objName: btnLeave
     name: 離開
@@ -338,97 +205,137 @@ objects:
     debug: false
     width: 88
     height: 82
-    init: clickLeave
-- #垂直群組
-  objName: groupVertical
-  name: 垂直群組
+    init: null
+
+- #說明
+  objName: rule
+  name: 說明
   type: group
   isInScene: false
-  pos: {x: 0, y: 450}
-  width: 120
-  height: 100
-  init: null
+  resource:
+    group: null
+    name: null
+  pos: {x: 0,y: 0}
+  width: 960
+  height: 540
+  init: createRule
   childList:
-  - #開始
-    objName: btnStart
-    name: 開始
+  - #info page
+    objName: imgPage
+    name: info page
+    type: image
+    isInScene: true
+    resource:
+      group: ui.pageInfo
+      name: 0
+    pos: {x: 101,y: 18}
+    width: 754
+    height: 465
+    init: null
+  - #info page WILDTEXT
+    objName: imgPageText
+    name: info page WILDTEXT
+    type: image
+    isInScene: true
+    resource:
+      group: ui.pageInfoText
+      name: 0
+    pos: {x: 196,y: 305}
+    width: 132
+    height: 108
+    init: null
+  - #info page close
+    objName: btnInfoClose
+    name: info page close
     type: button
     isInScene: true
     resource:
-      group: demo.button
-      name: start
+      group: ui
+      name: btnClose
       enter: enter
       press: press
       leave: leave
       disable: disable
-    pos: {x: 32,y: 0}
-    width: 88
-    height: 82
-    init: clickStart
-  - #自動
-    objName: btnAuto
-    name: 自動
-    type: button
+    pos: {x: 786,y: 85}
+    width: 42
+    height: 42
+    init: null
+  - #btnPage1
+    objName: btnPage1
+    name: btnPage
+    type: image
     isInScene: true
     resource:
-      group: demo.button
-      name: auto
-      enter: enter
-      press: press
-      leave: leave
-      disable: disable
-    pos: {x: 32,y: -100}
-    width: 88
-    height: 82
-    init: clickAuto
-  - #下注
-    objName: btnBet
-    name: 下注
-    type: button
+      group: ui.btnViewpayPoint
+      name: 0
+    pos: {x: 408,y: 440}
+    width: 21
+    height: 21
+    init: null
+  - #btnPage2
+    objName: btnPage2
+    name: btnPage
+    type: image
     isInScene: true
     resource:
-      group: demo.button
-      name: bet
-      enter: enter
-      press: press
-      leave: leave
-      disable: disable
-    pos: {x: 32,y: -200}
+      group: ui.btnViewpayPoint
+      name: 0
+    pos: {x: 438,y: 440}
+    width: 24
+    height: 24
+    init: null
+  - #btnPage3
+    objName: btnPage3
+    name: btnPage
+    type: image
+    isInScene: true
+    resource:
+      group: ui.btnViewpayPoint
+      name: 0
+    pos: {x: 468,y: 440}
+    width: 24
+    height: 24
+    init: null
+  - #btnPage4
+    objName: btnPage4
+    name: btnPage
+    type: image
+    isInScene: true
+    resource:
+      group: ui.btnViewpayPoint
+      name: 0
+    pos: {x: 498,y: 440}
+    width: 24
+    height: 24
+    init: null
+  - #btnPage5
+    objName: btnPage5
+    name: btnPage
+    type: image
+    isInScene: true
+    resource:
+      group: ui.btnViewpayPoint
+      name: 0
+    pos: {x: 528,y: 440}
+    width: 24
+    height: 24
+    init: null
+  - #cash number 01
+    objName: num
+    name: oddnum
+    type: number
+    isInScene: true
+    resource:
+      texture: numInfo
+    charMap: '0123456789,.'
+    pos: {x: 318,y: 185}
+    width: 100
+    height: 20
+    numCounts: 10
+    offset: 10
+    autoHide: true
+    useComma: true
     debug: false
-    width: 212
-    height: 82
-    init: clickBet
-  - #規則
-    objName: btnRule
-    name: 規則
-    type: button
-    isInScene: true
-    resource:
-      group: demo.button
-      name: rule
-      enter: enter
-      press: press
-      leave: leave
-      disable: disable
-    pos: {x: 32,y: -300}
-    debug: false
-    width: 88
-    height: 82
-    init: clickRule
-  - #離開
-    objName: btnLeave
-    name: 離開
-    type: button
-    isInScene: true
-    resource:
-      group: demo.button
-      name: leave
-      enter: enter
-      press: press
-      leave: leave
-      disable: disable
-    pos: {x: 32,y: -400}
-    debug: false
-    width: 88
-    height: 82
-    init: clickLeave
+    init: autoonPageNumber
+
+

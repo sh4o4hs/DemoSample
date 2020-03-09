@@ -8,7 +8,7 @@ export const TYPE_OVERVIEW = 1;
 export const TYPE_FORM = 2;
 export const TYPE_DEMO = 3;
 
-let visible = true;
+let visible = false;
 let objList = [];
 
 let Component = {

@@ -1,35 +1,51 @@
+import * as strings from 'language/strings';
 
-import data from 'res/main/config.yml';
-import sound from 'res/main/base.soundList.yml';
-import spine from 'res/main/base.spineList.yml';
-import object from 'res/main/objectList.yml';
+/**
+ * 取得資源
+ * @param {String} id 資源代碼
+ */
+export async function get (id) {
+  let res = {};
+  let obj;
 
-import teEn from 'res/main/en-us.textureList.yml';
-import teTw from 'res/main/zh-tw.textureList.yml';
-import teCn from 'res/main/zh-cn.textureList.yml';
-
-let resource = {
-  'en-us': {
-    data,
-    sound,
-    texture: teEn,
-    spine,
-    object
-  },
-  'zh-tw': {
-    data,
-    sound,
-    texture: teTw,
-    spine,
-    object
-  },
-  'zh-cn': {
-    data,
-    sound,
-    texture: teCn,
-    spine,
-    object
+  if (!id) {
+    id = strings.getID();
   }
-};
 
-export default resource;
+  // 取得材質
+  switch (id) {
+
+    // 英文-美
+    case 'en-us':
+      obj = await import('res/main/en-us.textureList');
+      res = obj;
+      break;
+
+    // 中文-台灣
+    case 'zh-tw':
+      obj = await import('res/main/zh-tw.textureList');
+      res = obj;
+      break;
+
+    // 中文-大陸
+    case 'zh-cn':
+      obj = await import('res/main/zh-cn.textureList');
+      res = obj;
+      break;
+
+    // 英文-美
+    default:
+      obj = await import('res/main/en-us.textureList');
+      res = obj;
+  }
+
+  // 取得動畫
+  obj = await import('res/main/base.spineList');
+  res.spines = obj.spines;
+
+  // 取得物件
+  obj = await import('res/main/objectList');
+  res.objects = obj.objects;
+
+  return res;
+}

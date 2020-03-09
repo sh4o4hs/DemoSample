@@ -8,11 +8,6 @@
 
 ************************************************************************ */
 import * as nuts from 'nuts';
-import * as mainSet from 'entity/mainSet';
-
-// import * as strings from 'language/strings';
-// import resource from 'src/res/main';
-import vendor from 'res/vendor';
 
 /**
  * 主場景
@@ -36,18 +31,19 @@ export default class Scene extends nuts.scene.Base {
    * 建立物件
    * @param game {Object} game
    */
-  constructor (game) {
-    let root = (function (game) {
-      let entity = {};
+  constructor (scene) {
+    let root = (function (scene) {
       let center = {};
-
-      center.entity = entity;
-      center.game = game;
-      center.layer = game.layer.main;
+      center.game = scene.game;
+      center.layer = scene.game.layer.main;
       center.currentUpdate = null;
       center.sounds = null;
-      center.objs = null;
-      center.textures = null;
+      center.objs = scene.objs;
+      center.textures = scene.textures;
+      center.entity = scene.entity;
+
+      let entity = center.entity;
+      console.log(entity);
 
       /************************************************************************/
       /**
@@ -62,10 +58,10 @@ export default class Scene extends nuts.scene.Base {
        * @param offsetTime {Number} 時間偏移量, 每一個 frame 所花費的時間
        */
       event.update = (offsetTime) => {
-
         if (center.currentUpdate !== null) {
           center.currentUpdate(offsetTime);
         }
+
       };
 
 
@@ -76,11 +72,11 @@ export default class Scene extends nuts.scene.Base {
       return {
         center
       };
-    }(game));
+    }(scene));
 
     super(SCENE_NAME);
     let self = this;
-    self.setGame(game);
+    self.setGame(scene.game);
     self.setRoot(root);
   }
 
@@ -96,46 +92,12 @@ export default class Scene extends nuts.scene.Base {
   */
 
   /**
-   * 重新設定場景狀態
-   */
-  reset (mode) {
-    console.log('reset mode :' + mode);
-    let center = this.getCenter();
-    let entity = center.entity;
-    let layer = center.layer;
-    let obj;
-
-    // 選擇模式
-    if (mode === 'h') {
-      obj = entity.groupVertical;
-      obj && layer.removeChild(obj);
-
-      obj = entity.groupHorizontal;
-      obj && layer.addChild(obj);
-
-    } else if (mode === 'v') {
-      obj = entity.groupHorizontal;
-      obj && layer.removeChild(obj);
-
-      obj = entity.groupVertical;
-      obj && layer.addChild(obj);
-    } else {
-      obj = entity.groupHorizontal;
-      obj && layer.addChild(obj);
-
-      obj = entity.groupVertical;
-      obj && layer.addChild(obj);
-    }
-  }
-
-  /**
    * 場景建立完成
    */
   /*
   eventFinish () {
   }
 */
-
   /**
    * 處理原始資料
    */
@@ -145,7 +107,6 @@ export default class Scene extends nuts.scene.Base {
   */
   /**
    * 處理音樂音效
-   * @param sounds {Object} 取得音樂音效物件
    */
   /*
     eventSound (sounds){
@@ -202,14 +163,55 @@ export default class Scene extends nuts.scene.Base {
     }
   */
   /**
+   * 更新資源
+   */
+  async reload (scene) {
+    console.log('!!!!!!!! 開始處理 reload !!!!!!!!!');
+    let self = this;
+    let center = self.getCenter();
+    let game = center.game;
+    let ent = center.entity;
+
+    // 指定要更新的資源
+    let newTextures = scene.textures.ui;
+    game.textures = scene.textures;
+
+    let obj = null;
+    obj = ent.gui;
+    obj.reload();
+
+    obj = ent.ring;
+    obj.reload();
+
+    await game.idle(1.0);
+    obj = ent.cash;
+    obj.x = 30;
+    obj.y = 50;
+    obj.custom.rect.width = 360;
+    obj.custom.rect.height = 100;
+    obj.custom.offset = 72;
+    obj.setTextures('numBW');
+
+
+    await game.idle(1.0);
+    obj = ent.coin;
+    obj.texture = newTextures.pageInfoText.a;
+    console.log('!!!!!!!! 完成處理 reload !!!!!!!!!');
+  }
+
+  /**
    * 場景管理
    * @param finish {Object} 場景建立完成後執行的任務
    */
-  createScene (finish) {
-    let self = this;
-    let res = vendor.main;
+  async createScene (finish) {
 
-    self.setInitMap(mainSet.normal);
+    // 讀取資源檔方式之一
+    let vendor = await import('src/vendor');
+    let res = await vendor.get('main');
+
+    // 讀取資源檔方式之一
+    // let resource = await import('src/res/main');
+    // let res = await resource.get();
 
     if (res) {
       console.log(res);
@@ -217,7 +219,6 @@ export default class Scene extends nuts.scene.Base {
       // 設定資訊
       let config = {
         infoList: [
-          { eventName: 'sound',   obj: res},
           { eventName: 'texture', obj: res},
           { eventName: 'spine',   obj: res},
           { eventName: 'object',  obj: res}

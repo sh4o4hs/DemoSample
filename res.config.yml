@@ -25,7 +25,11 @@ vendor:
   source: src/resource.js
   resource: res/vendor.yml
   output: res/vendor.js
-
+  
+# 資源設定
+resVendor:
+  src:
+    - res/vendor/**/*.js
 
 #===================================================
 # 資源設定
@@ -44,6 +48,7 @@ resGamecard:
 resFlat: # 相對路徑
   src:
     - res/main/asset/**/*.{jpg,png}
+    - res/main/ui/asset/**/*.{jpg,png}
     - res/ui/asset/**/*.{jpg,png}
     - res/sub/asset/**/*.{jpg,png}
 
@@ -65,6 +70,7 @@ resBones: # 相對路徑 bones
 textureAsset: # pixi.js asset
   src:
     - res/main/asset/**/*.json
+    - res/main/ui/asset/**/*.json
     - res/ui/asset/**/*.json
     - res/sub/asset/**/*.json
 

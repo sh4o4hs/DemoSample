@@ -1,8 +1,4 @@
 
-import en from 'language/en-us.ts';
-import tw from 'language/zh-tw.ts';
-import cn from 'language/zh-cn.ts';
-
 /**
  * 語言代碼
  * @type {{EN_US: string, ZH_TW: string, ZH_CN: string}}
@@ -13,39 +9,43 @@ export const ID = {
   ZH_CN: 'zh-cn'
 };
 
-let lang = en;
+let lang = null;
 let currentID = ID.EN_US;
 export function get (name) {
   'use strict';
-  let str = lang[name];
-  if (!str) {
-    str = 'no found !';
+  let str = 'null';
+  if (lang) {
+    str = lang.get(name);
+    if (!str) {
+      str = 'no found !';
+    }
   }
 
   return str;
 }
 
-/**
- * 設定語言
- * @param {string} id 語言代碼
- * @returns {void}
+/**import
  */
-export function setLanguage (id) {
+export async function setLanguage (id) {
   currentID = id;
+
   switch (id) {
     case ID.EN_US:
-      lang = en;
+      lang = await import('language/en-us');
       break;
     case ID.ZH_TW:
-      lang = tw;
+      lang = await import('language/zh-tw');
       break;
     case ID.ZH_CN:
-      lang = cn;
+      lang = await import('language/zh-cn');
       break;
     default:
-      lang = en;
       currentID = ID.EN_US;
+      lang = await import('language/en-us');
   }
+
+  //  console.log('zzzz: ' + get('loading'));
+
 }
 
 /**

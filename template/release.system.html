@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> demo sample </title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="systemjs-importmap">
+      {
+        "imports": {
+        {{#importmap}}
+          {{{importmapName}}}
+        {{/importmap}}
+        }
+      }
+  </script>
+  
+  <script src="/systemjs/6.2.5/system.js"></script>
+
+
+</head>
+<body style="background: #999">
+<div id="root"></div>
+
+<script crossorigin="anonymous">
+  System.import('{{{app}}}');
+</script>
+</body>
+</html>

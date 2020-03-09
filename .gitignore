@@ -4,6 +4,7 @@
 Thumbs.db
 index.html
 statistics.html
+/node_modules/
 /app/
 /tmp/
 /config/
@@ -11,5 +12,5 @@ statistics.html
 /release/
 /data/
 /raw/
-# /res/vendor.js
+/test/demo*.*
 /res/vendor.yml
