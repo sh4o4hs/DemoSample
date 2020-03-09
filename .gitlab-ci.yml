@@ -98,7 +98,7 @@ alpha機:
   variables:
     STUFF_DEBUG: 1
     STUFF_MODE: test
-    STUFF_UPLOAD: alpha_name
+    STUFF_UPLOAD: alpha_gin
   script:
   - stuff deploy
   environment:
