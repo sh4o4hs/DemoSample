@@ -3,13 +3,13 @@ System.register([], function (exports) {
   return {
     execute: function () {
 
-      var data = { images:{ ui:{ pageInfo:[ "data/main/ui/lang/en-us/beec230b5c0e8b50.png",
-              "data/main/ui/lang/en-us/915d19b7247ba66c.png",
-              "data/main/ui/lang/en-us/9b8ba089eb6d411a.png",
-              "data/main/ui/lang/en-us/5b72fb5acbf38cb5.png",
-              "data/main/ui/lang/en-us/7d1b4fdabd8baaa9.png" ],
-            pageInfoText:[ "data/main/ui/lang/en-us/0ac00a002c474e1c.png",
-              "data/main/ui/lang/en-us/ba8ed086c6fbb0a6.png" ],
+      var data = { images:{ ui:{ pageInfo:[ "data/main/ui/lang/zh-tw/9e11a5e8f37c349f.png",
+              "data/main/ui/lang/zh-tw/da4d992e3b5d8513.png",
+              "data/main/ui/lang/zh-tw/d5717fa0cd2ca864.png",
+              "data/main/ui/lang/zh-tw/cdd7db659b523eef.png",
+              "data/main/ui/lang/zh-tw/ac230694df049cfa.png" ],
+            pageInfoText:[ "data/main/ui/lang/zh-tw/92177e78cce8b937.png",
+              "data/main/ui/lang/zh-tw/fc60bc2035dee8a4.png" ],
             btnViewpayPoint:[ "data/main/ui/image/023cef0175f3a134.png",
               "data/main/ui/image/dd99c2b9f5d23f43.png" ] } },
         assets:{ "data/main/ui/asset/69f2e3b01237f329.json":{ frames:{ numInfo0:{ frame:{ x:0,

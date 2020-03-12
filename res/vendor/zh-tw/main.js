@@ -318,7 +318,7 @@ System.register([], function (exports) {
               "1000000":"data/sub/base/ea42938a58680542.png" },
             background:{ back:"data/main/bg/1f130a514604ab4b.png",
               fore:"data/main/bg/cddc5a27241ad23f.png",
-              t01:"data/main/bg/cddc5a27241ad23f.png" },
+              t03:"data/main/bg/cddc5a27241ad23f.png" },
             button:{ start:{ enter:"data/main/button/start/ef70d3e41904c825.png",
                 leave:"data/main/button/start/30ccb36d04b2ab42.png",
                 press:"data/main/button/start/a40aae537f735379.png" },

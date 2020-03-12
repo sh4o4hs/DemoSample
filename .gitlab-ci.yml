@@ -9,7 +9,7 @@ stages:
   variables:
     STUFF_DEBUG: 1
   script:
-  - stuff source
+  - stuff eslint
 
 打包展示版:
   stage: deploy
@@ -73,7 +73,6 @@ stages:
     STUFF_DEBUG: 0
     STUFF_MODE: test
     STUFF_UPLOAD: beta
-  when: manual
   script:
   - stuff deploy
   only:

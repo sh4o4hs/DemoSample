@@ -24,9 +24,11 @@ var jp = /*#__PURE__*/Object.freeze({
 });
 
 // import * as normal from 'demo/v1/normal/**/*.ts';
+
+
 var input = {
-    normal: normal,
-    jp: jp
+  normal,
+  jp
 };
 
 export default input;
