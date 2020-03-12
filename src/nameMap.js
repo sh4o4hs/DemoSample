@@ -23,21 +23,20 @@ let zhtwmain = 'res/vendor/zh-tw/main.js';
 let zhtwsub = 'res/vendor/zh-tw/sub.js';
 
 
-
 var nameMap = /*#__PURE__*/Object.freeze({
-	__proto__: null,
-	enusinfo: enusinfo,
-	enusload: enusload,
-	enusmain: enusmain,
-	enussub: enussub,
-	zhcninfo: zhcninfo,
-	zhcnload: zhcnload,
-	zhcnmain: zhcnmain,
-	zhcnsub: zhcnsub,
-	zhtwinfo: zhtwinfo,
-	zhtwload: zhtwload,
-	zhtwmain: zhtwmain,
-	zhtwsub: zhtwsub
+  __proto__: null,
+  enusinfo: enusinfo,
+  enusload: enusload,
+  enusmain: enusmain,
+  enussub: enussub,
+  zhcninfo: zhcninfo,
+  zhcnload: zhcnload,
+  zhcnmain: zhcnmain,
+  zhcnsub: zhcnsub,
+  zhtwinfo: zhtwinfo,
+  zhtwload: zhtwload,
+  zhtwmain: zhtwmain,
+  zhtwsub: zhtwsub
 });
 
 export default nameMap;

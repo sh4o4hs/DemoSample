@@ -205,7 +205,7 @@ objects:
     debug: false
     width: 88
     height: 82
-    init: null
+    init: setLeave
 
 - #說明
   objName: rule

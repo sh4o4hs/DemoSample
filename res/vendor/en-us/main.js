@@ -186,7 +186,7 @@ System.register([], function (exports) {
                 debug:false,
                 width:88,
                 height:82,
-                init:null } ] },
+                init:"setLeave" } ] },
           { objName:"rule",
             name:"說明",
             type:"group",

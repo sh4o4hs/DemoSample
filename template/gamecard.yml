@@ -27,6 +27,8 @@ options: # 功能開關設定
 app: release/demo.sample.js   # 程式 (自動產生)
 group: demo                # 群組
 appConfig: sample             # 程式設定檔
+# theOther: JPLuckyTreasure      # 是否有子專案
+theOther: other      # 是否有子專案
 pixiConfig: #PIXI 設定
   legacy: false
   width: &WIDTH 1024
