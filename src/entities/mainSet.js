@@ -10,7 +10,7 @@
 // import * as strings from 'language/strings';
 import * as nuts from 'nuts';
 
-import app from 'entity/app';
+// import app from 'entity/app';
 
 // import * as sceneInfo from 'src/scenes/info';
 // import * as sceneSub from 'src/scenes/sub';
@@ -45,7 +45,7 @@ export function normal (that) {
       self.group.reload();
     }
   }
-  
+
   function createOther () {
     console.log('建立附屬專案');
 
@@ -198,13 +198,13 @@ export function normal (that) {
 
     async setLeave (obj) {
 
-      async function leave () {
-        console.log('leave');
-        console.log(app);
-        center.game.scene.callTheOther(app.gamecard.theOther, {
-          jackpot: app.jackpot
-        });
-      }
+      // async function leave () {
+      //   console.log('leave');
+      //   console.log(app);
+      //   center.game.scene.callTheOther(app.gamecard.theOther, {
+      //     jackpot: app.jackpot
+      //   });
+      // }
 
       obj.setClick((/*o*/) => {
         // leave();
