@@ -44,8 +44,6 @@ export async function setLanguage (id) {
       lang = await import('language/en-us');
   }
 
-  //  console.log('zzzz: ' + get('loading'));
-
 }
 
 /**
