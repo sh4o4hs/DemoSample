@@ -44,7 +44,123 @@ export function normal (that) {
       console.log(scene);
       self.group.reload();
     }
+  }
+  
+  function createOther () {
+    console.log('建立附屬專案');
 
+    let game = center.game;
+
+    let jackpot = JSON.parse(`{"mJpOutIdx":0,"mJpOutScene":"NULL","mJpOutValue":0,
+    "mJpValue":[34713731,51699878,69600704,104784137,23779170,37964995],"resultCode":1}`);
+
+    let loading = null;
+
+    let sceneID = 'other';
+    let gameID = 'zzzz.0';
+    let config = {
+      style: {
+        position: 'absolute',
+        left: '50%',
+        top: '0%',
+        width: '50%',
+        height: '100%'
+      },
+      reference: {
+        left: 0.5,
+        top: 0.0,
+        width: 0.5,
+        height: 1.0
+      },
+      groupName: 'demo',
+      id: gameID,
+      sceneID: sceneID,
+      loadingEvent: {
+        start ()  {
+        },
+
+        resBegin (/*index*/) {
+        },
+
+        resEnd (/*index*/) {
+        },
+
+        sceneResBegin (/*id*/) {
+        },
+
+        sceneResLoading (value) {
+
+          // 顯示進度
+          let s = value.state;
+          let totalProgress = value.totalProgress;
+          if (s) {
+            let baseValue = (s.currentIndex - 1) / s.totals * 100;
+            totalProgress = baseValue + totalProgress / s.totals;
+          } else {
+            totalProgress = value.current / value.length * 100;
+          }
+
+          if (loading && loading.progress) {
+            loading.progress.setValue(totalProgress.toFixed(0));
+          }
+          console.log(totalProgress);
+        },
+
+        sceneResEnd (/*id*/) {
+        },
+
+        finish (scene) {
+
+          /*
+          scene.localEvent.enter({
+            jackpot,
+            id: gameID,
+            from: game.scene.info.id
+          });
+          */
+          console.log('==================================');
+          console.log(scene);
+          scene.localEvent.play({
+            jackpot,
+            id: gameID,
+            from: game.scene.info.id
+          });
+          scene.localEvent.show();
+
+          game.scene.localEvent.pause();
+          game.once();
+        }
+      }
+    };
+
+    // 是否已經建立完成
+    // let scene = game.scene.getTheOther(testID);
+    // if (scene) {
+    //   scene.localEvent.enter({
+    //     jackpot,
+    //     id: gameID,
+    //     from: game.scene.info.id
+    //   });
+    //   game.scene.localEvent.pause();
+    // } else {
+    // }
+    if (game.scene && game.scene.createTheOther) {
+      game.scene.createTheOther(config);
+
+      if (loading && loading.progress) {
+        if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {
+          let pixiConf = game.scene.gamecard.pixiConfig;
+          let pos = {
+            x: pixiConf.width / 2,
+            y: pixiConf.height / 2
+          };
+          loading.x = pos.x;
+          loading.y = pos.y;
+        }
+
+        loading.progress.setValue(0);
+      }
+    }
   }
 
   //--初始化對照表
@@ -81,17 +197,18 @@ export function normal (that) {
     },
 
     async setLeave (obj) {
+
       async function leave () {
         console.log('leave');
         console.log(app);
         center.game.scene.callTheOther(app.gamecard.theOther, {
           jackpot: app.jackpot
         });
-
       }
 
       obj.setClick((/*o*/) => {
-        leave();
+        // leave();
+        createOther();
       });
     },
 
