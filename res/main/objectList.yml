@@ -135,7 +135,7 @@ objects:
       press: press
       leave: leave
       disable: disable
-    pos: {x: 707,y: 0}
+    pos: {x: 507,y: 0}
     width: 88
     height: 82
     init: setPlay
@@ -151,7 +151,7 @@ objects:
       press: press
       leave: leave
       disable: disable
-    pos: {x: 618,y: 0}
+    pos: {x: 418,y: 0}
     width: 88
     height: 82
     init: null
@@ -167,7 +167,7 @@ objects:
       press: press
       leave: leave
       disable: disable
-    pos: {x: 408,y: 0}
+    pos: {x: 208,y: 0}
     debug: false
     width: 212
     height: 82

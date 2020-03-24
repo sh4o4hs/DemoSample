@@ -11,7 +11,6 @@
 // import 'style/animate.3.7.2.css';
 
 import 'tweenjs';
-import 'src/vendor';
 import * as component from 'src/component';
 
 

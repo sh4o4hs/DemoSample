@@ -27,25 +27,25 @@ options: # 功能開關設定
 app: release/demo.sample.js   # 程式 (自動產生)
 group: demo                # 群組
 appConfig: sample             # 程式設定檔
-theOther: other      # 是否有子專案
+theOther: Jackpot      # 是否有子專案
 pixiConfig: #PIXI 設定
   legacy: false
-  width: &WIDTH 1024
-  height: &HEIGHT 768
+  width: &WIDTH 640
+  height: &HEIGHT 720
   resolution: 1.0
   antialias: false
   transparent: true
 screen:   # 螢幕設定
-  isLock: false             # 是否鎖定
-  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
-  width: *WIDTH               # 寬
-  height: *HEIGHT              # 高
-  # portrait: # 垂直鎖定設定
-  #   width: 800               # 寬
-  #   height: 960              # 高
-  # landscape: # 水平鎖定設定
-  #   width: 960               # 寬
-  #   height: 800              # 高  
+  isLock: true             # 是否鎖定
+  # orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
+  # width: *WIDTH               # 寬
+  # height: *HEIGHT              # 高
+  portrait: # 垂直鎖定設定
+    width: 6400               # 寬
+    height: 7200              # 高
+  landscape: # 水平鎖定設定
+    width: 7200               # 寬
+    height: 6400              # 高  
 resize: # 畫面尺寸改變用
   horizontal:     # 水平
     width: *WIDTH   # 寬
@@ -57,7 +57,7 @@ images:   # 圖檔設定
   icon: gamecard/icon.png
   logo: gamecard/logo.png
   background: gamecard/background.jpg
-  #useBackground: true # 是否顯示背景圖片
+  useBackground: true # 是否顯示背景圖片
 overview: # 預覽用
   width: 960  # 畫面的寬
   height: 580 # 畫面的高

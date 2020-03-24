@@ -1,26 +1,26 @@
-let enusinfo = 'res/vendor/en-us/info.js';
+let enusinfo = 'data/vendor/en-us/e8662ece2c68a4c6.js';
 
-let enusload = 'res/vendor/en-us/load.js';
+let enusload = 'data/vendor/en-us/7e676b1aa0111df9.js';
 
-let enusmain = 'res/vendor/en-us/main.js';
+let enusmain = 'data/vendor/en-us/f98c72591e6fc25a.js';
 
-let enussub = 'res/vendor/en-us/sub.js';
+let enussub = 'data/vendor/en-us/135bc4d91653a851.js';
 
-let zhcninfo = 'res/vendor/zh-cn/info.js';
+let zhcninfo = 'data/vendor/zh-cn/c399b250c2b3af1f.js';
 
-let zhcnload = 'res/vendor/zh-cn/load.js';
+let zhcnload = 'data/vendor/zh-cn/8f21e5ca5f4f94c3.js';
 
-let zhcnmain = 'res/vendor/zh-cn/main.js';
+let zhcnmain = 'data/vendor/zh-cn/57650a7952ecb489.js';
 
-let zhcnsub = 'res/vendor/zh-cn/sub.js';
+let zhcnsub = 'data/vendor/zh-cn/135bc4d91653a851.js';
 
-let zhtwinfo = 'res/vendor/zh-tw/info.js';
+let zhtwinfo = 'data/vendor/zh-tw/472f46ca0cf7a657.js';
 
-let zhtwload = 'res/vendor/zh-tw/load.js';
+let zhtwload = 'data/vendor/zh-tw/c7798f79782bf7a0.js';
 
-let zhtwmain = 'res/vendor/zh-tw/main.js';
+let zhtwmain = 'data/vendor/zh-tw/79611499b1f3fc42.js';
 
-let zhtwsub = 'res/vendor/zh-tw/sub.js';
+let zhtwsub = 'data/vendor/zh-tw/135bc4d91653a851.js';
 
 
 

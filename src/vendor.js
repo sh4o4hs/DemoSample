@@ -39,6 +39,7 @@ export async function get (name, lang) {
   let id = lang.replace('-', '');
 
   let str = nameMap[`${id}${name}`];
+  console.log(`vendor.get : ${str}`);
   let res = await import(`${app.baseURL}${str}`);
   console.log(res);
   return res.default;

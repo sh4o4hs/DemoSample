@@ -11,6 +11,9 @@ images:
       100000: res/sub/base/chip_100k.png
       500000: res/sub/base/chip_500k.png
       1000000: res/sub/base/chip_1m.png
+    # test: 
+    #   - res/sub/base/chip_1m.png
+    #   - res/sub/base/chip_1m.png
     background: #背景圖
       back: res/main/bg/background.png
       fore: res/main/bg/foreground.png
