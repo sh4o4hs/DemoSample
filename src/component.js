@@ -51,6 +51,16 @@ export async function run () {
         },
         objList.map(obj => {
           return m(obj.com, obj.attrs);
+        }),
+        m('.bg-blue ba', {
+          style: {
+            position: 'absolute',
+            zIndex: 100,
+            left: '30%',
+            top: '30%',
+            width: '40%',
+            height: '40%'
+          }
         })
       );
     }

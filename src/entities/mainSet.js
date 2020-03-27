@@ -184,15 +184,16 @@ export function normal (that) {
     },
 
     async setPlay (obj) {
-      async function play () {
 
-        // 傳送網路命令
-        let cmd = await  import('net/command/bet');
-        await cmd.send(1000);
-      }
+      // async function play () {
+
+      //   // 傳送網路命令
+      //   let cmd = await  import('net/command/bet');
+      //   await cmd.send(1000);
+      // }
 
       obj.setClick((/*o*/) => {
-        play();
+        // play();
       });
     },
 
