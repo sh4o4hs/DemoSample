@@ -199,18 +199,49 @@ export function normal (that) {
 
     async setLeave (obj) {
 
-      async function leave () {
-        console.log('leave');
-        console.log(app);
-        center.game.scene.callTheOther(app.gamecard.theOther, {
-          jackpot: app.jackpot
-        });
-      }
+      // async function leave () {
+      //   console.log('leave');
+      //   console.log(app);
+      //   center.game.scene.callTheOther(app.gamecard.theOther, {
+      //     jackpot: app.jackpot
+      //   });
+      // }
 
       obj.setClick((/*o*/) => {
-        leave();
-
+        // leave();
         // createOther();
+        let config = {};
+        config.url = '//172.16.80.22:3000/project/agent/statistics.html';
+
+        // config.setting = {
+        //   id: 'info',
+        //   isLock: true,
+        //   left: '5%',
+        //   top: '5%',
+        //   width: '90%',
+        //   height: '90%',
+        //   game: {
+        //     width: 4096,
+        //     height: 4096,
+        //     portrait: {
+        //       width: 5400,
+        //       height: 9600
+        //     },
+        //     landscape: {
+        //       width: 9600,
+        //       height: 5400
+        //     }
+        //   },
+        //   reference: {
+        //     left: 0.0,
+        //     top: 0.0,
+        //     width: 1.0,
+        //     height: 1.0
+        //   }
+        // };
+
+        app.game.scene.callWeb(config);
+
       });
     },
 

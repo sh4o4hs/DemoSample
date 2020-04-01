@@ -10,6 +10,7 @@
 
 import m from 'mithril';
 import * as comGame from 'component/gamePIXI';
+import comAV from 'component/av';
 
 let objList = [];
 
@@ -27,6 +28,20 @@ export function remove (index = 0) {
   m.redraw();
 }
 
+let visibleVideo = false;
+export function showVideo () {
+  visibleVideo = true;
+  m.redraw();
+}
+
+// 設定最大顯示畫面
+export let style = {
+  position: 'absolute',
+  left: '0%',
+  top: '0%',
+  width: '100%',
+  height: '100%'
+};
 
 /**
  * 啟動程式
@@ -34,25 +49,24 @@ export function remove (index = 0) {
  */
 export async function run () {
 
-  // 設定最大顯示畫面
-  let style = {
-    position: 'absolute',
-    left: '0%',
-    top: '0%',
-    width: '100%',
-    height: '100%'
-  };
 
   let Application = {
     view () {
       return m('.',
         {
-          style
+          style: {
+            position: 'absolute',
+            left: '0%',
+            top: '0%',
+            width: style.width,
+            height: style.height
+          }
         },
         objList.map(obj => {
           return m(obj.com, obj.attrs);
         }),
-        m('.bg-blue ba', {
+
+        visibleVideo ? m(comAV, {
           style: {
             position: 'absolute',
             zIndex: 100,
@@ -61,7 +75,7 @@ export async function run () {
             width: '40%',
             height: '40%'
           }
-        })
+        }) : null
       );
     }
   };

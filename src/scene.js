@@ -7,6 +7,7 @@
  *   Authors:
  *
  ************************************************************************ */
+import m from 'mithril';
 
 import * as nuts from 'nuts';
 import app from 'entity/app';
@@ -116,13 +117,18 @@ export function init () {
       let net = await import('net/network');
       await net.init(conf);
 
-      /// 傳送網路命令
+      // 傳送網路命令
       let cmd = await import('net/command/create');
       cmd.send();
+
+      // 初始化視訊
+
+      component.showVideo();
 
       game.disconnect = () => {
         console.log('!!!! game.disconnect !!!!');
       };
+      game.sysTray.visible = true;
     },
 
     /**
@@ -172,7 +178,17 @@ export function init () {
      * @param state
      */
     resize (state) {
-      console.log(state);
+      let setting = state.setting;
+      if (setting) {
+        let style = component.style;
+        style.width = setting.width;
+        style.height = setting.height;
+        console.log(style);
+        m.redraw();
+      }
+
+      // console.log(gameRoot);
+      // gameRoot.getRenderer().resize(640, 720);
     },
 
     /**
