@@ -7,7 +7,6 @@ stages:
   environment:
     name: check
   variables:
-    GIT_STRATEGY: none
     STUFF_DEBUG: 1
   script:
   - stuff eslint
