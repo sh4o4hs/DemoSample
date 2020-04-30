@@ -16,8 +16,7 @@ stages:
   environment:
     name: demo/$CI_COMMIT_REF_NAME
   variables:
-    GIT_STRATEGY: none
-    STUFF_DEBUG: 1
+    STUFF_DEBUG: 0
     STUFF_MODE: demo
     STUFF_UPLOAD: review
   script:
@@ -31,8 +30,7 @@ stages:
   environment:
     name: test/$CI_COMMIT_REF_NAME
   variables:
-    GIT_STRATEGY: none
-    STUFF_DEBUG: 1
+    STUFF_DEBUG: 0
     STUFF_MODE: test
     STUFF_UPLOAD: review
   script:
@@ -46,8 +44,7 @@ stages:
   environment:
     name: release/$CI_COMMIT_REF_NAME
   variables:
-    GIT_STRATEGY: none
-    STUFF_DEBUG: 1
+    STUFF_DEBUG: 0
     STUFF_MODE: release
     STUFF_UPLOAD: review
   script:
@@ -60,8 +57,7 @@ stages:
   environment:
     name: beta/$CI_COMMIT_REF_NAME
   variables:
-    GIT_STRATEGY: none
-    STUFF_DEBUG: 1
+    STUFF_DEBUG: 0
     STUFF_MODE: release
     STUFF_UPLOAD: beta
   script:
@@ -74,8 +70,7 @@ stages:
   environment:
     name: alpha/$CI_COMMIT_REF_NAME
   variables:
-    GIT_STRATEGY: none
-    STUFF_DEBUG: 1
+    STUFF_DEBUG: 0
     STUFF_MODE: test
     STUFF_UPLOAD: beta
   script:
@@ -88,8 +83,7 @@ stages:
   environment:
     name: beta/$CI_COMMIT_REF_NAME
   variables:
-    GIT_STRATEGY: none
-    STUFF_DEBUG: 1
+    STUFF_DEBUG: 0
     STUFF_MODE: demo
     STUFF_UPLOAD: beta
   when: manual
