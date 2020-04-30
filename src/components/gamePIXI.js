@@ -45,6 +45,33 @@ export let Component = {
   }
 };
 
+export let Other = {
+  oninit (vnode) {
+    let attrs = vnode.attrs;
+    this.config = attrs.config;
+    this.style = {
+      position: 'absolute',
+      zIndex: 9,
+      left: '0%',
+      top: '0%',
+      width: '50%',
+      height: '100%'
+    };
+  },
+  oncreate (/*vnode*/) {
+  },
+  view () {
+    let config = this.config;
+    let style = this.style;
+    return m(nuts.components.game.pixi,
+      {
+        style,
+        config
+      }
+    );
+  }
+};
+
 /**
  * 初始化
  * @returns {void}

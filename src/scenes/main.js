@@ -10,7 +10,8 @@ export async function create (game, loadingEvent) {
 
   // 是否需要建立
   if (!isCreate) {
-    isCreate = true;
+
+    // isCreate = true;
 
     // 讀取資源檔
     let vendor = await import('src/vendor');

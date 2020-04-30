@@ -77,6 +77,7 @@ export function init () {
           baseURL: conf.baseURL,
           loadingEvent: loadingEvent
         });
+        game.play();
       };
       component.add({
         com: comGame.Component,
@@ -84,6 +85,8 @@ export function init () {
           config: pixiConfig
         }
       });
+
+
     },
 
     /**
@@ -122,9 +125,22 @@ export function init () {
       cmd.send();
 
       // 初始化視訊
-
-      component.showVideo();
-
+      // component.showVideo();
+      /*
+      component.add({
+        com: comGame.Other,
+        attrs: {
+          config: {
+            async ready (game) {
+              game.play();
+              let scene = await import('scene/sub');
+              console.log(scene);
+              await scene.play(game);
+            }
+          }
+        }
+      }, 1);
+*/
       game.disconnect = () => {
         console.log('!!!! game.disconnect !!!!');
       };
