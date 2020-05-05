@@ -9,7 +9,7 @@ sysTray: # 是否顯示系統選單
   left: 40px         # 左邊界座標
   top: 40px          # 上邊界座標
   flags: # 選單功能項目開關設定
-    fullscreen: false   # 全螢幕
+    fullscreen: true   # 全螢幕
     lock: false         # 鎖定顯示比例
     music: false        # 音樂
     sound: false        # 音效
