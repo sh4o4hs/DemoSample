@@ -10,6 +10,7 @@ let Command = {
     let main = Main.getSingleton();
     let center = main.getCenter();
 
+
     console.log('[初始化表演子場景]');
     let scene = await import('scene/sub');
 

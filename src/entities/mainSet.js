@@ -199,20 +199,20 @@ export function normal (that) {
 
     async setLeave (obj) {
 
-      async function leave () {
-        console.log('leave');
-        console.log(app);
-        center.game.scene.callTheOther(app.gamecard.theOther, {
-          jackpot: app.jackpot
-        });
-      }
+      // async function leave () {
+      //   console.log('leave');
+      //   console.log(app);
+      //   center.game.scene.callTheOther(app.gamecard.theOther, {
+      //     jackpot: app.jackpot
+      //   });
+      // }
 
       obj.setClick((/*o*/) => {
-        leave();
+        // leave();
 
         // createOther();
-        // let config = {};
-        // config.url = '//172.16.80.22:3000/project/agent/statistics.html';
+        let config = {};
+        config.url = '//172.16.80.22:3000/project/agent/statistics.html';
 
         // config.setting = {
         //   id: 'info',
@@ -241,8 +241,7 @@ export function normal (that) {
         //   }
         // };
 
-        // app.game.scene.callWeb(config);
-
+        app.game.scene.callWeb(config);
       });
     },
 
