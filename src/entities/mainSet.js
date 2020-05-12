@@ -212,7 +212,9 @@ export function normal (that) {
 
         // createOther();
         let config = {};
-        config.url = '//172.16.80.22:3000/project/agent/statistics.html';
+
+        //config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
+        config.url = 'http://beta.sp2001.com:8070/web/BetTracer?g=BingoParade001001&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnYW1lcklkIjoiY255X2J0cGxhdF9idGFnZW50X2J0aG91c2VfdHJ5X2RlbW8xMjM0Iiwibmlja25hbWUiOiJkZW1vMTIzNCIsImlhdCI6MTU4OTE1OTMxNiwiZXhwIjoxNTg5MjQ1NzE2fQ.0u1S9rfDnRRWimNQvlPYh9WM2wkJNRCHMaiDSwhC9LE&z=+8&lang=zh-CN';
 
         // config.setting = {
         //   id: 'info',
