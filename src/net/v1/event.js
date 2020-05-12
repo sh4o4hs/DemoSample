@@ -16,11 +16,11 @@
  * receive game data
  * @param data {Object} 接收網路資料（遊戲用）
  */
-export async function recvGameData (/*data*/) {
-  // let net = await import('net/network');
-  // let command = await import('net/command');
+export async function recvGameData (data) {
+  let net = await import('net/network');
+  let command = await import('net/command');
 
-  /*
+
   let obj = null;
   let cmdList = net.cmdList;
   const CMD = command.CMD;
@@ -48,7 +48,6 @@ export async function recvGameData (/*data*/) {
       cmd.handle(obj);
     }
   }
-  */
 }
 
 /**

@@ -174,12 +174,19 @@ export function normal (that) {
         console.log('[完成建立說明場景]');
       }
       obj.setClick((/*o*/) => {
-        ruleVisible = !ruleVisible;
-        if (ruleVisible) {
-          create();
-        } else {
-          center.rule.hide();
-        }
+        // ruleVisible = !ruleVisible;
+        // if (ruleVisible) {
+        //   create();
+        // } else {
+        //   center.rule.hide();
+        // }
+        let config = {
+          game: 'HexagonSlot',
+          group: 'slot',
+          id: 'sample',
+          tablekey: 'abcd1234'
+        };
+        app.game.scene.reload(config);
       });
     },
 
@@ -214,7 +221,7 @@ export function normal (that) {
         let config = {};
 
         //config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
-        config.url = 'http://beta.sp2001.com:8070/web/BetTracer?g=BingoParade001001&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnYW1lcklkIjoiY255X2J0cGxhdF9idGFnZW50X2J0aG91c2VfdHJ5X2RlbW8xMjM0Iiwibmlja25hbWUiOiJkZW1vMTIzNCIsImlhdCI6MTU4OTE1OTMxNiwiZXhwIjoxNTg5MjQ1NzE2fQ.0u1S9rfDnRRWimNQvlPYh9WM2wkJNRCHMaiDSwhC9LE&z=+8&lang=zh-CN';
+        // config.url = 'http://beta.sp2001.com:8070/web/BetTracer?g=BingoParade001001&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnYW1lcklkIjoiY255X2J0cGxhdF9idGFnZW50X2J0aG91c2VfdHJ5X2RlbW8xMjM0Iiwibmlja25hbWUiOiJkZW1vMTIzNCIsImlhdCI6MTU4OTE1OTMxNiwiZXhwIjoxNTg5MjQ1NzE2fQ.0u1S9rfDnRRWimNQvlPYh9WM2wkJNRCHMaiDSwhC9LE&z=+8&lang=zh-CN';
 
         // config.setting = {
         //   id: 'info',
@@ -263,11 +270,11 @@ export function normal (that) {
     setSpine (obj) {
       obj.play();
     },
-    createRule (obj) {
+    createRule () {
       console.log('[create rule]');
-      console.log(obj);
 
-      center.rule = new Rule(obj, center.game.layer.foreground);
+      // console.log(obj);
+      // center.rule = new Rule(obj, center.game.layer.foreground);
     },
     autoonPageNumber (obj) {
       obj.fixVal = center.decimal;
