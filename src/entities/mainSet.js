@@ -27,6 +27,7 @@ export function normal (that) {
   let center = that.getCenter();
 
   //  let textures = center.textures.demo;
+  /*
   let ruleVisible = false;
   class Rule {
     constructor (obj, layer) {
@@ -45,6 +46,7 @@ export function normal (that) {
       self.group.reload();
     }
   }
+*/
 
   // function createOther () {
   //   console.log('建立附屬專案');
@@ -166,13 +168,14 @@ export function normal (that) {
   //--初始化對照表
   let set =  {
     async setInfo (obj) {
-      async function create () {
-        console.log('[初始化說明場景]');
-        let scene = await import('scene/info');
-        console.log('[開始建立說明場景]');
-        await scene.create();
-        console.log('[完成建立說明場景]');
-      }
+
+      // async function create () {
+      //   console.log('[初始化說明場景]');
+      //   let scene = await import('scene/info');
+      //   console.log('[開始建立說明場景]');
+      //   await scene.create();
+      //   console.log('[完成建立說明場景]');
+      // }
       obj.setClick((/*o*/) => {
         // ruleVisible = !ruleVisible;
         // if (ruleVisible) {
@@ -221,7 +224,6 @@ export function normal (that) {
         let config = {};
 
         //config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
-        // config.url = 'http://beta.sp2001.com:8070/web/BetTracer?g=BingoParade001001&key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJnYW1lcklkIjoiY255X2J0cGxhdF9idGFnZW50X2J0aG91c2VfdHJ5X2RlbW8xMjM0Iiwibmlja25hbWUiOiJkZW1vMTIzNCIsImlhdCI6MTU4OTE1OTMxNiwiZXhwIjoxNTg5MjQ1NzE2fQ.0u1S9rfDnRRWimNQvlPYh9WM2wkJNRCHMaiDSwhC9LE&z=+8&lang=zh-CN';
 
         // config.setting = {
         //   id: 'info',
