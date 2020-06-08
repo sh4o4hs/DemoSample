@@ -44,7 +44,7 @@ export async function recvGameData (data) {
   if (data.jackpot) {
     obj = JSON.parse(data.jackpot);
     let cmd = cmdList[CMD.JACKPOT];
-    if (cmd.handle) {
+    if (cmd && cmd.handle) {
       cmd.handle(obj);
     }
   }

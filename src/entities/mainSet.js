@@ -10,7 +10,10 @@
 // import * as strings from 'language/strings';
 
 import * as nuts from 'nuts';
+
 import app from 'entity/app';
+import * as other from 'loading/other';
+
 
 // import * as sceneInfo from 'src/scenes/info';
 // import * as sceneSub from 'src/scenes/sub';
@@ -56,10 +59,9 @@ export function normal (that) {
   //   let jackpot = JSON.parse(`{"mJpOutIdx":0,"mJpOutScene":"NULL","mJpOutValue":0,
   //   "mJpValue":[34713731,51699878,69600704,104784137,23779170,37964995],"resultCode":1}`);
 
-  //   let loading = null;
 
-  //   let sceneID = 'other';
-  //   let gameID = 'zzzz.0';
+  //   let sceneID = 'dragontiger';
+  //   let gameID = 'other';
   //   let config = {
   //     style: {
   //       position: 'absolute',
@@ -74,7 +76,7 @@ export function normal (that) {
   //       width: 0.5,
   //       height: 1.0
   //     },
-  //     groupName: 'demo',
+  //     groupName: 'video',
   //     id: gameID,
   //     sceneID: sceneID,
   //     loadingEvent: {
@@ -93,19 +95,9 @@ export function normal (that) {
   //       sceneResLoading (value) {
 
   //         // 顯示進度
-  //         let s = value.state;
   //         let totalProgress = value.totalProgress;
-  //         if (s) {
-  //           let baseValue = (s.currentIndex - 1) / s.totals * 100;
-  //           totalProgress = baseValue + totalProgress / s.totals;
-  //         } else {
-  //           totalProgress = value.current / value.length * 100;
-  //         }
-
-  //         if (loading && loading.progress) {
-  //           loading.progress.setValue(totalProgress.toFixed(0));
-  //         }
-  //         console.log(totalProgress);
+  //         let num = totalProgress.toFixed(0);
+  //         console.log('num : ' + num);
   //       },
 
   //       sceneResEnd (/*id*/) {
@@ -113,21 +105,16 @@ export function normal (that) {
 
   //       finish (scene) {
 
-  //         /*
   //         scene.localEvent.enter({
   //           jackpot,
   //           id: gameID,
   //           from: game.scene.info.id
   //         });
-  //         */
-  //         console.log('==================================');
-  //         console.log(scene);
   //         scene.localEvent.play({
   //           jackpot,
   //           id: gameID,
   //           from: game.scene.info.id
   //         });
-  //         scene.localEvent.show();
 
   //         game.scene.localEvent.pause();
   //         game.once();
@@ -136,32 +123,25 @@ export function normal (that) {
   //   };
 
   //   // 是否已經建立完成
-  //   // let scene = game.scene.getTheOther(testID);
-  //   // if (scene) {
-  //   //   scene.localEvent.enter({
-  //   //     jackpot,
-  //   //     id: gameID,
-  //   //     from: game.scene.info.id
-  //   //   });
-  //   //   game.scene.localEvent.pause();
-  //   // } else {
-  //   // }
-  //   if (game.scene && game.scene.createTheOther) {
+  //   let scene = game.scene.getTheOther(gameID);
+  //   if (scene) {
+
+  //     scene.localEvent.enter({
+  //       jackpot,
+  //       id: gameID,
+  //       from: game.scene.info.id
+  //     });
+
+  //     scene.localEvent.play({
+  //       id: gameID,
+  //       from: game.scene.info.id
+  //     });
+
+  //     game.scene.localEvent.pause();
+  //     game.once();
+
+  //   } else {
   //     game.scene.createTheOther(config);
-
-  //     if (loading && loading.progress) {
-  //       if (game.scene.gamecard && game.scene.gamecard.pixiConfig) {
-  //         let pixiConf = game.scene.gamecard.pixiConfig;
-  //         let pos = {
-  //           x: pixiConf.width / 2,
-  //           y: pixiConf.height / 2
-  //         };
-  //         loading.x = pos.x;
-  //         loading.y = pos.y;
-  //       }
-
-  //       loading.progress.setValue(0);
-  //     }
   //   }
   // }
 
@@ -177,19 +157,31 @@ export function normal (that) {
       //   console.log('[完成建立說明場景]');
       // }
       obj.setClick((/*o*/) => {
-        // ruleVisible = !ruleVisible;
-        // if (ruleVisible) {
-        //   create();
-        // } else {
-        //   center.rule.hide();
-        // }
-        let config = {
-          game: 'HexagonSlot',
-          group: 'slot',
-          id: 'sample',
-          tablekey: 'abcd1234'
-        };
-        app.game.scene.reload(config);
+
+        // let project = {
+        //   id: 'HexagonSlot',
+        //   group: 'slot',
+        //   name: 'HexagonSlot',
+        //   reloadConfig: {
+        //     tablekey: 'abc123',
+        //     id: 'HexagonSlot'
+        //   }
+        // };
+
+        // other.create(project);
+
+        app.game.setTimeout(() => {
+          let config = {
+            game: 'sample',
+            group: 'demo',
+            id: 'sample',
+            tablekey: 'abcd1234',
+            zzz: 'aaa'
+          };
+
+          app.game.scene.reload(config);
+        }, 0.01);
+
       });
     },
 
@@ -218,11 +210,20 @@ export function normal (that) {
       // }
 
       obj.setClick((/*o*/) => {
-        // leave();
 
-        // createOther();
-        let config = {};
+        let project = {
+          id: 'sample',
+          group: 'video',
+          name: 'dragontiger',
+          reloadConfig: {
+            tablekey: 'abc123',
+            id: 'sample'
+          }
+        };
 
+        other.create(project);
+
+        // let config = {};
         //config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
 
         // config.setting = {
@@ -251,8 +252,8 @@ export function normal (that) {
         //     height: 1.0
         //   }
         // };
+        // app.game.scene.callWeb(config);
 
-        app.game.scene.callWeb(config);
       });
     },
 

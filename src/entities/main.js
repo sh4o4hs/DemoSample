@@ -108,24 +108,25 @@ export default class Scene extends nuts.scene.Base {
   /**
    * 處理音樂音效
    */
-  /*
-    eventSound (sounds){
-    }
-  */
+  eventSound (sounds) {
+    console.log('eventSound : ' + sounds);
+  }
+
   /**
    * 處理材質
    */
-  /*
-    eventTexture (textures){
-    }
-  */
+
+  eventTexture (textures) {
+    console.log('eventTexture : ' + textures);
+  }
+
   /**
    * 處理動畫
    */
-  /*
-    eventSpine(spines) {
-    }
-  */
+  eventSpine (spines) {
+    console.log('eventSpine : ' + spines);
+  }
+
   /**
    * 處理物件
    */
