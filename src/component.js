@@ -70,7 +70,7 @@ export async function run () {
         visibleVideo ? m(comAV, {
           style: {
             position: 'absolute',
-            zIndex: 100,
+            zIndex: 1_000,
             left: '30%',
             top: '30%',
             width: '40%',

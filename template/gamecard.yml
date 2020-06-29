@@ -57,7 +57,7 @@ images:   # 圖檔設定
   icon: gamecard/icon.png
   logo: gamecard/logo.png
   background: gamecard/background.jpg
-  useBackground: true # 是否顯示背景圖片
+  useBackground: 'background-image: url("gamecard/icon.png")' # 是否顯示背景圖片
 overview: # 預覽用
   width: 960  # 畫面的寬
   height: 580 # 畫面的高

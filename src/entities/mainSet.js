@@ -223,8 +223,8 @@ export function normal (that) {
 
         other.create(project);
 
-        // let config = {};
-        //config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
+        let config = {};
+        config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
 
         // config.setting = {
         //   id: 'info',
@@ -252,7 +252,7 @@ export function normal (that) {
         //     height: 1.0
         //   }
         // };
-        // app.game.scene.callWeb(config);
+        app.game.scene.callWeb(config);
 
       });
     },
