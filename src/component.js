@@ -34,6 +34,18 @@ export function showVideo () {
   m.redraw();
 }
 
+// 預設值
+let videoSetting = {
+  source: 'wss://lcsvd001001wss.streamingvds.com:18074/'
+};
+export function setVideoSource (src) {
+  console.log('setVideoSource : ' + src);
+  videoSetting.source = src;
+  if (videoSetting.setSource) {
+    videoSetting.setSource(src);
+  }
+}
+
 // 設定最大顯示畫面
 export let style = {
   position: 'absolute',
@@ -75,7 +87,8 @@ export async function run () {
             top: '30%',
             width: '40%',
             height: '40%'
-          }
+          },
+          setting: videoSetting
         }) : null
       );
     }

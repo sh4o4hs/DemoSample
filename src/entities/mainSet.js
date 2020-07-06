@@ -14,6 +14,7 @@ import * as nuts from 'nuts';
 import app from 'entity/app';
 import * as other from 'loading/other';
 
+import * as component from 'src/component';
 
 // import * as sceneInfo from 'src/scenes/info';
 // import * as sceneSub from 'src/scenes/sub';
@@ -145,6 +146,8 @@ export function normal (that) {
   //   }
   // }
 
+  let isChangeSource = false;
+
   //--初始化對照表
   let set =  {
     async setInfo (obj) {
@@ -170,17 +173,26 @@ export function normal (that) {
 
         // other.create(project);
 
-        app.game.setTimeout(() => {
-          let config = {
-            game: 'sample',
-            group: 'demo',
-            id: 'sample',
-            tablekey: 'abcd1234',
-            zzz: 'aaa'
-          };
 
-          app.game.scene.reload(config);
-        }, 0.01);
+        // app.game.setTimeout(() => {
+        //   let config = {
+        //     game: 'sample',
+        //     group: 'demo',
+        //     id: 'sample',
+        //     tablekey: 'abcd1234',
+        //     zzz: 'aaa'
+        //   };
+
+        //   app.game.scene.reload(config);
+        // }, 0.01);
+
+        if (isChangeSource) {
+          component.setVideoSource('wss://bgvd001001wss.streamingvds.com:9084/');
+        } else {
+          component.setVideoSource('wss://lcsvd001001wss.streamingvds.com:18074/');
+        }
+        isChangeSource = !isChangeSource;
+
 
       });
     },

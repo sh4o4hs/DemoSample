@@ -18,3 +18,4 @@ import * as component from 'src/component';
 component.run();
 
 console.log('zz');
+

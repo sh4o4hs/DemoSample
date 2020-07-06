@@ -31,17 +31,12 @@ async function link (config) {
     player.audioOut = null;
     player.demuxer = null;
   }
-  let connection = 'ws://vtest.sp2001.com:8074/';
 
-  // let connection = 'wss://bgvd001001wss.streamingvds.com:9084/';
+  let connection = config.source;
   let LCS = await window.parent.getLCS();
-  console.info('====');
-  console.info(LCS);
   player = new LCS.Player(connection, {canvas: canvas});
   config.player = player;
   console.info(player);
-
-
 }
 
 let Component = {
@@ -51,17 +46,26 @@ let Component = {
 
     self.style = attrs.style || baseStyle;
     self.ready = attrs.ready;
+
+    self.setting = attrs.setting;
+
+    self.setting.setSource = (src) => {
+      self.setting.source = src;
+      link(self.setting);
+    };
+
+
   },
 
   oncreate (vnode) {
     console.info('av oncreate : ');
     let self = this;
-    let config = {};
-    config.canvas = vnode.instance.children[0].dom;
-    config.element = vnode.dom;
-    console.info(config);
-    link(config);
 
+    let setting = self.setting;
+    setting.canvas = vnode.instance.children[0].dom;
+    setting.element = vnode.dom;
+
+    link(setting);
 
     if (self.ready) {
       self.ready();
@@ -70,6 +74,19 @@ let Component = {
 
   onremove (/*vnode*/) {
     console.log('av onremove');
+    let self = this;
+    let setting = self.setting;
+    if (setting.player) {
+      let player = setting.player;
+      player.destroy();
+      player.source = null;
+      player.video = null;
+      player.renderer = null;
+      player.audio = null;
+      player.audioOut = null;
+      player.demuxer = null;
+      setting.player = null;
+    }
   },
   view (/*vnode*/) {
     let self = this;
