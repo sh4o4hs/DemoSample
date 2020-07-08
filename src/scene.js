@@ -125,7 +125,7 @@ export function init () {
       cmd.send();
 
       // 初始化視訊
-      component.showVideo();
+      // component.showVideo();
 
       /*
       component.add({

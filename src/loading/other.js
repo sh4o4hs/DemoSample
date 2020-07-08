@@ -7,21 +7,61 @@
    Authors:
 
 ************************************************************************ */
-// import * as nuts from 'nuts';
+import * as nuts from 'nuts';
 import app from 'entity/app';
+
+let isBusy = false;
 
 export async function create (project) {
 
-  return new Promise((resolve) => {
+  // 是否建立中
+  if (isBusy) {
+    return;
+  }
+  isBusy = true;
+
+  return new Promise((resolve, reject) => {
     console.log('[建立附屬專案]');
     let game = app.game;
+    let other = app.other;
+    if (!other) {
+      other = {};
+      app.other = other;
+    }
 
-    // let sceneID = 'dragontiger';
-    // let gameID = 'other';
     let id = project.id;
+    let tablekey = id;
     let group = project.group;
     let name = project.name;
     let reloadConfig = project.reloadConfig;
+
+    function finish (scene, isCreate = true) {
+
+      game.scene.localEvent.pause();
+      game.once();
+
+      // 目標專案
+      if (isCreate) {
+        scene.localEvent.enter({
+          id,
+          tablekey
+        });
+      }
+
+      scene.localEvent.play({
+        id,
+        tablekey,
+        from: game.scene.info.id
+      });
+
+      isBusy = false;
+      resolve(scene);
+    }
+
+    function cancel () {
+      isBusy = false;
+      reject();
+    }
 
     let config = {
       style: {
@@ -40,10 +80,11 @@ export async function create (project) {
       groupName: group,
       id: 'other',
       sceneID: name,
+      reloadConfig,
       loadingEvent: {
 
-        // 開始 (進度歸零)
-        start ()  {
+        // 開始
+        start () {
         },
 
         resBegin (/*index*/) {
@@ -60,6 +101,11 @@ export async function create (project) {
           let totalProgress = value.totalProgress;
           let num = totalProgress.toFixed(0);
           console.log('num : ' + num);
+
+          other.timeout = nuts.updateManager.setTimeout(() => {
+            other.timeout = null;
+            cancel();
+          }, 6);
         },
 
         sceneResEnd (/*id*/) {
@@ -67,45 +113,18 @@ export async function create (project) {
 
         // 完成
         finish (scene) {
-
-          game.scene.localEvent.pause();
-          game.once();
-
-          // 目標專案
-          scene.localEvent.enter({
-            reloadConfig,
-            id: id
-          });
-          scene.localEvent.play({
-            id: id,
-            from: game.scene.info.id
-          });
-
-          resolve(scene);
+          finish(scene);
         }
       }
     };
 
     // 是否已經建立完成
-    // let scene = game.scene.getTheOther('other');
-    // if (scene) {
+    let scene = game.scene.getTheOther(config.id);
+    if (scene) {
+      finish(scene, true);
+    } else {
+      game.scene.createTheOther(config);
+    }
 
-    //   scene.localEvent.enter({
-    //     reloadConfig,
-    //     id: id,
-    //     from: game.scene.info.id
-    //   });
-
-    //   scene.localEvent.play({
-    //     id: id,
-    //     from: game.scene.info.id
-    //   });
-
-    // } else {
-    //   game.scene.createTheOther(config);
-    // }
-
-    // 建立專案
-    game.scene.createTheOther(config);
   });
 }
