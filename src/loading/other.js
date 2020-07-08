@@ -69,6 +69,7 @@ export async function create (project) {
     }
 
     function cancel () {
+      game.scene.destroyTheOther(name);
       isBusy = false;
       reject();
     }
@@ -88,7 +89,7 @@ export async function create (project) {
         height: 1.0
       },
       groupName: group,
-      id: 'other',
+      id: name,
       sceneID: name,
       reloadConfig,
       loadingEvent: {
