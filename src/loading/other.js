@@ -14,14 +14,19 @@ let isBusy = false;
 
 export async function create (project) {
 
-  // 是否建立中
-  if (isBusy) {
-    return;
-  }
-  isBusy = true;
 
   return new Promise((resolve, reject) => {
     console.log('[建立附屬專案]');
+
+    // 是否建立中
+    if (isBusy) {
+      reject();
+      return;
+    }
+    isBusy = true;
+
+    let isFinish = false;
+
     let game = app.game;
     let other = app.other;
     if (!other) {
@@ -36,6 +41,11 @@ export async function create (project) {
     let reloadConfig = project.reloadConfig;
 
     function finish (scene, isCreate = true) {
+      isFinish = true;
+      if (other.timeout) {
+        nuts.updateManager.remove(other.timeout);
+        other.timeout = null;
+      }
 
       game.scene.localEvent.pause();
       game.once();
@@ -102,10 +112,16 @@ export async function create (project) {
           let num = totalProgress.toFixed(0);
           console.log('num : ' + num);
 
-          other.timeout = nuts.updateManager.setTimeout(() => {
-            other.timeout = null;
-            cancel();
-          }, 6);
+          if (!isFinish) {
+            if (other.timeout) {
+              nuts.updateManager.remove(other.timeout);
+              other.timeout = null;
+            }
+            other.timeout = nuts.updateManager.setTimeout(() => {
+              other.timeout = null;
+              cancel();
+            }, 6);
+          }
         },
 
         sceneResEnd (/*id*/) {
