@@ -49,21 +49,21 @@ export async function create (/*game*/) {
 
   //----------------------------------------
 
-  config = {
-    game,
-    infoList: [
-      { eventName: 'texture',   obj: res}
-    ]
-  };
+  // config = {
+  //   game,
+  //   infoList: [
+  //     { eventName: 'texture',   obj: res}
+  //   ]
+  // };
 
-  console.log('[讀取資源] 圖檔');
-  scene = await sceneManager.createScene(config);
-  console.log('[讀取資源] 完成');
-  console.log(scene);
-  await main.reload(scene);
+  // console.log('[讀取資源] 圖檔');
+  // scene = await sceneManager.createScene(config);
+  // console.log('[讀取資源] 完成');
+  // console.log(scene);
+  // await main.reload(scene);
 
-  //----------------------------------------------
-  console.log('[更新結束]等待 1 秒');
-  await game.idle(1.0);
-  console.log('[更新結束]1 秒後');
+  // //----------------------------------------------
+  // console.log('[更新結束]等待 1 秒');
+  // await game.idle(1.0);
+  // console.log('[更新結束]1 秒後');
 }
