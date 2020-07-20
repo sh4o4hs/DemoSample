@@ -111,6 +111,10 @@ export function init () {
      */
     async enter (conf) {
       console.log('scene enter ');
+      if (conf.tablecofig) {
+
+        return;
+      }
 
       // todo:game 收到玩家進入遊戲
       let game = conf.game;
@@ -146,6 +150,10 @@ export function init () {
         console.log('!!!! game.disconnect !!!!');
       };
       game.sysTray.visible = true;
+
+      // 讀取資源
+      let sceneLoad = await import('scene/load');
+      sceneLoad.create();
     },
 
     /**

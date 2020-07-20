@@ -25,9 +25,6 @@ let Command = {
     }
     app.game.play();
 
-    // 讀取資源
-    let sceneLoad = await import('scene/load');
-    sceneLoad.create();
 
   }
 };
@@ -70,8 +67,4 @@ export async function send () {
     main.addToScene();
   }
   app.game.play();
-
-  // 讀取資源
-  let sceneLoad = await import('scene/load');
-  sceneLoad.create();
 }

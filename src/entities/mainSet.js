@@ -175,17 +175,17 @@ export function normal (that) {
         // other.create(project);
 
 
-        // app.game.setTimeout(() => {
-        //   let config = {
-        //     game: 'sample',
-        //     group: 'demo',
-        //     id: 'sample',
-        //     tablekey: 'abcd1234',
-        //     zzz: 'aaa'
-        //   };
+        app.game.setTimeout(() => {
+          let config = {
+            game: 'sample',
+            group: 'demo',
+            id: 'sample',
+            tablekey: 'abcd1234',
+            zzz: 'aaa'
+          };
 
-        //   app.game.scene.reload(config);
-        // }, 0.01);
+          app.game.scene.reload(config);
+        }, 0.01);
 
         if (isChangeSource) {
           component.setVideoSource('wss://bgvd001001wss.streamingvds.com:9084/');

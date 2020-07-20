@@ -4,6 +4,7 @@ import Main from 'entity/main';
 
 let sceneManager = nuts.scene.sceneManager;
 
+
 let isCreate = false;
 let scene = null;
 export async function create (game, loadingEvent) {

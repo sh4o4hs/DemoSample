@@ -109,6 +109,7 @@ export async function create (project) {
 
         // 顯示進度
         sceneResLoading (value) {
+
           let totalProgress = value.totalProgress;
           let num = totalProgress.toFixed(0);
           console.log('num : ' + num);
