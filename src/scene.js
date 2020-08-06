@@ -16,9 +16,6 @@ import * as component from 'src/component';
 
 import * as entity from 'src/entity';
 
-/**
- * 事件用
- */
 let eventList = null;
 
 
@@ -26,6 +23,7 @@ let eventList = null;
  * 初始化事件 (接收大廳傳送的命令用)
  * @returns {Object} 傳回物件事件
  */
+
 export function init () {
   console.log('scene init');
   if (eventList) {
@@ -108,7 +106,14 @@ export function init () {
 
     /**
      * 進入場景
+     *
      */
+
+
+    /**
+      *
+      * @param {*} conf
+      */
     async enter (conf) {
       console.log('scene enter ');
       if (conf.tablecofig) {
@@ -119,6 +124,9 @@ export function init () {
       // todo:game 收到玩家進入遊戲
       let game = conf.game;
       console.log(game);
+      if (app.game.report) {
+        app.game.report.loadBegin(app.recordEnter);
+      }
 
       // 初始化網路
       let net = await import('net/network');

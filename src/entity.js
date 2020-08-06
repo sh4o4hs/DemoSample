@@ -29,6 +29,7 @@ export async function create (conf) {
   let baseURL = conf.baseURL || '';
   nuts.scene.sceneManager.setBaseURL(baseURL);
 
+
   //--設定讀取畫面
   let loading = nuts.ui.loading;
   let resource = [

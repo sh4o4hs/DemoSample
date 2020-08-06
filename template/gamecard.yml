@@ -37,7 +37,7 @@ pixiConfig: #PIXI 設定
   transparent: true
 screen:   # 螢幕設定
   isLock: true             # 是否鎖定
-  orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
+  # orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
   width: 6400               # 寬
   height: 7200              # 高
   # portrait: # 垂直鎖定設定

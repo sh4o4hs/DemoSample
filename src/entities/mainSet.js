@@ -160,7 +160,7 @@ export function normal (that) {
       //   await scene.create();
       //   console.log('[完成建立說明場景]');
       // }
-      obj.setClick((/*o*/) => {
+      obj.setClick(async (/*o*/) => {
 
         // let project = {
         //   id: 'HexagonSlot',
@@ -174,18 +174,15 @@ export function normal (that) {
 
         // other.create(project);
 
-
-        app.game.setTimeout(() => {
-          let config = {
-            game: 'sample',
-            group: 'demo',
-            id: 'sample',
-            tablekey: 'abcd1234',
-            zzz: 'aaa'
-          };
-
-          app.game.scene.reload(config);
-        }, 0.01);
+        await app.game.idle(0.01);
+        let config = {
+          game: 'HexagonSlot',
+          group: 'slot',
+          id: 'sample',
+          tablekey: 'abcd1234',
+          zzz: 'aaa'
+        };
+        app.game.scene.reload(config);
 
         if (isChangeSource) {
           component.setVideoSource('wss://bgvd001001wss.streamingvds.com:9084/');
@@ -201,6 +198,9 @@ export function normal (that) {
     async setPlay (obj) {
 
       async function play () {
+        if (app.game.report) {
+          app.game.report.serviceBegin(app.recordBet);
+        }
 
         // 傳送網路命令
         let cmd = await  import('net/command/bet');
@@ -224,22 +224,22 @@ export function normal (that) {
 
       obj.setClick(async (/*o*/) => {
 
-        // let other  = await import('loading/other');
+        let other  = await import('loading/other');
 
-        // let project = {
-        //   id: 'sample',
-        //   group: 'video',
-        //   name: 'dragontiger',
-        //   reloadConfig: {
-        //     tablekey: 'abc123',
-        //     id: 'sample'
-        //   }
-        // };
+        let project = {
+          id: 'sample',
+          group: 'video',
+          name: 'dragontiger',
+          reloadConfig: {
+            tablekey: 'abc123',
+            id: 'sample'
+          }
+        };
 
-        // other.create(project);
+        other.create(project);
 
-        let config = {};
-        config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
+        // let config = {};
+        // config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
 
         // config.setting = {
         //   id: 'info',
@@ -267,7 +267,7 @@ export function normal (that) {
         //     height: 1.0
         //   }
         // };
-        app.game.scene.callWeb(config);
+        // app.game.scene.callWeb(config);
 
       });
     },

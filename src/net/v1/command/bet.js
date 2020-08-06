@@ -1,4 +1,5 @@
 import Main from 'entity/main';
+import app from 'entity/app';
 
 /**
  * 下注
@@ -10,6 +11,9 @@ let Command = {
     let main = Main.getSingleton();
     let center = main.getCenter();
 
+    if (app.game.report) {
+      app.game.report.serviceEnd(app.recordBet);
+    }
 
     console.log('[初始化表演子場景]');
     let scene = await import('scene/sub');
@@ -17,6 +21,11 @@ let Command = {
     console.log('[開始表演子場景]');
     await scene.play(center.game, result);
     console.log('[完成表演子場景]');
+
+
+    if (app.game.report) {
+      app.game.report.log('下注');
+    }
   }
 };
 

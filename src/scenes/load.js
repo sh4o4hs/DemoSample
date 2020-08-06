@@ -11,7 +11,7 @@ export async function create (/*game*/) {
   let game = center.game;
 
   // console.log('[讀取資源]等待 2 秒');
-  // await game.idle(2.0);
+  // await game.idle(0.01);
   // console.log('[讀取資源]2 秒後');
 
   // 是否需要建立

@@ -25,6 +25,10 @@ let Command = {
     }
     app.game.play();
 
+    if (app.game.report) {
+      app.game.report.loadEnd(app.recordEnter);
+      app.game.report.log('進入遊戲');
+    }
 
   }
 };
