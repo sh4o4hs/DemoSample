@@ -25,6 +25,8 @@ let Command = {
     }
     app.game.play();
 
+    
+    // 歷程 進入遊戲
     if (app.game.report) {
       app.game.report.loadEnd(app.recordEnter);
       app.game.report.log('進入遊戲');

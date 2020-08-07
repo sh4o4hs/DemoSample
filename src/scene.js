@@ -124,6 +124,8 @@ export function init () {
       // todo:game 收到玩家進入遊戲
       let game = conf.game;
       console.log(game);
+
+      // 歷程 進入遊戲
       if (app.game.report) {
         app.game.report.loadBegin(app.recordEnter);
       }

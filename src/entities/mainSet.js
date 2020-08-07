@@ -198,6 +198,8 @@ export function normal (that) {
     async setPlay (obj) {
 
       async function play () {
+
+        // 歷程 下注
         if (app.game.report) {
           app.game.report.serviceBegin(app.recordBet);
         }
