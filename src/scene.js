@@ -121,13 +121,12 @@ export function init () {
         return;
       }
 
-      // todo:game 收到玩家進入遊戲
       let game = conf.game;
       console.log(game);
 
-      // 歷程 進入遊戲
+      // 歷程 開始遊戲
       if (app.game.report) {
-        app.game.report.loadBegin(app.recordEnter);
+        app.game.report.loadBegin(app.recordStart);
       }
 
       // 初始化網路

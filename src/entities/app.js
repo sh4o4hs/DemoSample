@@ -9,9 +9,9 @@ app.baseURL = '';
 /**
  * 計時用紀錄
  */
-// 歷程 進入遊戲
-app.recordEnter = {
-  category: '進入遊戲'
+// 歷程 開始遊戲
+app.recordStart = {
+  category: '開始遊戲'
 };
 
 // 歷程 下注
