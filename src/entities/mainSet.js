@@ -274,6 +274,19 @@ export function normal (that) {
       });
     },
 
+    // 設定下注
+    setBet (obj) {
+
+      obj.setClick(async (/*o*/) => {
+        center.sounds
+        let sound = center?.sounds?.demo;
+        if(sound) {
+          sound?.countDown?.play();
+        }
+      });
+
+    },
+
     // 設定動畫
     setAnim (obj) {
       obj.play();

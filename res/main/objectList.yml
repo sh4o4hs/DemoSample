@@ -171,7 +171,7 @@ objects:
     debug: false
     width: 212
     height: 82
-    init: null
+    init: setBet
   - #規則
     objName: btnRule
     name: 規則
