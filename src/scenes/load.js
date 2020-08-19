@@ -44,6 +44,7 @@ export async function create (/*game*/) {
   // 播放背景音樂
   let sound = scene.sounds.demo;
   if (sound && sound.music && sound.music.play) {
+    sound.music.volume(0.2);
     sound.music.play();
   }
 

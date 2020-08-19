@@ -147,7 +147,14 @@ export function normal (that) {
   //   }
   // }
 
-  let isChangeSource = false;
+  let videoSourceIndex = 0;
+
+  let videoSourceList = [
+    'wss://lcsvd001001wss.streamingvds.com:8174/',
+    'wss://lcsvd001001wss.streamingvds.com:8374/',
+    'wss://lcsvd001001wss.streamingvds.com:8474/',
+    'wss://bgvd001001wss.streamingvds.com:9084/'
+  ];
 
   //--初始化對照表
   let set =  {
@@ -173,7 +180,7 @@ export function normal (that) {
         // };
 
         // other.create(project);
-
+        component.releaseVideo();
         await app.game.idle(0.01);
         let config = {
           game: 'HexagonSlot',
@@ -183,13 +190,6 @@ export function normal (that) {
           zzz: 'aaa'
         };
         app.game.scene.reload(config);
-
-        if (isChangeSource) {
-          component.setVideoSource('wss://bgvd001001wss.streamingvds.com:9084/');
-        } else {
-          component.setVideoSource('wss://lcsvd001001wss.streamingvds.com:18074/');
-        }
-        isChangeSource = !isChangeSource;
 
 
       });
@@ -225,6 +225,9 @@ export function normal (that) {
       // }
 
       obj.setClick(async (/*o*/) => {
+
+        component.releaseVideo();
+        await app.game.idle(0.01);
 
         let other  = await import('loading/other');
 
@@ -278,13 +281,17 @@ export function normal (that) {
     setBet (obj) {
 
       obj.setClick(async (/*o*/) => {
-        center.sounds
+
         let sound = center?.sounds?.demo;
-        if(sound) {
-          sound?.countDown?.play();
+        sound?.countDown?.play();
+
+        let source = videoSourceList[videoSourceIndex];
+        component.setVideoSource(source);
+        videoSourceIndex++;
+        if (videoSourceIndex >= videoSourceList.length) {
+          videoSourceIndex = 0;
         }
       });
-
     },
 
     // 設定動畫

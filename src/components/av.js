@@ -54,6 +54,20 @@ let Component = {
       link(self.setting);
     };
 
+    self.setting.releaseVideo = () => {
+      let setting = self.setting;
+      if (setting.player) {
+        let player = setting.player;
+        player.destroy();
+        player.source = null;
+        player.video = null;
+        player.renderer = null;
+        player.audio = null;
+        player.audioOut = null;
+        player.demuxer = null;
+        setting.player = null;
+      }
+    };
 
   },
 

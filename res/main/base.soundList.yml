@@ -25,7 +25,7 @@ sounds:
         - res/main/sound/pbg_countdown.ogg
         - res/main/sound/pbg_countdown.mp3
         - res/main/sound/pbg_countdown.wav
-      loop: false
+        loop: false 
     - #背景音樂
       objName: music
       config: 

@@ -36,13 +36,22 @@ export function showVideo () {
 
 // 預設值
 let videoSetting = {
-  source: 'wss://lcsvd001001wss.streamingvds.com:18074/'
+  source: 'wss://lcsvd001001wss.streamingvds.com:8174/'
 };
+
 export function setVideoSource (src) {
   console.log('setVideoSource : ' + src);
   videoSetting.source = src;
   if (videoSetting.setSource) {
     videoSetting.setSource(src);
+  }
+}
+
+export function releaseVideo () {
+  console.log('[releaseVideo]');
+
+  if (videoSetting.releaseVideo) {
+    videoSetting.releaseVideo();
   }
 }
 
@@ -84,7 +93,7 @@ export async function run () {
             position: 'absolute',
             zIndex: 1_000,
             left: '30%',
-            top: '30%',
+            top: '50%',
             width: '40%',
             height: '40%'
           },
