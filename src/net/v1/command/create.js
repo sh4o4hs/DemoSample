@@ -25,13 +25,11 @@ let Command = {
     }
     app.game.play();
 
-
     // 歷程 開始遊戲
     if (app.game.report) {
       app.game.report.loadEnd(app.recordStart);
       app.game.report.log('開始遊戲');
     }
-
   }
 };
 
