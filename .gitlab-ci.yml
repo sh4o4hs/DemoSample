@@ -104,3 +104,29 @@ alpha機:
     name: alpha/$CI_COMMIT_REF_NAME
   only:
   - alpha
+
+LCS機:
+  stage: deploy
+  environment:
+    name: beta/$CI_COMMIT_REF_NAME
+  variables:
+    STUFF_DEBUG: 1
+    STUFF_MODE: release
+    STUFF_UPLOAD: beta_lcs
+  script:
+  - stuff deploy
+  only:
+  - lcs
+
+LCS機(log):
+  stage: deploy
+  environment:
+    name: alpha/$CI_COMMIT_REF_NAME
+  variables:
+    STUFF_DEBUG: 1
+    STUFF_MODE: test
+    STUFF_UPLOAD: beta_lcs
+  script:
+  - stuff deploy
+  only:
+  - lcs
