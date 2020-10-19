@@ -1,4 +1,5 @@
 
+import app from 'entity/app';
 import m from 'mithril';
 
 let canvasStyle = {
@@ -33,10 +34,40 @@ async function link (config) {
   }
 
   let connection = config.source;
-  let LCS = await window.parent.getLCS();
+
+  // 啟動串流
+  let LCS = await app.game.getLCS();
   player = new LCS.Player(connection, {canvas: canvas});
   config.player = player;
-  console.info(player);
+
+  // 檢測串流
+  let videoList = [
+    {
+      id: 'Ali',
+      tables: [
+        'wss://testplay18374.50fo.com:443/',
+        'wss://testplay18374.50fo.com:443/',
+        'wss://testplay18374.50fo.com:443/',
+        'wss://testplay18374.50fo.com:443/',
+        'wss://testplay18374.50fo.com:443/',
+        'wss://testplay18374.50fo.com:443/'
+      ]
+    },
+    {
+      id: 'GCP',
+      tables: [
+        'wss://lcsvd001001wss.streamingvds.com:8174/',
+        'wss://lcsvd001001wss.streamingvds.com:8374/',
+        'wss://lcsvd001001wss.streamingvds.com:8474/',
+        'wss://lcsvd001001wss.streamingvds.com:8274/',
+        'wss://lcsvd001001wss.streamingvds.com:8074/',
+        'wss://lcsvd001001wss.streamingvds.com:28574'
+      ]
+    }
+  ];
+  app.game.scanLCS(videoList).then(result => {
+    console.log(result);
+  });
 }
 
 let Component = {
