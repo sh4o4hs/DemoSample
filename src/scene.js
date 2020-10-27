@@ -51,6 +51,9 @@ export function init () {
         app.gamecard = gamecard;
       }
 
+      // console.log('==================================');
+      // console.log(game.localforage);
+
       // 初始化
       app.langID = conf.langID;
       app.baseURL = conf.baseURL || '';
@@ -122,7 +125,7 @@ export function init () {
       }
 
       let game = conf.game;
-      console.log(game);
+      console.log(game.localforage);
 
       // 歷程 開始遊戲
       if (app.game.report) {
