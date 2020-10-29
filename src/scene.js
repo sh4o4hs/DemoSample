@@ -20,6 +20,57 @@ let eventList = null;
 
 
 /**
+ * 存檔
+ */
+async function save () {
+  let localforage = app.game.localforage;
+  let setting = app.setting;
+  let store = app.store;
+  if (!store) {
+    store = localforage.createInstance({
+      name: 'mygames',
+      storeName: 'sample'
+    });
+    app.store = store;
+  }
+
+  await store.setItem('setting', setting);
+}
+
+/**
+ * 復原
+ */
+async function restore () {
+  let localforage = app.game.localforage;
+
+  let store = app.store;
+  if (!store) {
+    store = localforage.createInstance({
+      name: 'mygames',
+      storeName: 'sample'
+    });
+    app.store = store;
+  }
+
+  // 預設值
+  let setting = {
+    sound: 100,
+    music: 50
+  };
+  app.setting = setting;
+  let value = null;
+
+  // 讀取設定
+  value = await store.getItem('setting');
+  if (value) {
+    setting = value;
+  }
+
+  console.log('restore : ');
+  console.log(setting);
+}
+
+/**
  * 初始化事件 (接收大廳傳送的命令用)
  * @returns {Object} 傳回物件事件
  */
@@ -120,12 +171,12 @@ export function init () {
     async enter (conf) {
       console.log('scene enter ');
       if (conf.tablecofig) {
-
         return;
       }
+      await restore();
+      await save();
 
       let game = conf.game;
-      console.log(game.localforage);
 
       // 歷程 開始遊戲
       if (app.game.report) {
