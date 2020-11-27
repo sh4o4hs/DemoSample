@@ -6,7 +6,9 @@
 export const ID = {
   EN_US: 'en-us',
   ZH_TW: 'zh-tw',
-  ZH_CN: 'zh-cn'
+  ZH_CN: 'zh-cn',
+  TH_TH: 'th-th',
+  VI_VN: 'vi-vn'
 };
 
 let lang = null;
@@ -38,6 +40,12 @@ export async function setLanguage (id) {
       break;
     case ID.ZH_CN:
       lang = await import('language/zh-cn');
+      break;
+    case ID.TH_TH:
+      lang = await import('language/th-th');
+      break;
+    case ID.VI_VN:
+      lang = await import('language/vi-vn');
       break;
     default:
       currentID = ID.EN_US;

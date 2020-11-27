@@ -154,7 +154,7 @@ objects:
     pos: {x: 418,y: 0}
     width: 88
     height: 82
-    init: null
+    init: setAuto
   - #下注
     objName: btnBet
     name: 下注

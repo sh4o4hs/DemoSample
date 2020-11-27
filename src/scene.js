@@ -122,6 +122,8 @@ export function init () {
       // 指定遊戲引擎初始化完成後, 需要執行的工作
       // (開始讀取遊戲資料,然後建立遊戲場景)
       pixiConfig.ready = (game) => {
+        console.log('=====================');
+        console.log(pixiConfig);
         entity.create({
           game: game,
           langID: conf.langID,
@@ -192,6 +194,12 @@ export function init () {
       cmd.send();
 
       // 初始化視訊
+      app.game.getIP().then(ip => {
+        console.log('!!!!');
+        if (ip) {
+          console.log(ip);
+        }
+      });
       component.showVideo();
 
       /*

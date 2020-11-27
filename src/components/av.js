@@ -41,33 +41,34 @@ async function link (config) {
   config.player = player;
 
   // 檢測串流
-  let videoList = [
-    {
-      id: 'Ali',
-      tables: [
-        'wss://testplay18374.50fo.com:443/',
-        'wss://testplay18374.50fo.com:443/',
-        'wss://testplay18374.50fo.com:443/',
-        'wss://testplay18374.50fo.com:443/',
-        'wss://testplay18374.50fo.com:443/',
-        'wss://testplay18374.50fo.com:443/'
-      ]
-    },
-    {
-      id: 'GCP',
-      tables: [
-        'wss://lcsvd001001wss.streamingvds.com:8174/',
-        'wss://lcsvd001001wss.streamingvds.com:8374/',
-        'wss://lcsvd001001wss.streamingvds.com:8474/',
-        'wss://lcsvd001001wss.streamingvds.com:8274/',
-        'wss://lcsvd001001wss.streamingvds.com:8074/',
-        'wss://lcsvd001001wss.streamingvds.com:28574'
-      ]
-    }
-  ];
-  app.game.scanLCS(videoList).then(result => {
-    console.log(result);
-  });
+  // let videoList = [
+  //   {
+  //     id: 'Ali',
+  //     tables: [
+  //       'wss://testplay18374.50fo.com:443/',
+  //       'wss://testplay18374.50fo.com:443/',
+  //       'wss://testplay18374.50fo.com:443/',
+  //       'wss://testplay18374.50fo.com:443/',
+  //       'wss://testplay18374.50fo.com:443/',
+  //       'wss://testplay18374.50fo.com:443/'
+  //     ]
+  //   },
+  //   {
+  //     id: 'GCP',
+  //     tables: [
+  //       'wss://lcsvd001001wss.streamingvds.com:8174/',
+  //       'wss://lcsvd001001wss.streamingvds.com:8374/',
+  //       'wss://lcsvd001001wss.streamingvds.com:8474/',
+  //       'wss://lcsvd001001wss.streamingvds.com:8274/',
+  //       'wss://lcsvd001001wss.streamingvds.com:8074/',
+  //       'wss://lcsvd001001wss.streamingvds.com:28574'
+  //     ]
+  //   }
+  // ];
+
+  // app.game.scanLCS(videoList).then(result => {
+  //   console.log(result);
+  // });
 }
 
 let Component = {

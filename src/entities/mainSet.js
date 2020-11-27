@@ -195,6 +195,13 @@ export function normal (that) {
       });
     },
 
+    async setAuto (obj) {
+      obj.setClick(async (/*o*/) => {
+        let com = await import('/project/example/z01/debug/main.js');
+        console.log(com);
+      });
+    },
+
     async setPlay (obj) {
 
       async function play () {

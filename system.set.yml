@@ -17,7 +17,7 @@ config:
     language/: demo/sample/src/strings/
     loading/: demo/sample/src/loading/
     net/: demo/sample/src/net/v1/
-    makeres/: demo/sample/src/makeres/v1/
+    makeres/: demo/sample/src/makeres/v2/
     scene/: demo/sample/src/scenes/
     style/: demo/sample/style/
     schema/: demo/sample/schema/

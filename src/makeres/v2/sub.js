@@ -23,6 +23,14 @@ export async function get (id) {
       res.texture = await import('res/sub/zh-cn.textureList');
       break;
 
+    case 'vi-vn':
+      res.texture = await import('res/sub/en-us.textureList');
+      break;
+
+    case 'th-th':
+      res.texture = await import('res/sub/en-us.textureList');
+      break;
+
     // 英文-美
     default:
       res.texture = await import('res/sub/en-us.textureList');

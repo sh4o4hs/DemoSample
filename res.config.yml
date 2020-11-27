@@ -22,6 +22,9 @@ vendor:
     - en-us
     - zh-tw
     - zh-cn
+    - vi-vn
+    - th-th
+
   source: src/resource.js
   resource: res/vendor.yml
   output: res/vendor.js
