@@ -103,7 +103,12 @@ export async function init () {
 
   // 通知 lobby 準備好了
   if (game.scene) {
-    game.scene.ready();
+
+    let manual = {
+      overview: true
+    };
+
+    game.scene.ready(manual);
   }
 }
 

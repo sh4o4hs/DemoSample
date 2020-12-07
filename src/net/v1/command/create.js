@@ -25,6 +25,10 @@ let Command = {
     }
     app.game.play();
 
+    if (app.game.scene.setOverviewVisible) {
+      app.game.scene.setOverviewVisible(false);
+    }
+
     // 歷程 開始遊戲
     if (app.game.report) {
       app.game.report.loadEnd(app.recordStart);

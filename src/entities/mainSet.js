@@ -180,7 +180,7 @@ export function normal (that) {
         // };
 
         // other.create(project);
-        component.releaseVideo();
+        // component.releaseVideo();
         await app.game.idle(0.01);
         let config = {
           game: 'HexagonSlot',
@@ -233,7 +233,7 @@ export function normal (that) {
 
       obj.setClick(async (/*o*/) => {
 
-        component.releaseVideo();
+        // component.releaseVideo();
         await app.game.idle(0.01);
 
         let other  = await import('loading/other');
@@ -286,18 +286,64 @@ export function normal (that) {
 
     // 設定下注
     setBet (obj) {
+      let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
       obj.setClick(async (/*o*/) => {
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        let source = videoSourceList[videoSourceIndex];
-        component.setVideoSource(source);
+        let url = videoSourceList[videoSourceIndex];
         videoSourceIndex++;
         if (videoSourceIndex >= videoSourceList.length) {
           videoSourceIndex = 0;
         }
+        let streaming = new app.game.Streaming(PIXI);
+        let texture = await streaming.play(url);
+        console.log(texture);
+        let videoScreen = streaming.videoScreen;
+        let w = videoScreen.width / 4;
+        let h = videoScreen.height / 4;
+
+        for (let i = 0; i < 4; i++) {
+          for (let j = 0; j < 4; j++) {
+            let x = i * w;
+            let y = j * h;
+            let frame = new PIXI.Rectangle(x, y, w, h);
+            let te = new PIXI.Texture(texture.baseTexture, frame);
+            let child = new PIXI.Sprite(te);
+            child.texture = te;
+            child.x = 5 + i * (w + 5);
+            child.y = 5 + j * (h + 5);
+            app.game.layer.overlay.addChild(child);
+            createjs.Tween.get(child, { loop: true })
+              .to({ x: 400 }, 1000, createjs.Ease.getPowInOut(4))
+              .to({ alpha: 0, y: 175 }, 500, createjs.Ease.getPowInOut(2))
+              .to({ alpha: 0, y: 225 }, 100)
+              .to({ alpha: 1, y: 200 }, 500, createjs.Ease.getPowInOut(2))
+              .to({ x: 100 }, 800, createjs.Ease.getPowInOut(2));
+
+          }
+        }
+
+
+        // nuts.updateManager.add({
+        //   update (offsetTime) {
+        //     frame.x += 1;
+        //     if (frame.x > 200) {
+        //       frame.x = 0;
+        //     }
+        //     sprite.texture.updateUvs();
+        //   }
+        // });
+
+        // sprite.texture = texture;
+        // sprite.x = 0;
+        // sprite.y = 768 / 2;
+        // sprite.anchor.x = 0;
+        // sprite.anchor.y = 0.5;
+        // sprite.alpha = 1.0;
+        // app.game.layer.overlay.addChild(sprite);
       });
     },
 

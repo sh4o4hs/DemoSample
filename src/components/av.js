@@ -37,7 +37,12 @@ async function link (config) {
 
   // 啟動串流
   let LCS = await app.game.getLCS();
-  player = new LCS.Player(connection, {canvas: canvas});
+  player = new LCS.Player(connection, {
+    videoBufferSize: 2048 * 1024,
+    disableGl: false,
+    disableWebAssembly: false,
+    canvas: canvas
+  });
   config.player = player;
 
   // 檢測串流

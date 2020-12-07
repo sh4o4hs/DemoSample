@@ -194,13 +194,12 @@ export function init () {
       cmd.send();
 
       // 初始化視訊
-      app.game.getIP().then(data => {
-        console.log('!!!!');
-        if (data) {
-          console.log(data);
-        }
-      });
-      component.showVideo();
+      let ip = await app.game.getIP();
+      if (ip) {
+        console.log(ip);
+      }
+
+      // component.showVideo();
 
       /*
       component.add({
