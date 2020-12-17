@@ -15,10 +15,47 @@ import app from 'entity/app';
 
 // import * as other from 'loading/other';
 
-import * as component from 'src/component';
+// import * as component from 'src/component';
 
 // import * as sceneInfo from 'src/scenes/info';
 // import * as sceneSub from 'src/scenes/sub';
+
+
+/* let SHADER = {
+  FRAGMENT_YCRCB_TO_RGBA: [
+    'precision mediump float;',
+    'uniform sampler2D textureY;',
+    'uniform sampler2D textureCb;',
+    'uniform sampler2D textureCr;',
+    'varying vec2 texCoord;',
+
+    'mat4 rec601 = mat4(',
+    '1.16438,  0.00000,  1.59603, -0.87079,',
+    '1.16438, -0.39176, -0.81297,  0.52959,',
+    '1.16438,  2.01723,  0.00000, -1.08139,',
+    '0, 0, 0, 1',
+    ');',
+
+    'void main() {',
+    'float y = texture2D(textureY, texCoord).r;',
+    'float cb = texture2D(textureCb, texCoord).r;',
+    'float cr = texture2D(textureCr, texCoord).r;',
+
+    'gl_FragColor = vec4(y, cr, cb, 1.0) * rec601;',
+    '}'
+  ].join('\n'),
+
+  VERTEX_IDENTITY: [
+    'attribute vec2 vertex;',
+    'varying vec2 texCoord;',
+
+    'void main() {',
+    'texCoord = vertex;',
+    'gl_Position = vec4((vertex * 2.0 - 1.0) * vec2(1, -1), 0.0, 1.0);',
+    '}'
+  ].join('\n')
+};
+ */
 
 /**
  * 物件初始化
@@ -287,6 +324,12 @@ export function normal (that) {
     // 設定下注
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+      let streaming = new app.game.Streaming(PIXI);
+
+      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+
+
+      // let point = new PIXI.Point(0.25, 0.5);
 
       obj.setClick(async (/*o*/) => {
 
@@ -298,9 +341,48 @@ export function normal (that) {
         if (videoSourceIndex >= videoSourceList.length) {
           videoSourceIndex = 0;
         }
-        let streaming = new app.game.Streaming(PIXI);
-        let texture = await streaming.play(url);
+
+        sprite.filters = null;
+        app.game.layer.overlay.removeChild(sprite);
+
+        let options = {
+          videoBufferSize: 512 * 1024,
+          fps: 60
+        };
+        let texture = await streaming.play(url, options);
         console.log(texture);
+
+        /*
+        const uniforms = {
+          textureY: texture,
+          textureCb: texture,
+          textureCr: texture
+        };
+        const geometry = new PIXI.Geometry()
+          .addAttribute('vertex',
+            [ -100, -50, // x, y
+              100, -50, // x, y
+              0.0, 100.0 ], // x, y
+            2); // the size of the attribute
+
+
+        // .addAttribute('aUvs', // the attribute name
+        //     [0, 0, // u, v
+        //         1, 0, // u, v
+        //         1, 1,
+        //         0, 1], // u, v
+        //     2) // the size of the attribute
+        // .addIndex([0, 1, 2, 0, 2, 3]);
+
+        //let filter = new PIXI.Filter(SHADER.VERTEX_IDENTITY, SHADER.FRAGMENT_YCRCB_TO_RGBA, uniforms);
+        let shader = PIXI.Shader.from(SHADER.VERTEX_IDENTITY, SHADER.FRAGMENT_YCRCB_TO_RGBA, uniforms);
+
+        const triangle = new PIXI.Mesh(geometry, shader);
+        triangle.position.set(400, 300);
+        triangle.scale.set(1);
+        app.game.layer.overlay.addChild(triangle);
+*/
+
         let videoScreen = streaming.videoScreen;
         let w = videoScreen.width / 4;
         let h = videoScreen.height / 4;
@@ -317,12 +399,11 @@ export function normal (that) {
             child.y = 5 + j * (h + 5);
             app.game.layer.overlay.addChild(child);
             createjs.Tween.get(child, { loop: true })
-              .to({ x: 400 }, 1000, createjs.Ease.getPowInOut(4))
-              .to({ alpha: 0, y: 175 }, 500, createjs.Ease.getPowInOut(2))
-              .to({ alpha: 0, y: 225 }, 100)
-              .to({ alpha: 1, y: 200 }, 500, createjs.Ease.getPowInOut(2))
-              .to({ x: 100 }, 800, createjs.Ease.getPowInOut(2));
-
+              .to({ x: 400 }, 4000, createjs.Ease.getPowInOut(4))
+              .to({ alpha: 0, y: 175 }, 2000, createjs.Ease.getPowInOut(2))
+              .to({ alpha: 0, y: 225 }, 400)
+              .to({ alpha: 1, y: 200 }, 1000, createjs.Ease.getPowInOut(2))
+              .to({ x: 100 }, 500, createjs.Ease.getPowInOut(2));
           }
         }
 
@@ -337,13 +418,19 @@ export function normal (that) {
         //   }
         // });
 
-        // sprite.texture = texture;
-        // sprite.x = 0;
-        // sprite.y = 768 / 2;
-        // sprite.anchor.x = 0;
-        // sprite.anchor.y = 0.5;
-        // sprite.alpha = 1.0;
-        // app.game.layer.overlay.addChild(sprite);
+        sprite.texture = texture;
+        sprite.x = 0;
+        sprite.y = 768 / 2;
+        sprite.anchor.x = 0;
+        sprite.anchor.y = 0.0;
+        sprite.alpha = 1.0;
+
+        // const filter = new PIXI.Filter(null, null, { myUniform: 0.5 });
+        // sprite.filters = [ filter ];
+
+        // sprite.scale.x = 0.5;
+        // sprite.scale.y = 0.5;
+        app.game.layer.overlay.addChild(sprite);
       });
     },
 
