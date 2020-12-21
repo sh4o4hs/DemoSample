@@ -233,9 +233,11 @@ export function normal (that) {
     },
 
     async setAuto (obj) {
+      let lock = true;
       obj.setClick(async (/*o*/) => {
-        let com = await import('/project/example/z01/debug/main.js');
-        console.log(com);
+        console.log(app.game.sysTray);
+        app.game.sysTray.isLock = lock;
+        lock = !lock;
       });
     },
 
