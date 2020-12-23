@@ -233,10 +233,9 @@ export function normal (that) {
     },
 
     async setAuto (obj) {
-      let lock = true;
+      let lock = false;
       obj.setClick(async (/*o*/) => {
-        console.log(app.game.sysTray);
-        app.game.sysTray.isLock = lock;
+        app.game.scene.localEvent.lock(lock);
         lock = !lock;
       });
     },

@@ -17,12 +17,12 @@ framework:
 #   standalone: true
 #   debug:
 #     appInLibMap: true
-#     format: iife
+#     format: esm
 #     src: template/debug.html
 #     dest: index.html
 #   release:
 #     appInLibMap: true
-#     format: iife
+#     format: esm
 #     src: template/release.html
 #     dest: index.html
 author:

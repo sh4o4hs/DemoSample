@@ -7,7 +7,7 @@
  *   Authors:
  *
  ************************************************************************ */
-import m from 'mithril';
+// import m from 'mithril';
 
 import * as nuts from 'nuts';
 import app from 'entity/app';
@@ -272,15 +272,15 @@ export function init () {
      * 尺寸改變事件
      * @param state
      */
-    resize (state) {
-      let setting = state.setting;
-      if (setting) {
-        let style = component.style;
-        style.width = setting.width;
-        style.height = setting.height;
-        console.log(style);
-        m.redraw();
-      }
+    resize (/* state */) {
+      // let setting = state.setting;
+      // if (setting) {
+      //   let style = component.style;
+      //   style.width = setting.width;
+      //   style.height = setting.height;
+      //   console.log(style);
+      //   m.redraw();
+      // }
 
       // console.log(gameRoot);
       // gameRoot.getRenderer().resize(640, 720);

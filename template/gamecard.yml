@@ -11,10 +11,10 @@ sysTray: # 是否顯示系統選單
   left: 40px         # 左邊界座標
   top: 40px          # 上邊界座標
   flags: # 選單功能項目開關設定
-    fullscreen: true   # 全螢幕
-    lock: false         # 鎖定顯示比例
-    music: false        # 音樂
-    sound: false        # 音效
+    fullscreen: false   # 全螢幕
+    lock: true         # 鎖定顯示比例
+    music: true        # 音樂
+    sound: true        # 音效
 manual:
   overview: true
 options: # 功能開關設定
@@ -34,8 +34,8 @@ appConfig: sample             # 程式設定檔
 # theOther: Jackpot      # 是否有子專案
 pixiConfig: #PIXI 設定
   legacy: false
-  width: &WIDTH 1024
-  height: &HEIGHT 768
+  width: &WIDTH 640
+  height: &HEIGHT 780
   resolution: 1.0
   antialias: false
   transparent: true
@@ -43,12 +43,12 @@ screen:   # 螢幕設定
   isLock: true             # 是否鎖定
   # orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
   width: 6400               # 寬
-  height: 7200              # 高
+  height: 7800              # 高
   # portrait: # 垂直鎖定設定
   #   width: 6400               # 寬
-  #   height: 7200              # 高
+  #   height: 7800              # 高
   # landscape: # 水平鎖定設定
-  #   width: 7200               # 寬
+  #   width: 7800               # 寬
   #   height: 6400              # 高
 resize: # 畫面尺寸改變用
   horizontal:     # 水平

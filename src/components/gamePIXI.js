@@ -1,4 +1,4 @@
-import 'pixi';
+// import 'PIXI';
 
 // import 'pixi-spine';
 // import 'pixi-particles';
@@ -81,14 +81,16 @@ export async function init () {
 
   // await import('pixi');
   let Loader = await import('resource-loader');
-  let Stats = await import('stats');
+
+  // let Stats = await import('stats.js');
 
   let config = {};
   config.Loader = Loader;
   config.m = m;
 
   config.PIXI = PIXI;
-  config.Stats = Stats;
+
+  // config.Stats = Stats;
   config.plugin = plugin;
 
   await nuts.init(config);
