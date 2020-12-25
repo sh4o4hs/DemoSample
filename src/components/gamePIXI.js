@@ -1,8 +1,3 @@
-// import 'PIXI';
-
-// import 'pixi-spine';
-// import 'pixi-particles';
-
 import m from 'mithril';
 
 //import * as Loader from 'resource-loader';

@@ -187,7 +187,7 @@ export function normal (that) {
   let videoSourceIndex = 0;
 
   let videoSourceList = [
-    'wss://lcsvd001001wss.streamingvds.com:8174/',
+    'wss://pc-8174.cngov123.cn/',
     'wss://lcsvd001001wss.streamingvds.com:8374/',
     'wss://lcsvd001001wss.streamingvds.com:8474/',
     'wss://bgvd001001wss.streamingvds.com:9084/'
