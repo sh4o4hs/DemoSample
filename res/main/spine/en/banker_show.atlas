@@ -1,0 +1,13 @@
+
+banker_show.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+banker_show
+  rotate: false
+  xy: 1, 1
+  size: 108, 110
+  orig: 110, 110
+  offset: 2, 0
+  index: -1

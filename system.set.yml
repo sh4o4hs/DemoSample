@@ -34,7 +34,7 @@ config:
     pixi-spine: depend:pixi/pixi-spine.2.0.5.js
     # pixi: depend:pixi/pixi.min.4.8.10.js
     # pixi-spine: depend:pixi/pixi-spine.1.5.22.js
-    pixi-particles: depend:pixi/pixi-particles.2.0.0.js
+    # pixi-particles: depend:pixi/pixi-particles.2.0.0.js
 #    howler: depend:howler/howler.min.2.1.2.js
 #    dragonBones: depend:pixi/dragonBones.min.3.0.5.js
 #    dragonBonesPixi: depend:pixi/dragonBonesPixi.min.3.0.5.js

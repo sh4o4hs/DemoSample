@@ -224,6 +224,29 @@ export function init () {
       // 讀取資源
       let sceneLoad = await import('scene/load');
       sceneLoad.create();
+
+
+      // 測試
+      async function test () {
+        let photos = await game.getProject('video/photos');
+        if (photos) {
+          console.log(photos);
+          let lib = photos.lib;
+          let pathname = photos.pathname;
+          let dataList = await lib.getDealer();
+          console.log('========= test =========');
+          console.log(dataList);
+          let data = dataList[12];
+          console.log(data);
+          let filename = `${pathname}/${data.mPhoto}`;
+          let te = PIXI.Texture.from(filename);
+          let sprite = new PIXI.Sprite(te);
+          sprite.x = 20;
+          sprite.y = 40;
+          game.layer.overlay.addChild(sprite);
+        }
+      }
+      test();
     },
 
     /**
