@@ -228,13 +228,13 @@ export function init () {
 
       // 測試
       async function test () {
+        console.log('========= get photos =========');
         let photos = await game.getProject('video/photos');
         if (photos) {
           console.log(photos);
           let lib = photos.lib;
           let pathname = photos.pathname;
           let dataList = await lib.getDealer();
-          console.log('========= test =========');
           console.log(dataList);
           let data = dataList[12];
           console.log(data);
