@@ -238,12 +238,14 @@ export function init () {
           console.log(dataList);
           let data = dataList[12];
           console.log(data);
-          let filename = `${pathname}/${data.mPhoto}`;
-          let te = PIXI.Texture.from(filename);
-          let sprite = new PIXI.Sprite(te);
-          sprite.x = 20;
-          sprite.y = 40;
-          game.layer.overlay.addChild(sprite);
+          if (data && data.photo) {
+            let filename = `${pathname}/${data.photo}`;
+            let te = PIXI.Texture.from(filename);
+            let sprite = new PIXI.Sprite(te);
+            sprite.x = 20;
+            sprite.y = 40;
+            game.layer.overlay.addChild(sprite);
+          }
         }
       }
       test();
