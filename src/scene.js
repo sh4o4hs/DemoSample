@@ -171,10 +171,11 @@ export function init () {
       * @param {*} conf
       */
     async enter (conf) {
-      console.log('scene enter ');
+      console.info('[scene] enter ');
       if (conf.tablecofig) {
         return;
       }
+
       await restore();
       await save();
 
@@ -193,10 +194,11 @@ export function init () {
       let cmd = await import('net/command/create');
       cmd.send();
 
+
       // 初始化視訊
       let ip = await app.game.getIP();
       if (ip) {
-        console.log(ip);
+        console.info(ip);
       }
 
       // component.showVideo();
@@ -217,7 +219,7 @@ export function init () {
       }, 1);
 */
       game.disconnect = () => {
-        console.log('!!!! game.disconnect !!!!');
+        console.info('!!!! game.disconnect !!!!');
       };
       game.sysTray.visible = true;
 
@@ -225,11 +227,25 @@ export function init () {
       let sceneLoad = await import('scene/load');
       sceneLoad.create();
 
-
       // 測試
       async function test () {
-        console.log('========= get photos =========');
-        let photos = await game.getProject('video/photos');
+        let obj = await game.getProject('video/domains');
+        console.log('========= get domains =========');
+        console.log(obj);
+
+        let lib = obj.lib;
+        let sources;
+        sources = await lib.getVideoSource('BaccaratSeatPC');
+        console.log('==== pc sources ====');
+        console.log(sources);
+
+        sources = await lib.getVideoSource('BGBaccarat');
+        console.log('==== mobile sources ====');
+        console.log(sources);
+
+        let photos = null;
+
+        // let photos = await game.getProject('video/photos');
         if (photos) {
           console.log(photos);
           let lib = photos.lib;
@@ -248,6 +264,7 @@ export function init () {
           }
         }
       }
+
       test();
     },
 

@@ -17,8 +17,9 @@ let defaultStyle = {
 };
 
 let plugin = [
-  'pixi-spine',
-  'pixi-particles'
+  'pixi-spine'
+
+  // 'pixi-particles'
 ];
 
 export let Component = {
