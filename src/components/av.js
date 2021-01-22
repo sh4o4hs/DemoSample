@@ -1,6 +1,7 @@
 
 import app from 'entity/app';
-import m from 'mithril';
+
+// import m from 'mithril';
 
 let canvasStyle = {
   position: 'absolute',

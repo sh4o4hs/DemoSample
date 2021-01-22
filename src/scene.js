@@ -7,7 +7,7 @@
  *   Authors:
  *
  ************************************************************************ */
-// import m from 'mithril';
+// // import m from 'mithril';
 
 import * as nuts from 'nuts';
 import app from 'entity/app';

@@ -27,7 +27,7 @@ config:
     # stats: depend:stats/stats.min.0.17.0.js
     # loader: depend:loader/resource-loader.min.2.2.4.js
     # mithril: depend:mithril/mithril.min.2.0.4.js
-    tweenjs: depend:createjs/tweenjs.min.1.0.2.js
+    # tweenjs: depend:createjs/tweenjs.min.1.0.2.js
 #    js-yaml: depend:yaml/js-yaml.min.3.13.1.js
     # nuts: depend:nuts/nuts.1.10.0.js
     pixi: depend:pixi/pixi.min.5.3.5.js

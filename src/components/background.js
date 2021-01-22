@@ -1,4 +1,4 @@
-import m from 'mithril';
+// import m from 'mithril';
 
 let aspectRatio = 'aspect-ratio--16x9';
 let Component = {

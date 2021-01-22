@@ -1,4 +1,4 @@
-import m from 'mithril';
+// import m from 'mithril';
 import * as Loader from 'resource-loader';
 import Stats from 'stats';
 import * as nuts from 'nuts';

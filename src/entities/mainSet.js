@@ -274,22 +274,22 @@ export function normal (that) {
         // component.releaseVideo();
         await app.game.idle(0.01);
 
-        let other  = await import('loading/other');
+        // let other  = await import('loading/other');
 
-        let project = {
-          id: 'sample',
-          group: 'video',
-          name: 'dragontiger',
-          reloadConfig: {
-            tablekey: 'abc123',
-            id: 'sample'
-          }
-        };
+        // let project = {
+        //   id: 'sample',
+        //   group: 'video',
+        //   name: 'dragontiger',
+        //   reloadConfig: {
+        //     tablekey: 'abc123',
+        //     id: 'sample'
+        //   }
+        // };
 
-        other.create(project);
+        // other.create(project);
 
-        // let config = {};
-        // config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
+        let config = {};
+        config.url = '//www.gt-igaming.com/real/bingo?language=zh-cn';
 
         // config.setting = {
         //   id: 'info',
@@ -317,7 +317,7 @@ export function normal (that) {
         //     height: 1.0
         //   }
         // };
-        // app.game.scene.callWeb(config);
+        app.game.scene.callWeb(config);
 
       });
     },
