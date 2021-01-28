@@ -26,21 +26,25 @@ export function useNetV2 () {
   return currentVersion = NET_VERSION.V2;
 }
 
+let langID = 'enus';
+export function setLang (id) {
+  langID = id.replace('-', '');
+}
+
+let baseURL = '.';
+export function setBaseURL (url) {
+  baseURL = url;
+}
+export function getBaseURL () {
+  return baseURL;
+}
 
 /**
  * 取得資源
  * @param {string} name 名稱
- * @param {string} lang 語言,可以不輸入
  */
-export async function get (name, lang) {
-  if (!lang) {
-    lang = strings.getID();
-  }
-  let id = lang.replace('-', '');
-
-  let str = nameMap[`${id}${name}`];
-  console.log(`vendor.get : ${str}`);
-  let res = await import(`${app.baseURL}${str}`);
-  console.log(res);
+export async function get (name) {
+  let str = nameMap[`${langID}${name}`];
+  let res = await import(`${baseURL}/${str}`);
   return res.default;
 }

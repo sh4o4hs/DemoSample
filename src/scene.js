@@ -7,7 +7,7 @@
  *   Authors:
  *
  ************************************************************************ */
-// // import m from 'mithril';
+// import m from 'mithril';
 
 import * as nuts from 'nuts';
 import app from 'entity/app';
@@ -91,7 +91,7 @@ export function init () {
      * 建立場景
      * @param conf config
      */
-    create (conf)  {
+    async create (conf)  {
       let game = conf.game;
       let loadingEvent = null;
       if (game.scene) {
@@ -109,6 +109,10 @@ export function init () {
       app.langID = conf.langID;
       app.baseURL = conf.baseURL || '';
       app.isChild = conf.isChild;
+
+      let vendor = await import('src/vendor');
+      vendor.setLang(app.langID);
+      vendor.setBaseURL(app.baseURL);
 
       if (conf.console) {
         console.info = conf.console.info;

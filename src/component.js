@@ -8,7 +8,7 @@
  *
  ************************************************************************ */
 
-// import m from 'mithril';
+import m from 'mithril';
 import * as comGame from 'component/gamePIXI';
 import comAV from 'component/av';
 
@@ -70,7 +70,6 @@ export let style = {
  * @returns {void}
  */
 export async function run () {
-
 
   let Application = {
     view () {
