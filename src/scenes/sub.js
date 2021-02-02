@@ -1,12 +1,12 @@
-import * as nuts from 'nuts';
+//import * as nuts from 'nuts';
+import app from 'entity/app';
 
-
-let sceneManager = nuts.scene.sceneManager;
 
 let isCreate = false;
 let scene = null;
 export async function play (game, result) {
-  let ui = nuts.ui;
+  let sceneManager = app.nuts.scene.sceneManager;
+  let ui = app.nuts.ui;
   let loading = ui.loading;
   const NUM = ui.Number.NUM;
 

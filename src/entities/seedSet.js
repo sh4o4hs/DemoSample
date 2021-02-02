@@ -8,8 +8,11 @@
  *
  ************************************************************************ */
 import * as strings from 'language/strings';
-import * as nuts from 'nuts';
+
+//import * as nuts from 'nuts';
 import app from 'entity/app';
+
+// import app from 'entity/app';
 
 
 /**
@@ -17,7 +20,7 @@ import app from 'entity/app';
  * @param {Object} that
  */
 export function normal (that) {
-  let ui = nuts.ui;
+  let ui = app.nuts.ui;
   const NUM = ui.Number.NUM;
   let center = that.getCenter();
   let textures = center.textures.demo;

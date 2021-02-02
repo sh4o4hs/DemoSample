@@ -1,12 +1,15 @@
-import * as nuts from 'nuts';
+//import * as nuts from 'nuts';
 import app from 'entity/app';
+
+// import app from 'entity/app';
 import vendor from 'res/vendor';
 
-let sceneManager = nuts.scene.sceneManager;
 
 let isCreate = false;
 
 export async function create (game, ent) {
+
+  let sceneManager = app.nuts.scene.sceneManager;
 
   // 是否需要建立
   if (isCreate) {

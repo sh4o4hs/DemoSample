@@ -1,11 +1,14 @@
-import * as nuts from 'nuts';
+//import * as nuts from 'nuts';
+import app from 'entity/app';
+
 import Main from 'entity/main';
 
-let sceneManager = nuts.scene.sceneManager;
 
 let isCreate = false;
 let scene = null;
 export async function create () {
+  let sceneManager = app.nuts.scene.sceneManager;
+
   let main = Main.getSingleton();
   let center = main.getCenter();
   let game = center.game;
@@ -14,7 +17,7 @@ export async function create () {
   if (!isCreate) {
 
     // isCreate = true;
-    let loading = nuts.ui.loading;
+    let loading = app.nuts.ui.loading;
 
     // 讀取資源檔
     let vendor = await import('src/vendor');

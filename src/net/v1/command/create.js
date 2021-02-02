@@ -1,7 +1,6 @@
 import app from 'entity/app';
 import Main from 'entity/main';
 
-let isCreated = false;
 
 /**
  * 建立遊戲 (舊版)
@@ -10,10 +9,7 @@ let Command = {
   async handle (obj) {
 
     console.log('[收到] create :' + JSON.stringify(obj));
-    if (isCreated) {
-      return;
-    }
-    isCreated = true;
+
 
     app.decimal = 2;
     let main = Main.getSingleton();
@@ -58,10 +54,6 @@ export async function send () {
   if ((typeof result === 'number') || (typeof result === 'boolean')) {
     return;
   }
-  if (!result || isCreated) {
-    return;
-  }
-  isCreated = true;
 
   console.log('[收到] 建立遊戲');
   console.log(result);
@@ -72,7 +64,7 @@ export async function send () {
     let mainSet = await import('entity/mainSet');
     main.setInitMap(mainSet.normal);
     main.eventFinish();
-    main.addToScene();
+    main.addToScene(app.game);
   }
   app.game.play();
 }

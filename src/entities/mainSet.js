@@ -9,9 +9,11 @@
  ************************************************************************ */
 // import * as strings from 'language/strings';
 
-import * as nuts from 'nuts';
-
+//import * as nuts from 'nuts';
 import app from 'entity/app';
+
+
+// import app from 'entity/app';
 
 // import * as other from 'loading/other';
 
@@ -63,7 +65,7 @@ import app from 'entity/app';
  */
 export function normal (that) {
 
-  let ui = nuts.ui;
+  let ui = app.nuts.ui;
   const NUM = ui.Number.NUM;
 
   let center = that.getCenter();
@@ -218,8 +220,18 @@ export function normal (that) {
 
         // other.create(project);
         // component.releaseVideo();
+
+        let sound = center.sounds.demo;
+        if (sound && sound.music && sound.music.play) {
+          sound.music.stop();
+        }
+
         await app.game.idle(0.01);
         let config = {
+
+          // game: 'sample',
+          // group: 'demo',
+
           game: 'HexagonSlot',
           group: 'slot',
           id: 'sample',

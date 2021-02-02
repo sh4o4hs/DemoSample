@@ -7,7 +7,9 @@
    Authors:
 
 ************************************************************************ */
-import * as nuts from 'nuts';
+//import * as nuts from 'nuts';
+import app from 'entity/app';
+
 
 /**
  * 讀取子場景用
@@ -56,7 +58,7 @@ function finish () {
  */
 export function create (config) {
 
-  let loadingMgr = nuts.scene.loadingManager;
+  let loadingMgr = app.nuts.scene.loadingManager;
 
   if (attribute.isBusy || !config) {
     return false;

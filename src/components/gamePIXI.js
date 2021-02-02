@@ -4,6 +4,7 @@ import m from 'mithril';
 //import Stats from 'stats';
 
 import * as nuts from 'nuts';
+
 import * as scene from 'src/scene';
 
 let defaultStyle = {
@@ -101,12 +102,7 @@ export async function init () {
 
   // 通知 lobby 準備好了
   if (game.scene) {
-
-    let manual = {
-      overview: true
-    };
-
-    game.scene.ready(manual);
+    game.scene.ready();
   }
 }
 

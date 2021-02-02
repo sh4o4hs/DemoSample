@@ -1,6 +1,4 @@
 
-import app from 'entity/app';
-import * as strings from 'language/strings';
 import nameMap from 'src/nameMap';
 
 

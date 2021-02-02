@@ -3,6 +3,7 @@ import * as Loader from 'resource-loader';
 import Stats from 'stats';
 
 import * as nuts from 'nuts';
+
 import app from 'entity/app';
 import * as entity from 'src/entity';
 import * as scene from 'src/scene';

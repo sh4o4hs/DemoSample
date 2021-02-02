@@ -7,7 +7,9 @@
  Authors:
 
  ************************************************************************ */
-import * as nuts from 'nuts';
+//import * as nuts from 'nuts';
+import app from 'entity/app';
+
 
 //import * as strings from 'language/strings';
 import * as subSet from 'entity/subSet';
@@ -22,15 +24,13 @@ import vendor from 'res/vendor';
 const SCENE_NAME = 'sub';
 let singleton = null;
 
-export default class Scene extends nuts.scene.Base {
+export default class Scene extends app.nuts.scene.Base {
 
   static  getSingleton () {
     return singleton;
   }
   static setSingleton (scene) {
-    if (!singleton) {
-      singleton = scene;
-    }
+    singleton = scene;
   }
 
   /**

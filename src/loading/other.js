@@ -7,8 +7,10 @@
    Authors:
 
 ************************************************************************ */
-import * as nuts from 'nuts';
+//import * as nuts from 'nuts';
 import app from 'entity/app';
+
+// import app from 'entity/app';
 
 let isBusy = false;
 
@@ -43,7 +45,7 @@ export async function create (project) {
     function finish (scene, isCreate = true) {
       isFinish = true;
       if (other.timeout) {
-        nuts.updateManager.remove(other.timeout);
+        app.nuts.updateManager.remove(other.timeout);
         other.timeout = null;
       }
 
@@ -116,10 +118,10 @@ export async function create (project) {
 
           if (!isFinish) {
             if (other.timeout) {
-              nuts.updateManager.remove(other.timeout);
+              app.nuts.updateManager.remove(other.timeout);
               other.timeout = null;
             }
-            other.timeout = nuts.updateManager.setTimeout(() => {
+            other.timeout = app.nuts.updateManager.setTimeout(() => {
               other.timeout = null;
               cancel();
             }, 6);

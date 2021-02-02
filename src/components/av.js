@@ -1,6 +1,5 @@
 
 import app from 'entity/app';
-
 import m from 'mithril';
 
 let canvasStyle = {

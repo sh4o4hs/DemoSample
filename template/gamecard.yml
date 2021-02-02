@@ -7,14 +7,14 @@ name:   # 遊戲名稱 (多語設定)
   en-us: game
   zh-tw: 遊戲
   zh-cn: 游戏
-sysTray: # 是否顯示系統選單
-  left: 40px         # 左邊界座標
-  top: 40px          # 上邊界座標
-  flags: # 選單功能項目開關設定
-    fullscreen: false   # 全螢幕
-    lock: true         # 鎖定顯示比例
-    music: true        # 音樂
-    sound: true        # 音效
+# sysTray: # 是否顯示系統選單
+#   left: 40px         # 左邊界座標
+#   top: 40px          # 上邊界座標
+#   flags: # 選單功能項目開關設定
+#     fullscreen: false   # 全螢幕
+#     lock: true         # 鎖定顯示比例
+#     music: true        # 音樂
+#     sound: true        # 音效
 manual:
   overview: true
 options: # 功能開關設定

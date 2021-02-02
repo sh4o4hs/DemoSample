@@ -9,14 +9,11 @@
  ************************************************************************ */
 // import m from 'mithril';
 
-import * as nuts from 'nuts';
+// //import * as nuts from 'nuts';
 import app from 'entity/app';
-import * as comGame from 'component/gamePIXI';
-import * as component from 'src/component';
 
-import * as entity from 'src/entity';
-
-let eventList = null;
+// import app from 'entity/app';
+import * as strings from 'language/strings';
 
 
 /**
@@ -70,21 +67,31 @@ async function restore () {
   console.log(setting);
 }
 
+
+let eventList = null;
+
 /**
  * 初始化事件 (接收大廳傳送的命令用)
  * @returns {Object} 傳回物件事件
  */
+export async function init (config) {
 
-export function init () {
-  console.log('scene init');
-  app.nuts = nuts;
   if (eventList) {
     return eventList;
   }
 
-  // 遊戲管理用
-  let gameRoot = null;
-  let gamecard = null;
+  console.log('scene init');
+
+  // 初始化
+  app.isChild = config.isChild;
+
+  let nuts = config.nuts;
+  let baseURL = config.baseURL || '.';
+  let langID = config.langID;
+
+  app.nuts = nuts;
+  app.baseURL = baseURL;
+  app.langID = langID;
 
   eventList = {
 
@@ -95,54 +102,24 @@ export function init () {
     async create (conf)  {
       let game = conf.game;
       let loadingEvent = null;
+
+      app.game = game;
       if (game.scene) {
         loadingEvent = game.scene.loadingEvent;
-        gamecard = game.scene.gamecard;
-        gameRoot = game;
-        app.game = game;
-        app.gamecard = gamecard;
+        app.gamecard = game.scene.gamecard;
       }
 
-      // 初始化
-      app.langID = conf.langID;
-      app.baseURL = conf.baseURL || '';
-      app.isChild = conf.isChild;
-
-      let vendor = await import('src/vendor');
-      vendor.setLang(app.langID);
-      vendor.setBaseURL(app.baseURL);
-
-      if (conf.console) {
-        console.info = conf.console.info;
-      }
-
-      // todo:game 收到建立遊戲事件
-      let pixiConfig = gamecard.pixiConfig;
-      pixiConfig.game = gameRoot;
-      app.pixiConfig = pixiConfig;
-
-      // 指定遊戲引擎初始化完成後, 需要執行的工作
-      // (開始讀取遊戲資料,然後建立遊戲場景)
-      pixiConfig.ready = (game) => {
-        console.log('=====================');
-        console.log(pixiConfig);
-        entity.create({
-          game: game,
-          langID: conf.langID,
-          isChild: conf.isChild,
-          baseURL: conf.baseURL,
-          loadingEvent: loadingEvent
-        });
-        game.play();
-      };
-      component.add({
-        com: comGame.Component,
-        attrs: {
-          config: pixiConfig
-        }
-      });
+      nuts.scene.sceneManager.setBaseURL(baseURL);
 
 
+      // 建立場景
+      let scene = await import('scene/main');
+
+      nuts.scene.sceneManager.setEvent(loadingEvent);
+
+      await scene.create(game, loadingEvent);
+
+      nuts.scene.sceneManager.setEvent(null);
     },
 
     /**
@@ -151,7 +128,6 @@ export function init () {
     play (conf) {
       console.log(conf.game.scene.info.id + ' scene play: from ' + conf.from);
       app.from = conf.from;
-
     },
 
     /**
@@ -166,12 +142,6 @@ export function init () {
      * 進入場景
      *
      */
-
-
-    /**
-      *
-      * @param {*} conf
-      */
     async enter (conf) {
       console.info('[scene] enter ');
       if (conf.tablecofig) {
@@ -196,79 +166,59 @@ export function init () {
       let cmd = await import('net/command/create');
       cmd.send();
 
-
       // 初始化視訊
       let ip = await app.game.getIP();
       if (ip) {
         console.info(ip);
       }
 
-      // component.showVideo();
-
-      /*
-      component.add({
-        com: comGame.Other,
-        attrs: {
-          config: {
-            async ready (game) {
-              game.play();
-              let scene = await import('scene/sub');
-              console.log(scene);
-              await scene.play(game);
-            }
-          }
-        }
-      }, 1);
-*/
       game.disconnect = () => {
         console.info('!!!! game.disconnect !!!!');
       };
-      game.sysTray.visible = true;
 
       // 讀取資源
       let sceneLoad = await import('scene/load');
       sceneLoad.create(game);
 
-
       // 測試
-      async function test () {
-        let obj = await game.getProject('video/domains');
-        console.log('========= get domains =========');
-        console.log(obj);
+      // async function test () {
+      //   let obj = await game.getProject('video/domains');
+      //   console.log('========= get domains =========');
+      //   console.log(obj);
 
-        let lib = obj.lib;
-        let sources;
-        sources = await lib.getVideoSource('BaccaratSeatPC');
-        console.log('==== pc sources ====');
-        console.log(sources);
+      //   let lib = obj.lib;
+      //   let sources;
+      //   sources = await lib.getVideoSource('BaccaratSeatPC');
+      //   console.log('==== pc sources ====');
+      //   console.log(sources);
 
-        sources = await lib.getVideoSource('BGBaccarat');
-        console.log('==== mobile sources ====');
-        console.log(sources);
+      //   sources = await lib.getVideoSource('BGBaccarat');
+      //   console.log('==== mobile sources ====');
+      //   console.log(sources);
 
-        let photos = null;
+      //   let photos = null;
 
-        // let photos = await game.getProject('video/photos');
-        if (photos) {
-          console.log(photos);
-          let lib = photos.lib;
-          let pathname = photos.pathname;
-          let dataList = await lib.getDealer();
-          console.log(dataList);
-          let data = dataList[12];
-          console.log(data);
-          if (data && data.photo) {
-            let filename = `${pathname}/${data.photo}`;
-            let te = PIXI.Texture.from(filename);
-            let sprite = new PIXI.Sprite(te);
-            sprite.x = 20;
-            sprite.y = 40;
-            game.layer.overlay.addChild(sprite);
-          }
-        }
-      }
+      //   // let photos = await game.getProject('video/photos');
+      //   if (photos) {
+      //     console.log(photos);
+      //     let lib = photos.lib;
+      //     let pathname = photos.pathname;
+      //     let dataList = await lib.getDealer();
+      //     console.log(dataList);
+      //     let data = dataList[12];
+      //     console.log(data);
+      //     if (data && data.photo) {
+      //       let filename = `${pathname}/${data.photo}`;
+      //       let te = PIXI.Texture.from(filename);
+      //       let sprite = new PIXI.Sprite(te);
+      //       sprite.x = 20;
+      //       sprite.y = 40;
+      //       game.layer.overlay.addChild(sprite);
+      //     }
+      //   }
+      // }
 
-      test();
+      // test();
     },
 
     /**
@@ -348,13 +298,13 @@ export function init () {
     }
   };
 
+  // 設定多語
+  strings.setLanguage(app.langID);
+
+  // 設定資源
+  let vendor = await import('src/vendor');
+  vendor.setLang(langID);
+  vendor.setBaseURL(baseURL);
+
   return eventList;
 }
-
-window.addEventListener('beforeunload', (event) => {
-  console.log('beforeunload' + JSON.stringify(event));
-});
-window.addEventListener('unload', (/*event*/) => {
-  console.log('unload');
-  nuts.scene.sceneManager.destroyAllSound();
-});

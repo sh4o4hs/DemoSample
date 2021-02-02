@@ -23,7 +23,6 @@ export const CMD = {
   JACKPOT: 'jackpot'
 };
 
-let isInit = false;
 let cmdList = null;
 
 /**
@@ -31,11 +30,11 @@ let cmdList = null;
  * @return {Object} 傳回命令清單
  */
 export function init () {
-  if (isInit) {
+
+  if (cmdList) {
     return cmdList;
   }
 
-  isInit = true;
   let list = {};
 
   /**
@@ -54,18 +53,19 @@ export function init () {
    */
   list[CMD.JACKPOT] = jackpot;
 
-  cmdList = list;
 
   // 儲存命令清單
-  create.cmdList = cmdList;
-  bet.cmdList = cmdList;
-  result.cmdList = cmdList;
-  jackpot.cmdList = cmdList;
+  create.cmdList = list;
+  bet.cmdList = list;
+  result.cmdList = list;
+  jackpot.cmdList = list;
 
   create.CMD = CMD;
   bet.CMD = CMD;
   result.CMD = CMD;
   jackpot.CMD = CMD;
+
+  cmdList = list;
 
   return list;
 }

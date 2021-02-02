@@ -7,7 +7,9 @@
    Authors:
 
 ************************************************************************ */
-import * as nuts from 'nuts';
+//import * as nuts from 'nuts';
+import app from 'entity/app';
+
 
 /**
  * 主場景
@@ -16,15 +18,13 @@ import * as nuts from 'nuts';
 const SCENE_NAME = 'main';
 let singleton = null;
 
-export default class Scene extends nuts.scene.Base {
+export default class Scene extends app.nuts.scene.Base {
 
   static  getSingleton () {
     return singleton;
   }
   static setSingleton (scene) {
-    if (!singleton) {
-      singleton = scene;
-    }
+    singleton = scene;
   }
 
   /**
@@ -39,6 +39,7 @@ export default class Scene extends nuts.scene.Base {
       center.currentUpdate = null;
       center.sounds = null;
       center.objs = scene.objs;
+      center.spines = scene.spines;
       center.textures = scene.textures;
       center.entity = scene.entity;
 
@@ -192,7 +193,6 @@ export default class Scene extends nuts.scene.Base {
     obj.custom.rect.height = 100;
     obj.custom.offset = 72;
     obj.setTextures('numBW');
-
 
     await game.idle(1.0);
     obj = ent.coin;
