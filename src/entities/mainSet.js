@@ -228,12 +228,11 @@ export function normal (that) {
 
         await app.game.idle(0.01);
         let config = {
+          game: 'sample',
+          group: 'demo',
 
-          // game: 'sample',
-          // group: 'demo',
-
-          game: 'HexagonSlot',
-          group: 'slot',
+          // game: 'HexagonSlot',
+          // group: 'slot',
           id: 'sample',
           tablekey: 'abcd1234',
           zzz: 'aaa'
