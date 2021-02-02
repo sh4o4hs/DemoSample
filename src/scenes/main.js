@@ -1,4 +1,3 @@
-//import * as nuts from 'nuts';
 import app from 'entity/app';
 import Main from 'entity/main';
 

@@ -76,22 +76,22 @@ let eventList = null;
  */
 export async function init (config) {
 
+  // 初始化
+  let baseURL = config.baseURL || '.';
+  let langID = config.langID;
+
+  app.isChild = config.isChild;
+  app.game = config.game;
+  app.nuts = config.nuts;
+  app.baseURL = baseURL;
+  app.langID = langID;
+
   if (eventList) {
     return eventList;
   }
 
   console.log('scene init');
 
-  // 初始化
-  app.isChild = config.isChild;
-
-  let nuts = config.nuts;
-  let baseURL = config.baseURL || '.';
-  let langID = config.langID;
-
-  app.nuts = nuts;
-  app.baseURL = baseURL;
-  app.langID = langID;
 
   eventList = {
 
@@ -103,18 +103,16 @@ export async function init (config) {
       let game = conf.game;
       let loadingEvent = null;
 
-      app.game = game;
       if (game.scene) {
         loadingEvent = game.scene.loadingEvent;
         app.gamecard = game.scene.gamecard;
       }
-
-      nuts.scene.sceneManager.setBaseURL(baseURL);
-
+      let nuts = app.nuts;
 
       // 建立場景
       let scene = await import('scene/main');
 
+      nuts.scene.sceneManager.setBaseURL(baseURL);
       nuts.scene.sceneManager.setEvent(loadingEvent);
 
       await scene.create(game, loadingEvent);

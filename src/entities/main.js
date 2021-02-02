@@ -7,7 +7,6 @@
    Authors:
 
 ************************************************************************ */
-//import * as nuts from 'nuts';
 import app from 'entity/app';
 
 
