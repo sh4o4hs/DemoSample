@@ -11,40 +11,13 @@ stages:
   script:
   - stuff eslint
 
-打包展示版:
-  stage: deploy
-  environment:
-    name: demo/$CI_COMMIT_REF_NAME
-  variables:
-    STUFF_DEBUG: 0
-    STUFF_MODE: demo
-    STUFF_UPLOAD: review
-  script:
-  - stuff deploy
-  when: manual
-  only:
-  - tags
-
-打包除錯版:
-  stage: deploy
-  environment:
-    name: test/$CI_COMMIT_REF_NAME
-  variables:
-    STUFF_DEBUG: 0
-    STUFF_MODE: test
-    STUFF_UPLOAD: review
-  script:
-  - stuff deploy
-  when: manual
-  only:
-  - tags
-
 打包正式版:
   stage: deploy
   environment:
     name: release/$CI_COMMIT_REF_NAME
   variables:
-    STUFF_DEBUG: 0
+    GIT_STRATEGY: none
+    STUFF_DEBUG: 1
     STUFF_MODE: release
     STUFF_UPLOAD: review
   script:
@@ -57,9 +30,11 @@ stages:
   environment:
     name: beta/$CI_COMMIT_REF_NAME
   variables:
-    STUFF_DEBUG: 0
+    GIT_STRATEGY: none
+    STUFF_DEBUG: 1
     STUFF_MODE: release
-    STUFF_UPLOAD: beta
+    STUFF_UPLOAD: beta_lcs
+  when: manual
   script:
   - stuff deploy
   only:
@@ -70,63 +45,12 @@ stages:
   environment:
     name: alpha/$CI_COMMIT_REF_NAME
   variables:
-    STUFF_DEBUG: 0
-    STUFF_MODE: test
-    STUFF_UPLOAD: beta
-  script:
-  - stuff deploy
-  only:
-  - beta
-
-測試機(demo):
-  stage: deploy
-  environment:
-    name: beta/$CI_COMMIT_REF_NAME
-  variables:
-    STUFF_DEBUG: 0
-    STUFF_MODE: demo
-    STUFF_UPLOAD: beta
-  when: manual
-  script:
-  - stuff deploy
-  only:
-  - beta
-
-alpha機:
-  stage: deploy
-  variables:
-    STUFF_DEBUG: 1
-    STUFF_MODE: test
-    STUFF_UPLOAD: alpha_gin
-  script:
-  - stuff deploy
-  environment:
-    name: alpha/$CI_COMMIT_REF_NAME
-  only:
-  - alpha
-
-LCS機:
-  stage: deploy
-  environment:
-    name: beta/$CI_COMMIT_REF_NAME
-  variables:
-    STUFF_DEBUG: 1
-    STUFF_MODE: release
-    STUFF_UPLOAD: beta_lcs
-  script:
-  - stuff deploy
-  only:
-  - lcs
-
-LCS機(log):
-  stage: deploy
-  environment:
-    name: alpha/$CI_COMMIT_REF_NAME
-  variables:
+    GIT_STRATEGY: none
     STUFF_DEBUG: 1
     STUFF_MODE: test
     STUFF_UPLOAD: beta_lcs
   script:
   - stuff deploy
   only:
-  - lcs
+  - beta
+
