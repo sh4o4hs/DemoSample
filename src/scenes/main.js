@@ -1,16 +1,15 @@
 import app from 'entity/app';
-import Main from 'entity/main';
-
 
 let isCreate = false;
 let scene = null;
 export async function create (game, loadingEvent) {
 
   let sceneManager = app.nuts.scene.sceneManager;
+  let lib = await import('entity/main');
+  let Main = lib.default;
 
   // 是否需要建立
   if (!isCreate) {
-    isCreate = true;
 
     // 讀取資源檔
     let vendor = await import('src/vendor');
@@ -28,6 +27,7 @@ export async function create (game, loadingEvent) {
     };
     console.log('[讀取資源檔] 開始');
     scene = await sceneManager.createScene(config);
+    isCreate = true;
     console.log('[讀取資源檔] 完成');
 
     console.log(scene);
@@ -37,6 +37,7 @@ export async function create (game, loadingEvent) {
     game.play();
 
     // 重新設定
+    scene.game = game;
     let main = Main.getSingleton();
     main.removeFromScene();
     main.setGame(game);
@@ -58,6 +59,5 @@ export async function create (game, loadingEvent) {
     await game.idle(0.01);
     loadingEvent.finish();
   }
+  game.textures = scene.textures;
 }
-
-

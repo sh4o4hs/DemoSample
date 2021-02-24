@@ -1,11 +1,14 @@
-import m from 'mithril';
-
+// import 'pixi';
+// import 'pixi-spine';
+// import 'pixi-particles';
 //import * as Loader from 'resource-loader';
 //import Stats from 'stats';
 
-import * as nuts from 'nuts';
+import m from 'mithril';
 
-import * as scene from 'src/scene';
+import app from 'entity/app';
+import * as nuts from 'nuts';
+import * as scene from 'src/sceneChild';
 
 let defaultStyle = {
   position: 'absolute',
@@ -13,14 +16,12 @@ let defaultStyle = {
   left: '0%',
   top: '0%',
   width: '100%',
-  height: '100%',
-  background: 'rgba(0,0,0,0)'
+  height: '100%'
 };
 
 let plugin = [
-  'pixi-spine'
-
-  // 'pixi-particles'
+  'pixi-spine',
+  'pixi-particles'
 ];
 
 export let Component = {
@@ -43,51 +44,24 @@ export let Component = {
   }
 };
 
-export let Other = {
-  oninit (vnode) {
-    let attrs = vnode.attrs;
-    this.config = attrs.config;
-    this.style = {
-      position: 'absolute',
-      zIndex: 9,
-      left: '0%',
-      top: '0%',
-      width: '50%',
-      height: '100%'
-    };
-  },
-  oncreate (/*vnode*/) {
-  },
-  view () {
-    let config = this.config;
-    let style = this.style;
-    return m(nuts.components.game.pixi,
-      {
-        style,
-        config
-      }
-    );
-  }
-};
-
 /**
  * 初始化
  * @returns {void}
  */
 export async function init () {
+  console.log('!!!!!!!!!! init !!!!!!!!!!!!');
+  app.nuts = nuts;
 
   // await import('pixi');
-  let Loader = await import('resource-loader');
-
   // let Stats = await import('stats.js');
+  let Loader = await import('resource-loader');
 
   let config = {};
   config.Loader = Loader;
   config.m = m;
 
-  config.PIXI = PIXI;
-
   // config.Stats = Stats;
+  config.PIXI = PIXI;
   config.plugin = plugin;
 
   await nuts.init(config);

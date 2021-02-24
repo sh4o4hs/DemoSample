@@ -9,7 +9,6 @@
 ************************************************************************ */
 import app from 'entity/app';
 
-
 /**
  * 主場景
  */
@@ -23,7 +22,9 @@ export default class Scene extends app.nuts.scene.Base {
     return singleton;
   }
   static setSingleton (scene) {
-    singleton = scene;
+    if (!singleton) {
+      singleton = scene;
+    }
   }
 
   /**
@@ -38,8 +39,8 @@ export default class Scene extends app.nuts.scene.Base {
       center.currentUpdate = null;
       center.sounds = null;
       center.objs = scene.objs;
-      center.spines = scene.spines;
       center.textures = scene.textures;
+      center.spines = scene.spines;
       center.entity = scene.entity;
 
       let entity = center.entity;
@@ -108,25 +109,24 @@ export default class Scene extends app.nuts.scene.Base {
   /**
    * 處理音樂音效
    */
-  eventSound (sounds) {
-    console.log('eventSound : ' + sounds);
-  }
-
+  /*
+    eventSound (sounds){
+    }
+  */
   /**
    * 處理材質
    */
-
-  eventTexture (textures) {
-    console.log('eventTexture : ' + textures);
-  }
-
+  /*
+    eventTexture (textures){
+    }
+  */
   /**
    * 處理動畫
    */
-  eventSpine (spines) {
-    console.log('eventSpine : ' + spines);
-  }
-
+  /*
+    eventSpine(spines) {
+    }
+  */
   /**
    * 處理物件
    */
@@ -175,7 +175,16 @@ export default class Scene extends app.nuts.scene.Base {
 
     // 指定要更新的資源
     let newTextures = scene.textures.ui;
-    game.textures = scene.textures;
+    let textures = center.textures;
+    textures.demo.ring = scene.textures.demo.ring;
+
+    let dest = textures.demo.button;
+    let src = scene.textures.demo.button;
+
+    dest.auto      = src.auto;
+    dest.autoLight = src.autoLight;
+    dest.bet       = src.bet;
+    dest.leave     = src.leave;
 
     let obj = null;
     obj = ent.gui;

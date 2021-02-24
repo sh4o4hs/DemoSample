@@ -1,5 +1,3 @@
-import Main from 'entity/main';
-import app from 'entity/app';
 
 /**
  * 下注
@@ -8,14 +6,10 @@ let Command = {
   async handle (obj) {
     console.log('bet :' + JSON.stringify(obj));
     let result = obj;
+    let lib = await import('entity/main');
+    let Main = lib.default;
     let main = Main.getSingleton();
     let center = main.getCenter();
-
-    // 歷程 下注
-    if (app.game.report) {
-      app.game.report.serviceEnd(app.recordBet);
-      app.game.report.log('下注');
-    }
 
     console.log('[初始化表演子場景]');
     let scene = await import('scene/sub');
@@ -23,7 +17,6 @@ let Command = {
     console.log('[開始表演子場景]');
     await scene.play(center.game, result);
     console.log('[完成表演子場景]');
-
   }
 };
 
@@ -62,6 +55,8 @@ export async function send (bet) {
   let scene = await import('scene/sub');
 
   console.log('[開始表演子場景]');
+  let lib = await import('entity/main');
+  let Main = lib.default;
   let main = Main.getSingleton();
   let center = main.getCenter();
   await scene.play(center.game, result);

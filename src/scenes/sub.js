@@ -5,6 +5,10 @@ let isCreate = false;
 let isPlay = false;
 let scene = null;
 
+export function reset () {
+  isPlay = false;
+}
+
 export async function play (game, result) {
   let sceneManager = app.nuts.scene.sceneManager;
   let ui = app.nuts.ui;
@@ -19,7 +23,6 @@ export async function play (game, result) {
 
   // 是否需要建立
   if (!isCreate) {
-    isCreate = true;
 
     // 讀取資源檔
     let vendor = await import('src/vendor');
@@ -27,7 +30,6 @@ export async function play (game, result) {
 
     let config = {
       game,
-
       loading,
       infoList: [
         { eventName: 'texture', obj: res},
@@ -38,6 +40,7 @@ export async function play (game, result) {
     };
     console.log('[讀取資源檔]');
     scene = await sceneManager.createScene(config);
+    isCreate = true;
 
     let container = new PIXI.Container();
 
@@ -60,7 +63,6 @@ export async function play (game, result) {
     container.pivot.y = container.height / 2;
 
     scene.container = container;
-
   }
 
   let container = scene.container;

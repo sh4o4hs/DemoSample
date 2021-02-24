@@ -1,10 +1,14 @@
+import 'pixi';
 import m from 'mithril';
 import * as Loader from 'resource-loader';
 import Stats from 'stats';
-
 import * as nuts from 'nuts';
+import app from 'entity/app';
+import gamecard from 'template/gamecard';
+import * as sceneMain from 'scene/main';
+import * as sceneSub from 'scene/sub';
+import * as component from 'src/component';
 
-import * as sceneDemo from 'scene/demo';
 
 let defaultStyle = {
   position: 'absolute',
@@ -16,9 +20,8 @@ let defaultStyle = {
 
 
 let plugin = [
-
-  // 'pixi-spine',
-  // 'pixi-particles'
+  'pixi-spine',
+  'pixi-particles'
 ];
 
 
@@ -46,10 +49,13 @@ let Component = {
       },
       m(nuts.components.game.pixi, {
         config,
-        ready (game) {
+        async ready (game) {
           console.log(game);
           game.play();
-          sceneDemo.create(game);
+
+          // game.debug = true;
+          await sceneMain.create(game);
+          await sceneSub.play(game);
         }
       })
     );
@@ -60,25 +66,24 @@ let Component = {
  * 初始化
  * @returns {void}
  */
-function init () {
+async function init () {
 
-  return new Promise((resolve/*, reject*/)=> {
-    let config = {};
-    config.Loader = Loader;
-    config.m = m;
+  app.baseURL = gamecard.baseURL;
 
-    // 使用 PIXI
-    config.PIXI = PIXI;
-    config.Stats = Stats;
-    config.plugin = plugin;
+  let config = {};
+  config.Loader = Loader;
+  config.m = m;
 
-    // 初始化
-    nuts.init(config).then(() => {
-      let config = {};
-      config.id = document.body.id || 9999;
+  // 使用 PIXI
+  config.PIXI = PIXI;
+  config.Stats = Stats;
+  config.plugin = plugin;
 
-      resolve(Component);
-    });
+  // 初始化
+  await nuts.init(config);
+
+  component.add({
+    com: Component
   });
 }
 

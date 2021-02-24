@@ -7,14 +7,13 @@
    Authors:
 
 ************************************************************************ */
+import app from 'entity/app';
 import * as command from 'net/command';
 import * as event from 'net/event';
 import * as vendor from 'src/vendor';
 
 
 vendor.useNetV1();
-
-let game = null;
 
 /**
  * 網路相關
@@ -28,7 +27,6 @@ export let cmdList = null;
  * @param conf {Object} conf
  */
 export async function init (conf) {
-  game = conf.game;
   currentID = conf.id;
 
   //--註冊網路事件
@@ -36,7 +34,7 @@ export async function init (conf) {
 
   if (currentID) {
     console.log('init id : ' + currentID);
-    game.command.registerGameEvent(event, currentID);
+    app.game.command.registerGameEvent(event, currentID);
   } else {
     console.log('init error');
     return Promise.reject('init error');
@@ -62,7 +60,7 @@ export async function sendCommand (cmd, dataObj) {
     data: JSON.stringify(dataObj)
   };
 
-  let result = await game.command.send(packet, currentID);
+  let result = await app.game.command.send(packet, currentID);
   return result;
 }
 

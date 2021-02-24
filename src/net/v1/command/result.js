@@ -1,4 +1,3 @@
-import Main from 'entity/main';
 
 /**
  * 結果
@@ -7,6 +6,9 @@ let Command = {
   async handle (obj) {
     console.log('result :' + JSON.stringify(obj));
     let result = obj;
+
+    let lib = await import('entity/main');
+    let Main = lib.default;
     let main = Main.getSingleton();
     let center = main.getCenter();
 

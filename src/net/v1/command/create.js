@@ -1,6 +1,4 @@
 import app from 'entity/app';
-import Main from 'entity/main';
-
 
 /**
  * 建立遊戲 (舊版)
@@ -10,25 +8,23 @@ let Command = {
 
     console.log('[收到] create :' + JSON.stringify(obj));
 
+    app.game.play();
 
     app.decimal = 2;
+    let lib = await import('entity/main');
+    let Main = lib.default;
     let main = Main.getSingleton();
     if (main) {
       let mainSet = await import('entity/mainSet');
+      console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+      console.log(app.game);
       main.setInitMap(mainSet.normal);
       main.eventFinish();
       main.addToScene();
     }
-    app.game.play();
 
     if (app.game.scene.setOverviewVisible) {
       app.game.scene.setOverviewVisible(false);
-    }
-
-    // 歷程 開始遊戲
-    if (app.game.report) {
-      app.game.report.loadEnd(app.recordStart);
-      app.game.report.log('開始遊戲');
     }
   }
 };
@@ -59,12 +55,14 @@ export async function send () {
   console.log(result);
 
   app.decimal = 2;
+  let lib = await import('entity/main');
+  let Main = lib.default;
   let main = Main.getSingleton();
   if (main) {
     let mainSet = await import('entity/mainSet');
     main.setInitMap(mainSet.normal);
     main.eventFinish();
-    main.addToScene(app.game);
+    main.addToScene();
   }
   app.game.play();
 }

@@ -3,6 +3,7 @@
 .vscode
 Thumbs.db
 index.html
+index.json
 statistics.html
 /node_modules/
 /app/

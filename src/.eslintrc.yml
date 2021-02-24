@@ -1,15 +1,18 @@
+---
 env:
   browser: true
   worker: true
-  es2020: true
+  es2021: true
 extends: 
   - 'eslint:recommended'
   # - 'plugin:@typescript-eslint/recommended'
+  - 'prettier'
+  # - 'prettier/@typescript-eslint'
 parser: '@typescript-eslint/parser' # babel-eslint
 plugins: 
   - '@typescript-eslint'
 parserOptions:
-  ecmaVersion: 2020
+  ecmaVersion: 2021
   allowImportExportEverywhere: true
   codeFrame: false
   sourceType: module

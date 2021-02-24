@@ -7,6 +7,8 @@
    Authors:
 
 ************************************************************************ */
+import app from 'entity/app';
+
 import * as event from 'net/event';
 import fmtGame from 'schema/game';
 import * as vendor from 'src/vendor';
@@ -14,7 +16,6 @@ import * as vendor from 'src/vendor';
 
 vendor.useNetV2();
 
-let game = null;
 let actionTypes = null;
 
 /**
@@ -34,12 +35,11 @@ export function getActionTypes () {
  * @param conf {Object} conf
  */
 export async function init (conf) {
-  game = conf.game;
   currentID = conf.id;
 
   if (currentID) {
     console.log('init id : ' + currentID);
-    game.command.registerGameEvent(event, currentID);
+    app.game.command.registerGameEvent(event, currentID);
   } else {
     console.log('init error');
     return Promise.reject('init error');
@@ -90,9 +90,9 @@ export async function init (conf) {
     ]
   };
 
-  if (game.command.register) {
+  if (app.game.command.register) {
     console.log('[註冊封包解碼]');
-    actionTypes = await game.command.register(config);
+    actionTypes = await app.game.command.register(config);
     if (actionTypes) {
       console.log('[註冊成功]');
     } else {
@@ -113,7 +113,7 @@ export async function send (data) {
     funcIndex: 9,
     data
   };
-  let result = await game.command.send(packet, currentID);
+  let result = await app.game.command.send(packet, currentID);
 
   return result;
 }

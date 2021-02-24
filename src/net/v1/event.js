@@ -20,7 +20,6 @@ export async function recvGameData (data) {
   let net = await import('net/network');
   let command = await import('net/command');
 
-
   let obj = null;
   let cmdList = net.cmdList;
   const CMD = command.CMD;
@@ -44,10 +43,11 @@ export async function recvGameData (data) {
   if (data.jackpot) {
     obj = JSON.parse(data.jackpot);
     let cmd = cmdList[CMD.JACKPOT];
-    if (cmd && cmd.handle) {
+    if (cmd.handle) {
       cmd.handle(obj);
     }
   }
+
 }
 
 /**

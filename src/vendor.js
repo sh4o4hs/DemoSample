@@ -1,4 +1,3 @@
-
 import nameMap from 'src/nameMap';
 
 
@@ -33,6 +32,7 @@ let baseURL = '.';
 export function setBaseURL (url) {
   baseURL = url;
 }
+
 export function getBaseURL () {
   return baseURL;
 }
@@ -42,6 +42,7 @@ export function getBaseURL () {
  * @param {string} name 名稱
  */
 export async function get (name) {
+
   let str = nameMap[`${langID}${name}`];
   let res = await import(`${baseURL}/${str}`);
   return res.default;

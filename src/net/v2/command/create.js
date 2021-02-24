@@ -1,5 +1,4 @@
 import app from 'entity/app';
-import Main from 'entity/main';
 
 //import * as SceneLoad from 'src/scenes/load';
 //import * as module from 'component/module';
@@ -27,6 +26,8 @@ export async function send () {
   console.log(result);
 
   app.decimal = 2;
+  let lib = await import('entity/main');
+  let Main = lib.default;
   let main = Main.getSingleton();
   if (main) {
     let mainSet = await import('entity/mainSet');
@@ -36,7 +37,7 @@ export async function send () {
   }
   app.game.play();
 
-  // 讀取資源
-  let sceneLoad = await import('scene/load');
-  sceneLoad.create();
+  if (app.game.scene.setOverviewVisible) {
+    app.game.scene.setOverviewVisible(false);
+  }
 }

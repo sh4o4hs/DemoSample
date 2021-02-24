@@ -8,8 +8,11 @@
 
  ************************************************************************ */
 
-import * as nuts from 'nuts';
+import app from 'entity/app';
+
 import * as strings from 'language/strings';
+
+import * as sceneMain from 'scene/main';
 
 /**
  * 建立場景
@@ -27,8 +30,7 @@ export async function create (conf) {
 
   // 設定 base URL
   let baseURL = conf.baseURL || '';
-  nuts.scene.sceneManager.setBaseURL(baseURL);
-
+  let nuts = app.nuts;
 
   //--設定讀取畫面
   let loading = nuts.ui.loading;
@@ -48,18 +50,13 @@ export async function create (conf) {
   ];
   loading.setScene(resource);
 
-  // 設定使用 lobby 的更新畫面
-  let loadingMgr = nuts.scene.loadingManager;
-  loadingMgr.setGame(game);
-  loadingMgr.setUseLobbyState(true);
+  nuts.scene.sceneManager.setBaseURL(baseURL);
+  nuts.scene.sceneManager.setEvent(conf.loadingEvent);
 
   // 建立場景
-  let scene = await import('scene/main');
-  await scene.create(game, conf.loadingEvent);
+  await sceneMain.create(game, conf.loadingEvent);
 
-  // reset
-  loadingMgr.setGame(null);
-  loadingMgr.setUseLobbyState(false);
+  nuts.scene.sceneManager.setEvent(null);
 }
 
 /**
@@ -69,6 +66,7 @@ export async function destroy () {
 
   // todo: 釋放資源
   // 銷毀音樂音效
+  let nuts = app.nuts;
   nuts.scene.sceneManager.destroyAllSound();
 }
 

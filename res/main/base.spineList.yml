@@ -5,7 +5,3 @@ spines:
       light01: res/main/spine/five/5kind.light1.json
       light02: res/main/spine/five/5kind.light2.json
       star: res/main/spine/five/5kind.star.json
-    xx: #xx
-      a: res/main/spine/en/banker_show.json
-      b: res/main/spine/en/player_show.json
-      c: res/main/spine/en/tie_show.json

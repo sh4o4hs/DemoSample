@@ -118,7 +118,7 @@ objects:
   name: 操作界面
   type: group
   isInScene: true
-  pos: {x: 0, y: 698}
+  pos: {x: 0, y: 200}
   width: 120
   height: 100
   init: null
@@ -135,7 +135,7 @@ objects:
       press: press
       leave: leave
       disable: disable
-    pos: {x: 552,y: 0}
+    pos: {x: 707,y: 0}
     width: 88
     height: 82
     init: setPlay
@@ -151,10 +151,10 @@ objects:
       press: press
       leave: leave
       disable: disable
-    pos: {x: 418,y: 0}
+    pos: {x: 618,y: 0}
     width: 88
     height: 82
-    init: setAuto
+    init: null
   - #下注
     objName: btnBet
     name: 下注
@@ -167,7 +167,7 @@ objects:
       press: press
       leave: leave
       disable: disable
-    pos: {x: 208,y: 0}
+    pos: {x: 408,y: 0}
     debug: false
     width: 212
     height: 82
@@ -201,7 +201,7 @@ objects:
       press: press
       leave: leave
       disable: disable
-    pos: {x: 0,y: 0}
+    pos: {x: 2,y: 0}
     debug: false
     width: 88
     height: 82

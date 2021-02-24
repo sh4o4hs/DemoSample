@@ -4,28 +4,27 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 1.16.2
+version: 1.0.0
 generatorVendor: v2
 framework:
   name: stuff
-  version: 6.0.0
+  version: 6.6.0
   builder: rollup
   skipCommandTerser: true
   useCodeSplitting: true
 templateVersion: game.5.0
-
 # template:
 #   format: game
 #   standalone: true
 #   debug:
 #     appInLibMap: true
-#     format: esm
-#     src: template/debug.html
+#     format: system
+#     src: template/debug.system.html
 #     dest: index.html
 #   release:
 #     appInLibMap: true
-#     format: esm
-#     src: template/release.html
+#     format: system
+#     src: template/release.system.html
 #     dest: index.html
 author:
   name: astro
