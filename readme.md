@@ -1,1 +1,1 @@
-webgame demo sample 說明
+demo sample 說明
