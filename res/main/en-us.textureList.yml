@@ -15,6 +15,7 @@ images:
       back: res/main/bg/background.png
       fore: res/main/bg/foreground.png
       t01: res/main/bg/foreground.png
+      # t02: res/main/button/arrowLeft_icon.svg
     button: #群組
       # auto: #自動
       #   enter: res/main/button/auto/enter.png
