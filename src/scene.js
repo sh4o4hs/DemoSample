@@ -25,18 +25,7 @@ export async function getLogo () {
   let filename = await obj.lib.getLogo(setting.agent);
   filename = `${pathname}/${filename}`;
   console.log(filename);
-  return new Promise((resolve, reject) => {
-    const loader = new PIXI.Loader(); // you can also create your own if you want
-    loader.add('logo', filename);
-    loader.load((loader, resources) => {
-      console.log('resources: ', resources);
-      if (resources.logo && resources.logo.texture) {
-        resolve(resources.logo.texture);
-      } else {
-        reject(null);
-      }
-    });
-  });
+
 }
 
 

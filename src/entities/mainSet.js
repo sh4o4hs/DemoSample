@@ -22,6 +22,9 @@ export function normal (that) {
 
   let center = that.getCenter();
 
+  const canvas = document.createElement('canvas');
+
+
   // let textures = center.textures.demo;
   let ruleVisible = false;
   class Rule {
@@ -86,6 +89,113 @@ export function normal (that) {
       });
     },
 
+    // 自動
+    async setAuto (obj) {
+
+      let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+      let player = null;
+
+      let childs = [ 4 * 4 ];
+      for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 4; j++) {
+          let child = new PIXI.Sprite(PIXI.Texture.EMPTY);
+          childs[j * 4 + i] = child;
+        }
+      }
+
+      async function play () {
+        console.log('自動');
+        let url = videoSourceList[videoSourceIndex];
+        videoSourceIndex += 1;
+        if (videoSourceIndex >= videoSourceList.length) {
+          videoSourceIndex = 0;
+        }
+
+        if (player) {
+          sprite.texture = PIXI.Texture.EMPTY;
+          app.game.layer.main.removeChild(sprite);
+
+          for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+              let child = childs[j * 4 + i];
+              child = PIXI.Texture.EMPTY;
+              if (child.tween) {
+                child.tween.pause();
+              }
+              app.game.layer.main.removeChild(child);
+            }
+          }
+          player.stop();
+          player.destroy();
+        }
+
+
+        let JSMpeg = await app.game.getStream();
+        player = new JSMpeg.Player(url, {
+          canvas,
+          onSourceEstablished () {
+            console.log('[onSourceEstablished]連線成功');
+          },
+          onReady (obj) {
+            console.log('[onReady]');
+            console.log(obj);
+            let texture = PIXI.Texture.from(canvas);
+            texture.update();
+            sprite.texture = texture;
+            app.game.layer.main.addChild(sprite);
+
+            let w = obj.width / 4;
+            let h = obj.height / 4;
+
+            for (let i = 0; i < 4; i++) {
+              for (let j = 0; j < 4; j++) {
+                let child = childs[j * 4 + i];
+                let x = i * w;
+                let y = j * h;
+                let frame = new PIXI.Rectangle(x, y, w, h);
+                let te = new PIXI.Texture(texture.baseTexture, frame);
+                child.texture = te;
+                child.x = 5 + i * (w + 5);
+                child.y = 5 + j * (h + 5);
+                child.alpha = 1.0;
+                app.game.layer.overlay.addChild(child);
+
+                child.tween = createjs.Tween.get(child, { loop: true })
+                  .to({ x: 400 }, 4000, createjs.Ease.getPowInOut(4))
+                  .to({ alpha: 0, y: 175 }, 2000, createjs.Ease.getPowInOut(2))
+                  .to({ alpha: 0, y: 225 }, 400)
+                  .to({ alpha: 1, y: 200 }, 1000, createjs.Ease.getPowInOut(2))
+                  .to({ x: 100 }, 500, createjs.Ease.getPowInOut(2));
+
+              }
+            }
+
+            player.eventUpdate = () => {
+              texture.update();
+              sprite.texture = texture;
+            };
+
+          }
+        });
+        player.play();
+
+
+        sprite.x = 0;
+        sprite.y = 0;
+        sprite.scale.x = 0.5;
+        sprite.scale.y = 0.5;
+        sprite.anchor.x = 0.0;
+        sprite.anchor.y = 0.0;
+        sprite.alpha = 1.0;
+
+
+      }
+
+      obj.setClick((/*o*/) => {
+        play();
+      });
+    },
+
     async setLeave (obj) {
       async function leave () {
         let sound = center.sounds.demo;
@@ -115,6 +225,7 @@ export function normal (that) {
         leave();
       });
     },
+
 
     // 設定下注
     setBet (obj) {
