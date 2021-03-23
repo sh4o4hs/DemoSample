@@ -172,9 +172,7 @@ export function normal (that) {
 
             player.eventUpdate = () => {
               texture.update();
-              sprite.texture = texture;
             };
-
           }
         });
         player.play();
