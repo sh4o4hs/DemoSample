@@ -9,6 +9,16 @@
  ************************************************************************ */
 
 import app from 'entity/app';
+import Streaming from 'entity/streaming';
+
+
+export async function getPlayer () {
+  let game = app.game;
+  let obj = await game.getProject('video/player');
+  console.log(obj);
+
+  return obj.lib;
+}
 
 
 /**
@@ -17,13 +27,11 @@ import app from 'entity/app';
  */
 export function normal (that) {
 
+  // let isFirstTime = true;
   let ui = app.nuts.ui;
   const NUM = ui.Number.NUM;
 
   let center = that.getCenter();
-
-  const canvas = document.createElement('canvas');
-
 
   // let textures = center.textures.demo;
   let ruleVisible = false;
@@ -89,110 +97,176 @@ export function normal (that) {
       });
     },
 
-    // 自動
     async setAuto (obj) {
-
+      let streaming = null;
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      let player = null;
 
-      let childs = [ 4 * 4 ];
-      for (let i = 0; i < 4; i++) {
-        for (let j = 0; j < 4; j++) {
-          let child = new PIXI.Sprite(PIXI.Texture.EMPTY);
-          childs[j * 4 + i] = child;
-        }
-      }
+      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
 
-      async function play () {
-        console.log('自動');
+      obj.setClick(async (/*o*/) => {
+
+        let sound = center?.sounds?.demo;
+        sound?.countDown?.play();
+
         let url = videoSourceList[videoSourceIndex];
-        videoSourceIndex += 1;
+        videoSourceIndex++;
         if (videoSourceIndex >= videoSourceList.length) {
           videoSourceIndex = 0;
         }
 
-        if (player) {
-          sprite.texture = PIXI.Texture.EMPTY;
-          app.game.layer.main.removeChild(sprite);
+        sprite.filters = null;
+        app.game.layer.overlay.removeChild(sprite);
 
-          for (let i = 0; i < 4; i++) {
-            for (let j = 0; j < 4; j++) {
-              let child = childs[j * 4 + i];
-              child = PIXI.Texture.EMPTY;
-              if (child.tween) {
-                child.tween.pause();
-              }
-              app.game.layer.main.removeChild(child);
-            }
-          }
-          player.stop();
-          player.destroy();
+        let options = {
+          videoBufferSize: 256 * 1024,
+          fps: 30
+        };
+        if (streaming) {
+          streaming.stop();
         }
+        streaming = new Streaming(app.game);
+        sprite.texture = PIXI.Texture.EMPTY;
+        let texture = await streaming.play(url, options);
+        console.log(texture);
 
 
-        let JSMpeg = await app.game.getStream();
-        player = new JSMpeg.Player(url, {
-          canvas,
-          onSourceEstablished () {
-            console.log('[onSourceEstablished]連線成功');
-          },
-          onReady (obj) {
-            console.log('[onReady]');
-            console.log(obj);
-            let texture = PIXI.Texture.from(canvas);
-            texture.update();
-            sprite.texture = texture;
-            app.game.layer.main.addChild(sprite);
-
-            let w = obj.width / 4;
-            let h = obj.height / 4;
-
-            for (let i = 0; i < 4; i++) {
-              for (let j = 0; j < 4; j++) {
-                let child = childs[j * 4 + i];
-                let x = i * w;
-                let y = j * h;
-                let frame = new PIXI.Rectangle(x, y, w, h);
-                let te = new PIXI.Texture(texture.baseTexture, frame);
-                child.texture = te;
-                child.x = 5 + i * (w + 5);
-                child.y = 5 + j * (h + 5);
-                child.alpha = 1.0;
-                app.game.layer.overlay.addChild(child);
-
-                child.tween = createjs.Tween.get(child, { loop: true })
-                  .to({ x: 400 }, 4000, createjs.Ease.getPowInOut(4))
-                  .to({ alpha: 0, y: 175 }, 2000, createjs.Ease.getPowInOut(2))
-                  .to({ alpha: 0, y: 225 }, 400)
-                  .to({ alpha: 1, y: 200 }, 1000, createjs.Ease.getPowInOut(2))
-                  .to({ x: 100 }, 500, createjs.Ease.getPowInOut(2));
-
-              }
-            }
-
-            player.eventUpdate = () => {
-              texture.update();
-            };
-          }
-        });
-        player.play();
-
-
+        sprite.texture = texture;
         sprite.x = 0;
-        sprite.y = 0;
-        sprite.scale.x = 0.5;
-        sprite.scale.y = 0.5;
-        sprite.anchor.x = 0.0;
+        sprite.y = 350;
+        sprite.anchor.x = 0;
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
+        colorMatrix.contrast(2);
+        sprite.filters = [ colorMatrix ];
 
-      }
-
-      obj.setClick((/*o*/) => {
-        play();
+        sprite.scale.x = 0.5;
+        sprite.scale.y = 0.5;
+        app.game.layer.main.addChild(sprite);
       });
+
     },
+
+    // 自動
+    // async setAuto (obj) {
+
+    //   let textureVideo = PIXI.Texture.EMPTY;
+    //   let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+    //   let player = null;
+
+    //   let childs = [ 4 * 4 ];
+    //   for (let i = 0; i < 4; i++) {
+    //     for (let j = 0; j < 4; j++) {
+    //       let child = new PIXI.Sprite(PIXI.Texture.EMPTY);
+    //       childs[j * 4 + i] = child;
+    //     }
+    //   }
+
+    //   async function play () {
+    //     console.log('自動');
+    //     let url = videoSourceList[videoSourceIndex];
+    //     videoSourceIndex += 1;
+    //     if (videoSourceIndex >= videoSourceList.length) {
+    //       videoSourceIndex = 0;
+    //     }
+
+    //     if (player) {
+    //       sprite.texture = PIXI.Texture.EMPTY;
+    //       app.game.layer.main.removeChild(sprite);
+
+    //       for (let i = 0; i < 4; i++) {
+    //         for (let j = 0; j < 4; j++) {
+    //           let child = childs[j * 4 + i];
+    //           child = PIXI.Texture.EMPTY;
+    //           if (child.tween) {
+    //             child.tween.pause();
+    //           }
+    //           app.game.layer.main.removeChild(child);
+    //         }
+    //       }
+    //       player.stop();
+    //       player.destroy();
+    //     }
+    //     let lib = await getPlayer();
+    //     let destVideo = {
+    //       resize (width, height, data) {
+    //         console.log(`destVideo resize : width=${width} height=${height}`);
+    //         textureVideo = PIXI.Texture.fromBuffer(data, width, height);
+    //         sprite.texture = textureVideo;
+    //         app.game.layer.main.addChild(sprite);
+
+    //       },
+    //       render (/* data */) {
+    //         // console.log('render');
+
+    //         textureVideo.update();
+    //       }
+    //     };
+
+    //     player = new lib.JSMpeg.Player(url, {
+    //       disableGl: true,
+    //       disableWebAssembly: true,
+    //       destVideo,
+    //       onSourceEstablished () {
+    //         console.log('[onSourceEstablished]連線成功');
+    //       },
+    //       onReady (obj) {
+    //         console.log('[onReady]');
+    //         console.log(obj);
+    //         let texture = PIXI.Texture.EMPTY;//PIXI.Texture.from(canvas);
+    //         texture.update();
+    //         sprite.texture = texture;
+    //         app.game.layer.main.addChild(sprite);
+
+    //         let w = obj.width / 4;
+    //         let h = obj.height / 4;
+
+    //         for (let i = 0; i < 4; i++) {
+    //           for (let j = 0; j < 4; j++) {
+    //             let child = childs[j * 4 + i];
+    //             let x = i * w;
+    //             let y = j * h;
+    //             let frame = new PIXI.Rectangle(x, y, w, h);
+    //             let te = new PIXI.Texture(texture.baseTexture, frame);
+    //             child.texture = te;
+    //             child.x = 5 + i * (w + 5);
+    //             child.y = 5 + j * (h + 5);
+    //             child.alpha = 1.0;
+    //             app.game.layer.overlay.addChild(child);
+
+    //             child.tween = createjs.Tween.get(child, { loop: true })
+    //               .to({ x: 400 }, 4000, createjs.Ease.getPowInOut(4))
+    //               .to({ alpha: 0, y: 175 }, 2000, createjs.Ease.getPowInOut(2))
+    //               .to({ alpha: 0, y: 225 }, 400)
+    //               .to({ alpha: 1, y: 200 }, 1000, createjs.Ease.getPowInOut(2))
+    //               .to({ x: 100 }, 500, createjs.Ease.getPowInOut(2));
+
+    //           }
+    //         }
+
+    //         player.eventUpdate = () => {
+    //           texture.update();
+    //         };
+    //       }
+    //     });
+    //     player.play();
+
+
+    //     sprite.x = 0;
+    //     sprite.y = 0;
+    //     sprite.scale.x = 0.5;
+    //     sprite.scale.y = 0.5;
+    //     sprite.anchor.x = 0.0;
+    //     sprite.anchor.y = 0.0;
+    //     sprite.alpha = 1.0;
+
+
+    //   }
+
+    //   obj.setClick((/*o*/) => {
+    //     play();
+    //   });
+    // },
 
     async setLeave (obj) {
       async function leave () {
@@ -227,11 +301,9 @@ export function normal (that) {
 
     // 設定下注
     setBet (obj) {
+      let streaming = null;
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      let streaming = new app.game.Streaming(PIXI);
-
-      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-
+      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
 
       // let point = new PIXI.Point(0.25, 0.5);
 
@@ -250,9 +322,14 @@ export function normal (that) {
         app.game.layer.overlay.removeChild(sprite);
 
         let options = {
-          videoBufferSize: 512 * 1024,
-          fps: 60
+          videoBufferSize: 256 * 1024,
+          fps: 30
         };
+        if (streaming) {
+          streaming.stop();
+        }
+        streaming = new Streaming(app.game);
+        sprite.texture = PIXI.Texture.EMPTY;
         let texture = await streaming.play(url, options);
         console.log(texture);
 
@@ -286,30 +363,27 @@ export function normal (that) {
             triangle.scale.set(1);
             app.game.layer.overlay.addChild(triangle);
     */
+        // colorMatrixreen.height / 4;
 
-        let videoScreen = streaming.videoScreen;
-        let w = videoScreen.width / 4;
-        let h = videoScreen.height / 4;
-
-        for (let i = 0; i < 4; i++) {
-          for (let j = 0; j < 4; j++) {
-            let x = i * w;
-            let y = j * h;
-            let frame = new PIXI.Rectangle(x, y, w, h);
-            let te = new PIXI.Texture(texture.baseTexture, frame);
-            let child = new PIXI.Sprite(te);
-            child.texture = te;
-            child.x = 5 + i * (w + 5);
-            child.y = 5 + j * (h + 5);
-            app.game.layer.overlay.addChild(child);
-            createjs.Tween.get(child, { loop: true })
-              .to({ x: 400 }, 4000, createjs.Ease.getPowInOut(4))
-              .to({ alpha: 0, y: 175 }, 2000, createjs.Ease.getPowInOut(2))
-              .to({ alpha: 0, y: 225 }, 400)
-              .to({ alpha: 1, y: 200 }, 1000, createjs.Ease.getPowInOut(2))
-              .to({ x: 100 }, 500, createjs.Ease.getPowInOut(2));
-          }
-        }
+        // for (let i = 0; i < 4; i++) {
+        //   for (let j = 0; j < 4; j++) {
+        //     let x = i * w;
+        //     let y = j * h;
+        //     let frame = new PIXI.Rectangle(x, y, w, h);
+        //     let te = new PIXI.Texture(texture.baseTexture, frame);
+        //     let child = new PIXI.Sprite(te);
+        //     child.texture = te;
+        //     child.x = 5 + i * (w + 5);
+        //     child.y = 5 + j * (h + 5);
+        //     app.game.layer.overlay.addChild(child);
+        //     createjs.Tween.get(child, { loop: true })
+        //       .to({ x: 400 }, 4000, createjs.Ease.getPowInOut(4))
+        //       .to({ alpha: 0, y: 175 }, 2000, createjs.Ease.getPowInOut(2))
+        //       .to({ alpha: 0, y: 225 }, 400)
+        //       .to({ alpha: 1, y: 200 }, 1000, createjs.Ease.getPowInOut(2))
+        //       .to({ x: 100 }, 500, createjs.Ease.getPowInOut(2));
+        //   }
+        // }
 
 
         // nuts.updateManager.add({
@@ -324,17 +398,18 @@ export function normal (that) {
 
         sprite.texture = texture;
         sprite.x = 0;
-        sprite.y = 768 / 2;
+        sprite.y = 0;
         sprite.anchor.x = 0;
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        // const filter = new PIXI.Filter(null, null, { myUniform: 0.5 });
-        // sprite.filters = [ filter ];
+        // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+        colorMatrix.contrast(1);
+        sprite.filters = [ colorMatrix ];
 
-        // sprite.scale.x = 0.5;
-        // sprite.scale.y = 0.5;
-        app.game.layer.overlay.addChild(sprite);
+        sprite.scale.x = 0.5;
+        sprite.scale.y = 0.5;
+        app.game.layer.main.addChild(sprite);
       });
     },
 
