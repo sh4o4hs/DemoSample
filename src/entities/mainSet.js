@@ -31,6 +31,9 @@ export function normal (that) {
   let ui = app.nuts.ui;
   const NUM = ui.Number.NUM;
 
+  let streaming1 = null;
+  let streaming2 = null;
+
   let center = that.getCenter();
 
   // let textures = center.textures.demo;
@@ -85,11 +88,16 @@ export function normal (that) {
     },
 
     async setPlay (obj) {
-      async function play () {
 
-        // 傳送網路命令
-        let cmd = await  import('net/command/bet');
-        await cmd.send(1000);
+      // async function play () {
+
+      //   // 傳送網路命令
+      //   let cmd = await  import('net/command/bet');
+      //   await cmd.send(1000);
+      // }
+      async function play () {
+        let obj = await app.game.getProject('lib/player', true);
+        console.log(obj);
       }
 
       obj.setClick((/*o*/) => {
@@ -98,10 +106,9 @@ export function normal (that) {
     },
 
     async setAuto (obj) {
-      let streaming = null;
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
-      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
 
       obj.setClick(async (/*o*/) => {
 
@@ -121,12 +128,12 @@ export function normal (that) {
           videoBufferSize: 256 * 1024,
           fps: 30
         };
-        if (streaming) {
-          streaming.stop();
+        if (streaming1) {
+          await streaming1.stop();
         }
-        streaming = new Streaming(app.game);
+        streaming1 = new Streaming(app.game);
         sprite.texture = PIXI.Texture.EMPTY;
-        let texture = await streaming.play(url, options);
+        let texture = await streaming1.play(url, options);
         console.log(texture);
 
 
@@ -137,8 +144,8 @@ export function normal (that) {
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        colorMatrix.contrast(2);
-        sprite.filters = [ colorMatrix ];
+        // colorMatrix.contrast(2);
+        // sprite.filters = [ colorMatrix ];
 
         sprite.scale.x = 0.5;
         sprite.scale.y = 0.5;
@@ -274,6 +281,14 @@ export function normal (that) {
         if (sound && sound.music && sound.music.play) {
           sound.music.stop();
         }
+        if (streaming1) {
+          await streaming1.stop();
+          streaming1 = null;
+        }
+        if (streaming2) {
+          await streaming2.stop();
+          streaming2 = null;
+        }
         let scene = await import('scene/sub');
         scene.reset();
 
@@ -301,7 +316,6 @@ export function normal (that) {
 
     // 設定下注
     setBet (obj) {
-      let streaming = null;
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
       let colorMatrix = new PIXI.filters.ColorMatrixFilter();
 
@@ -325,12 +339,12 @@ export function normal (that) {
           videoBufferSize: 256 * 1024,
           fps: 30
         };
-        if (streaming) {
-          streaming.stop();
+        if (streaming2) {
+          await streaming2.stop();
         }
-        streaming = new Streaming(app.game);
+        streaming2 = new Streaming(app.game);
         sprite.texture = PIXI.Texture.EMPTY;
-        let texture = await streaming.play(url, options);
+        let texture = await streaming2.play(url, options);
         console.log(texture);
 
         /*
@@ -404,7 +418,7 @@ export function normal (that) {
         sprite.alpha = 1.0;
 
         // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-        colorMatrix.contrast(1);
+        colorMatrix.contrast(0.25);
         sprite.filters = [ colorMatrix ];
 
         sprite.scale.x = 0.5;
