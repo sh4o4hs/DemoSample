@@ -133,8 +133,6 @@ export function normal (that) {
         sprite.texture = PIXI.Texture.EMPTY;
         let texture = await streaming1.play(url, options);
         console.log(texture);
-
-
         sprite.texture = texture;
         sprite.x = 0;
         sprite.y = 350;
