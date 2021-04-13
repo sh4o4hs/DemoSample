@@ -125,6 +125,4 @@ export default class Streaming {
       self.worker.postMessage(msg);
     });
   }
-
-
 }

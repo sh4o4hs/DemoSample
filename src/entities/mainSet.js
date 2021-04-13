@@ -9,7 +9,6 @@
  ************************************************************************ */
 
 import app from 'entity/app';
-import Streaming from 'entity/streaming';
 
 
 export async function getPlayer () {
@@ -17,7 +16,7 @@ export async function getPlayer () {
   let obj = await game.getProject('video/player');
   console.log(obj);
 
-  return obj.lib;
+  return obj.lib.pixiStreaming;
 }
 
 
@@ -30,6 +29,7 @@ export function normal (that) {
   // let isFirstTime = true;
   let ui = app.nuts.ui;
   const NUM = ui.Number.NUM;
+
 
   let streaming1 = null;
   let streaming2 = null;
@@ -128,9 +128,11 @@ export function normal (that) {
           videoBufferSize: 256 * 1024,
           fps: 30
         };
+
         if (streaming1) {
           await streaming1.stop();
         }
+        let Streaming = await getPlayer();
         streaming1 = new Streaming(app.game);
         sprite.texture = PIXI.Texture.EMPTY;
         let texture = await streaming1.play(url, options);
@@ -342,6 +344,8 @@ export function normal (that) {
         if (streaming2) {
           await streaming2.stop();
         }
+
+        let Streaming = await getPlayer();
         streaming2 = new Streaming(app.game);
         sprite.texture = PIXI.Texture.EMPTY;
         let texture = await streaming2.play(url, options);
