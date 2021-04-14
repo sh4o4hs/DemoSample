@@ -205,8 +205,8 @@ export function normal (that) {
     // 設定下注
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
 
+      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       // let point = new PIXI.Point(0.25, 0.5);
 
       obj.setClick(async (/*o*/) => {
