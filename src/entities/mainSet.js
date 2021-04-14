@@ -64,7 +64,9 @@ export function normal (that) {
     'wss://pc-8174.streamingvds.com/',
     'wss://pc-8374.streamingvds.com/',
     'wss://pc-8474.streamingvds.com/',
-    'wss://pc-8274.streamingvds.com/'
+    'wss://pc-8274.streamingvds.com/',
+    'wss://pc-8074.streamingvds.com/',
+    'wss://pc-28574.streamingvds.com/'
   ];
 
   //--初始化對照表
@@ -90,6 +92,18 @@ export function normal (that) {
     async setPlay (obj) {
 
       async function play () {
+
+        // let filename = 'http://localhost:4000/lib/player/main.js';
+        // let data = await fetch(filename);
+        // if (data && data.ok) {
+        //   let txt = await data.text();
+        //   let blob = new Blob([ txt ]);
+        //   let blobURL = window.URL.createObjectURL(blob);
+        //   let worker = new Worker(blobURL, {
+        //     type: 'module'
+        //   });
+        //   console.log(worker);
+        // }
 
         // 傳送網路命令
         let cmd = await  import('net/command/bet');
