@@ -117,8 +117,7 @@ export function normal (that) {
 
     async setAuto (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-
-      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
 
       obj.setClick(async (/*o*/) => {
 
@@ -154,8 +153,8 @@ export function normal (that) {
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        // colorMatrix.contrast(2);
-        // sprite.filters = [ colorMatrix ];
+        colorMatrix.saturate(0.25);
+        sprite.filters = [ colorMatrix ];
 
         sprite.scale.x = 0.5;
         sprite.scale.y = 0.5;
@@ -309,8 +308,8 @@ export function normal (that) {
         sprite.alpha = 1.0;
 
         // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-        colorMatrix.contrast(0.25);
-        sprite.filters = [ colorMatrix ];
+        // colorMatrix.contrast(1);
+        // sprite.filters = [ colorMatrix ];
 
         sprite.scale.x = 0.5;
         sprite.scale.y = 0.5;
