@@ -52,7 +52,6 @@ export function normal (that) {
     reload (scene) {
       let self = this;
       console.log(scene);
-
       center.game.textures.ui = scene.textures.ui;
       self.group.reload();
     }
@@ -117,7 +116,8 @@ export function normal (that) {
 
     async setAuto (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+
+      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
 
       obj.setClick(async (/*o*/) => {
 
@@ -135,7 +135,9 @@ export function normal (that) {
 
         let options = {
           videoBufferSize: 256 * 1024,
-          fps: 30
+          audioBufferSize: 32 * 1024,
+          audio: true,
+          fps: 100
         };
 
         if (streaming1) {
@@ -145,7 +147,6 @@ export function normal (that) {
         streaming1 = new Streaming(app.game);
         sprite.texture = PIXI.Texture.EMPTY;
         let texture = await streaming1.play(url, options);
-        console.log(texture);
         sprite.texture = texture;
         sprite.x = 0;
         sprite.y = 350;
@@ -153,8 +154,8 @@ export function normal (that) {
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        colorMatrix.saturate(0.25);
-        sprite.filters = [ colorMatrix ];
+        // colorMatrix.negative();
+        // sprite.filters = [ colorMatrix ];
 
         sprite.scale.x = 0.5;
         sprite.scale.y = 0.5;
@@ -206,7 +207,10 @@ export function normal (that) {
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
-      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+
+      // let blurFilter = new PIXI.filters.BlurFilter(2, 1);
+
       // let point = new PIXI.Point(0.25, 0.5);
 
       obj.setClick(async (/*o*/) => {
@@ -224,8 +228,10 @@ export function normal (that) {
         app.game.layer.overlay.removeChild(sprite);
 
         let options = {
-          videoBufferSize: 256 * 1024,
-          fps: 30
+          videoBufferSize: 512 * 1024,
+          audioBufferSize: 64 * 1024,
+          audio: true,
+          fps: 100
         };
         if (streaming2) {
           await streaming2.stop();
@@ -307,9 +313,11 @@ export function normal (that) {
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-        // colorMatrix.contrast(1);
-        // sprite.filters = [ colorMatrix ];
+        colorMatrix.reset();
+
+        // colorMatrix.vintage();
+        colorMatrix.brightness(1.2, true);
+        sprite.filters = [ colorMatrix ];
 
         sprite.scale.x = 0.5;
         sprite.scale.y = 0.5;
