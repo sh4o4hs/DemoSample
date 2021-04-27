@@ -105,13 +105,28 @@ export async function init (config) {
       let scene = await import('scene/load');
       scene.create(game);
 
+      // 初始化視訊
+      app.tableInfo = {
+        tableKey: 'a1'
+      };
+      let video = await import('scene/video');
+
+      let testID = 'BaccaratSeatPC';
+
+      // let testID = 'BGBaccarat';
+      video.init({
+        id: testID
+      });
+
+
       // 初始化網路
       let net = await import('net/network');
       await net.init(conf);
 
-      /// 傳送網路命令
+      // 傳送網路命令
       let cmd = await import('net/command/create');
       cmd.send();
+
 
       getLogo().then(texture => {
         let sprite = new PIXI.Sprite(texture);

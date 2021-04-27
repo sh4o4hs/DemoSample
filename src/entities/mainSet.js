@@ -31,8 +31,8 @@ export function normal (that) {
   const NUM = ui.Number.NUM;
 
 
-  let streaming1 = null;
-  let streaming2 = null;
+  // let streaming1 = null;
+  // let streaming2 = null;
 
   let center = that.getCenter();
 
@@ -57,16 +57,15 @@ export function normal (that) {
     }
   }
 
-  let videoSourceIndex = 0;
-
-  let videoSourceList = [
-    'wss://pc-8174.streamingvds.com/',
-    'wss://pc-8374.streamingvds.com/',
-    'wss://pc-8474.streamingvds.com/',
-    'wss://pc-8274.streamingvds.com/',
-    'wss://pc-8074.streamingvds.com/',
-    'wss://pc-28574.streamingvds.com/'
-  ];
+  // let videoSourceIndex = 0;
+  // let videoSourceList = [
+  //   'wss://pc-8174.streamingvds.com/',
+  //   'wss://pc-8374.streamingvds.com/',
+  //   'wss://pc-8474.streamingvds.com/',
+  //   'wss://pc-8274.streamingvds.com/',
+  //   'wss://pc-8074.streamingvds.com/',
+  //   'wss://pc-28574.streamingvds.com/'
+  // ];
 
   //--初始化對照表
   let set =  {
@@ -116,37 +115,31 @@ export function normal (that) {
 
     async setAuto (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-
-      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+      let channel = 0;
 
       obj.setClick(async (/*o*/) => {
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        let url = videoSourceList[videoSourceIndex];
-        videoSourceIndex++;
-        if (videoSourceIndex >= videoSourceList.length) {
-          videoSourceIndex = 0;
+        let ch = channel;
+        channel += 1;
+        if (channel > 2) {
+          channel = 0;
         }
 
-        sprite.filters = null;
+        // 視訊設定
+        // let options = {
+        //   videoBufferSize: 256 * 1024,
+        //   audioBufferSize: 32 * 1024,
+        //   audio: true,
+        //   fps: 100
+        // };
+
         app.game.layer.overlay.removeChild(sprite);
-
-        let options = {
-          videoBufferSize: 256 * 1024,
-          audioBufferSize: 32 * 1024,
-          audio: true,
-          fps: 100
-        };
-
-        if (streaming1) {
-          await streaming1.stop();
-        }
-        let Streaming = await getPlayer();
-        streaming1 = new Streaming(app.game);
         sprite.texture = PIXI.Texture.EMPTY;
-        let texture = await streaming1.play(url, options);
+        let video = await import('scene/video');
+        let texture =  await video.open(ch/* , options */);
         sprite.texture = texture;
         sprite.x = 0;
         sprite.y = 350;
@@ -154,12 +147,10 @@ export function normal (that) {
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        // colorMatrix.negative();
-        // sprite.filters = [ colorMatrix ];
-
         sprite.scale.x = 0.5;
         sprite.scale.y = 0.5;
         app.game.layer.main.addChild(sprite);
+
       });
 
     },
@@ -170,14 +161,9 @@ export function normal (that) {
         if (sound && sound.music && sound.music.play) {
           sound.music.stop();
         }
-        if (streaming1) {
-          await streaming1.stop();
-          streaming1 = null;
-        }
-        if (streaming2) {
-          await streaming2.stop();
-          streaming2 = null;
-        }
+        let video = await import('scene/video');
+        await video.closeAll();
+
         let scene = await import('scene/sub');
         scene.reset();
 
@@ -206,42 +192,48 @@ export function normal (that) {
     // 設定下注
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-
       let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-
-      // let blurFilter = new PIXI.filters.BlurFilter(2, 1);
-
-      // let point = new PIXI.Point(0.25, 0.5);
+      let channel = 0;
 
       obj.setClick(async (/*o*/) => {
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        let url = videoSourceList[videoSourceIndex];
-        videoSourceIndex++;
-        if (videoSourceIndex >= videoSourceList.length) {
-          videoSourceIndex = 0;
+        let ch = channel;
+        channel += 1;
+        if (channel > 2) {
+          channel = 0;
         }
+
+        // 視訊設定
+        // let options = {
+        //   videoBufferSize: 512 * 1024,
+        //   audioBufferSize: 64 * 1024,
+        //   audio: true,
+        //   fps: 100
+        // };
 
         sprite.filters = null;
         app.game.layer.overlay.removeChild(sprite);
-
-        let options = {
-          videoBufferSize: 512 * 1024,
-          audioBufferSize: 64 * 1024,
-          audio: true,
-          fps: 100
-        };
-        if (streaming2) {
-          await streaming2.stop();
-        }
-
-        let Streaming = await getPlayer();
-        streaming2 = new Streaming(app.game);
         sprite.texture = PIXI.Texture.EMPTY;
-        let texture = await streaming2.play(url, options);
-        console.log(texture);
+        let video = await import('scene/video');
+        let texture =  await video.open(ch/* , options */);
+        sprite.texture = texture;
+        sprite.x = 0;
+        sprite.y = 0;
+        sprite.anchor.x = 0;
+        sprite.anchor.y = 0.0;
+        sprite.alpha = 1.0;
+
+        colorMatrix.reset();
+        colorMatrix.brightness(1.2, true);
+        sprite.filters = [ colorMatrix ];
+
+        sprite.scale.x = 0.5;
+        sprite.scale.y = 0.5;
+        app.game.layer.main.addChild(sprite);
+
 
         /*
             const uniforms = {
@@ -306,22 +298,6 @@ export function normal (that) {
         //   }
         // });
 
-        sprite.texture = texture;
-        sprite.x = 0;
-        sprite.y = 0;
-        sprite.anchor.x = 0;
-        sprite.anchor.y = 0.0;
-        sprite.alpha = 1.0;
-
-        colorMatrix.reset();
-
-        // colorMatrix.vintage();
-        colorMatrix.brightness(1.2, true);
-        sprite.filters = [ colorMatrix ];
-
-        sprite.scale.x = 0.5;
-        sprite.scale.y = 0.5;
-        app.game.layer.main.addChild(sprite);
       });
     },
 

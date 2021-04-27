@@ -141,6 +141,18 @@ export function init () {
       let scene = await import('scene/load');
       scene.create();
 
+      // 初始化視訊
+      app.tableInfo = {
+        tableKey: 'a1'
+      };
+      let video = await import('scene/video');
+
+      // let testID = 'BaccaratSeatPC';
+      let testID = 'BGBaccarat';
+      video.init({
+        id: testID
+      });
+
       // 初始化網路
       let net = await import('net/network');
       await net.init(conf);
