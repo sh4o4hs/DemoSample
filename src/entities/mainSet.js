@@ -11,15 +11,6 @@
 import app from 'entity/app';
 
 
-export async function getPlayer () {
-  let game = app.game;
-  let obj = await game.getProject('video/player');
-  console.log(obj);
-
-  return obj.lib.pixiStreaming;
-}
-
-
 /**
  * 物件初始化
  * @param {Object} that
@@ -88,8 +79,19 @@ export function normal (that) {
     },
 
     async setPlay (obj) {
+      let name = 'autoSicboM';
 
       async function play () {
+        let player = app.player;
+        player.useVideoSource(name);
+        player.useUrls(0);
+
+        if (name === 'autoSicboM') {
+          name = 'BaccaratSeatPC';
+        } else {
+          name = 'autoSicboM';
+        }
+
 
         // let filename = 'http://localhost:4000/lib/player/main.js';
         // let data = await fetch(filename);
@@ -116,7 +118,7 @@ export function normal (that) {
     async setAuto (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
       let channel = 1;
-      let index = -1;
+      let index = 0;
 
 
       obj.setClick(async (/*o*/) => {
@@ -124,10 +126,10 @@ export function normal (that) {
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        index += 1;
-        if (index > 2) {
-          index = 0;
-        }
+        // index += 1;
+        // if (index > 2) {
+        //   index = 0;
+        // }
 
         // 視訊設定
         // let options = {
@@ -197,17 +199,17 @@ export function normal (that) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
       let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       let channel = 0;
-      let index = -1;
+      let index = 0;
 
       obj.setClick(async (/*o*/) => {
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        index += 1;
-        if (index > 2) {
-          index = 0;
-        }
+        // index += 1;
+        // if (index > 2) {
+        //   index = 0;
+        // }
 
         // 視訊設定
         // let options = {
