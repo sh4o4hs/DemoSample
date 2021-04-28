@@ -115,17 +115,18 @@ export function normal (that) {
 
     async setAuto (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      let channel = 0;
+      let channel = 1;
+      let index = -1;
+
 
       obj.setClick(async (/*o*/) => {
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        let ch = channel;
-        channel += 1;
-        if (channel > 2) {
-          channel = 0;
+        index += 1;
+        if (index > 2) {
+          index = 0;
         }
 
         // 視訊設定
@@ -138,8 +139,9 @@ export function normal (that) {
 
         app.game.layer.overlay.removeChild(sprite);
         sprite.texture = PIXI.Texture.EMPTY;
-        let video = await import('scene/video');
-        let texture =  await video.open(ch/* , options */);
+        let player = app.player;
+        let url = player.getUrl(index);
+        let texture =  await player.open(url, channel/* , options */);
         sprite.texture = texture;
         sprite.x = 0;
         sprite.y = 350;
@@ -161,8 +163,8 @@ export function normal (that) {
         if (sound && sound.music && sound.music.play) {
           sound.music.stop();
         }
-        let video = await import('scene/video');
-        await video.closeAll();
+        let player = app.player;
+        await player.closeAll();
 
         let scene = await import('scene/sub');
         scene.reset();
@@ -194,16 +196,16 @@ export function normal (that) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
       let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       let channel = 0;
+      let index = -1;
 
       obj.setClick(async (/*o*/) => {
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        let ch = channel;
-        channel += 1;
-        if (channel > 2) {
-          channel = 0;
+        index += 1;
+        if (index > 2) {
+          index = 0;
         }
 
         // 視訊設定
@@ -217,8 +219,9 @@ export function normal (that) {
         sprite.filters = null;
         app.game.layer.overlay.removeChild(sprite);
         sprite.texture = PIXI.Texture.EMPTY;
-        let video = await import('scene/video');
-        let texture =  await video.open(ch/* , options */);
+        let player = app.player;
+        let url = player.getUrl(index);
+        let texture =  await player.open(url, channel/* , options */);
         sprite.texture = texture;
         sprite.x = 0;
         sprite.y = 0;

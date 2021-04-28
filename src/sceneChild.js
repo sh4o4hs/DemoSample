@@ -150,6 +150,9 @@ export function init () {
       // let testID = 'BaccaratSeatPC';
       let testID = 'BGBaccarat';
       video.init({
+        Texture: PIXI.Texture,
+        game,
+        tableKey: app.tableInfo.tableKey,
         id: testID
       });
 

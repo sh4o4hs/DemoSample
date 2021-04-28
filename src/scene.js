@@ -115,6 +115,9 @@ export async function init (config) {
 
       // let testID = 'BGBaccarat';
       video.init({
+        Texture: PIXI.Texture,
+        game,
+        tableKey: app.tableInfo.tableKey,
         id: testID
       });
 
