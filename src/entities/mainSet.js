@@ -140,6 +140,7 @@ export function normal (that) {
         app.game.layer.overlay.removeChild(sprite);
         sprite.texture = PIXI.Texture.EMPTY;
         let player = app.player;
+        player.useUrls(1);
         let url = player.getUrl(index);
         let texture =  await player.open(url, channel/* , options */);
         sprite.texture = texture;
@@ -220,6 +221,7 @@ export function normal (that) {
         app.game.layer.overlay.removeChild(sprite);
         sprite.texture = PIXI.Texture.EMPTY;
         let player = app.player;
+        player.useUrls(0);
         let url = player.getUrl(index);
         let texture =  await player.open(url, channel/* , options */);
         sprite.texture = texture;
