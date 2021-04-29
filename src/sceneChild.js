@@ -147,8 +147,9 @@ export function init () {
       };
       let video = await import('scene/video');
 
-      // let testID = 'BaccaratSeatPC';
-      let testID = 'BGBaccarat';
+      let testID = 'BaccaratSeatPC';
+
+      // let testID = 'BGBaccarat';
       video.init({
         Texture: PIXI.Texture,
         game,

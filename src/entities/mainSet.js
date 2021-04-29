@@ -92,7 +92,6 @@ export function normal (that) {
           name = 'autoSicboM';
         }
 
-
         // let filename = 'http://localhost:4000/lib/player/main.js';
         // let data = await fetch(filename);
         // if (data && data.ok) {
@@ -106,7 +105,7 @@ export function normal (that) {
         // }
 
         // 傳送網路命令
-        let cmd = await  import('net/command/bet');
+        let cmd = await import('net/command/bet');
         await cmd.send(1000);
       }
 
@@ -119,6 +118,7 @@ export function normal (that) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
       let channel = 1;
       let index = 0;
+      let volume = 1.0;
 
 
       obj.setClick(async (/*o*/) => {
@@ -144,20 +144,25 @@ export function normal (that) {
         let player = app.player;
         player.useUrls(1);
         let url = player.getUrl(index);
-        let texture =  await player.open(url, channel/* , options */);
-        sprite.texture = texture;
+        let streaming =  await player.open(url, channel/* , options */);
+        if (streaming) {
+          volume = 1.5 - volume;
+          streaming.volume = volume;
+          let texture = streaming.texture;
+          sprite.texture = texture;
+        }
+
         sprite.x = 0;
         sprite.y = 350;
         sprite.anchor.x = 0;
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        sprite.scale.x = 0.5;
-        sprite.scale.y = 0.5;
+        // sprite.scale.x = 0.5;
+        // sprite.scale.y = 0.5;
         app.game.layer.main.addChild(sprite);
 
       });
-
     },
 
     async setLeave (obj) {
@@ -200,6 +205,7 @@ export function normal (that) {
       let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       let channel = 0;
       let index = 0;
+      let volume = 0.5;
 
       obj.setClick(async (/*o*/) => {
 
@@ -212,12 +218,12 @@ export function normal (that) {
         // }
 
         // 視訊設定
-        // let options = {
-        //   videoBufferSize: 512 * 1024,
-        //   audioBufferSize: 64 * 1024,
-        //   audio: true,
-        //   fps: 100
-        // };
+        let options = {
+          videoBufferSize: 512 * 1024,
+          audioBufferSize: 64 * 1024,
+          audio: true,
+          fps: 100
+        };
 
         sprite.filters = null;
         app.game.layer.overlay.removeChild(sprite);
@@ -225,8 +231,13 @@ export function normal (that) {
         let player = app.player;
         player.useUrls(0);
         let url = player.getUrl(index);
-        let texture =  await player.open(url, channel/* , options */);
-        sprite.texture = texture;
+        let streaming =  await player.open(url, channel, options);
+        if (streaming) {
+          volume = 1.5 - volume;
+          streaming.volume = volume;
+          let texture = streaming.texture;
+          sprite.texture = texture;
+        }
         sprite.x = 0;
         sprite.y = 0;
         sprite.anchor.x = 0;
