@@ -144,6 +144,7 @@ export function normal (that) {
         let player = app.player;
         player.useUrls(1);
         let url = player.getUrl(index);
+        await player.close(channel);
         let streaming =  await player.open(url, channel/* , options */);
         if (streaming) {
           volume = 1.5 - volume;
@@ -220,9 +221,10 @@ export function normal (that) {
         // 視訊設定
         let options = {
           videoBufferSize: 512 * 1024,
-          audioBufferSize: 64 * 1024,
-          audio: true,
-          fps: 100
+          audioBufferSize: 32 * 1024,
+          audio: true
+
+          // fps: 100
         };
 
         sprite.filters = null;
@@ -231,6 +233,7 @@ export function normal (that) {
         let player = app.player;
         player.useUrls(0);
         let url = player.getUrl(index);
+        await player.close(channel);
         let streaming =  await player.open(url, channel, options);
         if (streaming) {
           volume = 1.5 - volume;

@@ -114,13 +114,12 @@ export async function init (config) {
       let testID = 'BaccaratSeatPC';
 
       // let testID = 'BGBaccarat';
-      video.init({
+      await video.init({
         Texture: PIXI.Texture,
         game,
         tableKey: app.tableInfo.tableKey,
         id: testID
       });
-
 
       // 初始化網路
       let net = await import('net/network');
