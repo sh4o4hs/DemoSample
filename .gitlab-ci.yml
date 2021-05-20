@@ -54,3 +54,16 @@ stages:
   only:
   - beta
 
+GB-測試機:
+  stage: deploy
+  environment:
+    name: beta/$CI_COMMIT_REF_NAME
+  variables:
+    GIT_STRATEGY: none
+    STUFF_DEBUG: 1
+    STUFF_MODE: release
+    STUFF_UPLOAD: gb_beta
+  script:
+  - stuff deploy
+  only:
+  - beta
