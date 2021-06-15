@@ -25,9 +25,7 @@ export async function getLogo () {
   let filename = await obj.lib.getLogo(setting.agent);
   filename = `${pathname}/${filename}`;
   console.log(filename);
-
 }
-
 
 /**
  * 初始化事件 (接收大廳傳送的命令用)
