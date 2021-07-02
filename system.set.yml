@@ -8,7 +8,7 @@ package:
 config:
   paths:
     # tweenjs: /dependence/createjs/tweenjs.1.0.2.js
-    nuts: /dependence/nuts/nuts.2.0.0.js
+    nuts: /dependence/nuts/nuts.2.6.0.js
     data/: demo/sample/data/
     res/: demo/sample/res/
     src/: demo/sample/src/
