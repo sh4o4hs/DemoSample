@@ -26,7 +26,7 @@ export function get (name) {
   return str;
 }
 
-/**import
+/**
  */
 export async function setLanguage (id) {
   currentID = id;
@@ -51,7 +51,6 @@ export async function setLanguage (id) {
       currentID = ID.EN_US;
       lang = await import('language/en-us');
   }
-
 }
 
 /**
