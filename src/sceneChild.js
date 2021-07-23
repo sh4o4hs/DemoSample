@@ -147,7 +147,7 @@ export function init () {
       };
       let video = await import('scene/video');
 
-      let testID = 'BaccaratSeatPC';
+      let testID = 'liveBaccaratPC';
 
       // let testID = 'BGBaccarat';
       video.init({

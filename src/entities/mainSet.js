@@ -142,9 +142,10 @@ export function normal (that) {
         app.game.layer.overlay.removeChild(sprite);
         sprite.texture = PIXI.Texture.EMPTY;
         let player = app.player;
-        player.useUrls(1);
+        player.useUrls(0);
         let url = player.getUrl(index);
         await player.close(channel);
+        console.log(`url=${url}`);
         let streaming =  await player.open(url, channel/* , options */);
         if (streaming) {
           volume = 1.5 - volume;
@@ -213,10 +214,10 @@ export function normal (that) {
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        // index += 1;
-        // if (index > 2) {
-        //   index = 0;
-        // }
+        index += 1;
+        if (index > 2) {
+          index = 0;
+        }
 
         // 視訊設定
         let options = {
