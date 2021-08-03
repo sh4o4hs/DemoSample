@@ -228,6 +228,8 @@ export function normal (that) {
           videoBufferSize: 512 * 1024,
           audioBufferSize: 64 * 1024,
           audio: true,
+
+          // volume: 1.0,
           fps: 60
         };
 
@@ -237,7 +239,8 @@ export function normal (that) {
         let player = app.player;
         player.useUrls(0);
         let url = player.getUrl(index);
-        url = 'ws://vtest.sp2001.com:9064';
+
+        // url = 'wss://vtest.sp2001.com:9064';
         await player.close(channel);
         let streaming =  await player.open(url, channel, options);
         if (streaming) {
@@ -254,10 +257,10 @@ export function normal (that) {
 
         // colorMatrix.reset();
         // colorMatrix.brightness(1.2, true);
-        fxaa.resolution = 2;
+        PIXI.settings.FILTER_RESOLUTION = 1;
         sprite.filters = [ fxaa ];
-        sprite.scale.x = 2.0;
-        sprite.scale.y = 2.0;
+        sprite.scale.x = 1.5;
+        sprite.scale.y = 1.5;
         app.game.layer.main.addChild(sprite);
 
 
