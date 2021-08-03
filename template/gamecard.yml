@@ -42,8 +42,8 @@ pixiConfig: #PIXI 設定
 screen:   # 螢幕設定
   isLock: true              # 是否鎖定
   orientation: landscape    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
-  width: *WIDTH               # 寬
-  height: *HEIGHT              # 高
+  width: 10240               # 寬
+  height: 7680              # 高
   # portrait: # 垂直鎖定設定
   #   width: 800               # 寬
   #   height: 960              # 高

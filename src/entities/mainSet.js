@@ -153,6 +153,8 @@ export function normal (that) {
           let texture = streaming.texture;
           sprite.texture = texture;
         }
+        console.log('!!!!');
+        console.log(sprite.texture);
 
         sprite.x = 0;
         sprite.y = 350;
@@ -204,7 +206,9 @@ export function normal (that) {
     // 設定下注
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+
+      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+      let fxaa = new PIXI.filters.FXAAFilter();
       let channel = 0;
       let index = 0;
       let volume = 0.5;
@@ -222,10 +226,9 @@ export function normal (that) {
         // 視訊設定
         let options = {
           videoBufferSize: 512 * 1024,
-          audioBufferSize: 32 * 1024,
-          audio: true
-
-          // fps: 100
+          audioBufferSize: 64 * 1024,
+          audio: true,
+          fps: 60
         };
 
         sprite.filters = null;
@@ -234,6 +237,7 @@ export function normal (that) {
         let player = app.player;
         player.useUrls(0);
         let url = player.getUrl(index);
+        url = 'ws://vtest.sp2001.com:9064';
         await player.close(channel);
         let streaming =  await player.open(url, channel, options);
         if (streaming) {
@@ -248,12 +252,12 @@ export function normal (that) {
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        colorMatrix.reset();
-        colorMatrix.brightness(1.2, true);
-        sprite.filters = [ colorMatrix ];
-
-        sprite.scale.x = 0.5;
-        sprite.scale.y = 0.5;
+        // colorMatrix.reset();
+        // colorMatrix.brightness(1.2, true);
+        fxaa.resolution = 2;
+        sprite.filters = [ fxaa ];
+        sprite.scale.x = 2.0;
+        sprite.scale.y = 2.0;
         app.game.layer.main.addChild(sprite);
 
 
