@@ -173,6 +173,36 @@ export default class Scene extends app.nuts.scene.Base {
     let game = center.game;
     let ent = center.entity;
 
+
+    // async function play () {
+    //   let ogv = await import('ogv');
+    //   console.log(ogv);
+
+    //   ogv.OGVLoader.base = '/node_modules/ogv/dist';
+    //   let player = new ogv.OGVPlayer();
+    //   player.src = '/tmp/demo/media/llama-drama-av1.webm';
+    //   player.play();
+    //   let canvas = player.getCanvas();
+    //   console.log(canvas);
+    //   let teTest = PIXI.Texture.from(canvas);
+    //   ent.bg.texture = teTest;
+    //   ent.fg.texture = teTest;
+    //   ent.fg.y = 320;
+
+    //   let update = {
+    //     update (/* offsetTime */) {
+    //       teTest.update();
+    //     }
+    //   };
+    //   game.addUpdate(update);
+
+    //   player.addEventListener('ended', function () {
+    //     console.log('完成');
+    //   });
+    // }
+    // play();
+
+
     // 指定要更新的資源
     let newTextures = scene.textures.ui;
     let textures = center.textures;

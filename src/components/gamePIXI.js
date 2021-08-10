@@ -54,11 +54,14 @@ export async function init () {
 
   // await import('pixi');
   // let Stats = await import('stats.js');
-  let Loader = await import('resource-loader');
+  // let Loader = await import('resource-loader');
 
   let config = {};
-  config.Loader = Loader;
+  config.Loader = PIXI.Loader;
   config.m = m;
+
+  console.log(PIXI.spine);
+  console.log(PIXI.spine.core);
 
   // config.Stats = Stats;
   config.PIXI = PIXI;

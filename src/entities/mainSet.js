@@ -57,6 +57,9 @@ export function normal (that) {
   //   'wss://pc-8074.streamingvds.com/',
   //   'wss://pc-28574.streamingvds.com/'
   // ];
+  let testResolution = 1.0;
+  let testSprite = null;
+  let testFilter = null;
 
   //--初始化對照表
   let set =  {
@@ -115,13 +118,32 @@ export function normal (that) {
     },
 
     async setAuto (obj) {
-      let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      let channel = 1;
-      let index = 0;
-      let volume = 1.0;
+
+      // let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+      // let channel = 1;
+      // let index = 0;
+      // let volume = 1.0;
+      // let fxaa = new PIXI.filters.FXAAFilter();
 
 
       obj.setClick(async (/*o*/) => {
+        testResolution += 0.5;
+        if (testResolution >= 2.5) {
+          testResolution = 1.0;
+        }
+        console.log(testResolution);
+
+        if (testFilter) {
+          let filter = testFilter;
+
+          // fxaa.multisample = PIXI.MSAA_QUALITY.LOW;
+          filter.resolution = testResolution;
+        }
+
+        // if(testSprite) {
+        //   let sprite = testSprite;
+        //   sprite.filters = [ fxaa ];
+        // }
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
@@ -138,7 +160,7 @@ export function normal (that) {
         //   audio: true,
         //   fps: 100
         // };
-
+        /*
         app.game.layer.overlay.removeChild(sprite);
         sprite.texture = PIXI.Texture.EMPTY;
         let player = app.player;
@@ -146,16 +168,16 @@ export function normal (that) {
         let url = player.getUrl(index);
         await player.close(channel);
         console.log(`url=${url}`);
-        let streaming =  await player.open(url, channel/* , options */);
+        let streaming =  await player.open(url, channel);
         if (streaming) {
           volume = 1.5 - volume;
           streaming.volume = volume;
           let texture = streaming.texture;
           sprite.texture = texture;
         }
-        console.log('!!!!');
-        console.log(sprite.texture);
-
+        fxaa.multisample = PIXI.MSAA_QUALITY.LOW;
+        fxaa.resolution = 2.0;
+        sprite.filters = [ fxaa ];
         sprite.x = 0;
         sprite.y = 350;
         sprite.anchor.x = 0;
@@ -165,7 +187,7 @@ export function normal (that) {
         // sprite.scale.x = 0.5;
         // sprite.scale.y = 0.5;
         app.game.layer.main.addChild(sprite);
-
+*/
       });
     },
 
@@ -207,11 +229,14 @@ export function normal (that) {
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
-      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-      let fxaa = new PIXI.filters.FXAAFilter();
+      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+      let filter = new PIXI.filters.CRTFilter();
       let channel = 0;
       let index = 0;
       let volume = 0.5;
+
+      testFilter = filter;
+      testSprite = sprite;
 
       obj.setClick(async (/*o*/) => {
 
@@ -240,7 +265,7 @@ export function normal (that) {
         player.useUrls(0);
         let url = player.getUrl(index);
 
-        // url = 'wss://vtest.sp2001.com:9064';
+        url = 'wss://pc-8174.y1l9y.cn/';
         await player.close(channel);
         let streaming =  await player.open(url, channel, options);
         if (streaming) {
@@ -249,19 +274,41 @@ export function normal (that) {
           let texture = streaming.texture;
           sprite.texture = texture;
         }
+
         sprite.x = 0;
         sprite.y = 0;
         sprite.anchor.x = 0;
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
 
-        // colorMatrix.reset();
-        // colorMatrix.brightness(1.2, true);
-        PIXI.settings.FILTER_RESOLUTION = 1;
-        sprite.filters = [ fxaa ];
-        sprite.scale.x = 1.5;
-        sprite.scale.y = 1.5;
+        filter.multisample = PIXI.MSAA_QUALITY.NONE;
+        filter.resolution = testResolution;
+        filter.autoFit = false;
+
+        // filter.reset();
+        // filter.contrast(0.5, true);
+        // filter.brightness(1.0, true);
+        sprite.filters = [ filter ];
+        sprite.scale.x = 1.25;
+        sprite.scale.y = 1.25;
         app.game.layer.main.addChild(sprite);
+
+        // let texture = sprite.texture;
+        // let x = texture.width * 0.8;
+        // let y = texture.height * 0.4;
+        // let w = 100;
+        // let h = 80;
+        // let frame = new PIXI.Rectangle(x, y, w, h);
+        // let te = new PIXI.Texture(texture.baseTexture, frame);
+        // let child = new PIXI.Sprite(te);
+        // child.x = x;
+        // child.y = y;
+        // child.texture = te;
+        // colorMatrix.reset();
+        // colorMatrix.contrast(2);
+        // colorMatrix.blackAndWhite(true);
+        // child.filters = [ colorMatrix ];
+        // sprite.addChild(child);
 
 
         /*
