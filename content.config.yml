@@ -4,11 +4,11 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 2.6.28
+version: 2.7.0
 generatorVendor: v2
 framework:
   name: stuff
-  version: 6.6.0
+  version: 6.18.0
   builder: rollup
   skipCommandTerser: true
   useCodeSplitting: true
