@@ -4,7 +4,7 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 2.7.0
+version: 2.7.1
 generatorVendor: v2
 framework:
   name: stuff

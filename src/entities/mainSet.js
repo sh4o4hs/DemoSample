@@ -231,7 +231,7 @@ export function normal (that) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
       // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
-      let filter = new PIXI.filters.CRTFilter();
+      let filter = new PIXI.filters.ColorMatrixFilter();
       let channel = 0;
       let index = 0;
       let volume = 0.5;
