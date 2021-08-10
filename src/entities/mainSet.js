@@ -58,7 +58,8 @@ export function normal (that) {
   //   'wss://pc-28574.streamingvds.com/'
   // ];
   let testResolution = 1.0;
-  let testSprite = null;
+
+  // let testSprite = null;
   let testFilter = null;
 
   //--初始化對照表
@@ -229,14 +230,15 @@ export function normal (that) {
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
-      let colorMatrix = new PIXI.filters.ColorMatrixFilter();
+      // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       let filter = new PIXI.filters.CRTFilter();
       let channel = 0;
       let index = 0;
       let volume = 0.5;
 
       testFilter = filter;
-      testSprite = sprite;
+
+      // testSprite = sprite;
 
       obj.setClick(async (/*o*/) => {
 
