@@ -5,6 +5,7 @@ name:   # 遊戲名稱 (多語設定)
   th-th: เกม
   vi-vn: trò chơi
   en-us: game
+  it-it: game
   zh-tw: 遊戲
   zh-cn: 游戏
 sysTray: # 是否顯示系統選單

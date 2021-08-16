@@ -132,13 +132,18 @@ export function normal (that) {
         if (testResolution >= 2.5) {
           testResolution = 1.0;
         }
-        console.log(testResolution);
+        let index = 0;
+        for (let i = 0; i < 1000; i++) {
+          index = i;
+        }
+        console.log(index);
 
         if (testFilter) {
-          let filter = testFilter;
 
-          // fxaa.multisample = PIXI.MSAA_QUALITY.LOW;
-          filter.resolution = testResolution;
+          // let filter = testFilter;
+
+          // // fxaa.multisample = PIXI.MSAA_QUALITY.LOW;
+          // filter.resolution = testResolution;
         }
 
         // if(testSprite) {
@@ -291,8 +296,8 @@ export function normal (that) {
         // filter.contrast(0.5, true);
         // filter.brightness(1.0, true);
         sprite.filters = [ filter ];
-        sprite.scale.x = 1.25;
-        sprite.scale.y = 1.25;
+        sprite.scale.x = 1.0;
+        sprite.scale.y = 1.0;
         app.game.layer.main.addChild(sprite);
 
         // let texture = sprite.texture;
