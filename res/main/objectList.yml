@@ -29,7 +29,7 @@ objects:
   objName: ring
   name: 前景
   type: animation
-  isInScene: true
+  isInScene: false
   resource:
     group: demo
     name: ring

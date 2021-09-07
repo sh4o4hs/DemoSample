@@ -112,7 +112,7 @@ export async function init (config) {
       let testID = 'BaccaratSeatPC';
 
       // let testID = 'BGBaccarat';
-      video.init({
+      await video.init({
         Texture: PIXI.Texture,
         game,
         tableKey: app.tableInfo.tableKey,

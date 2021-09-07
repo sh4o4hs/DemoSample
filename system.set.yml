@@ -1,7 +1,7 @@
 ---
 # package
 package:
-  main: src/main1.js
+  main: src/main2.js
   defaultExtension: js
 
 # config
@@ -18,7 +18,7 @@ config:
     language/: demo/sample/src/strings/
     loading/: demo/sample/src/loading/
     net/: demo/sample/src/net/v1/
-    makeres/: demo/sample/src/makeres/v2/
+    makeres/: demo/sample/src/makeres/
     scene/: demo/sample/src/scenes/
     style/: demo/sample/style/
     schema/: demo/sample/schema/
@@ -31,7 +31,7 @@ config:
     tweenjs: depend:createjs/tweenjs.min.1.0.2.js
 #    js-yaml: depend:yaml/js-yaml.min.3.14.0.js
     # nuts: depend:nuts/nuts.1.10.0.js
-    pixi: depend:pixi/pixi.min.6.1.0.js
+    pixi: depend:pixi/pixi.min.6.1.2.js
     pixi-spine: depend:pixi/pixi-spine.2.0.5.js
     pixi-particles: depend:pixi/pixi-particles.2.0.0.js
 

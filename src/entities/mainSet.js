@@ -34,7 +34,7 @@ export function normal (that) {
       this.group = obj;
       this.layer = layer;
     }
-    show () {
+    async show () {
       this.layer.addChild(this.group);
     }
     hide () {
@@ -132,18 +132,17 @@ export function normal (that) {
         if (testResolution >= 2.5) {
           testResolution = 1.0;
         }
-        let index = 0;
-        for (let i = 0; i < 1000; i++) {
-          index = i;
-        }
-        console.log(index);
 
+        // let index = 0;
+        // for (let i = 0; i < 1000; i++) {
+        //   index = i;
+        // }
+        // console.log(index);
+
+        console.log('testResolution : ' + testResolution);
         if (testFilter) {
-
-          // let filter = testFilter;
-
-          // // fxaa.multisample = PIXI.MSAA_QUALITY.LOW;
-          // filter.resolution = testResolution;
+          let filter = testFilter;
+          filter.resolution = testResolution;
         }
 
         // if(testSprite) {
@@ -230,7 +229,6 @@ export function normal (that) {
       });
     },
 
-
     // 設定下注
     setBet (obj) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
@@ -243,9 +241,16 @@ export function normal (that) {
 
       testFilter = filter;
 
+      let isEnabled = true;
+
       // testSprite = sprite;
 
       obj.setClick(async (/*o*/) => {
+
+        if (!isEnabled) {
+          return;
+        }
+        isEnabled = false;
 
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
@@ -257,12 +262,12 @@ export function normal (that) {
 
         // 視訊設定
         let options = {
-          videoBufferSize: 512 * 1024,
-          audioBufferSize: 64 * 1024,
-          audio: true,
+          videoBufferSize: 1024 * 1024,
+          audioBufferSize: 128 * 1024,
+          audio: false,
 
           // volume: 1.0,
-          fps: 60
+          fps: 100
         };
 
         sprite.filters = null;
@@ -272,7 +277,7 @@ export function normal (that) {
         player.useUrls(0);
         let url = player.getUrl(index);
 
-        url = 'wss://pc-8174.y1l9y.cn/';
+        url = 'wss://pc-8174.streamingvds.com/';
         await player.close(channel);
         let streaming =  await player.open(url, channel, options);
         if (streaming) {
@@ -299,6 +304,10 @@ export function normal (that) {
         sprite.scale.x = 1.0;
         sprite.scale.y = 1.0;
         app.game.layer.main.addChild(sprite);
+
+        await app.game.idle(0.1);
+
+        isEnabled = true;
 
         // let texture = sprite.texture;
         // let x = texture.width * 0.8;
@@ -389,6 +398,7 @@ export function normal (that) {
       console.log('!!!!!!!!! setAnim !!!!!!!!!!');
       console.log(obj);
       obj.play();
+      app.game.layer.foreground.addChild(obj);
     },
 
     // 設定數字
@@ -402,12 +412,14 @@ export function normal (that) {
     setSpine (obj) {
       obj.play();
     },
+
     createRule (obj) {
       console.log('[create rule]');
       console.log(obj);
 
       center.rule = new Rule(obj, center.game.layer.foreground);
     },
+
     autoonPageNumber (obj) {
       obj.fixVal = center.decimal;
       obj.setAnchor({
