@@ -87,7 +87,6 @@ export async function init (config) {
      */
     pause (conf) {
       console.log(conf.game.scene.info.id + ' scene pause : from ' + conf.from);
-
     },
 
     /**

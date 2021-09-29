@@ -60,4 +60,11 @@ export async function create (game, loadingEvent) {
     loadingEvent.finish();
   }
   game.textures = scene.textures;
+  console.log('scene:');
+  console.log(scene);
+  console.log('game:');
+  console.log(game);
+  let renderer = game.getRenderer();
+  let accessibility = new PIXI.AccessibilityManager(renderer);
+  console.log(accessibility);
 }
