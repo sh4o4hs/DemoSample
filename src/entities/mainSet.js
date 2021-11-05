@@ -132,6 +132,7 @@ export function normal (that) {
         if (testResolution >= 2.5) {
           testResolution = 1.0;
         }
+        app.game.scene.fullscreen(true);
 
         // let index = 0;
         // for (let i = 0; i < 1000; i++) {

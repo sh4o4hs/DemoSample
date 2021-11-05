@@ -59,16 +59,6 @@ frames:
         enter: button.leave.enter.png
         leave: button.leave.leave.png
         press: button.leave.press.png
-  # ui:
-  #   pageInfo:
-  #     a: res/main/ui/lang/en-us/feature_en.png
-  #     b: res/main/ui/lang/en-us/paytable_en.png
-  #     c: res/main/ui/lang/en-us/paytable01_en.png
-  #     d: res/main/ui/lang/en-us/payline_en.png
-  #     e: res/main/ui/lang/en-us/jp_en.png
-  #   pageInfoText:
-  #     a: res/main/ui/lang/en-us/havejp_en.png
-  #     b: res/main/ui/lang/en-us/nojp_en.png
 assets: #註解
 - res/main/asset/numBW.json
 - res/main/asset/NumMPurple.json

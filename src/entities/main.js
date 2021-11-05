@@ -204,7 +204,6 @@ export default class Scene extends app.nuts.scene.Base {
 
 
     // 指定要更新的資源
-    let newTextures = scene.textures.ui;
     let textures = center.textures;
     textures.demo.ring = scene.textures.demo.ring;
 
@@ -232,9 +231,6 @@ export default class Scene extends app.nuts.scene.Base {
     obj.custom.offset = 72;
     obj.setTextures('numBW');
 
-    await game.idle(1.0);
-    obj = ent.coin;
-    obj.texture = newTextures.pageInfoText.a;
     console.log('!!!!!!!! 完成處理 reload !!!!!!!!!');
   }
 

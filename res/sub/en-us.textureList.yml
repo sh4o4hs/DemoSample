@@ -41,4 +41,3 @@ frames:
 assets: #註解
 - res/main/asset/numBW.json
 - res/main/asset/NumMPurple.json
-- res/main/asset/sub.base.json

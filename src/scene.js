@@ -50,6 +50,7 @@ export async function init (config) {
     return eventList;
   }
   console.log('scene init');
+  console.log(config);
 
   eventList = {
 
