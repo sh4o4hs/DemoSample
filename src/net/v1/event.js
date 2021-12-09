@@ -28,7 +28,17 @@ export async function recvGameData (data) {
   // 處理 data 欄位
   if (data.data) {
     commandName = data.command;
-    obj = JSON.parse(data.data);
+
+    // 判斷資料格式
+    if (typeof data.data === 'string') {
+
+      // 舊版
+      obj = JSON.parse(data.data);
+    } else {
+
+      // 新版
+      obj = data.data;
+    }
 
     // 處理命令
     let cmd = cmdList[commandName];

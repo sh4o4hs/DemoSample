@@ -176,7 +176,6 @@ export function init () {
       game.disconnect = () => {
         console.log('!!!! game.disconnect !!!!');
       };
-
     },
 
     /**
