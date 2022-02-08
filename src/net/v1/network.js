@@ -57,7 +57,7 @@ export async function sendCommand (cmd, dataObj) {
     format: 0,
     funcIndex: 9,
     command: cmd,
-    data: JSON.stringify(dataObj)
+    data: dataObj
   };
 
   let result = await app.game.command.send(packet, currentID);

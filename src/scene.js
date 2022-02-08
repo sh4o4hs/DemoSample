@@ -188,8 +188,8 @@ export async function init (config) {
      * 尺寸改變事件
      * @param state
      */
-    resize (state) {
-      console.log(state);
+    resize (/* state */) {
+      // console.log(state);
     },
 
     /**
