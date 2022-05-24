@@ -238,7 +238,7 @@ export function normal (that) {
       let filter = new PIXI.filters.ColorMatrixFilter();
       let channel = 0;
       let index = 0;
-      let volume = 0.5;
+      let volume = 2;
 
       testFilter = filter;
 
@@ -282,7 +282,8 @@ export function normal (that) {
         await player.close(channel);
         let streaming =  await player.open(url, channel, options);
         if (streaming) {
-          volume = 1.5 - volume;
+
+          // volume = 1.5 - volume;
           streaming.volume = volume;
           let texture = streaming.texture;
           sprite.texture = texture;
