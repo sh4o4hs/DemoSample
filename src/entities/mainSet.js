@@ -278,7 +278,7 @@ export function normal (that) {
         player.useUrls(0);
         let url = player.getUrl(index);
 
-        url = 'wss://pc-8174.streamingvds.com/';
+        url = 'wss://28084.wllon.com/';
         await player.close(channel);
         let streaming =  await player.open(url, channel, options);
         if (streaming) {

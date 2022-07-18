@@ -46,7 +46,7 @@ export async function init (config) {
   app.baseURL = baseURL;
   app.langID = langID;
 
-  
+
   if (eventList) {
     return eventList;
   }
