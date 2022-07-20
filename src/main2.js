@@ -10,6 +10,7 @@
 
 import * as scene from 'src/scene';
 
+let aa;
 
 export {
   scene
