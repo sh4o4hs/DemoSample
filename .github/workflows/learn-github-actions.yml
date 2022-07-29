@@ -2,7 +2,7 @@ name: 學習-github-actions
 on: [push]
 jobs:
   check-bats-version:
-    runs-on: runs-on: self-hosted
+    runs-on: self-hosted
     name: 中文打字ABC1234
     steps:
       - run: echo "顯示文字"
