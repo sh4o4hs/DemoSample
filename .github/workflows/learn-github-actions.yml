@@ -2,12 +2,9 @@ name: 學習-github-actions
 on: [push]
 jobs:
   check-bats-version:
-    runs-on: ubuntu-latest
+    runs-on: runs-on: self-hosted
     name: 中文打字ABC1234
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
+      - run: echo "顯示文字"
       - run: npm install -g bats
       - run: bats -v
