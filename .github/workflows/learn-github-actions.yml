@@ -2,9 +2,14 @@ name: 學習-github-actions
 on: [push]
 jobs:
   check-bats-version:
+    env:
+      STUFF_DEBUG: 1
+      STUFF_MODE: release
+      STUFF_UPLOAD: beta
     runs-on: self-hosted
     name: 中文打字ABC1234
     steps:
       - run: node --version
       - run: ls -la
       - run: pwd
+      - run: env
