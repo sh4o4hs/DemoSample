@@ -46,16 +46,18 @@ export async function create (game) {
     console.log(scene);
     isCreate = true;
 
+    // globalThis.Howler.autoSuspend = false;
+
     await main.reload(scene);
   }
 
   //----------------------------------------
   // 播放背景音樂
-  let sound = center.sounds.demo;
-  if (sound && sound.music && sound.music.play) {
-    sound.music.volume(0.2);
-    sound.music.play();
-  }
+  // let sound = center.sounds.demo;
+  // if (sound && sound.music && sound.music.play) {
+  //   sound.music.volume(0.2);
+  //   sound.music.play();
+  // }
 
 
 }

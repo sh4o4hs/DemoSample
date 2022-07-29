@@ -107,6 +107,8 @@ export function normal (that) {
         //   });
         //   console.log(worker);
         // }
+        let sound = center?.sounds?.demo;
+        sound?.countDown?.play();
 
         // 傳送網路命令
         let cmd = await import('net/command/bet');
@@ -265,7 +267,7 @@ export function normal (that) {
         let options = {
           videoBufferSize: 1024 * 1024,
           audioBufferSize: 128 * 1024,
-          audio: false,
+          audio: true,
 
           // volume: 1.0,
           fps: 100
@@ -283,7 +285,7 @@ export function normal (that) {
         let streaming =  await player.open(url, channel, options);
         if (streaming) {
 
-          // volume = 1.5 - volume;
+          volume = 2.0;// 1.5 - volume;
           streaming.volume = volume;
           let texture = streaming.texture;
           sprite.texture = texture;
@@ -303,8 +305,8 @@ export function normal (that) {
         // filter.contrast(0.5, true);
         // filter.brightness(1.0, true);
         sprite.filters = [ filter ];
-        sprite.scale.x = 1.0;
-        sprite.scale.y = 1.0;
+        sprite.scale.x = 0.50;
+        sprite.scale.y = 0.50;
         app.game.layer.main.addChild(sprite);
 
         await app.game.idle(0.1);
