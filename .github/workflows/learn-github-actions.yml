@@ -3,6 +3,7 @@ on: [push]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
+    name: 中文打字ABC1234
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
