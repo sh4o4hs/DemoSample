@@ -5,6 +5,6 @@ jobs:
     runs-on: self-hosted
     name: 中文打字ABC1234
     steps:
-      - run: echo "顯示文字"
+      - run: node --version
       - run: ls -la
-      - run: echo "結束"
+      - run: pwd
