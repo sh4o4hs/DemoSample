@@ -7,7 +7,7 @@ jobs:
       STUFF_MODE: release
       STUFF_UPLOAD: beta
     #runs-on: zz
-    runs-on: self-hosted
+    runs-on: [self-hosted Linux X64 zz]
     name: 中文打字ABC1234
     steps:
       - run: node --version
