@@ -1,4 +1,4 @@
-name: 學習-github-actions
+name: 學習-actions
 on: [push]
 jobs:
   check-bats-version:
