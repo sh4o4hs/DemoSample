@@ -8,9 +8,10 @@ jobs:
       STUFF_DEBUG: 1
       STUFF_MODE: release
       STUFF_UPLOAD: beta
-    runs-on: [self-hosted,video]
+    runs-on: [self-hosted, x64]
     name: 確認遊戲版本
     steps:
+      - uses: actions/checkout@v3
       - name: 說明 一
         run: echo "::debug::Set the Octocat variable"
       - name: 說明 二 
