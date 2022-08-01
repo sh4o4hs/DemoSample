@@ -8,7 +8,7 @@ jobs:
       STUFF_DEBUG: 1
       STUFF_MODE: release
       STUFF_UPLOAD: beta
-    runs-on: self-hosted
+    runs-on: [self-hosted, x64, game]
     name: 確認遊戲版本
     steps:
       - uses: actions/checkout@v3
