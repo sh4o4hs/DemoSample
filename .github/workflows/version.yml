@@ -1,7 +1,8 @@
 name: Bump version
 on:
-  tags:
-    - *
+  push:
+    tags:
+      - *
 jobs:
   release:
     env:
