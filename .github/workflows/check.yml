@@ -14,6 +14,7 @@ jobs:
       - name: 訊息
         run: |
           . stuff_tools.sh
+          export
           report "複製專案"
       - uses: actions/checkout@v3
       - name: 使用 eslint
