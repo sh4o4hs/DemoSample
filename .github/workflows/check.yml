@@ -9,16 +9,14 @@ jobs:
       STUFF_MODE: release
       STUFF_UPLOAD: beta
     runs-on: [self-hosted, x64, game]
-    name: 確認遊戲版本
+    name: 檢查程式碼
     steps:
+      - name: 訊息
+        run: |
+          . stuff_tools.sh
+          report "複製專案"
       - uses: actions/checkout@v3
-      - name: 說明 一
-        run: echo "::debug::Set the Octocat variable"
-      - name: 說明 二 
-        run: node --version
-      - name: 說明 三
-        run: ls -la
-      - name: 說明 四
-        run: pwd
-      - name: 說明 五
+      - name: 檢查程式碼
+        run: stuff eslint
+      - name: 測試用
         run: export
