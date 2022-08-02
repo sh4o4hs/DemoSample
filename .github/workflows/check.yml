@@ -1,9 +1,9 @@
-name: 檢查-actions
+name: 審查
 on: 
   push:
     branches: [ main, next, beta ]
 jobs:
-  check-game-version:
+  check-code-style:
     env:
       STUFF_DEBUG: 1
       STUFF_MODE: release
@@ -16,7 +16,7 @@ jobs:
           . stuff_tools.sh
           report "複製專案"
       - uses: actions/checkout@v3
-      - name: 檢查程式碼
+      - name: 使用 eslint
         run: stuff eslint
       - name: 測試用
         run: export
