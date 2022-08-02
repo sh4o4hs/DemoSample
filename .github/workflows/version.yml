@@ -1,4 +1,5 @@
 name: Bump version
+on:
   label:
     types:
       - created
@@ -9,7 +10,7 @@ jobs:
       STUFF_MODE: release
       STUFF_UPLOAD: review
     runs-on: [self-hosted, x64, game]
-    name: 確認遊戲版本
+    name: 更新遊戲
     steps:
       - uses: actions/checkout@v3
       - name: 說明 一

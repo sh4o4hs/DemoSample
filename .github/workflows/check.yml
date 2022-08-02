@@ -1,0 +1,24 @@
+name: 檢查-actions
+on: 
+  push:
+    branches: [ main, next, beta ]
+jobs:
+  check-game-version:
+    env:
+      STUFF_DEBUG: 1
+      STUFF_MODE: release
+      STUFF_UPLOAD: beta
+    runs-on: [self-hosted, x64, game]
+    name: 確認遊戲版本
+    steps:
+      - uses: actions/checkout@v3
+      - name: 說明 一
+        run: echo "::debug::Set the Octocat variable"
+      - name: 說明 二 
+        run: node --version
+      - name: 說明 三
+        run: ls -la
+      - name: 說明 四
+        run: pwd
+      - name: 說明 五
+        run: export
