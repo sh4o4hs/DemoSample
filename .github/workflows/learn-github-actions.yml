@@ -21,4 +21,4 @@ jobs:
       - name: 說明 四
         run: pwd
       - name: 說明 五
-        run: env
+        run: export
