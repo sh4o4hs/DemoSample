@@ -1,4 +1,4 @@
-name: Bump version
+name: 更新
 on:
   push:
     tags:
