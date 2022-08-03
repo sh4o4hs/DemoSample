@@ -16,5 +16,5 @@ jobs:
       - name: 部署
         run: stuff deploy
       - name: 測試用
-        run: export  
+        run: export
 
