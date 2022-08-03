@@ -1,7 +1,7 @@
 name: 檢查
 on: 
   push:
-    branches: [ main, next, beta ]
+    branches: *
 jobs:
   check-code-style:
     env:
@@ -15,7 +15,7 @@ jobs:
           export
           report "複製專案"
       - uses: actions/checkout@v3
-      - name: 使用 eslint
+      - name: eslint
         run: stuff eslint
       - name: 測試用
         run: export

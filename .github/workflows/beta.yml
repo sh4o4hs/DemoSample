@@ -1,0 +1,23 @@
+name: 測試機組
+on:
+  push:
+    branches: [beta]
+jobs:
+  release:
+    env:
+      STUFF_DEBUG: 1
+      STUFF_MODE: release
+      STUFF_UPLOAD: beta
+    runs-on: [self-hosted, x64, game]
+    name: 營運版
+    steps:
+      #- name: 訊息
+        #run: |
+          #. stuff_tools.sh
+          #export
+          #report "複製專案"
+      - uses: actions/checkout@v3
+      - name: 部署
+        run: stuff deploy
+      - name: 測試用
+        run: export
