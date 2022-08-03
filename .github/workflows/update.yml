@@ -13,7 +13,6 @@ jobs:
     name: 營運版
     steps:
       - uses: actions/checkout@v3
-      - name: 說明 一
-        run: pwd
-      - name: 說明 二 
-        run: export
+      - name: 部署
+        run: stuff deploy
+
