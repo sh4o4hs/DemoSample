@@ -13,8 +13,8 @@ jobs:
     name: 營運版
     steps:
       - uses: actions/checkout@v3
-      #- name: 部署
-        #run: stuff deploy
+      - name: 部署
+        run: stuff deploy
       - name: 測試用
         run: export  
 
