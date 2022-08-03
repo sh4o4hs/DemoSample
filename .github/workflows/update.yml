@@ -8,9 +8,9 @@ jobs:
     env:
       STUFF_DEBUG: 1
       STUFF_MODE: release
-      STUFF_UPLOAD: review
+      STUFF_UPLOAD: beta
     runs-on: [self-hosted, x64, game]
-    name: 更新遊戲
+    name: 營運機組
     steps:
       - uses: actions/checkout@v3
       - name: 說明 一

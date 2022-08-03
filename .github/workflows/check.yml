@@ -6,8 +6,6 @@ jobs:
   check-code-style:
     env:
       STUFF_DEBUG: 1
-      STUFF_MODE: release
-      STUFF_UPLOAD: beta
     runs-on: [self-hosted, x64, game]
     name: 檢查程式碼
     steps:
