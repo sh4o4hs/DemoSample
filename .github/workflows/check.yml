@@ -12,10 +12,7 @@ jobs:
       - name: 訊息
         run: |
           . stuff_tools.sh
-          export
           report "複製專案"
       - uses: actions/checkout@v3
       - name: eslint
         run: stuff eslint
-      - name: 測試用
-        run: export
