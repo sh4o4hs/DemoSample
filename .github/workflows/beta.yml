@@ -11,11 +11,10 @@ jobs:
     runs-on: [self-hosted, x64, game]
     name: 營運版
     steps:
-      #- name: 訊息
-        #run: |
-          #. stuff_tools.sh
-          #export
-          #report "複製專案"
+      - name: 訊息
+        run: |
+          . stuff_tools.sh
+          report "複製專案"
       - uses: actions/checkout@v3
       - name: 部署
         run: stuff deploy
