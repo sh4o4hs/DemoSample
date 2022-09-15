@@ -38,7 +38,7 @@ export function setLang (id) {
   }
 }
 
-let baseURL = '.';
+let baseURL = './';
 export function setBaseURL (url) {
   baseURL = url;
 }
@@ -54,6 +54,6 @@ export function getBaseURL () {
 export async function get (name) {
 
   let str = nameMap[`${langID}${name}`];
-  let res = await import(`${baseURL}/${str}`);
+  let res = await import(`${baseURL}${str}`);
   return res.default;
 }

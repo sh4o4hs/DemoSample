@@ -64,7 +64,8 @@ export async function create (game, loadingEvent) {
   console.log(scene);
   console.log('game:');
   console.log(game);
-  let renderer = game.getRenderer();
-  let accessibility = new PIXI.AccessibilityManager(renderer);
-  console.log(accessibility);
+
+  // let renderer = game.getRenderer();
+  // let accessibility = new PIXI.AccessibilityManager(renderer);
+  // console.log(accessibility);
 }

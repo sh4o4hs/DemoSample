@@ -28,6 +28,7 @@ globals:
   m: true
   createjs: true
   isMobile: true
+  ogvjs: true
 rules:
   space-before-function-paren:
     - 2

@@ -11,11 +11,50 @@
 import app from 'entity/app';
 
 
+let hasOGV = false;
+
 /**
  * 物件初始化
  * @param {Object} that
  */
 export function normal (that) {
+
+  async function loadScript (filename) {
+    return new Promise((resolve, reject) => {
+      let script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = filename;
+      script.onload = () => {
+        resolve();
+      };
+      script.onerror = () => {
+        reject();
+      };
+      document.body.appendChild(script);
+    });
+  }
+
+  async function load () {
+    if (hasOGV) {
+      return;
+    }
+    hasOGV = true;
+    let baseURL = '/dependence/';
+    console.log(app.game);
+
+    let libList = [
+      'ogv/ogv-es2017.js'
+    ];
+
+    let list = [];
+    for (let i = 0; i < libList.length; i++) {
+      let filename = baseURL + libList[i];
+      let job = loadScript(filename);
+      list.push(job);
+    }
+    await Promise.all(list);
+  }
+
 
   // let isFirstTime = true;
   let ui = app.nuts.ui;
@@ -57,7 +96,7 @@ export function normal (that) {
   //   'wss://pc-8074.streamingvds.com/',
   //   'wss://pc-28574.streamingvds.com/'
   // ];
-  let testResolution = 1.0;
+  let testResolution = 2.0;
 
   // let testSprite = null;
   let testFilter = null;
@@ -134,7 +173,30 @@ export function normal (that) {
         if (testResolution >= 2.5) {
           testResolution = 1.0;
         }
-        app.game.scene.fullscreen(true);
+
+        // await load();
+        // console.log(globalThis);
+
+        // globalThis.ogvjs;
+        await import('/dependence/ogv/ogv-es2017.js');
+        console.log(ogvjs);
+        ogvjs.OGVLoader.base = '/dependence/ogv';
+        let player = new ogvjs.OGVPlayer({
+          forceWebGL: true
+        });
+        const elem = app.game.getElement();
+        console.log(elem);
+        elem.appendChild(player);
+
+        // player.src = '/tmp/demo/vp8/Big_Buck_Bunny_720_10s_5MB.webm';
+        player.src = '/tmp/demo/sample_1280x720.ogx';
+        player.play();
+        player.addEventListener('ended', function () {
+          console.log('播放完成');
+        });
+        console.log(player);
+
+        // app.game.scene.fullscreen(true);
 
         // let index = 0;
         // for (let i = 0; i < 1000; i++) {
@@ -305,8 +367,8 @@ export function normal (that) {
         // filter.contrast(0.5, true);
         // filter.brightness(1.0, true);
         sprite.filters = [ filter ];
-        sprite.scale.x = 0.50;
-        sprite.scale.y = 0.50;
+        sprite.scale.x = 1.0;
+        sprite.scale.y = 1.0;
         app.game.layer.main.addChild(sprite);
 
         await app.game.idle(0.1);

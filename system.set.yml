@@ -34,6 +34,7 @@ config:
     pixi: depend:pixi/pixi.min.6.1.2.js
     pixi-spine: depend:pixi/pixi-spine.2.0.5.js
     pixi-particles: depend:pixi/pixi-particles.2.0.0.js
+    ogv: depend:ogv/ogv-es2017.js
 
 #build
 build:
@@ -49,6 +50,7 @@ build:
     # - loader
     # - mithril
     # - js-yaml
+    - ogv
     - tweenjs
     - mustache
     - howler

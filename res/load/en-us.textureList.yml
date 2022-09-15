@@ -1,18 +1,18 @@
 images:
   demo:
     ring: #旋轉圖
-      - res/main/loading/Loading_01.png
-      - res/main/loading/Loading_02.png
-      - res/main/loading/Loading_03.png
-      - res/main/loading/Loading_04.png
-      - res/main/loading/Loading_05.png
-      - res/main/loading/Loading_06.png
-      - res/main/loading/Loading_07.png
-      - res/main/loading/Loading_08.png
-      - res/main/loading/Loading_09.png
-      - res/main/loading/Loading_10.png
-      - res/main/loading/Loading_11.png
-      - res/main/loading/Loading_12.png
+      - res/main/loading/Loading_01.avif
+      - res/main/loading/Loading_02.avif
+      - res/main/loading/Loading_03.avif
+      - res/main/loading/Loading_04.avif
+      - res/main/loading/Loading_05.avif
+      - res/main/loading/Loading_06.avif
+      - res/main/loading/Loading_07.avif
+      - res/main/loading/Loading_08.avif
+      - res/main/loading/Loading_09.avif
+      - res/main/loading/Loading_10.avif
+      - res/main/loading/Loading_11.avif
+      - res/main/loading/Loading_12.avif
     # button: #群組
     #   auto: #自動
     #     enter: res/main/button/auto/enter.png
