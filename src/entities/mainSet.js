@@ -11,7 +11,7 @@
 import app from 'entity/app';
 
 
-let hasOGV = false;
+// let hasOGV = false;
 
 /**
  * 物件初始化
@@ -19,41 +19,41 @@ let hasOGV = false;
  */
 export function normal (that) {
 
-  async function loadScript (filename) {
-    return new Promise((resolve, reject) => {
-      let script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = filename;
-      script.onload = () => {
-        resolve();
-      };
-      script.onerror = () => {
-        reject();
-      };
-      document.body.appendChild(script);
-    });
-  }
+  // async function loadScript (filename) {
+  //   return new Promise((resolve, reject) => {
+  //     let script = document.createElement('script');
+  //     script.type = 'text/javascript';
+  //     script.src = filename;
+  //     script.onload = () => {
+  //       resolve();
+  //     };
+  //     script.onerror = () => {
+  //       reject();
+  //     };
+  //     document.body.appendChild(script);
+  //   });
+  // }
 
-  async function load () {
-    if (hasOGV) {
-      return;
-    }
-    hasOGV = true;
-    let baseURL = '/dependence/';
-    console.log(app.game);
+  // async function load () {
+  //   if (hasOGV) {
+  //     return;
+  //   }
+  //   hasOGV = true;
+  //   let baseURL = '/dependence/';
+  //   console.log(app.game);
 
-    let libList = [
-      'ogv/ogv-es2017.js'
-    ];
+  //   let libList = [
+  //     'ogv/ogv-es2017.js'
+  //   ];
 
-    let list = [];
-    for (let i = 0; i < libList.length; i++) {
-      let filename = baseURL + libList[i];
-      let job = loadScript(filename);
-      list.push(job);
-    }
-    await Promise.all(list);
-  }
+  //   let list = [];
+  //   for (let i = 0; i < libList.length; i++) {
+  //     let filename = baseURL + libList[i];
+  //     let job = loadScript(filename);
+  //     list.push(job);
+  //   }
+  //   await Promise.all(list);
+  // }
 
 
   // let isFirstTime = true;

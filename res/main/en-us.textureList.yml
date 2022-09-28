@@ -1,9 +1,9 @@
 images:
   demo: #群組
     background: #背景圖
-      back: res/main/bg/background.avif
-      fore: res/main/bg/foreground.avif
-      t01: res/main/bg/foreground.avif
+      back: res/main/bg/background.png
+      fore: res/main/bg/foreground.png
+      t01: res/main/bg/foreground.png
     fiveofkind: #動畫-五連線獎
       mask:
         gradient1: res/main/spine/five/gradient1_mask.png
