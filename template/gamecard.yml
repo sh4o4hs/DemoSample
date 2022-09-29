@@ -61,7 +61,7 @@ resize: # 畫面尺寸改變用
 images:   # 圖檔設定
   icon: gamecard/icon.png
   logo: gamecard/logo.png
-  background: gamecard/background.avif
+  background: gamecard/background.jpg
   useBackground: true # 是否顯示背景圖片
 overview: # 預覽用
   width: 960  # 畫面的寬
