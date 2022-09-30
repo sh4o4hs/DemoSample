@@ -46,7 +46,7 @@ res: # 絕對路徑
 
 resGamecard:
   src:
-    - gamecard/**/*.{jpg,png}
+    - gamecard/**/*.{jpg,png,avif}
 
 resFlat: # 相對路徑
   src:
