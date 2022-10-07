@@ -6,7 +6,6 @@ import * as v2load from 'makeres/v2load';
 import * as v1info from 'makeres/v1info';
 import * as v2info from 'makeres/v2info';
 
-
 export {
   v1main,
   v2main,
