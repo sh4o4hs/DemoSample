@@ -18,14 +18,22 @@ removeKey: project/demo/sample/
 
 # 最佳化用
 vendor:
-  custom:
+  sceneList:
+    - v1main
+    - v2main
+    - sub
+    - v1load
+    - v2load
+    - v1info
+    - v2info
+  langList:
     - en-us
     - zh-tw
     - zh-cn
     # - vi-vn
     # - th-th
 
-  source: src/resource.js
+  source: src/makeres/resource.js
   resource: res/vendor.yml
   output: res/vendor.js
   
