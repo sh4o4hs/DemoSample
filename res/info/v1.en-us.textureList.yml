@@ -13,6 +13,7 @@ images:
     #   - res/main/ui/image/light_01.png
     #   - res/main/ui/image/light.png
 frames:
+  # '00': abc
   ui:
     btnViewpayPoint:
       - ui.image.light_01.png
