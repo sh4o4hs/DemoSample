@@ -90,4 +90,39 @@ config:
     pixi: depend:pixi/pixi.min.6.5.8.js
     pixi-spine: depend:pixi/pixi-spine.2.0.5.js
 
+  externals:
+    # - stats
+    # - nuts
+    # - loader
+    - mithril
+    # - js-yaml
+    - tweenjs
+    - mustache
+    - howler
+    - io
+    - pixi
+    - pixi-spine
+    - pixi-particles
+    - dragonBones
+    - dragonBonesPixi
+
+````
+
+- src/程式碼
+
+下面程式庫打註解
+
+````js
+// import m from 'mithril';
+// import * as Loader from 'resource-loader';
+// import Stats from 'stats';
+````
+
+.eslintrc.yml  
+
+新增一個條件
+
+````yml
+globals:
+  m: true
 ````

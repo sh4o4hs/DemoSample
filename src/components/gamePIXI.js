@@ -19,6 +19,7 @@ let defaultStyle = {
 };
 
 let plugin = [
+
   // 'pixi-spine',
   // 'pixi-particles'
 ];
@@ -56,6 +57,7 @@ export async function init () {
   // let Loader = await import('resource-loader');
 
   let config = {};
+
   // config.Loader = PIXI.Loader;
   config.m = m;
 

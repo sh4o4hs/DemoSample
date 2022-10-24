@@ -20,6 +20,7 @@ let defaultStyle = {
 
 
 let plugin = [
+
   // 'pixi-spine',
   // 'pixi-particles'
 ];
@@ -71,11 +72,13 @@ async function init () {
   app.baseURL = gamecard.baseURL;
 
   let config = {};
+
   // config.Loader = Loader;
   config.m = m;
 
   // 使用 PIXI
   config.PIXI = PIXI;
+
   // config.Stats = Stats;
   config.plugin = plugin;
 
