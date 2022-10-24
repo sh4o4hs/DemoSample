@@ -72,6 +72,20 @@ export {
 export * from 'res';
 ````
 
+- 調整建立資源檔命令 grunt makeres
+
+新增子命令,單獨處理指定的場景  
+grunt makeres:<語言代號>:<場景代號>  
+例如
+
+````bash
+處理主要場景
+grunt makeres:en-us:main
+
+處理背景讀取 (圖檔與音效檔)
+grunt makeres:en-us:load
+````
+
 ### 步驟 2 修改程式設定
 
 - system.set.yml  
