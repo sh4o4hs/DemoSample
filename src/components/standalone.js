@@ -1,7 +1,7 @@
-import 'pixi';
-import m from 'mithril';
-import * as Loader from 'resource-loader';
-import Stats from 'stats';
+// import 'pixi';
+// import m from 'mithril';
+// import * as Loader from 'resource-loader';
+// import Stats from 'stats';
 import * as nuts from 'nuts';
 import app from 'entity/app';
 import gamecard from 'template/gamecard';
@@ -20,8 +20,8 @@ let defaultStyle = {
 
 
 let plugin = [
-  'pixi-spine',
-  'pixi-particles'
+  // 'pixi-spine',
+  // 'pixi-particles'
 ];
 
 
@@ -71,12 +71,12 @@ async function init () {
   app.baseURL = gamecard.baseURL;
 
   let config = {};
-  config.Loader = Loader;
+  // config.Loader = Loader;
   config.m = m;
 
   // 使用 PIXI
   config.PIXI = PIXI;
-  config.Stats = Stats;
+  // config.Stats = Stats;
   config.plugin = plugin;
 
   // 初始化

@@ -3,8 +3,7 @@
 // import 'pixi-particles';
 //import * as Loader from 'resource-loader';
 //import Stats from 'stats';
-
-import m from 'mithril';
+// import m from 'mithril';
 
 import app from 'entity/app';
 import * as nuts from 'nuts';
@@ -20,8 +19,8 @@ let defaultStyle = {
 };
 
 let plugin = [
-  'pixi-spine',
-  'pixi-particles'
+  // 'pixi-spine',
+  // 'pixi-particles'
 ];
 
 export let Component = {
@@ -57,11 +56,8 @@ export async function init () {
   // let Loader = await import('resource-loader');
 
   let config = {};
-  config.Loader = PIXI.Loader;
+  // config.Loader = PIXI.Loader;
   config.m = m;
-
-  console.log(PIXI.spine);
-  console.log(PIXI.spine.core);
 
   // config.Stats = Stats;
   config.PIXI = PIXI;

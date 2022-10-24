@@ -48,7 +48,7 @@ build:
     # - stats
     # - nuts
     # - loader
-    # - mithril
+    - mithril
     # - js-yaml
     - ogv
     - tweenjs
