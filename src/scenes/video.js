@@ -4,10 +4,11 @@ import app from 'entity/app';
 let player = null;
 
 export async function getPlayer () {
-  let obj = await app.game.getProject('video/player');
+  let obj = await app.game.getProject('video/player', {
+    version: '1.1.0'
+  });
   return obj.lib.player;
 }
-
 
 export async function init (config) {
   if (!player) {
@@ -16,4 +17,3 @@ export async function init (config) {
   await player.init(config);
   app.player = player;
 }
-

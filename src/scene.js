@@ -20,7 +20,9 @@ let eventList = null;
 export async function getLogo () {
   let game = app.game;
   let setting = app.setting;
-  let obj = await game.getProject('video/photos');
+  let obj = await game.getProject('video/photos', {
+    version: '2.0.6'
+  });
   let pathname = obj.pathname;
   let filename = await obj.lib.getLogo(setting.agent);
   filename = `${pathname}/${filename}`;
