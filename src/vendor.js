@@ -56,9 +56,9 @@ export async function get (name) {
   let str = nameMap[`${langID}${name}`];
 
   // 找不到指定的語言時,使用英文
-  // if (!str) {
-  //   str = nameMap[`enus${name}`];
-  // }
+  if (!str) {
+    str = nameMap[`enus${name}`];
+  }
   let res = await import(`${baseURL}${str}`);
   return res.default;
 }
