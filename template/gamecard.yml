@@ -4,7 +4,7 @@ id: sample # 遊戲代號 遊戲代號
 name:   # 遊戲名稱 (多語設定)
   th-th: เกม
   vi-vn: trò chơi
-  ja-jp: game ja-jp
+  # ja-jp: game ja-jp
   en-us: game en-us
   it-it: game it-it
   zh-tw: 遊戲
