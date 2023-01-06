@@ -277,6 +277,7 @@ export function normal (that) {
 
       let isEnabled = true;
       let hasSplit = false;
+      let animList = [];
 
       // testSprite = sprite;
 
@@ -425,6 +426,7 @@ export function normal (that) {
               let frame = new PIXI.Rectangle(x, y, w, h);
               let te = new PIXI.Texture(texture.baseTexture, frame);
               let child = new PIXI.Sprite(te);
+              animList.push(child);
               child.texture = te;
               child.x = 800 + i * (w + 5);
               child.y = 5 + j * (h + 5);
@@ -438,6 +440,11 @@ export function normal (that) {
               // .to({ x: 800 }, 200, createjs.Ease.getPowInOut(2));
             }
           }
+
+        } else {
+          animList.forEach(anim => {
+            anim.texture.baseTexture = texture.baseTexture;
+          });
 
         }
 
