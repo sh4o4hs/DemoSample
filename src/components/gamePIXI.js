@@ -11,7 +11,7 @@ import * as scene from 'src/sceneChild';
 
 let defaultStyle = {
   position: 'absolute',
-  zIndex: 9,
+  zIndex: 0,
   left: '0%',
   top: '0%',
   width: '100%',

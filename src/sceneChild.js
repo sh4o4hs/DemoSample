@@ -73,6 +73,7 @@ export function init () {
         app.gamecard = gamecard;
       }
 
+
       // 初始化
       app.game = game;
       app.setting = conf.setting;
@@ -96,6 +97,7 @@ export function init () {
       // 指定遊戲引擎初始化完成後, 需要執行的工作
       // (開始讀取遊戲資料,然後建立遊戲場景)
       pixiConfig.ready = (game) => {
+
         entity.create({
           game: game,
           langID: conf.langID,
@@ -137,6 +139,7 @@ export function init () {
 
       // todo:game 收到玩家進入遊戲
       let game = conf.game;
+
 
       // 背景讀取資源
       let scene = await import('scene/load');

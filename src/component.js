@@ -49,6 +49,22 @@ export async function run () {
         {
           style
         },
+        m('video', {
+          id: 'video',
+
+          // poster: '//shaka-player-demo.appspot.com/assets/poster.jpg',
+          controls: false,
+          autoplay: true,
+          loop: true,
+          style: {
+            zIndex: 0,
+            position: 'absolute',
+            left: '0%',
+            top: '0%',
+            width: '0%',
+            height: '0%'
+          }
+        }),
         objList.map(obj => {
           return m(obj.com, obj.attrs);
         })

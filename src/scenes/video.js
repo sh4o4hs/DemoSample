@@ -5,9 +5,9 @@ let player = null;
 
 export async function getPlayer () {
   let obj = await app.game.getProject('video/player', {
-    version: '1.1.0'
+    version: '2.0.0'
   });
-  return obj.lib.player;
+  return await obj.lib.getH264();
 }
 
 export async function init (config) {

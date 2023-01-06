@@ -36,16 +36,16 @@ appConfig: sample             # 程式設定檔
 # theOther: other      # 是否有子專案
 pixiConfig: #PIXI 設定
   legacy: false
-  width: &WIDTH 1280
-  height: &HEIGHT 1080
+  width: &WIDTH 1600
+  height: &HEIGHT 1200
   resolution: 1.0
   antialias: false
   transparent: true
 screen:   # 螢幕設定
   isLock: true              # 是否鎖定
   # orientation: portrait    # portrait = 垂直 , landscape = 水平, 沒有的話是不檢查
-  width: 12800               # 寬
-  height: 10800              # 高
+  width: 16000               # 寬
+  height: 12000              # 高
   # portrait: # 垂直鎖定設定
   #   width: 800               # 寬
   #   height: 960              # 高

@@ -99,7 +99,7 @@ export function normal (that) {
   let testResolution = 2.0;
 
   // let testSprite = null;
-  let testFilter = null;
+  // let testFilter = null;
 
   //--初始化對照表
   let set =  {
@@ -126,8 +126,9 @@ export function normal (that) {
 
       async function play () {
         let player = app.player;
-        player.useVideoSource(name);
-        player.useUrls(0);
+        await player.close(0);
+        await player.close(1);
+
 
         if (name === 'autoSicboM') {
           name = 'BaccaratSeatPC';
@@ -161,54 +162,20 @@ export function normal (that) {
 
     async setAuto (obj) {
 
-      // let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+      let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+
       // let channel = 1;
       // let index = 0;
-      // let volume = 1.0;
-      // let fxaa = new PIXI.filters.FXAAFilter();
+      let volume = 1.0;
+
+      let fxaa = new PIXI.filters.FXAAFilter();
 
 
       obj.setClick(async (/*o*/) => {
-        testResolution += 0.5;
-        if (testResolution >= 2.5) {
-          testResolution = 1.0;
-        }
-
-        // await load();
-        // console.log(globalThis);
-
-        // globalThis.ogvjs;
-        await import('/dependence/ogv/ogv-es2017.js');
-        console.log(ogvjs);
-        ogvjs.OGVLoader.base = '/dependence/ogv';
-        let player = new ogvjs.OGVPlayer({
-          forceWebGL: true
-        });
-        const elem = app.game.getElement();
-        console.log(elem);
-        elem.appendChild(player);
-
-        // player.src = '/tmp/demo/vp8/Big_Buck_Bunny_720_10s_5MB.webm';
-        player.src = '/tmp/demo/sample_1280x720.ogx';
-        player.play();
-        player.addEventListener('ended', function () {
-          console.log('播放完成');
-        });
-        console.log(player);
-
-        // app.game.scene.fullscreen(true);
-
-        // let index = 0;
-        // for (let i = 0; i < 1000; i++) {
-        //   index = i;
+        // testResolution += 0.5;
+        // if (testResolution >= 2.5) {
+        //   testResolution = 1.0;
         // }
-        // console.log(index);
-
-        console.log('testResolution : ' + testResolution);
-        if (testFilter) {
-          let filter = testFilter;
-          filter.resolution = testResolution;
-        }
 
         // if(testSprite) {
         //   let sprite = testSprite;
@@ -230,15 +197,17 @@ export function normal (that) {
         //   audio: true,
         //   fps: 100
         // };
-        /*
-        app.game.layer.overlay.removeChild(sprite);
-        sprite.texture = PIXI.Texture.EMPTY;
+
+        // app.game.layer.overlay.removeChild(sprite);
+        // sprite.texture = PIXI.Texture.EMPTY;
         let player = app.player;
         player.useUrls(0);
-        let url = player.getUrl(index);
-        await player.close(channel);
-        console.log(`url=${url}`);
-        let streaming =  await player.open(url, channel);
+        let url = player.getUrl(0);
+        url = 'wss://172.16.102.149:9001/b1';
+
+        // await player.close(channel);
+
+        let streaming =  await player.open(url, 1);
         if (streaming) {
           volume = 1.5 - volume;
           streaming.volume = volume;
@@ -246,10 +215,10 @@ export function normal (that) {
           sprite.texture = texture;
         }
         fxaa.multisample = PIXI.MSAA_QUALITY.LOW;
-        fxaa.resolution = 2.0;
-        sprite.filters = [ fxaa ];
-        sprite.x = 0;
-        sprite.y = 350;
+        fxaa.resolution = 1.0;
+        sprite.filters = [];
+        sprite.x = 20;
+        sprite.y = 540;
         sprite.anchor.x = 0;
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
@@ -257,7 +226,7 @@ export function normal (that) {
         // sprite.scale.x = 0.5;
         // sprite.scale.y = 0.5;
         app.game.layer.main.addChild(sprite);
-*/
+
       });
     },
 
@@ -301,13 +270,13 @@ export function normal (that) {
 
       // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       let filter = new PIXI.filters.ColorMatrixFilter();
-      let channel = 0;
+
+      // let channel = 0;
       let index = 0;
       let volume = 2;
 
-      testFilter = filter;
-
       let isEnabled = true;
+      let hasSplit = false;
 
       // testSprite = sprite;
 
@@ -327,25 +296,44 @@ export function normal (that) {
         }
 
         // 視訊設定
-        let options = {
-          videoBufferSize: 1024 * 1024,
-          audioBufferSize: 128 * 1024,
-          audio: true,
+        // let options = {
+        //   videoBufferSize: 1024 * 1024,
+        //   audioBufferSize: 128 * 1024,
+        //   audio: true,
 
-          // volume: 1.0,
-          fps: 100
-        };
+        //   // volume: 1.0,
+        //   fps: 100
+        // };
 
+        let streaming = null;
         sprite.filters = null;
-        app.game.layer.overlay.removeChild(sprite);
-        sprite.texture = PIXI.Texture.EMPTY;
+
+        // app.game.layer.overlay.removeChild(sprite);
+        // sprite.texture = PIXI.Texture.EMPTY;
         let player = app.player;
         player.useUrls(0);
         let url = player.getUrl(index);
 
-        url = 'wss://28084.wllon.com/';
-        await player.close(channel);
-        let streaming =  await player.open(url, channel, options);
+        url = 'wss://172.16.102.149:9001/b1';
+
+        // console.log(player);
+
+
+        // let voptions = {
+
+        //   // webgl: true,
+        //   // useWorker: true,
+        //   // workerFile : "video/Decoder.js",
+        //   size: {width: 640, height: 360}
+        // };
+
+        // await player.close(0);/
+
+        streaming = await player.open(url);
+
+
+        // await player.close(channel);
+        // streaming =  await player.open(url, channel, options);
         if (streaming) {
 
           volume = 2.0;// 1.5 - volume;
@@ -354,8 +342,8 @@ export function normal (that) {
           sprite.texture = texture;
         }
 
-        sprite.x = 0;
-        sprite.y = 0;
+        sprite.x = 20;
+        sprite.y = 50;
         sprite.anchor.x = 0;
         sprite.anchor.y = 0.0;
         sprite.alpha = 1.0;
@@ -376,11 +364,13 @@ export function normal (that) {
 
         isEnabled = true;
 
-        // let texture = sprite.texture;
+        let texture = sprite.texture;
+
         // let x = texture.width * 0.8;
         // let y = texture.height * 0.4;
-        // let w = 100;
-        // let h = 80;
+        let w = texture.width * 0.25;//100;
+        let h = texture.height * 0.25;//80;
+
         // let frame = new PIXI.Rectangle(x, y, w, h);
         // let te = new PIXI.Texture(texture.baseTexture, frame);
         // let child = new PIXI.Sprite(te);
@@ -425,26 +415,31 @@ export function normal (that) {
             app.game.layer.overlay.addChild(triangle);
     */
         // colorMatrixreen.height / 4;
+        if (!hasSplit) {
+          hasSplit = true;
 
-        // for (let i = 0; i < 4; i++) {
-        //   for (let j = 0; j < 4; j++) {
-        //     let x = i * w;
-        //     let y = j * h;
-        //     let frame = new PIXI.Rectangle(x, y, w, h);
-        //     let te = new PIXI.Texture(texture.baseTexture, frame);
-        //     let child = new PIXI.Sprite(te);
-        //     child.texture = te;
-        //     child.x = 5 + i * (w + 5);
-        //     child.y = 5 + j * (h + 5);
-        //     app.game.layer.overlay.addChild(child);
-        //     createjs.Tween.get(child, { loop: true })
-        //       .to({ x: 400 }, 4000, createjs.Ease.getPowInOut(4))
-        //       .to({ alpha: 0, y: 175 }, 2000, createjs.Ease.getPowInOut(2))
-        //       .to({ alpha: 0, y: 225 }, 400)
-        //       .to({ alpha: 1, y: 200 }, 1000, createjs.Ease.getPowInOut(2))
-        //       .to({ x: 100 }, 500, createjs.Ease.getPowInOut(2));
-        //   }
-        // }
+          for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+              let x = i * w;
+              let y = j * h;
+              let frame = new PIXI.Rectangle(x, y, w, h);
+              let te = new PIXI.Texture(texture.baseTexture, frame);
+              let child = new PIXI.Sprite(te);
+              child.texture = te;
+              child.x = 800 + i * (w + 5);
+              child.y = 5 + j * (h + 5);
+              app.game.layer.overlay.addChild(child);
+              createjs.Tween.get(child, { loop: true })
+                .to({ x: 800 }, 4000, createjs.Ease.getPowInOut(4))
+                .to({ alpha: 0, y: 175 }, 1000, createjs.Ease.getPowInOut(2))
+                .to({ alpha: 0, y: 225 }, 200);
+
+              // .to({ alpha: 1, y: 200 }, 600, createjs.Ease.getPowInOut(2))
+              // .to({ x: 800 }, 200, createjs.Ease.getPowInOut(2));
+            }
+          }
+
+        }
 
 
         // nuts.updateManager.add({
