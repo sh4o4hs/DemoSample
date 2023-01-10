@@ -164,9 +164,16 @@ export function normal (that) {
 
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
-      // let channel = 1;
+
       // let index = 0;
       let volume = 1.0;
+
+      let channel = 0;
+      let urls = [
+        'wss://172.16.102.149:9001/b1',
+        'wss://172.16.102.149:9001/b2',
+        'wss://172.16.102.149:9001/b3'
+      ];
 
       let fxaa = new PIXI.filters.FXAAFilter();
 
@@ -203,7 +210,14 @@ export function normal (that) {
         let player = app.player;
         player.useUrls(0);
         let url = player.getUrl(0);
-        url = 'wss://172.16.102.149:9001/b1';
+
+        url = urls[channel];
+
+        channel++;
+        if (channel >= urls.length) {
+          channel = 0;
+        }
+
 
         // await player.close(channel);
 
@@ -271,9 +285,14 @@ export function normal (that) {
       // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       let filter = new PIXI.filters.ColorMatrixFilter();
 
-      // let channel = 0;
       let index = 0;
       let volume = 2;
+      let channel = 0;
+      let urls = [
+        'wss://172.16.102.149:9001/b1',
+        'wss://172.16.102.149:9001/b2',
+        'wss://172.16.102.149:9001/b3'
+      ];
 
       let isEnabled = true;
       let hasSplit = false;
@@ -315,7 +334,12 @@ export function normal (that) {
         player.useUrls(0);
         let url = player.getUrl(index);
 
-        url = 'wss://172.16.102.149:9001/b1';
+        url = urls[channel];
+
+        channel++;
+        if (channel >= urls.length) {
+          channel = 0;
+        }
 
         // console.log(player);
 
