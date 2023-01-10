@@ -354,7 +354,12 @@ export function normal (that) {
 
         // await player.close(0);/
 
-        streaming = await player.open(url);
+        try {
+          streaming = await player.open(url);
+        } catch (e) {
+          console.error(e);
+        }
+        isEnabled = true;
 
 
         // await player.close(channel);
@@ -387,7 +392,6 @@ export function normal (that) {
 
         await app.game.idle(0.1);
 
-        isEnabled = true;
 
         let texture = sprite.texture;
 
