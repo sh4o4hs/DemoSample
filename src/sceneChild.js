@@ -154,12 +154,17 @@ export function init () {
       let testID = 'liveBaccaratPC';
 
       // let testID = 'BGBaccarat';
+      let options = {
+        useMpeg1: true,
+        useH264: true
+      };
+
       video.init({
         Texture: PIXI.Texture,
         game,
         tableKey: app.tableInfo.tableKey,
         id: testID
-      });
+      }, options);
 
       // 初始化網路
       let net = await import('net/network');

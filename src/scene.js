@@ -115,12 +115,17 @@ export async function init (config) {
       let testID = 'BaccaratSeatPC';
 
       // let testID = 'BGBaccarat';
+      let options = {
+        useMpeg1: true,
+        useH264: true
+      };
+
       await video.init({
         Texture: PIXI.Texture,
         game,
         tableKey: app.tableInfo.tableKey,
         id: testID
-      });
+      }, options);
 
       // 初始化網路
       let net = await import('net/network');

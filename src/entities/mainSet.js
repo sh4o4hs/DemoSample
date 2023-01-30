@@ -125,10 +125,18 @@ export function normal (that) {
       let name = 'autoSicboM';
 
       async function play () {
-        let player = app.player;
-        await player.close(0);
-        await player.close(1);
 
+        let h264 = app.h264;
+        if (h264) {
+          await h264.close(0);
+          await h264.close(1);
+        }
+
+        let mpeg1 = app.mpeg1;
+        if (mpeg1) {
+          await mpeg1.close(0);
+          await mpeg1.close(1);
+        }
 
         if (name === 'autoSicboM') {
           name = 'BaccaratSeatPC';
@@ -207,7 +215,7 @@ export function normal (that) {
 
         // app.game.layer.overlay.removeChild(sprite);
         // sprite.texture = PIXI.Texture.EMPTY;
-        let player = app.player;
+        let player = app.h264;
         player.useUrls(0);
         let url = player.getUrl(0);
 
@@ -219,7 +227,7 @@ export function normal (that) {
         }
 
 
-        // await player.close(channel);
+        await player.close(1);
 
         let streaming =  await player.open(url, 1);
         if (streaming) {
@@ -250,8 +258,16 @@ export function normal (that) {
         if (sound && sound.music && sound.music.play) {
           sound.music.stop();
         }
-        let player = app.player;
-        await player.closeAll();
+
+        let mpeg1 = app.mpeg1;
+        if (mpeg1) {
+          await mpeg1.closeAll();
+        }
+
+        let h264 = app.h264;
+        if (h264) {
+          await h264.closeAll();
+        }
 
         let scene = await import('scene/sub');
         scene.reset();
@@ -330,7 +346,7 @@ export function normal (that) {
 
         // app.game.layer.overlay.removeChild(sprite);
         // sprite.texture = PIXI.Texture.EMPTY;
-        let player = app.player;
+        let player = app.h264;
         player.useUrls(0);
         let url = player.getUrl(index);
 
