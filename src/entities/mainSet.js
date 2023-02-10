@@ -178,9 +178,22 @@ export function normal (that) {
 
       let channel = 0;
       let urls = [
-        'wss://172.16.102.149:9001/b1',
-        'wss://172.16.102.149:9001/b2',
-        'wss://172.16.102.149:9001/b3'
+        {
+          type: 'mpeg1',
+          main: 'wss://33084.wllon.com/'
+        },
+        {
+          type: 'h264',
+          main: 'wss://172.16.102.149:9001/b1'
+        },
+        {
+          type: 'h264',
+          main: 'wss://172.16.102.149:9001/b2'
+        },
+        {
+          type: 'h264',
+          main: 'wss://172.16.102.149:9001/b3'
+        }
       ];
 
       let fxaa = new PIXI.filters.FXAAFilter();
@@ -206,20 +219,22 @@ export function normal (that) {
         // }
 
         // 視訊設定
-        // let options = {
-        //   videoBufferSize: 256 * 1024,
-        //   audioBufferSize: 32 * 1024,
-        //   audio: true,
-        //   fps: 100
-        // };
+        let options = {
+          videoBufferSize: 256 * 1024,
+          audioBufferSize: 32 * 1024,
+          audio: true,
+          fps: 100
+        };
 
         // app.game.layer.overlay.removeChild(sprite);
         // sprite.texture = PIXI.Texture.EMPTY;
-        let player = app.h264;
-        player.useUrls(0);
-        let url = player.getUrl(0);
-
-        url = urls[channel];
+        let url = urls[channel];
+        let player = null;
+        if (url.type === 'h264') {
+          player = app.h264;
+        } else if (url.type === 'mpeg1') {
+          player = app.mpeg1;
+        }
 
         channel++;
         if (channel >= urls.length) {
@@ -229,7 +244,7 @@ export function normal (that) {
 
         await player.close(1);
 
-        let streaming =  await player.open(url, 1);
+        let streaming =  await player.open(url.main, 1, options);
         if (streaming) {
           volume = 1.5 - volume;
           streaming.volume = volume;
@@ -259,15 +274,8 @@ export function normal (that) {
           sound.music.stop();
         }
 
-        let mpeg1 = app.mpeg1;
-        if (mpeg1) {
-          await mpeg1.closeAll();
-        }
-
-        let h264 = app.h264;
-        if (h264) {
-          await h264.closeAll();
-        }
+        let video = await import('scene/video');
+        await video.release();
 
         let scene = await import('scene/sub');
         scene.reset();
@@ -346,10 +354,8 @@ export function normal (that) {
 
         // app.game.layer.overlay.removeChild(sprite);
         // sprite.texture = PIXI.Texture.EMPTY;
+        let url;
         let player = app.h264;
-        player.useUrls(0);
-        let url = player.getUrl(index);
-
         url = urls[channel];
 
         channel++;

@@ -1,4 +1,8 @@
 images:
+  '1': a
+  '01': b
+  '001': c
+  '0001': d
   demo: #群組
     # coin: #籌碼
     #   50: res/sub/base/chip_50.png
