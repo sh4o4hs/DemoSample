@@ -128,12 +128,14 @@ export function normal (that) {
 
         let h264 = app.h264;
         if (h264) {
+          console.log('[h264.close]');
           await h264.close(0);
           await h264.close(1);
         }
 
         let mpeg1 = app.mpeg1;
         if (mpeg1) {
+          console.log('[mpeg1.close]');
           await mpeg1.close(0);
           await mpeg1.close(1);
         }
@@ -173,10 +175,10 @@ export function normal (that) {
       let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
 
-      // let index = 0;
       let volume = 1.0;
 
-      let channel = 0;
+      // let index = 0;
+      let channel = 1;
       let urls = [
         {
           type: 'mpeg1',
@@ -193,6 +195,14 @@ export function normal (that) {
         {
           type: 'h264',
           main: 'wss://172.16.102.149:9001/b3'
+        },
+        {
+          type: 'h264',
+          main: 'wss://172.16.102.149:9001/b4'
+        },
+        {
+          type: 'h264',
+          main: 'wss://172.16.102.149:9001/b5'
         }
       ];
 
@@ -228,23 +238,29 @@ export function normal (that) {
 
         // app.game.layer.overlay.removeChild(sprite);
         // sprite.texture = PIXI.Texture.EMPTY;
-        let url = urls[channel];
+        let url = urls[app.video1];
         let player = null;
+
+        if (app.lastPlayer) {
+          await app.lastPlayer.close(channel);
+          app.lastPlayer = null;
+        }
+
         if (url.type === 'h264') {
           player = app.h264;
         } else if (url.type === 'mpeg1') {
           player = app.mpeg1;
         }
 
-        channel++;
-        if (channel >= urls.length) {
-          channel = 0;
+        app.video1++;
+        if (app.video1 >= urls.length) {
+          app.video1 = 0;
         }
 
+        // await player.close(channel);
 
-        await player.close(1);
-
-        let streaming =  await player.open(url.main, 1, options);
+        let streaming =  await player.open(url.main, channel, options);
+        app.lastPlayer = player;
         if (streaming) {
           volume = 1.5 - volume;
           streaming.volume = volume;
@@ -287,7 +303,7 @@ export function normal (that) {
           // group: 'demo',
           // id: 'sample',
           // tablekey: 'abcd1234',
-          version: '2.0.0',
+          version: '2.1.0',
           game: 'HexagonSlot',
           group: 'slot',
           id: 'sample',
@@ -309,13 +325,15 @@ export function normal (that) {
       // let colorMatrix = new PIXI.filters.ColorMatrixFilter();
       let filter = new PIXI.filters.ColorMatrixFilter();
 
-      let index = 0;
+      // let index = 0;
       let volume = 2;
       let channel = 0;
       let urls = [
         'wss://172.16.102.149:9001/b1',
         'wss://172.16.102.149:9001/b2',
-        'wss://172.16.102.149:9001/b3'
+        'wss://172.16.102.149:9001/b3',
+        'wss://172.16.102.149:9001/b4',
+        'wss://172.16.102.149:9001/b5'
       ];
 
       let isEnabled = true;
@@ -334,10 +352,10 @@ export function normal (that) {
         let sound = center?.sounds?.demo;
         sound?.countDown?.play();
 
-        index += 1;
-        if (index > 2) {
-          index = 0;
-        }
+        // index += 1;
+        // if (index > 2) {
+        //   index = 0;
+        // }
 
         // 視訊設定
         // let options = {
@@ -356,11 +374,11 @@ export function normal (that) {
         // sprite.texture = PIXI.Texture.EMPTY;
         let url;
         let player = app.h264;
-        url = urls[channel];
+        url = urls[app.video0];
 
-        channel++;
-        if (channel >= urls.length) {
-          channel = 0;
+        app.video0++;
+        if (app.video0 >= urls.length) {
+          app.video0 = 0;
         }
 
         // console.log(player);
@@ -377,7 +395,7 @@ export function normal (that) {
         // await player.close(0);/
 
         try {
-          streaming = await player.open(url);
+          streaming = await player.open(url, channel);
         } catch (e) {
           console.error(e);
         }

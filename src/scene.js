@@ -48,6 +48,40 @@ export async function init (config) {
   app.baseURL = baseURL;
   app.langID = langID;
 
+  console.log(config);
+
+  // let renderer = app.game.getRenderer();
+  // console.log(renderer);
+
+  // let SPECTOR = await import('spectorjs');
+  // console.log(SPECTOR);
+  // let spector = new SPECTOR.Spector();
+  // spector.displayUI();
+
+
+  // if (renderer?.context?.gl) {
+  //   await import('https://greggman.github.io/webgl-memory/webgl-memory.js');
+
+  // }
+
+  let { initializeApp }  = await import('firebase/app');
+  console.log(initializeApp);
+
+  const firebaseConfig = {
+  };
+
+  const zz = initializeApp(firebaseConfig);
+  console.log(zz);
+
+
+  // if (app.gamecard.devMode === 'debug') {
+  //   globalThis.__PIXI_APP__ = {
+  //     stage: app.game.layer.stage,
+  //     view: app.game.getCanvas(),
+  //     renderer: app.game.getRenderer()
+  //   };
+  // }
+
 
   if (eventList) {
     return eventList;
@@ -75,6 +109,14 @@ export async function init (config) {
 
       await scene.create(game, loadingEvent);
       nuts.scene.sceneManager.setEvent(null);
+
+      // const ext = renderer.context.gl.getExtension('GMAN_webgl_memory');
+      // console.error(ext);
+      // if (ext) {
+      //   const info = ext.getMemoryInfo();
+      //   console.error(info);
+      // }
+
     },
 
     /**

@@ -27,6 +27,7 @@ const options = {
 const parser = new CodecParser(mimeType, options);
 console.log(parser);
 
+
 export {
   scene
 };

@@ -51,6 +51,7 @@ res: # 絕對路徑
     - res/sub/**/*.{avif,jpg,png,wav,ogg,mp3}
     - res/background/**/*.{avif,jpg,png,wav,ogg,mp3}
     - res/overview/**/*.{avif,jpg,png,wav,ogg,mp3}
+    - res/video/**/*.{mp4,h264,avi,webm,ogg}
 
 resGamecard:
   src:

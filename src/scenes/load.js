@@ -1,5 +1,7 @@
 import app from 'entity/app';
 
+import parseAPNG from 'apng-js';
+
 let isCreate = false;
 let sceneSounds = null;
 let scene = null;
@@ -56,6 +58,93 @@ export async function create (game) {
 
     await main.reload(scene);
   }
+
+  // const video = document.createElement('video');
+  // video.src = app.baseURL + 'res/video/soccer1.webm';
+  // video.controls = true;
+  // video.muted = false;
+
+  // console.log(video);
+
+  // video.onplay = (/* event */) => {
+  //   // console.log('播放');
+  // };
+
+  // video.onended = (/* event */) => {
+  //   // console.log('結束');
+  //   video.play();
+  // };
+
+  // const videoMask = document.createElement('video');
+  // videoMask.src = '	https://simpl.info/videoalpha/video/dancer1.webm';
+  // videoMask.controls = true;
+  // videoMask.muted = false;
+
+
+  // videoMask.onplay = (/* event */) => {
+  // };
+
+  // videoMask.onended = (/* event */) => {
+  //   video.play();
+  // };
+
+
+  let url = app.baseURL + 'res/video/kingBaccarata001_1.png';
+
+  let response = await fetch(url);
+
+  // let apng = null;
+  // let teVideo = PIXI.Texture.EMPTY;
+  if (response.ok) {
+    let array = await response.arrayBuffer();
+    let apng = parseAPNG(array);
+
+
+    apng.createImages().then(async () => {
+      let teList = [];
+      console.log(`${apng.width}px`);
+      console.log(`${apng.height}px`);
+
+      // let firstFrame = null;
+      apng.frames.forEach(f => {
+
+        // console.log(f);
+        // console.log(`${f.left}px`);
+        // console.log(`${f.top}px`);
+        let te = PIXI.Texture.from(f.imageElement);
+        teList.push(te);
+      });
+
+      let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
+      game.layer.overlay.addChild(sprite);
+
+      console.log(teList);
+      for (let i = 0; i < teList.length; i++) {
+        let te = teList[i];
+        let f = apng.frames[i];
+        console.log(f);
+
+        sprite.texture = te;
+        sprite.x = f.left;
+        sprite.y = f.top;
+
+        await game.idle(0.15);
+      }
+
+      // console.log(teVideo);
+    });
+
+    // teVideo = PIXI.Texture.fromBuffer(array, 480, 400);
+
+    // self.texture.baseTexture.resource.data = array;
+    // self.texture.baseTexture.update();
+  }
+
+  // teVideo = PIXI.Texture.from(url);
+
+  // const teMask = PIXI.Texture.from(videoMask);
+  // let mask = new PIXI.Sprite(teMask);
+
 
   //----------------------------------------
   // 播放背景音樂
