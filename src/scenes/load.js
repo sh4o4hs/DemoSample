@@ -127,8 +127,7 @@ export async function create (game) {
         sprite.texture = te;
         sprite.x = f.left;
         sprite.y = f.top;
-
-        await game.idle(0.15);
+        await game.idle(f.delay * 0.001);
       }
 
       // console.log(teVideo);
