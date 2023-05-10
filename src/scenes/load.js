@@ -6,6 +6,8 @@ let isCreate = false;
 let sceneSounds = null;
 let scene = null;
 
+let avatar = null;
+
 export async function create (game) {
   let sceneManager = app.nuts.scene.sceneManager;
   let lib = await import('entity/main');
@@ -88,56 +90,75 @@ export async function create (game) {
   //   video.play();
   // };
 
+  if (!avatar) {
+    let url = app.baseURL + 'res/video/kingBaccarata001_1.png';
 
-  let url = app.baseURL + 'res/video/kingBaccarata001_1.png';
+    // let bytes = 0;
 
-  let response = await fetch(url);
+    // async function readData (url) {
+    //   const response = await fetch(url);
+    //   for await (const chunk of response.body) {
+    //     bytes += chunk.length;
+    //     console.log(`Chunk: ${chunk.length}. Read ${bytes} characters.`);
+    //   }
+    //   return response;
+    // }
+    // let response = await readData(url);
 
-  // let apng = null;
-  // let teVideo = PIXI.Texture.EMPTY;
-  if (response.ok) {
-    let array = await response.arrayBuffer();
-    let apng = parseAPNG(array);
+    let response = await fetch(url);
+
+    // let apng = null;
+    // let teVideo = PIXI.Texture.EMPTY;
+    if (response.ok) {
+      let array = await response.arrayBuffer();
+      let apng = parseAPNG(array);
 
 
-    apng.createImages().then(async () => {
-      let teList = [];
-      console.log(`${apng.width}px`);
-      console.log(`${apng.height}px`);
+      apng.createImages().then(async () => {
 
-      // let firstFrame = null;
-      apng.frames.forEach(f => {
+        console.log(`${apng.width}px`);
+        console.log(`${apng.height}px`);
 
-        // console.log(f);
-        // console.log(`${f.left}px`);
-        // console.log(`${f.top}px`);
-        let te = PIXI.Texture.from(f.imageElement);
-        teList.push(te);
+        // let firstFrame = null;
+        apng.frames.forEach(f => {
+
+          // console.log(f);
+          // console.log(`${f.left}px`);
+          // console.log(`${f.top}px`);
+          let te = PIXI.Texture.from(f.imageElement);
+          f.texture = te;
+        });
+
+        avatar = new PIXI.Sprite(PIXI.Texture.EMPTY);
+        avatar.apng = apng;
+
+        game.layer.overlay.addChild(avatar);
+
+        for (let i = 0; i < apng.frames.length; i++) {
+          let f = apng.frames[i];
+
+          // console.log(f);
+          avatar.texture = f.texture;
+          avatar.x = f.left;
+          avatar.y = f.top;
+          await game.idle(f.delay * 0.001);
+        }
       });
 
-      let sprite = new PIXI.Sprite(PIXI.Texture.EMPTY);
-      game.layer.overlay.addChild(sprite);
+    }
 
-      console.log(teList);
-      for (let i = 0; i < teList.length; i++) {
-        let te = teList[i];
-        let f = apng.frames[i];
-        console.log(f);
+  } else {
+    game.layer.overlay.addChild(avatar);
 
-        sprite.texture = te;
-        sprite.x = f.left;
-        sprite.y = f.top;
-        await game.idle(f.delay * 0.001);
-      }
-
-      // console.log(teVideo);
-    });
-
-    // teVideo = PIXI.Texture.fromBuffer(array, 480, 400);
-
-    // self.texture.baseTexture.resource.data = array;
-    // self.texture.baseTexture.update();
+    for (let i = 0; i < avatar.apng.frames.length; i++) {
+      let f = avatar.apng.frames[i];
+      avatar.texture = f.texture;
+      avatar.x = f.left;
+      avatar.y = f.top;
+      await game.idle(f.delay * 0.001);
+    }
   }
+
 
   // teVideo = PIXI.Texture.from(url);
 

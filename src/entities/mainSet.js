@@ -303,7 +303,7 @@ export function normal (that) {
           // group: 'demo',
           // id: 'sample',
           // tablekey: 'abcd1234',
-          version: '2.1.0',
+          version: '2.2.0',
           game: 'HexagonSlot',
           group: 'slot',
           id: 'sample',
