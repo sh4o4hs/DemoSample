@@ -9,8 +9,8 @@ let scene = null;
 let elephant1 = null;
 let elephant2 = null;
 
-let click1 = null;
-let click2 = null;
+let clock1 = null;
+let clock2 = null;
 
 export async function create (game) {
   let sceneManager = app.nuts.scene.sceneManager;
@@ -97,7 +97,7 @@ export async function create (game) {
 
   // 建立
   let url;
-  url = app.baseURL + 'res/video/kingBaccarata001_1.png';
+  url = app.baseURL + 'res/video/elephant.png';
   let image1 = await png.createImage(url);
 
   url = app.baseURL + 'res/video/clock.png';
@@ -111,26 +111,26 @@ export async function create (game) {
     elephant2 = await png.createPlayer(image1);
   }
 
-  if (!click1) {
-    click1 = await png.createPlayer(image1);
+  if (!clock1) {
+    clock1 = await png.createPlayer(image2);
   }
 
-  if (!click2) {
-    click2 = await png.createPlayer(image1);
+  if (!clock2) {
+    clock2 = await png.createPlayer(image2);
   }
 
   // 顯示
-  click1.x = 10;
-  click1.y = 400;
-  game.layer.overlay.addChild(click1);
+  clock1.x = 10;
+  clock1.y = 400;
+  game.layer.overlay.addChild(clock1);
 
-  click2.x = 200;
-  click2.y = 400;
-  click2.speed = 0.0005;
-  game.layer.overlay.addChild(click2);
+  clock2.x = 10;
+  clock2.y = 600;
+  clock2.speed = 0.0005;
+  game.layer.overlay.addChild(clock2);
 
   elephant1.x = 10;
-  elephant1.speed = 0.005;
+  elephant1.speed = 0.002;
   game.layer.overlay.addChild(elephant1);
 
   elephant2.x = 350;
@@ -139,32 +139,35 @@ export async function create (game) {
 
 
   // 播放
-  async function playClick1 () {
-    console.log('[click1] start');
+  async function playClock1 () {
+    console.log('[clock1] start');
     for (let i = 0; i < 5; i++) {
-      await click1.play();
+      await clock1.play();
     }
-    console.log('[click1] end');
+    console.log('[clock1] end');
   }
-  async function playClick2 () {
-    console.log('[click2] start');
+  async function playClock2 () {
+    console.log('[clock2] start');
     for (let i = 0; i < 10; i++) {
-      await click2.play();
+      await clock2.play();
     }
-    console.log('[click2] end');
+    console.log('[clock2] end');
   }
-  console.log('[playClick1] start');
-  playClick1();
-  console.log('[playClick1] end');
+  console.log('[playclock1] start');
+  playClock1();
+  console.log('[playclock1] end');
 
-  console.log('[playClick2] start');
-  await playClick2();
-  console.log('[playClick2] end');
+  console.log('[playclock2] start');
+  clock2.loop = 5;
+  clock2.play();
+
+  // playClock2();
+  console.log('[playclock2] end');
 
 
   console.log('[play] start elephant1');
-  elephant1.play(5);
-  await game.idle(1.0);
+  elephant1.play(0);
+  await game.idle(0.5);
   await elephant1.pause();
   console.log('[play] end elephant1');
 
@@ -177,7 +180,8 @@ export async function create (game) {
   console.log('[play] end elephant1');
 
   console.log('[play] start elephant2');
-  elephant2.speed = 0.002;
+  elephant2.speed = 0.0005;
+  elephant2.loop = true;
   await elephant2.play();
   console.log('[play] end elephant2');
 

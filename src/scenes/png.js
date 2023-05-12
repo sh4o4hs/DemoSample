@@ -55,32 +55,64 @@ export async function createImage (url) {
 
 export async function createPlayer (image) {
 
+  let canvas = document.createElement('canvas');
+  canvas.width = image.width;
+  canvas.height = image.height;
+  let context = canvas.getContext('2d');
+
   let group = new PIXI.Container();
 
   let current = new PIXI.Sprite(PIXI.Texture.EMPTY);
-  let prev = new PIXI.Sprite(PIXI.Texture.EMPTY);
   group.current = current;
-  group.prev = prev;
   group.addChild(current);
-  group.addChild(prev);
   group.speed = 0.001;
   group.index = 0;
   group.image = image;
   group.isPlay = false;
+  group.loop = false;
 
   let game = app.game;
   let frames = image.frames;
 
-  let f = frames[0];
+  let _currentFrameNumber = -1;
+  let _prevFrame = null;
+  let _prevFrameData = null;
+  let currentFrame = null;
 
-  if (!f.texture) {
-    console.log(`[png.texture] index : ${0}`, f);
-    f.texture = PIXI.Texture.from(f.imageElement);
+  let teTest = null;
+
+  function renderNextFrame () {
+    _currentFrameNumber = (_currentFrameNumber + 1) % frames.length;
+    currentFrame = frames[_currentFrameNumber];
+
+    if (_prevFrame && _prevFrame.disposeOp === 1) {
+      context.clearRect(_prevFrame.left, _prevFrame.top, _prevFrame.width, _prevFrame.height);
+    } else if (_prevFrame && _prevFrame.disposeOp === 2) {
+      context.putImageData(_prevFrameData, _prevFrame.left, _prevFrame.top);
+    }
+
+    const frame = currentFrame;
+    _prevFrame = frame;
+    _prevFrameData = null;
+    if (frame.disposeOp === 2) {
+      _prevFrameData = context.getImageData(frame.left, frame.top, frame.width, frame.height);
+    }
+    if (frame.blendOp === 0) {
+      context.clearRect(frame.left, frame.top, frame.width, frame.height);
+    }
+
+    context.drawImage(frame.imageElement, frame.left, frame.top);
+
+    let img = context.getImageData(0, 0, image.width, image.height);
+
+    if (!teTest) {
+      teTest = PIXI.Texture.fromBuffer(img.data, image.width, image.height);
+      current.texture = teTest;
+    } else {
+      teTest.baseTexture.resource.data = img.data;
+      teTest.baseTexture.update();
+    }
   }
-  current.x = f.left;
-  current.y = f.top;
-  current.texture = f.texture;
-
   async function play (idx) {
     if (group.isPlay) {
       console.log('[png.play] 播放中');
@@ -102,43 +134,29 @@ export async function createPlayer (image) {
         group.pauseResolve = null;
         return;
       }
+      renderNextFrame();
+
       let f = frames[i];
-      if (!f.texture) {
-        console.log(`[png.texture] index : ${i}`, f);
-        f.texture = PIXI.Texture.from(f.imageElement);
-      }
-
-      // if (f.disposeOp === 1) {
-      //   prev.texture = PIXI.Texture.EMPTY;
-      // } else if (f.disposeOp === 2) {
-      //   prev.texture = f.texture;
-      //   prev.x = f.left;
-      //   prev.y = f.top;
-      // }
-
-
-      // if (f.blendOp === 1) {
-      //   prev.texture = f.texture;
-      //   prev.x = f.left;
-      //   prev.y = f.top;
-      //   prev.blendMode = PIXI.BLEND_MODES.ERASE;
-
-      // } else {
-      //   prev.blendMode = PIXI.BLEND_MODES.NORMAL;
-      //   current.texture = f.texture;
-      //   current.x = f.left;
-      //   current.y = f.top;
-      // }
-
-      current.texture = f.texture;
-      current.x = f.left;
-      current.y = f.top;
 
       await game.idle(f.delay * group.speed);
 
       group.index = i;
     }
     group.index = 0;
+    if (group.loop) {
+      console.log('[png]loop:', group.loop);
+      group.isPlay = false;
+      if (typeof group.loop === 'number') {
+        if (group.loop > 0) {
+          group.loop--;
+          await play();
+          return;
+        }
+      } else {
+        await play();
+        return;
+      }
+    }
     group.isPlay = false;
     group.isPause = false;
     group.pauseResolve = null;
@@ -161,14 +179,11 @@ export async function createPlayer (image) {
     group.isPause = false;
     group.pauseResolve = null;
 
-    let f = frames[0];
-    prev.texture = PIXI.Texture.EMPTY;
-
-    current.x = f.left;
-    current.y = f.top;
-    current.texture = f.texture;
+    renderNextFrame();
 
   }
+
+  stop();
 
 
   group.play = play;
