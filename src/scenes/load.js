@@ -1,12 +1,16 @@
 import app from 'entity/app';
+import * as png from 'scene/png';
 
-import parseAPNG from 'apng-js';
 
 let isCreate = false;
 let sceneSounds = null;
 let scene = null;
 
-let avatar = null;
+let elephant1 = null;
+let elephant2 = null;
+
+let click1 = null;
+let click2 = null;
 
 export async function create (game) {
   let sceneManager = app.nuts.scene.sceneManager;
@@ -90,75 +94,96 @@ export async function create (game) {
   //   video.play();
   // };
 
-  if (!avatar) {
-    let url = app.baseURL + 'res/video/kingBaccarata001_1.png';
 
-    // let bytes = 0;
+  // 建立
+  let url;
+  url = app.baseURL + 'res/video/kingBaccarata001_1.png';
+  let image1 = await png.createImage(url);
 
-    // async function readData (url) {
-    //   const response = await fetch(url);
-    //   for await (const chunk of response.body) {
-    //     bytes += chunk.length;
-    //     console.log(`Chunk: ${chunk.length}. Read ${bytes} characters.`);
-    //   }
-    //   return response;
-    // }
-    // let response = await readData(url);
+  url = app.baseURL + 'res/video/clock.png';
+  let image2 = await png.createImage(url);
 
-    let response = await fetch(url);
-
-    // let apng = null;
-    // let teVideo = PIXI.Texture.EMPTY;
-    if (response.ok) {
-      let array = await response.arrayBuffer();
-      let apng = parseAPNG(array);
-
-
-      apng.createImages().then(async () => {
-
-        console.log(`${apng.width}px`);
-        console.log(`${apng.height}px`);
-
-        // let firstFrame = null;
-        apng.frames.forEach(f => {
-
-          // console.log(f);
-          // console.log(`${f.left}px`);
-          // console.log(`${f.top}px`);
-          let te = PIXI.Texture.from(f.imageElement);
-          f.texture = te;
-        });
-
-        avatar = new PIXI.Sprite(PIXI.Texture.EMPTY);
-        avatar.apng = apng;
-
-        game.layer.overlay.addChild(avatar);
-
-        for (let i = 0; i < apng.frames.length; i++) {
-          let f = apng.frames[i];
-
-          // console.log(f);
-          avatar.texture = f.texture;
-          avatar.x = f.left;
-          avatar.y = f.top;
-          await game.idle(f.delay * 0.001);
-        }
-      });
-
-    }
-
-  } else {
-    game.layer.overlay.addChild(avatar);
-
-    for (let i = 0; i < avatar.apng.frames.length; i++) {
-      let f = avatar.apng.frames[i];
-      avatar.texture = f.texture;
-      avatar.x = f.left;
-      avatar.y = f.top;
-      await game.idle(f.delay * 0.001);
-    }
+  if (!elephant1) {
+    elephant1 = await png.createPlayer(image1);
   }
 
+  if (!elephant2) {
+    elephant2 = await png.createPlayer(image1);
+  }
+
+  if (!click1) {
+    click1 = await png.createPlayer(image1);
+  }
+
+  if (!click2) {
+    click2 = await png.createPlayer(image1);
+  }
+
+  // 顯示
+  click1.x = 10;
+  click1.y = 400;
+  game.layer.overlay.addChild(click1);
+
+  click2.x = 200;
+  click2.y = 400;
+  click2.speed = 0.0005;
+  game.layer.overlay.addChild(click2);
+
+  elephant1.x = 10;
+  elephant1.speed = 0.005;
+  game.layer.overlay.addChild(elephant1);
+
+  elephant2.x = 350;
+  elephant2.speed = 0.001;
+  game.layer.overlay.addChild(elephant2);
+
+
+  // 播放
+  async function playClick1 () {
+    console.log('[click1] start');
+    for (let i = 0; i < 5; i++) {
+      await click1.play();
+    }
+    console.log('[click1] end');
+  }
+  async function playClick2 () {
+    console.log('[click2] start');
+    for (let i = 0; i < 10; i++) {
+      await click2.play();
+    }
+    console.log('[click2] end');
+  }
+  console.log('[playClick1] start');
+  playClick1();
+  console.log('[playClick1] end');
+
+  console.log('[playClick2] start');
+  await playClick2();
+  console.log('[playClick2] end');
+
+
+  console.log('[play] start elephant1');
+  elephant1.play(5);
+  await game.idle(1.0);
+  await elephant1.pause();
+  console.log('[play] end elephant1');
+
+  console.log('[play] start elephant2');
+  await elephant2.play();
+  console.log('[play] end elephant2');
+
+  console.log('[play] start elephant1');
+  await elephant1.play();
+  console.log('[play] end elephant1');
+
+  console.log('[play] start elephant2');
+  elephant2.speed = 0.002;
+  await elephant2.play();
+  console.log('[play] end elephant2');
+
+  // 停止
+  elephant1.stop();
+  elephant2.stop();
 
   // teVideo = PIXI.Texture.from(url);
 
