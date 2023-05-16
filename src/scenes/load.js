@@ -97,44 +97,45 @@ export async function create (game) {
 
   // 建立
   let url;
-  url = app.baseURL + 'res/video/elephant.png';
+  url = app.baseURL + 'res/video/kingBaccarata001_comfort.png';
   let image1 = await png.createImage(url);
 
   url = app.baseURL + 'res/video/clock.png';
   let image2 = await png.createImage(url);
 
   if (!elephant1) {
-    elephant1 = await png.createPlayer(image1);
+    elephant1 = await png.createPlayer(image1, 'elephant1');
   }
 
   if (!elephant2) {
-    elephant2 = await png.createPlayer(image1);
+    elephant2 = await png.createPlayer(image1, 'elephant2');
   }
 
   if (!clock1) {
-    clock1 = await png.createPlayer(image2);
+    clock1 = await png.createPlayer(image2, 'clock1');
   }
 
   if (!clock2) {
-    clock2 = await png.createPlayer(image2);
+    clock2 = await png.createPlayer(image2, 'clock2');
   }
 
   // 顯示
   clock1.x = 10;
   clock1.y = 400;
+  clock2.speed = 1.0;
   game.layer.overlay.addChild(clock1);
 
   clock2.x = 10;
   clock2.y = 600;
-  clock2.speed = 0.0005;
+  clock2.speed = 0.5;
   game.layer.overlay.addChild(clock2);
 
   elephant1.x = 10;
-  elephant1.speed = 0.002;
+  elephant1.speed = 0.5;
   game.layer.overlay.addChild(elephant1);
 
   elephant2.x = 350;
-  elephant2.speed = 0.001;
+  elephant2.speed = 0.75;
   game.layer.overlay.addChild(elephant2);
 
 
@@ -180,14 +181,25 @@ export async function create (game) {
   console.log('[play] end elephant1');
 
   console.log('[play] start elephant2');
-  elephant2.speed = 0.0005;
-  elephant2.loop = true;
+  elephant2.speed = 1.0;
+  elephant2.loop = false;
   await elephant2.play();
   console.log('[play] end elephant2');
 
-  // 停止
-  elephant1.stop();
-  elephant2.stop();
+  await game.idle(1.0);
+  await elephant2.pause();
+
+  await game.idle(1.0);
+  await elephant2.play();
+
+  await game.idle(1.0);
+  await elephant2.pause();
+
+  await game.idle(1.0);
+  await elephant2.play(10);
+
+  elephant2.loop = true;
+  elephant2.play();
 
   // teVideo = PIXI.Texture.from(url);
 

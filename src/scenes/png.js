@@ -53,7 +53,15 @@ export async function createImage (url) {
 }
 
 
-export async function createPlayer (image) {
+let playerName = 0;
+
+export async function createPlayer (image, name) {
+
+  if (!name) {
+    name = playerName;
+    playerName++;
+  }
+  console.log('[png.createPlayer]', name);
 
   let canvas = document.createElement('canvas');
   canvas.width = image.width;
@@ -63,39 +71,43 @@ export async function createPlayer (image) {
   let group = new PIXI.Container();
 
   let current = new PIXI.Sprite(PIXI.Texture.EMPTY);
-  group.current = current;
-  group.addChild(current);
-  group.speed = 0.001;
-  group.index = 0;
-  group.image = image;
-  group.isPlay = false;
-  group.loop = false;
 
   let game = app.game;
   let frames = image.frames;
-
-  let _currentFrameNumber = -1;
-  let _prevFrame = null;
-  let _prevFrameData = null;
+  let frameCnts = frames.length;
+  let currentFrameNumber = -1;
+  let prevFrame = null;
+  let prevFrameData = null;
   let currentFrame = null;
+
+  group.name = name;
+  group.current = current;
+  group.addChild(current);
+  group.speed = 1.0;
+  group.index = frameCnts - 1;
+  group.image = image;
+  group.isPlay = false;
+  group.loop = false;
+  group.playResolve = null;
+  group.currentTime = 0;
 
   let teTest = null;
 
   function renderNextFrame () {
-    _currentFrameNumber = (_currentFrameNumber + 1) % frames.length;
-    currentFrame = frames[_currentFrameNumber];
+    currentFrameNumber = (currentFrameNumber + 1) % frameCnts;
+    currentFrame = frames[currentFrameNumber];
 
-    if (_prevFrame && _prevFrame.disposeOp === 1) {
-      context.clearRect(_prevFrame.left, _prevFrame.top, _prevFrame.width, _prevFrame.height);
-    } else if (_prevFrame && _prevFrame.disposeOp === 2) {
-      context.putImageData(_prevFrameData, _prevFrame.left, _prevFrame.top);
+    if (prevFrame && prevFrame.disposeOp === 1) {
+      context.clearRect(prevFrame.left, prevFrame.top, prevFrame.width, prevFrame.height);
+    } else if (prevFrame && prevFrame.disposeOp === 2) {
+      context.putImageData(prevFrameData, prevFrame.left, prevFrame.top);
     }
 
     const frame = currentFrame;
-    _prevFrame = frame;
-    _prevFrameData = null;
+    prevFrame = frame;
+    prevFrameData = null;
     if (frame.disposeOp === 2) {
-      _prevFrameData = context.getImageData(frame.left, frame.top, frame.width, frame.height);
+      prevFrameData = context.getImageData(frame.left, frame.top, frame.width, frame.height);
     }
     if (frame.blendOp === 0) {
       context.clearRect(frame.left, frame.top, frame.width, frame.height);
@@ -113,82 +125,128 @@ export async function createPlayer (image) {
       teTest.baseTexture.update();
     }
   }
-  async function play (idx) {
-    if (group.isPlay) {
-      console.log('[png.play] 播放中');
+
+  function update (offsetTime) {
+
+    // console.log(`[png.update] offsetTime ${offsetTime} ${group.name}`);
+
+    if (group.isPause) {
       return;
     }
+
+    if (currentFrame) {
+      group.currentTime += parseInt((offsetTime + 0.001) * 1000);
+      if (group.currentTime < parseInt(currentFrame.delay * group.speed)) {
+        return;
+      }
+
+      // console.log(`[png.update] time ${group.currentTime} delay ${currentFrame.delay * group.speed} ${group.name}`);
+
+      group.currentTime = 0;
+    }
+
+    // if (currentFrameNumber === 0) {
+    //   console.log(`[png.update] play ${group.name}`);
+    // }
+
+    renderNextFrame();
+
+    if (group.index === currentFrameNumber) {
+      if (!group.loop) {
+        console.log(`[png.update] event index ${group.index}`);
+        group.stop(false);
+        if (group.playResolve) {
+          group.playResolve();
+          group.playResolve = null;
+        }
+      }
+    }
+
+    if (currentFrameNumber === frameCnts - 1) {
+
+      // console.log(`[png.update] stop ${group.name}`);
+
+
+      if (group.loop) {
+        if (typeof group.loop === 'number') {
+          group.loop--;
+          if (group.loop <= 0) {
+            group.loop = 0;
+            group.stop(false);
+          }
+        }
+      } else {
+        group.stop(false);
+      }
+    }
+  }
+
+
+  /**
+   * 播放
+   * @param {number} idx
+   * @returns
+   */
+  async function play (idx) {
+    if (group.isPlay) {
+      console.log(`[png.play] 播放中 ${group.name}`);
+      return;
+    }
+    group.isPause = false;
     group.isPlay = true;
+    group.currentTime = 0.0;
+    group.index = frameCnts - 1;
+    game.addUpdate(group);
+
     if (typeof idx === 'number') {
       group.index = idx;
     }
 
-    console.log(`[png.play] index : ${group.index}`);
+    console.log(`[png.play] ${group.name}`);
 
-    for (let i = group.index; i < frames.length; i++) {
-      if (group.isPause) {
-        group.isPause = false;
-        group.isPlay = false;
-        console.log('[png.pause] index', group.index);
-        group.pauseResolve();
-        group.pauseResolve = null;
-        return;
-      }
-      renderNextFrame();
+    let promise = new Promise((resolve) => {
+      group.playResolve = resolve;
+    });
 
-      let f = frames[i];
-
-      await game.idle(f.delay * group.speed);
-
-      group.index = i;
-    }
-    group.index = 0;
-    if (group.loop) {
-      console.log('[png]loop:', group.loop);
-      group.isPlay = false;
-      if (typeof group.loop === 'number') {
-        if (group.loop > 0) {
-          group.loop--;
-          await play();
-          return;
-        }
-      } else {
-        await play();
-        return;
-      }
-    }
-    group.isPlay = false;
-    group.isPause = false;
-    group.pauseResolve = null;
+    return promise;
   }
 
+  /**
+   * 暫停
+   */
   async function pause () {
     if (!group.isPlay) {
       return;
     }
-    return new Promise((resolve) => {
-      group.pauseResolve = resolve;
-      group.isPause = true;
-    });
+    console.log('[png.pause] ', group.name);
+    group.isPause = true;
+    group.isPlay = false;
   }
 
-  async function stop () {
-    await pause();
-    group.index = 0;
+  /**
+   * 停止
+   */
+  async function stop (reset = true) {
+    console.log('[png.stop] ', group.name);
+
     group.isPlay = false;
     group.isPause = false;
-    group.pauseResolve = null;
+    game.removeUpdate(group);
 
-    renderNextFrame();
-
+    if (reset) {
+      group.index = frameCnts - 1;
+      currentFrameNumber = -1;
+      renderNextFrame();
+    }
   }
 
-  stop();
 
+  stop();
 
   group.play = play;
   group.pause = pause;
   group.stop = stop;
+  group.update = update;
 
   return group;
 }
