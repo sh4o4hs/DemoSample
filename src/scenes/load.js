@@ -127,11 +127,11 @@ export async function create (game) {
 
   clock2.x = 10;
   clock2.y = 600;
-  clock2.speed = 0.5;
+  clock2.speed = 2.0;
   game.layer.overlay.addChild(clock2);
 
   elephant1.x = 10;
-  elephant1.speed = 0.5;
+  elephant1.speed = 1.0;
   game.layer.overlay.addChild(elephant1);
 
   elephant2.x = 350;
@@ -181,7 +181,7 @@ export async function create (game) {
   console.log('[play] end elephant1');
 
   console.log('[play] start elephant2');
-  elephant2.speed = 1.0;
+  elephant2.speed = 1.25;
   elephant2.loop = false;
   await elephant2.play();
   console.log('[play] end elephant2');
@@ -199,6 +199,7 @@ export async function create (game) {
   await elephant2.play(10);
 
   elephant2.loop = true;
+  elephant2.speed = 1.0;
   elephant2.play();
 
   // teVideo = PIXI.Texture.from(url);

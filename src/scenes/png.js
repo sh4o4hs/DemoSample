@@ -135,8 +135,8 @@ export async function createPlayer (image, name) {
     }
 
     if (currentFrame) {
-      group.currentTime += parseInt((offsetTime + 0.001) * 1000);
-      if (group.currentTime < parseInt(currentFrame.delay * group.speed)) {
+      group.currentTime += parseInt((offsetTime + 0.001) * group.speed * 1000);
+      if (group.currentTime < parseInt(currentFrame.delay)) {
         return;
       }
 
