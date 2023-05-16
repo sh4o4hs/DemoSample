@@ -135,14 +135,15 @@ export async function createPlayer (image, name) {
     }
 
     if (currentFrame) {
+      let time = parseInt(currentFrame.delay);
+
       group.currentTime += parseInt((offsetTime + 0.001) * group.speed * 1000);
-      if (group.currentTime < parseInt(currentFrame.delay)) {
+      if (group.currentTime < time) {
         return;
       }
 
       // console.log(`[png.update] time ${group.currentTime} delay ${currentFrame.delay * group.speed} ${group.name}`);
-
-      group.currentTime = 0;
+      group.currentTime = group.currentTime - time;
     }
 
     // if (currentFrameNumber === 0) {
