@@ -162,6 +162,8 @@ export async function init (config) {
         useH264: true
       };
 
+      console.log(globalThis);
+
       await video.init({
         Texture: PIXI.Texture,
         game,

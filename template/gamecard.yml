@@ -7,6 +7,7 @@ name:   # 遊戲名稱 (多語設定)
   # ja-jp: game ja-jp
   en-us: game en-us
   it-it: game it-it
+  pt-br: jogo
   zh-tw: 遊戲
   zh-cn: 游戏
 sysTray: # 是否顯示系統選單

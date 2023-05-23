@@ -98,7 +98,9 @@ export async function create (game) {
   // 建立
   let url;
   url = app.baseURL + 'res/video/kingBaccarata001_comfort.png';
+  console.log('開始下載 ', url);
   let image1 = await png.createImage(url);
+  console.log('下載完成 ', url);
 
   url = app.baseURL + 'res/video/clock.png';
   let image2 = await png.createImage(url);

@@ -66,7 +66,7 @@ export async function createPlayer (image, name) {
   let canvas = document.createElement('canvas');
   canvas.width = image.width;
   canvas.height = image.height;
-  let context = canvas.getContext('2d');
+  let context = canvas.getContext('2d', { willReadFrequently: true });
 
   let group = new PIXI.Container();
 

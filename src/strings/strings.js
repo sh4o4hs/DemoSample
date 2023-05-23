@@ -4,6 +4,7 @@
  * @type {{EN_US: string, ZH_TW: string, ZH_CN: string}}
  */
 export const ID = {
+  PT_BR: 'pt-br',
   EN_US: 'en-us',
   ZH_TW: 'zh-tw',
   ZH_CN: 'zh-cn',
@@ -32,6 +33,7 @@ export async function setLanguage (id) {
   currentID = id;
 
   switch (id) {
+    case ID.PT_BR:
     case ID.EN_US:
       lang = await import('language/en-us');
       break;
