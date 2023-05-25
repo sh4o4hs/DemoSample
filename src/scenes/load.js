@@ -149,13 +149,15 @@ export async function create (game) {
     }
     console.log('[clock1] end');
   }
-  async function playClock2 () {
-    console.log('[clock2] start');
-    for (let i = 0; i < 10; i++) {
-      await clock2.play();
-    }
-    console.log('[clock2] end');
-  }
+
+  // async function playClock2 () {
+  //   console.log('[clock2] start');
+  //   for (let i = 0; i < 10; i++) {
+  //     await clock2.play();
+  //   }
+  //   console.log('[clock2] end');
+  // }
+
   console.log('[playclock1] start');
   playClock1();
   console.log('[playclock1] end');
