@@ -1,4 +1,4 @@
-import app from 'entity/app';
+import app from 'entity/app.js';
 import * as png from 'scene/png';
 
 
@@ -123,22 +123,24 @@ export async function create (game) {
 
   // 顯示
   clock1.x = 10;
-  clock1.y = 400;
+  clock1.y = 600;
   clock2.speed = 1.0;
   game.layer.overlay.addChild(clock1);
 
   clock2.x = 10;
-  clock2.y = 600;
-  clock2.speed = 2.0;
+  clock2.y = 750;
+  clock2.speed = 1.0;
   game.layer.overlay.addChild(clock2);
 
   elephant1.x = 10;
-  elephant1.speed = 1.0;
-  game.layer.overlay.addChild(elephant1);
+  elephant1.speed = 4.0;
+
+  // game.layer.overlay.addChild(elephant1);
 
   elephant2.x = 350;
   elephant2.speed = 0.75;
-  game.layer.overlay.addChild(elephant2);
+
+  // game.layer.overlay.addChild(elephant2);
 
 
   // 播放

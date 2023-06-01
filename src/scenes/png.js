@@ -1,4 +1,4 @@
-import app from 'entity/app';
+import app from 'entity/app.js';
 
 import parseAPNG from 'apng-js';
 
@@ -55,11 +55,31 @@ export async function createImage (url) {
 
 let playerName = 0;
 
+let playerList = {};
+
+export async function stopAll () {
+  let names = Object.getOwnPropertyNames(playerList);
+
+  for (let i = 0; i < names.length; i++) {
+    let name = names[i];
+    let player = playerList[name];
+    if (player) {
+      await player.stop();
+    }
+  };
+}
+
 export async function createPlayer (image, name) {
 
   if (!name) {
     name = playerName;
     playerName++;
+  }
+
+  let group = playerList[name];
+
+  if(group) {
+    return group;
   }
   console.log('[png.createPlayer]', name);
 
@@ -68,7 +88,7 @@ export async function createPlayer (image, name) {
   canvas.height = image.height;
   let context = canvas.getContext('2d', { willReadFrequently: true });
 
-  let group = new PIXI.Container();
+  group = new PIXI.Container();
 
   let current = new PIXI.Sprite(PIXI.Texture.EMPTY);
 
@@ -248,6 +268,8 @@ export async function createPlayer (image, name) {
   group.pause = pause;
   group.stop = stop;
   group.update = update;
+
+  playerList[name] = group;
 
   return group;
 }

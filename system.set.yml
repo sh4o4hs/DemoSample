@@ -3,12 +3,12 @@
 package:
   main: src/main2.js
   defaultExtension: js
+  skipRollup: true
 
 # config
 config:
   paths:
-    # tweenjs: /dependence/createjs/tweenjs.1.0.2.js
-    nuts: /dependence/nuts/nuts.2.9.0.js
+    nuts: /dependence/nuts/nuts.2.10.0.js
     data/: demo/sample/data/
     res/: demo/sample/res/
     src/: demo/sample/src/

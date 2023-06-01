@@ -7,9 +7,9 @@
    Authors:
 
 ************************************************************************ */
-import app from 'entity/app';
-import * as command from 'net/command';
-import * as event from 'net/event';
+import app from 'entity/app.js';
+import * as command from 'net/command.js';
+import * as event from 'net/event.js';
 import * as vendor from 'src/vendor';
 
 

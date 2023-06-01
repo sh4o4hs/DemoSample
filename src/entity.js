@@ -8,7 +8,7 @@
 
  ************************************************************************ */
 
-import app from 'entity/app';
+import app from 'entity/app.js';
 
 import * as strings from 'language/strings';
 

@@ -7,7 +7,7 @@
    Authors:
 
 ************************************************************************ */
-import app from 'entity/app';
+import app from 'entity/app.js';
 
 /**
  * 讀取子場景用

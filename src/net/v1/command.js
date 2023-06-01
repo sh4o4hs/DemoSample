@@ -7,10 +7,10 @@
    Authors:
 
 ************************************************************************ */
-import create from 'net/command/create';
-import bet from 'net/command/bet';
-import result from 'net/command/result';
-import jackpot from 'net/command/jackpot';
+import create from 'net/command/create.js';
+import bet from 'net/command/bet.js';
+import result from 'net/command/result.js';
+import jackpot from 'net/command/jackpot.js';
 
 /**
  * 處理收到的網路命令

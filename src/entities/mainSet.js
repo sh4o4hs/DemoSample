@@ -8,7 +8,7 @@
  *
  ************************************************************************ */
 
-import app from 'entity/app';
+import app from 'entity/app.js';
 
 
 // let hasOGV = false;
@@ -105,17 +105,18 @@ export function normal (that) {
   let set =  {
     async setInfo (obj) {
       async function create () {
-        console.log('[初始化說明場景]');
+        console.log('[讀取說明]');
         let scene = await import('scene/info');
-        console.log('[開始建立說明場景]');
+        console.log('[建立說明]');
         await scene.create();
-        console.log('[完成建立說明場景]');
+        console.log('[顯示說明]');
       }
       obj.setClick((/*o*/) => {
         ruleVisible = !ruleVisible;
         if (ruleVisible) {
           create();
         } else {
+          console.log('[關閉說明]');
           center.rule.hide();
         }
       });
@@ -289,6 +290,9 @@ export function normal (that) {
         if (sound && sound.music && sound.music.play) {
           sound.music.stop();
         }
+
+        let png = await import('scene/png');
+        await png.stopAll();
 
         let video = await import('scene/video');
         await video.release();

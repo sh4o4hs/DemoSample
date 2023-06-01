@@ -13,5 +13,7 @@
 
 import * as component from 'src/component';
 
+console.log('[demo/sample]');
+
 // 程式進入點;
 component.run();

@@ -1,4 +1,4 @@
-import app from 'entity/app';
+import app from 'entity/app.js';
 
 /**
  * jackpot

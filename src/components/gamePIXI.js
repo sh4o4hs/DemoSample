@@ -5,7 +5,7 @@
 //import Stats from 'stats';
 // import m from 'mithril';
 
-import app from 'entity/app';
+import app from 'entity/app.js';
 import * as nuts from 'nuts';
 import * as scene from 'src/sceneChild';
 
@@ -53,7 +53,7 @@ export async function init () {
   app.nuts = nuts;
 
   // await import('pixi');
-  // let Stats = await import('stats.js');
+  // let Stats = await import('stats');
   // let Loader = await import('resource-loader');
 
   let config = {};

@@ -8,7 +8,7 @@
  *
  ************************************************************************ */
 
-import app from 'entity/app';
+import app from 'entity/app.js';
 import * as strings from 'language/strings';
 
 /**
@@ -60,18 +60,9 @@ export async function init (config) {
 
 
   // if (renderer?.context?.gl) {
-  //   await import('https://greggman.github.io/webgl-memory/webgl-memory.js');
+  //   await import('https://greggman.github.io/webgl-memory/webgl-memory');
 
   // }
-
-  let { initializeApp }  = await import('firebase/app');
-  console.log(initializeApp);
-
-  const firebaseConfig = {
-  };
-
-  const zz = initializeApp(firebaseConfig);
-  console.log(zz);
 
 
   // if (app.gamecard.devMode === 'debug') {

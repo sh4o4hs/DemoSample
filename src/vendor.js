@@ -1,4 +1,4 @@
-import nameMap from 'src/nameMap';
+import nameMap from 'src/nameMap.js';
 
 
 // 網路版本
@@ -59,6 +59,7 @@ export async function get (name) {
   if (!str) {
     str = nameMap[`enus${name}`];
   }
+  console.log(`${baseURL}${str}`);
   let res = await import(`${baseURL}${str}`);
   return res.default;
 }

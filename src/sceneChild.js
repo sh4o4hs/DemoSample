@@ -8,7 +8,7 @@
  *
  ************************************************************************ */
 
-import app from 'entity/app';
+import app from 'entity/app.js';
 import * as comGame from 'component/gamePIXI';
 import * as component from 'src/component';
 import * as entity from 'src/entity';

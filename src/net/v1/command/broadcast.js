@@ -1,4 +1,4 @@
-import updateBalance from 'net/command/broadcast/updateBalance';
+import updateBalance from 'net/command/broadcast/updateBalance.js';
 
 export const CMD = {
   UPDATE_BALANCE: 'updateBalance'
