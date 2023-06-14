@@ -1,4 +1,4 @@
-import nameMap from 'src/nameMap.js';
+import nameMap from 'src/nameMap';
 
 
 // 網路版本

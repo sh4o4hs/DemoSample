@@ -20,6 +20,10 @@ console.log('!!!!!!!!!!!!!!!!!!!!!!!');
 console.log('!!!!!!!!!!!!!!!!!!!!!!!');
 console.log('!!!!!!!!!!!!!!!!!!!!!!!');
 console.log('????????????????????');
+if (importShim) {
+  const importMap = importShim.getImportMap();
+  console.log(importMap);
+}
 
 // console.log(a);
 

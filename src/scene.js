@@ -8,7 +8,7 @@
  *
  ************************************************************************ */
 
-import app from 'entity/app.js';
+import app from 'entity/app';
 import * as strings from 'language/strings';
 
 /**
@@ -18,15 +18,20 @@ let eventList = null;
 
 
 export async function getLogo () {
-  let game = app.game;
   let setting = app.setting;
-  let obj = await game.getProject('video/photos', {
-    version: '2.0.6'
-  });
-  let pathname = obj.pathname;
-  let filename = await obj.lib.getLogo(setting.agent);
-  filename = `${pathname}/${filename}`;
-  console.log(filename);
+
+  try {
+    let filename = import.meta.resolve('video/photos');
+    let lib = await import(filename);
+    let pathname = filename.substring(0, filename.indexOf('video/photos'));
+    pathname += 'video/photos';
+
+    filename = await lib.getLogo(setting.agent);
+    filename = `${pathname}/${filename}`;
+    console.log(filename);
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 /**

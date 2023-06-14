@@ -1,4 +1,4 @@
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 
 let isCreate = false;

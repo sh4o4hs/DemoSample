@@ -1,4 +1,4 @@
-// import m from 'mithril';
+import m from 'mithril';
 
 import * as strings from 'language/strings';
 import Background from 'component/background';

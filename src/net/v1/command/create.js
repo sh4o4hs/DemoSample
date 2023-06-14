@@ -1,4 +1,4 @@
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 /**
  * 建立遊戲 (舊版)

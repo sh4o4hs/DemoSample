@@ -1,8 +1,9 @@
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 let isCreate = false;
 let scene = null;
 export async function create () {
+  console.log('[scene/info]create');
   let sceneManager = app.nuts.scene.sceneManager;
   let lib = await import('entity/main');
   let Main = lib.default;

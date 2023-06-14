@@ -1,4 +1,4 @@
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 
 let sources = null;
@@ -29,9 +29,12 @@ export async function init (config) {
     }
 
     sources = {};
-    let obj = await app.game.getProject('video/domains');
-    let lib = obj.lib;
-    sources = await lib.getVideoSource(config.id);
+    try {
+      let filename = import.meta.resolve('video/domains');
+      let lib = await import(filename);
+      sources = await lib.getVideoSource(config.id);
+    } catch (e) {
+    }
 
     useUrls(groupIndex);
     console.log('sources : ', sources);
@@ -59,8 +62,8 @@ export async function release () {
  */
 export async function useVideoSource (id) {
   sources = {};
-  let obj = await app.game.getProject('video/domains');
-  let lib = obj.lib;
+  let filename = import.meta.resolve('video/domains');
+  let lib = await import(filename);
   sources = await lib.getVideoSource(id);
 }
 

@@ -27,6 +27,7 @@ globals:
   System: true
   m: true
   createjs: true
+  importShim: true
   isMobile: true
   ogvjs: true
   shaka: true

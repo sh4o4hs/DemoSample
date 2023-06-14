@@ -1,4 +1,4 @@
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 //import * as SceneLoad from 'src/scenes/load';
 //import * as module from 'component/module';

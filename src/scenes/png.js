@@ -1,4 +1,4 @@
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 import parseAPNG from 'apng-js';
 
@@ -78,7 +78,7 @@ export async function createPlayer (image, name) {
 
   let group = playerList[name];
 
-  if(group) {
+  if (group) {
     return group;
   }
   console.log('[png.createPlayer]', name);

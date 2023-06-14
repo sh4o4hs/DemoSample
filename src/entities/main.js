@@ -7,7 +7,7 @@
    Authors:
 
 ************************************************************************ */
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 /**
  * 主場景

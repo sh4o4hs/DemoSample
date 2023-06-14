@@ -8,7 +8,7 @@
  *
  ************************************************************************ */
 
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 
 // let hasOGV = false;
@@ -105,18 +105,18 @@ export function normal (that) {
   let set =  {
     async setInfo (obj) {
       async function create () {
-        console.log('[讀取說明]');
+        console.log('[修改讀取說明]');
         let scene = await import('scene/info');
-        console.log('[建立說明]');
+        console.log('[修改建立說明]');
         await scene.create();
-        console.log('[顯示說明]');
+        console.log('[修改顯示說明]');
       }
       obj.setClick((/*o*/) => {
         ruleVisible = !ruleVisible;
         if (ruleVisible) {
           create();
         } else {
-          console.log('[關閉說明]');
+          console.log('[修改關閉說明]');
           center.rule.hide();
         }
       });

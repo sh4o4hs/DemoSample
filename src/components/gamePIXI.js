@@ -3,9 +3,9 @@
 // import 'pixi-particles';
 //import * as Loader from 'resource-loader';
 //import Stats from 'stats';
-// import m from 'mithril';
 
-import app from 'entity/app.js';
+import m from 'mithril';
+import app from 'entity/app';
 import * as nuts from 'nuts';
 import * as scene from 'src/sceneChild';
 

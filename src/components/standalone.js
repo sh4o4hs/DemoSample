@@ -1,9 +1,10 @@
+import m from 'mithril';
+
 // import 'pixi';
-// import m from 'mithril';
 // import * as Loader from 'resource-loader';
 // import Stats from 'stats';
 import * as nuts from 'nuts';
-import app from 'entity/app.js';
+import app from 'entity/app';
 import gamecard from 'template/gamecard';
 import * as sceneMain from 'scene/main';
 import * as sceneSub from 'scene/sub';

@@ -7,7 +7,7 @@
    Authors:
 
 ************************************************************************ */
-import app from 'entity/app.js';
+import app from 'entity/app';
 
 import * as event from 'net/event';
 import fmtGame from 'schema/game';

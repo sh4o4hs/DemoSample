@@ -8,7 +8,7 @@
  *
  ************************************************************************ */
 
-import app from 'entity/app.js';
+import app from 'entity/app';
 import * as comGame from 'component/gamePIXI';
 import * as component from 'src/component';
 import * as entity from 'src/entity';
@@ -19,27 +19,38 @@ import * as entity from 'src/entity';
 let eventList = null;
 
 export async function getLogo () {
-  let game = app.game;
   let setting = app.setting;
-  let obj = await game.getProject('video/photos', {
-    version: '2.0.6'
-  });
-  let pathname = obj.pathname;
-  let filename = await obj.lib.getLogo(setting.agent);
-  filename = `${pathname}/${filename}`;
-  console.log(filename);
-  return new Promise((resolve, reject) => {
-    const loader = new PIXI.Loader(); // you can also create your own if you want
-    loader.add('logo', filename);
-    loader.load((loader, resources) => {
-      console.log('resources: ', resources);
-      if (resources.logo && resources.logo.texture) {
-        resolve(resources.logo.texture);
-      } else {
-        reject(null);
-      }
+  let filename;
+
+  try {
+    filename = import.meta.resolve('video/photos');
+    let lib = await import(filename);
+    let pathname = filename.substring(0, filename.indexOf('video/photos'));
+    pathname += 'video/photos';
+
+    filename = await lib.getLogo(setting.agent);
+    filename = `${pathname}/${filename}`;
+    console.log(filename);
+  } catch (e) {
+    console.error(e);
+  }
+
+  if (filename) {
+    return new Promise((resolve, reject) => {
+      const loader = new PIXI.Loader(); // you can also create your own if you want
+      loader.add('logo', filename);
+      loader.load((loader, resources) => {
+        console.log('resources: ', resources);
+        if (resources.logo && resources.logo.texture) {
+          resolve(resources.logo.texture);
+        } else {
+          reject(null);
+        }
+      });
     });
-  });
+  } else {
+    return PIXI.Texture.EMPTY;
+  }
 }
 
 
@@ -143,7 +154,7 @@ export function init () {
 
       // 背景讀取資源
       let scene = await import('scene/load');
-      scene.create();
+      scene.create(game);
 
       // 初始化視訊
       app.tableInfo = {
