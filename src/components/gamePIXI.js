@@ -4,6 +4,9 @@
 //import * as Loader from 'resource-loader';
 //import Stats from 'stats';
 
+import * as PIXI from 'pixi.js';
+import * as spine from 'pixi-spine';
+
 import m from 'mithril';
 import app from 'entity/app';
 import * as nuts from 'nuts';
@@ -18,11 +21,11 @@ let defaultStyle = {
   height: '100%'
 };
 
-let plugin = [
+// let plugin = [
 
-  // 'pixi-spine',
-  // 'pixi-particles'
-];
+//   // 'pixi-spine',
+//   // 'pixi-particles'
+// ];
 
 export let Component = {
   oninit (vnode) {
@@ -52,18 +55,18 @@ export async function init () {
   console.log('!!!!!!!!!! init !!!!!!!!!!!!');
   app.nuts = nuts;
 
-  // await import('pixi');
+
   // let Stats = await import('stats');
   // let Loader = await import('resource-loader');
 
-  let config = {};
+  let config = {
+    PIXI: PIXI,
+    spine: spine,
+    Ticker: createjs.Ticker,
+    m: m
+  };
 
-  // config.Loader = PIXI.Loader;
-  config.m = m;
-
-  // config.Stats = Stats;
-  config.PIXI = PIXI;
-  config.plugin = plugin;
+  // config.plugin = plugin;
 
   await nuts.init(config);
 

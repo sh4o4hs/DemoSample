@@ -208,12 +208,6 @@ export async function create (game) {
   elephant2.speed = 1.0;
   elephant2.play();
 
-  // teVideo = PIXI.Texture.from(url);
-
-  // const teMask = PIXI.Texture.from(videoMask);
-  // let mask = new PIXI.Sprite(teMask);
-
-
   //----------------------------------------
   // 播放背景音樂
   // let sound = center.sounds.demo;

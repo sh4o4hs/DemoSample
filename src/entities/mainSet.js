@@ -7,6 +7,7 @@
  *   Authors:
  *
  ************************************************************************ */
+import * as PIXI from 'pixi.js';
 
 import app from 'entity/app';
 

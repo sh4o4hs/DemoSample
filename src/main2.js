@@ -15,10 +15,6 @@ import * as scene from 'src/scene';
 // import a from 'src/a.out.mjs';
 
 console.log('!!!!!!!!!!!!!!!!!!!!!!!');
-console.log('!!!!!!!!!!!!!!!!!!!!!!!');
-console.log('!!!!!!!!!!!!!!!!!!!!!!!');
-console.log('!!!!!!!!!!!!!!!!!!!!!!!');
-console.log('!!!!!!!!!!!!!!!!!!!!!!!');
 console.log('????????????????????');
 if (importShim) {
   const importMap = importShim.getImportMap();
