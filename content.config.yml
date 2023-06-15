@@ -8,11 +8,11 @@ version: 3.2.2
 generatorVendor: v2
 framework:
   name: stuff
-  version: 7.0.0
+  version: 7.10.0
   builder: rollup
   skipCommandTerser: true
   useCodeSplitting: true
-templateVersion: game.4.0
+templateVersion: game.6.0
 # template:
 #   format: game
 #   standalone: true

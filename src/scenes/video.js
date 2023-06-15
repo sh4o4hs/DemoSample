@@ -34,6 +34,7 @@ export async function init (config) {
       let lib = await import(filename);
       sources = await lib.getVideoSource(config.id);
     } catch (e) {
+      console.error(e);
     }
 
     useUrls(groupIndex);
@@ -62,9 +63,13 @@ export async function release () {
  */
 export async function useVideoSource (id) {
   sources = {};
-  let filename = import.meta.resolve('video/domains');
-  let lib = await import(filename);
-  sources = await lib.getVideoSource(id);
+  try {
+    let filename = import.meta.resolve('video/domains');
+    let lib = await import(filename);
+    sources = await lib.getVideoSource(id);
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 export function getUrls (group) {

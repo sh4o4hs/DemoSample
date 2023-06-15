@@ -1,14 +1,14 @@
 ---
 # package
 package:
-  main: src/main1.js
+  main: src/main2.js
   defaultExtension: js
   skipRollup: true
 
 # config
 config:
   paths:
-    nuts: /dependence/nuts/nuts.2.10.0.js
+    # nuts: /dependence/nuts/nuts.2.10.0.js
     data/: demo/sample/data/
     res/: demo/sample/res/
     src/: demo/sample/src/
