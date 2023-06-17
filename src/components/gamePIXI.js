@@ -4,6 +4,8 @@
 //import * as Loader from 'resource-loader';
 //import Stats from 'stats';
 
+import createjs from 'tweenjs';
+
 import * as PIXI from 'pixi.js';
 import * as spine from 'pixi-spine';
 
