@@ -14,10 +14,6 @@
 import * as component from 'src/component';
 
 console.log('----[demo/sample]----');
-if (importShim) {
-  const importMap = importShim.getImportMap();
-  console.log(importMap);
-}
 
 // 程式進入點;
 component.run();

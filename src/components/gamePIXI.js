@@ -1,13 +1,7 @@
-// import 'pixi';
-// import 'pixi-spine';
-// import 'pixi-particles';
-//import * as Loader from 'resource-loader';
-//import Stats from 'stats';
-
 import createjs from 'tweenjs';
 
-// import * as PIXI from 'pixi.js';
-// import * as spine from 'pixi-spine';
+import * as PIXI from 'pixi.js';
+import * as spine from 'pixi-spine';
 
 import m from 'mithril';
 import app from 'entity/app';
@@ -23,17 +17,15 @@ let defaultStyle = {
   height: '100%'
 };
 
-// let plugin = [
-
-//   // 'pixi-spine',
-//   // 'pixi-particles'
-// ];
 
 export let Component = {
   oninit (vnode) {
     let attrs = vnode.attrs;
     this.config = attrs.config;
     this.style = attrs.style || defaultStyle;
+    this.config.PIXI = PIXI;
+    this.config.spine = spine;
+
   },
   oncreate (/*vnode*/) {
   },
@@ -62,8 +54,6 @@ export async function init () {
   // let Loader = await import('resource-loader');
 
   let config = {
-    PIXI: PIXI,
-    spine: PIXI.spine,
     Ticker: createjs.Ticker,
     m: m
   };

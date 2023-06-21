@@ -36,6 +36,7 @@ group: demo                # 群組
 appConfig: sample             # 程式設定檔
 # theOther: other      # 是否有子專案
 pixiConfig: #PIXI 設定
+  useModule: true
   legacy: false
   width: &WIDTH 1600
   height: &HEIGHT 1200
