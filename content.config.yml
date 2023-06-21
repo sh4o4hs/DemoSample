@@ -4,7 +4,7 @@ title:
 group: demo
 company: com
 description: webapp demo sample
-version: 3.2.2
+version: 3.3.0
 generatorVendor: v2
 framework:
   name: stuff
@@ -12,7 +12,7 @@ framework:
   builder: rollup
   skipCommandTerser: true
   useCodeSplitting: true
-templateVersion: game.4.0
+templateVersion: game.6.0
 # template:
 #   format: game
 #   standalone: true

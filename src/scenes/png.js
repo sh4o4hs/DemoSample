@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js';
+// import * as PIXI from 'pixi.js';
 import parseAPNG from 'apng-js';
 
 import app from 'entity/app';

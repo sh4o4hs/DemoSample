@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js';
+// import * as PIXI from 'pixi.js';
 
 import app from 'entity/app';
 
@@ -17,6 +17,7 @@ export async function play (game, result) {
 
   let loading = ui.loading;
   const NUM = ui.Number.NUM;
+  let engine = game.engine;
 
   if (isPlay) {
     return;
@@ -104,7 +105,7 @@ export async function play (game, result) {
   let spines = scene.spines.demo;
   let light01 = scene.light01;
   if (!light01) {
-    let spine = new app.game.spine.Spine(spines.contbo.tom.star[0]);
+    let spine = new engine.spine.Spine(spines.contbo.tom.star[0]);
     spine.skeleton.setToSetupPose();
     spine.autoUpdate = false;
     light01 = scene.light01 = spine;
@@ -119,7 +120,7 @@ export async function play (game, result) {
 
   let light02 = scene.light02;
   if (!light02) {
-    let spine = new app.game.spine.Spine(spines.contbo.tom.star[1]);
+    let spine = new engine.spine.Spine(spines.contbo.tom.star[1]);
     spine.skeleton.setToSetupPose();
     spine.autoUpdate = false;
     light02 = scene.light02 = spine;
@@ -136,7 +137,7 @@ export async function play (game, result) {
 
   let star1 = scene.star1;
   if (!star1) {
-    let spine = new app.game.spine.Spine(spines.contbo.tom.loop[0]);
+    let spine = new engine.spine.Spine(spines.contbo.tom.loop[0]);
     spine.skeleton.setToSetupPose();
     spine.autoUpdate = false;
     star1 = scene.star1 = spine;
@@ -153,7 +154,7 @@ export async function play (game, result) {
 
   let star2 = scene.star2;
   if (!star2) {
-    let spine = new app.game.spine.Spine(spines.contbo.tom.loop[1]);
+    let spine = new engine.spine.Spine(spines.contbo.tom.loop[1]);
     spine.skeleton.setToSetupPose();
     spine.autoUpdate = false;
     star2 = scene.star2 = spine;
@@ -168,7 +169,7 @@ export async function play (game, result) {
 
   let text = scene.text;
   if (!text) {
-    let spine = new app.game.spine.Spine(spines.contbo.tom.loop[4]);
+    let spine = new engine.spine.Spine(spines.contbo.tom.loop[4]);
     spine.skeleton.setToSetupPose();
     spine.autoUpdate = false;
     text = scene.text = spine;

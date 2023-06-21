@@ -6,8 +6,8 @@
 
 import createjs from 'tweenjs';
 
-import * as PIXI from 'pixi.js';
-import * as spine from 'pixi-spine';
+// import * as PIXI from 'pixi.js';
+// import * as spine from 'pixi-spine';
 
 import m from 'mithril';
 import app from 'entity/app';
@@ -63,7 +63,7 @@ export async function init () {
 
   let config = {
     PIXI: PIXI,
-    spine: spine,
+    spine: PIXI.spine,
     Ticker: createjs.Ticker,
     m: m
   };
