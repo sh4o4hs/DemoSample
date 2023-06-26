@@ -1,12 +1,10 @@
-import createjs from 'tweenjs';
+import app from 'entity/app';
 
+import createjs from 'tweenjs';
 import * as PIXI from 'pixi.js';
 import * as spine from 'pixi-spine';
-
 import m from 'mithril';
-import app from 'entity/app';
 import * as nuts from 'nuts';
-import * as scene from 'src/sceneChild';
 
 let defaultStyle = {
   position: 'absolute',
@@ -45,7 +43,7 @@ export let Component = {
  * 初始化
  * @returns {void}
  */
-export async function init () {
+export async function init (scene) {
   console.log('!!!!!!!!!! init !!!!!!!!!!!!');
   app.nuts = nuts;
 

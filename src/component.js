@@ -12,6 +12,8 @@ import m from 'mithril';
 
 // import * as comGame from 'component/standalone';
 import * as comGame from 'component/gamePIXI';
+import * as scene from 'src/sceneChild';
+
 let objList = [];
 
 export function add (obj, index = 0) {
@@ -60,6 +62,10 @@ export async function run () {
   m.mount(document.body, Application);
 
   // 初始化
-  await comGame.init();
+  scene.setComponent({
+    add: add,
+    remove: remove
+  });
+  await comGame.init(scene);
 
 }

@@ -7,17 +7,22 @@
  *   Authors:
  *
  ************************************************************************ */
-import * as PIXI from 'pixi.js';
-
 import app from 'entity/app';
+
+import * as PIXI from 'pixi.js';
 import * as comGame from 'component/gamePIXI';
-import * as component from 'src/component';
 import * as entity from 'src/entity';
 
 /**
  * 事件用
  */
 let eventList = null;
+
+
+let component = null;
+export function setComponent (com) {
+  component = com;
+}
 
 export async function getLogo () {
   let setting = app.setting;
