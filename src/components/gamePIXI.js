@@ -1,9 +1,10 @@
 import app from 'entity/app';
 
+import m from 'mithril';
 import createjs from 'tweenjs';
+
 import * as PIXI from 'pixi.js';
 import * as spine from 'pixi-spine';
-import m from 'mithril';
 import * as nuts from 'nuts';
 
 let defaultStyle = {

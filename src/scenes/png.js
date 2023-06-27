@@ -196,6 +196,10 @@ export async function createPlayer (image, name) {
           if (group.loop <= 0) {
             group.loop = 0;
             group.stop(false);
+            if (group.playResolve) {
+              group.playResolve();
+              group.playResolve = null;
+            }
           }
         }
       } else {
