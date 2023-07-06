@@ -55,6 +55,7 @@ export async function init (config) {
   app.langID = langID;
 
   console.log(config);
+  console.log(PIXI.Assets);
 
   // let renderer = app.game.getRenderer();
   // console.log(renderer);
