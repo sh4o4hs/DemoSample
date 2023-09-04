@@ -36,6 +36,10 @@ config:
     # pixi-particles: depend:pixi/pixi-particles.2.0.0.js
     # shaka-player: depend:shaka-player/shaka-player.compiled.js
     # ogv: depend:ogv/ogv-es2017.js
+  importmap:
+    pixi.js: /dependence/pixi/pixi.min.6.5.9.mjs
+    # pixi-spine: /public/release/dependence/pixi/pixi-spine.3.0.2.mjs
+    # nuts: /project/lib/nuts/debug/main.js
 
 #build
 build:

@@ -54,8 +54,8 @@ export async function init (config) {
   app.baseURL = baseURL;
   app.langID = langID;
 
-  console.log(config);
-  console.log(PIXI.Assets);
+  console.log('[config]', config);
+  console.log('[PIXI]', PIXI);
 
   // let renderer = app.game.getRenderer();
   // console.log(renderer);
