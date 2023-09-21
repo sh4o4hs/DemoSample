@@ -13,6 +13,6 @@ jobs:
         run: |
           . stuff-env
           report "複製專案"
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: eslint
         run: stuff eslint
