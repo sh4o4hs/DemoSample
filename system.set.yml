@@ -3,7 +3,7 @@
 package:
   main: src/main2.js
   defaultExtension: js
-  skipRollup: true
+  skipRollup: false
 
 # config
 config:

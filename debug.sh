@@ -1,0 +1,1 @@
+bun build src/main2.js --outdir ./debug --external nuts --external mithril --external apng-js --external shaka-player --external ogv --external tweenjs --external mustache --external howler --external io --external pixi.js --external pixi --external pixi-spine --external pixi-particles --external dragonBones --external dragonBonesPixi

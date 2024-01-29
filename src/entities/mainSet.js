@@ -182,30 +182,32 @@ export function normal (that) {
       // let index = 0;
       let channel = 1;
       let urls = [
-        {
-          type: 'mpeg1',
-          main: 'wss://33084.wllon.com/'
-        },
+
+        // {
+        //   type: 'mpeg1',
+        //   main: 'wss://33084.wllon.com/'
+        // },
         {
           type: 'h264',
           main: 'wss://172.16.102.149:9001/b1'
         },
         {
           type: 'h264',
-          main: 'wss://172.16.102.149:9001/b2'
-        },
-        {
-          type: 'h264',
-          main: 'wss://172.16.102.149:9001/b3'
-        },
-        {
-          type: 'h264',
-          main: 'wss://172.16.102.149:9001/b4'
-        },
-        {
-          type: 'h264',
-          main: 'wss://172.16.102.149:9001/b5'
+          main: 'wss://172.16.102.149:9001/b1'
         }
+
+        // {
+        //   type: 'h264',
+        //   main: 'wss://172.16.102.149:9001/b3'
+        // },
+        // {
+        //   type: 'h264',
+        //   main: 'wss://172.16.102.149:9001/b4'
+        // },
+        // {
+        //   type: 'h264',
+        //   main: 'wss://172.16.102.149:9001/b5'
+        // }
       ];
 
       let fxaa = new PIXI.filters.FXAAFilter();
@@ -308,7 +310,7 @@ export function normal (that) {
           // group: 'demo',
           // id: 'sample',
           // tablekey: 'abcd1234',
-          version: '2.2.0',
+          version: '2.3.0',
           game: 'HexagonSlot',
           group: 'slot',
           id: 'sample',
@@ -334,11 +336,13 @@ export function normal (that) {
       let volume = 2;
       let channel = 0;
       let urls = [
-        'wss://172.16.102.149:9001/b1',
-        'wss://172.16.102.149:9001/b2',
-        'wss://172.16.102.149:9001/b3',
-        'wss://172.16.102.149:9001/b4',
-        'wss://172.16.102.149:9001/b5'
+        'wss://172.16.102.5:9001/b1',
+        'wss://172.16.102.5:9001/b2'
+
+        // 'wss://172.16.102.149:9001/b1'
+        // 'wss://172.16.102.149:9001/b3',
+        // 'wss://172.16.102.149:9001/b4',
+        // 'wss://172.16.102.149:9001/b5'
       ];
 
       let isEnabled = true;

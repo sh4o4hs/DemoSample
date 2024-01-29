@@ -149,7 +149,7 @@ export async function create (game) {
 
   // game.layer.overlay.addChild(elephant2);
 
-
+  /*
   // 播放
   async function playClock1 () {
     console.log('[clock1] start');
@@ -214,6 +214,7 @@ export async function create (game) {
   elephant2.loop = true;
   elephant2.speed = 1.0;
   elephant2.play();
+  */
 
   //----------------------------------------
   // 播放背景音樂
