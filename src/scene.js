@@ -143,8 +143,9 @@ export async function init (config) {
       let game = conf.game;
 
       // 背景讀取資源
-      let scene = await import('scene/load');
-      scene.create(game);
+      import('scene/load').then(scene => {
+        scene.create(game);
+      });
 
       // 初始化視訊
       app.tableInfo = {

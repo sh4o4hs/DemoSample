@@ -336,8 +336,10 @@ export function normal (that) {
       let volume = 2;
       let channel = 0;
       let urls = [
-        'wss://172.16.102.5:9001/b1',
-        'wss://172.16.102.5:9001/b2'
+        'wss://172.16.102.5:9001/b2',
+        'wss://172.16.102.5:9001/b1'
+
+        // 'wss://172.16.102.5:9001/b3'
 
         // 'wss://172.16.102.149:9001/b1'
         // 'wss://172.16.102.149:9001/b3',
@@ -446,6 +448,8 @@ export function normal (that) {
 
         // let x = texture.width * 0.8;
         // let y = texture.height * 0.4;
+        // let w = 1280 * 0.25;//100;
+        // let h = 720 * 0.25;//80;
         let w = texture.width * 0.25;//100;
         let h = texture.height * 0.25;//80;
 
