@@ -189,11 +189,15 @@ export function normal (that) {
         // },
         {
           type: 'h264',
-          main: 'wss://172.16.102.149:9001/b1'
+          main: 'wss://172.16.102.11:9001/b2'
         },
         {
           type: 'h264',
-          main: 'wss://172.16.102.149:9001/b1'
+          main: 'wss://172.16.102.11:9001/b3'
+        },
+        {
+          type: 'h264',
+          main: 'wss://172.16.102.11:9001/b1'
         }
 
         // {
@@ -336,8 +340,9 @@ export function normal (that) {
       let volume = 2;
       let channel = 0;
       let urls = [
-        'wss://172.16.102.5:9001/b2',
-        'wss://172.16.102.5:9001/b1'
+        'wss://172.16.102.11:9001/b2',
+        'wss://172.16.102.11:9001/b3',
+        'wss://172.16.102.11:9001/b1'
 
         // 'wss://172.16.102.5:9001/b3'
 
@@ -393,8 +398,6 @@ export function normal (that) {
         }
 
         // console.log(player);
-
-
         // let voptions = {
 
         //   // webgl: true,
