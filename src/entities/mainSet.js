@@ -89,14 +89,7 @@ export function normal (that) {
   }
 
   // let videoSourceIndex = 0;
-  // let videoSourceList = [
-  //   'wss://pc-8174.streamingvds.com/',
-  //   'wss://pc-8374.streamingvds.com/',
-  //   'wss://pc-8474.streamingvds.com/',
-  //   'wss://pc-8274.streamingvds.com/',
-  //   'wss://pc-8074.streamingvds.com/',
-  //   'wss://pc-28574.streamingvds.com/'
-  // ];
+
   let testResolution = 2.0;
 
   // let testSprite = null;
@@ -182,23 +175,24 @@ export function normal (that) {
       // let index = 0;
       let channel = 1;
       let urls = [
+        {
+          type: 'h264',
+          main: 'wss://34.80.49.231/app/b2'
+        },
+        {
+          type: 'h264',
+          main: 'wss://34.80.49.231/app/b1'
+        },
+
+        {
+          type: 'h264',
+          main: 'wss://34.80.49.231/app/b3'
+        }
 
         // {
-        //   type: 'mpeg1',
-        //   main: 'wss://33084.wllon.com/'
-        // },
-        {
-          type: 'h264',
-          main: 'wss://172.16.102.11:9001/b2'
-        },
-        {
-          type: 'h264',
-          main: 'wss://172.16.102.11:9001/b3'
-        },
-        {
-          type: 'h264',
-          main: 'wss://172.16.102.11:9001/b1'
-        }
+        //   type: 'h264',
+        //   main: 'wss://172.16.102.11/app/b3'
+        // }
 
         // {
         //   type: 'h264',
@@ -340,9 +334,11 @@ export function normal (that) {
       let volume = 2;
       let channel = 0;
       let urls = [
-        'wss://172.16.102.11:9001/b2',
-        'wss://172.16.102.11:9001/b3',
-        'wss://172.16.102.11:9001/b1'
+        'wss://34.80.49.231/app/b2',
+        'wss://34.80.49.231/app/b1',
+        'wss://34.80.49.231/app/b3'
+
+        // 'wss://172.16.102.11/app/b3'
 
         // 'wss://172.16.102.5:9001/b3'
 

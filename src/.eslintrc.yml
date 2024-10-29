@@ -3,6 +3,10 @@ env:
   browser: true
   worker: true
   es2021: true
+# files: 
+#   - '**/*.ts'
+#   - '**/*.cts'
+#   - '**.*.mts'
 extends: 
   - 'eslint:recommended'
   # - 'plugin:@typescript-eslint/recommended'
